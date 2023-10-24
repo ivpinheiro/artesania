@@ -1,12 +1,6 @@
 {
   "elements": [
     {
-      "name": "teste12",
-      "id": 1234,
-      "country": "BR",
-      "groupId": 2
-    },
-    {
       "name": "teste13",
       "id": 12345,
       "country": "JP",

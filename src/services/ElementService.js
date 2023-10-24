@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export class ElementService {
-    static serverURL = 'http://192.168.1.30:9000';
+    static serverURL = 'http://localhost:9000';
     static getAllElements(){
         let dataURL = `${this.serverURL}/elements`;
         return axios.get(dataURL);
