@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #f0fdf0 !important;
+}
+
+.contact-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.contact-img-big {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.loader-img {
+    width: 250px;
+}
+
+.container-card {
+    background-color: #1987542f;
+}
