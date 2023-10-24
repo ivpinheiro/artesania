@@ -55,14 +55,14 @@ import { ElementService } from '../services/ElementService.js'
                 groups: []
             }
         },
-        created: async function () {
-            try {
-                let response = await ElementService.getAllGroups();
-                this.groups = response.data;
-            } catch (error) {
-                console.error(error)
-            }
-        },
+        // created: async function () {
+        //     try {
+        //         let response = await ElementService.getAllGroups();
+        //         this.groups = response.data;
+        //     } catch (error) {
+        //         console.error(error)
+        //     }
+        // },
         methods: {
             submitCreate: async function () {
                 try {

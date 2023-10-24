@@ -1,12 +1,6 @@
 {
   "elements": [
     {
-      "name": "teste129",
-      "id": 123,
-      "country": "US",
-      "groupId": 1
-    },
-    {
       "name": "teste12",
       "id": 1234,
       "country": "BR",
@@ -28,19 +22,13 @@
       "name": "Ivan",
       "id": "1337",
       "country": "BR",
-      "groupId": "1"
+      "groupId": 1
     },
     {
       "name": "Plot",
       "id": 123457,
       "country": "KR",
-      "groupId": "1"
-    },
-    {
-      "name": "Oloro",
-      "id": "1578",
-      "country": "AR",
-      "groupId": "1"
+      "groupId": 1
     }
   ],
   "groups": [
