@@ -1,4 +1,4 @@
-# artesania
+# Artesania
 
 ## Project setup
 ```
