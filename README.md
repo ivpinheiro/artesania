@@ -1,4 +1,4 @@
-# vue-f1-crud
+# artesania
 
 ## Project setup
 ```
