@@ -1,9 +1,14 @@
 <template>
     <nav class="fixed-top navbar navbar-expand-lg navbar navbar-dark">
         <div class="container">
-            <a href="/">
-                <img src="../assets/img/f1-car.png" class="navbar-brand" alt="F1 Car"/>
-            </a>
+            <div class="logo-conteiner">
+                <a href="/">
+                    <img src="../assets/img/artesania-logo.svg" class="navbar-brand" alt="F1 Car" />
+                </a>
+                <router-link to="/" class="nav-section" id="brand-name">
+                    ARTESANIA
+                </router-link>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -11,36 +16,36 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active">
-                        <router-link to="/" class="navbar-brand" style="">
-                            Home
+                        <router-link to="/" class="nav-section" style="">
+                            Artistas independentes
                         </router-link>
-                        <span class="sr-only">(current)</span></a>
-                    <!-- <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+                        <router-link to="/" class="nav-section" style="">
+                            Pinturas
+                        </router-link>
+                        <router-link to="/" class="nav-section" style="">
+                            Fotografia
+                        </router-link>
+                        <router-link to="/" class="nav-section" style="">
+                            Novidades
+                        </router-link>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">                        
+                    </form>
                 </div>
             </div>
             <div class="my-2 my-lg-0">
                 <router-link to="/" class="navbar-brand">
-                    <i class="fa fa-sign-in"></i>
-                    Sign-in
+                    <i class="fa-solid fa-cart-shopping fa-inverse"></i>
+                </router-link>
+                <router-link to="/" class="navbar-brand">
+                    <i class="fa-regular fa-circle-user fa-inverse"></i>
                 </router-link>
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-dark bg-success navbar-expand-sm">
-        <div class="row"></div>
-        <div class="container">
-            <router-link to="/" class="navbar-brand">
-                <i class="fa fa-home"></i>
-                Home
-            </router-link>
-            <router-link to="/" class="navbar-brand">
-                <i class="fa fa-sign-in"></i>
-                Sign-in
-            </router-link>
-        </div>
-    </nav> -->
 </template>
 
 <script>
@@ -49,4 +54,19 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.logo-conteiner a img {
+    max-width: 45%;
+    height: auto;
+}
+
+.fa-inverse {
+    color: #000000;
+}
+
+#brand-name {
+    font-family: Inter;
+    font-weight: 900;
+    color: #9D3207;
+}
+</style>

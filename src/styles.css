@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f0fdf0 !important;
 }
 
@@ -24,14 +27,20 @@ body {
 }
 
 .navbar {
-    background-color: #198754;
+    background-color: #ffff;
     border: none; 
     padding: 0;
     z-index: 10;
-    font-weight: bold;
+    font-weight: bold;    
+}
+
+.nav-section {
+    color: #000000;
+    text-decoration: none;
 }
 
 .navbar-brand {
+    color: #000000;
     border: 0 0 0 0px;
     width: 100px;
 }
