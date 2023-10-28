@@ -54,14 +54,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .logo-conteiner a img {
     max-width: 45%;
     height: auto;
 }
 
 .fa-inverse {
-    color: #000000;
+    color: $red;
 }
 
 #brand-name {
