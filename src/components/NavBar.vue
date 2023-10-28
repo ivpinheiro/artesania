@@ -2,7 +2,7 @@
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="../assets/img/artesania-logo.svg" alt="Artesania" />
+                <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />
                 <span id="brand-name">ARTESANIA</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,6 +26,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <!-- <SearchInput v-model="searchVal" /> -->
                 </form>
                 <div class="my-2 my-lg-0">
                     <router-link to="/">
@@ -41,34 +42,53 @@
 </template>
 
 <script>
+// import { ref } from 'vue'
+// import SearchInput from 'vue-search-input'
+// import 'vue-search-input/dist/styles.css'
+
+// const searchVal = ref('')
+
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    // components: { SearchInput },
+    // setup() {
+    //     return {
+    //         searchVal
+    //     }
+    // }
 }
 </script>
 
 <style lang="scss" scoped>
+.navbar {
+    background-color: #ffff;
+    border: none;
+    padding: 0;
+    z-index: 10;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
 #brand-name {
     font-family: Inter;
     font-weight: 900;
+    font-size: 25px;
     color: #9D3207;
-}
-
-.navbar {
-    padding: 10px 0;
+    padding-left: 1em;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    width: unset;
 }
 
 .navbar-brand img {
-    max-height: 40px;
+    max-height: 50px;
     margin-right: 10px;
-}
-
-#brand-name {
-    font-size: 1.5rem;
+    margin: 0;
 }
 
 .navbar-toggler {
@@ -77,7 +97,6 @@ export default {
 
 .navbar-nav {
     margin-left: auto;
-    /* Alinhe o menu à direita da barra de navegação */
 }
 
 .form-control {

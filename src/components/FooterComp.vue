@@ -151,14 +151,14 @@
     <!-- Left -->
     
     <!-- Right -->
-      <img src = ../assets/img/BadgeVisa.svg>
-      <img src = ../assets/img/BadgeMasterCard.svg>
-      <img src = ../assets/img/BadgePayPal.svg>
-      <img src = ../assets/img/BadgeApple.svg>
-      <img src = ../assets/img/BadgeGooglePay.svg>
-      <img src = ../assets/img/BadgeBarCode.svg>
-      <img src = ../assets/img/BadgePix.svg>
-      <img src = ../assets/img/site-seguro-google.svg>
+      <img src = ../assets/img/footer/BadgeVisa.svg>
+      <img src = ../assets/img/footer/BadgeMasterCard.svg>
+      <img src = ../assets/img/footer/BadgePayPal.svg>
+      <img src = ../assets/img/footer/BadgeApple.svg>
+      <img src = ../assets/img/footer/BadgeGooglePay.svg>
+      <img src = ../assets/img/footer/BadgeBarCode.svg>
+      <img src = ../assets/img/footer/BadgePix.svg>
+      <img src = ../assets/img/footer/site-seguro-google.svg>
     <!-- Right -->
     
     
