@@ -1,5 +1,6 @@
 <template>
   <div>
+    <AcessibilityMenu></AcessibilityMenu>
     <NavBar></NavBar>
     <div class="content">
       <router-view />
@@ -8,9 +9,11 @@
 </template>
 <script>
 import NavBar from './components/NavBar.vue'
+import AcessibilityMenu from './components/AcessibilityMenu.vue'
+
 export default ({
   name: 'App',
-  components: { NavBar }
+  components: { NavBar, AcessibilityMenu }
 })
 </script>
 
