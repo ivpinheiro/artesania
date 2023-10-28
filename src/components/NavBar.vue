@@ -1,48 +1,40 @@
 <template>
-    <nav class="fixed-top navbar navbar-expand-lg navbar navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container">
-            <div class="logo-conteiner">
-                <a href="/">
-                    <img src="../assets/img/artesania-logo.svg" class="navbar-brand" alt="F1 Car" />
-                </a>
-                <router-link to="/" class="nav-section" id="brand-name">
-                    ARTESANIA
-                </router-link>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/img/artesania-logo.svg" alt="Artesania" />
+                <span id="brand-name">ARTESANIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active">
-                        <router-link to="/" class="nav-section" style="">
-                            Artistas independentes
-                        </router-link>
-                        <router-link to="/" class="nav-section" style="">
-                            Pinturas
-                        </router-link>
-                        <router-link to="/" class="nav-section" style="">
-                            Fotografia
-                        </router-link>
-                        <router-link to="/" class="nav-section" style="">
-                            Novidades
-                        </router-link>
-                    </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Artistas independentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pinturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Fotografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="my-2 my-lg-0">
+                    <router-link to="/">
+                        <i class="fa-solid fa-cart-shopping fa-inverse"></i>
+                    </router-link>
+                    <router-link to="/">
+                        <i class="fa-regular fa-circle-user fa-inverse"></i>
+                    </router-link>
                 </div>
-                <div class="navbar-collapse">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">                        
-                    </form>
-                </div>
-            </div>
-            <div class="my-2 my-lg-0">
-                <router-link to="/" class="navbar-brand">
-                    <i class="fa-solid fa-cart-shopping fa-inverse"></i>
-                </router-link>
-                <router-link to="/" class="navbar-brand">
-                    <i class="fa-regular fa-circle-user fa-inverse"></i>
-                </router-link>
             </div>
         </div>
     </nav>
@@ -55,18 +47,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.logo-conteiner a img {
-    max-width: 45%;
-    height: auto;
-}
-
-.fa-inverse {
-    color: $red;
-}
-
 #brand-name {
     font-family: Inter;
     font-weight: 900;
     color: #9D3207;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+#brand-name {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    /* Alinhe o menu à direita da barra de navegação */
+}
+
+.form-control {
+    width: auto;
+}
+
+.my-2.my-lg-0 {
+    display: flex;
+    align-items: center;
+}
+
+.my-2.my-lg-0 i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fa-inverse {
+    color: $nav-btn-color;
 }
 </style>
