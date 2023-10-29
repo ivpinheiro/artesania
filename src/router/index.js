@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomePage from '../views/HomePage.vue'
 import ElementManager from '../views/ElementManager.vue'
 import AddElement from '../views/AddElement.vue'
 import EditElement from '../views/EditElement.vue'
@@ -10,8 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    redirect : '/elements',
-    component: HomeView
+    component: HomePage
   },
   {
     path: '/elements',
