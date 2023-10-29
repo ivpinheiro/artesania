@@ -6,13 +6,47 @@
 
   </div><!-->
   
-  <div class="subs-footer container-sm">
+  
+  
     
-    <h3 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
-      FIQUE ATUALIZADO SOBRE NOSSAS ÚLTIMAS OFERTAS
-    </h3>
+  <!-- Grid container -->
+  <div class="subs-footer container p-1">
     
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-around">
+        
+          <!--Grid column-->
+          <div class="col-lg-6" style="color:#FFFFFF">
+            <h3 class="subscribe-offers fw-bold pt-5">
+              FIQUE ATUALIZADO SOBRE NOSSAS ÚLTIMAS OFERTAS
+            </h3>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="input-comp col-sm-3 pt-2">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-2">
+              <input type="email" id="form5Example21" class="form-control" style="border-radius: 20px">
+              <i class="fa fa-envelope" style="color:#FFFFFF"></i>
+              <label class="form-label" for="form5Example21" style="color:#FFFFFF">_Digite seu e-mail</label>
+            </div>
+            <button type="submit" class="btn btn-outline-light mb-4" style="border-radius: 30px">
+              Inscreva-se para receber novidades
+            </button>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form --> 
   </div>
+    
 
   <!-- Section: Links  -->
   <section class="links-section">
@@ -145,7 +179,9 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="border-top text-center p-4">
+  
+  <div class="text-center p-4">
+    <hr />
     <!-- Left -->
       Artesania © 2023, Todos os direitos reservados
     <!-- Left -->
@@ -185,7 +221,17 @@
   }
 
   .subs-footer{
-    background-color: footer-color2;
+    background-color: $footer-color2;
+    border-radius: 20px;
+    padding: 25px;
+
   }
+
+  .btn-subs{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+  }
+
+
   
 </style>
