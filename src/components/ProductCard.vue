@@ -5,7 +5,7 @@
             <h3 class="card-text">{{ productName }}</h3>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
                 :round-start-rating=" false "></star-rating>
-            <p class="card-value">R$ {{ productPrice }}</p>
+            <p class="card-value">R${{ productPrice }}</p>
         </div>
     </div>
 </template>
