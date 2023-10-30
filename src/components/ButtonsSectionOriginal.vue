@@ -20,7 +20,7 @@
   .verticalLine {
     background-color: #fff;
     width: 2px;
-    height: 100%;
+    height: 100%;    
   }
   
   .buttons_space {
@@ -50,6 +50,7 @@
     cursor: pointer;
     border: 2px solid transparent; /* Adiciona uma borda transparente */
     transition: all 0.3s; /* Transição suave para todas as propriedades */
+    font-weight: 900;
   }
   
   .buttonPrimary:hover {

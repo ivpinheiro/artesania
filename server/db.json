@@ -82,5 +82,61 @@
       "id": 2,
       "name": "Teste2"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Fragmentos da Realidade",
+      "price": "130,00",
+      "alt": "",
+      "sale": "",
+      "rating": 4.5,
+      "url": "../assets/img/products/product-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Flores em Repouso",
+      "price": "168,00",
+      "alt": "",
+      "sale": "140,00",
+      "rating": 3.5,
+      "url": "../assets/img/products/product-1.png"
+    },
+    {
+      "id": 3,
+      "name": "Vaso Arte em Cerâmica",
+      "price": "168,00",
+      "alt": "",
+      "sale": "140,00",
+      "rating": 3.5,
+      "url": "../assets/img/products/product-1.png"
+    },
+    {
+      "id": 4,
+      "name": "Mãe Natureza - Peça em madeira",
+      "price": "168,00",
+      "alt": "",
+      "sale": "140,00",
+      "rating": 3.5,
+      "url": "../assets/img/products/product-1.png"
+    },
+    {
+      "id": 5,
+      "name": "Flores em Repouso",
+      "price": "168,00",
+      "alt": "",
+      "sale": "140,00",
+      "rating": 3.5,
+      "url": "../assets/img/products/product-1.png"
+    },
+    {
+      "id": 6,
+      "name": "Flores em Repouso",
+      "price": "168,00",
+      "alt": "",
+      "sale": "140,00",
+      "rating": 3.5,
+      "url": "../assets/img/products/product-1.png"
+    }
   ]
 }

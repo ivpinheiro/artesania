@@ -1,6 +1,8 @@
 <template>
-    <div class="card" style="width: 18rem;">
-        <img src="../assets/img/products/product-1.png" class="card-img-top" alt="...">
+    <div class="card border-0" style="width: 18rem;">
+        <div class="wallpaper-img">
+            <img src="../assets/img/products/product-1.png" class="card-img-top" alt="...">
+        </div>
         <div class="card-body">
             <h3 class="card-text">{{ productName }}</h3>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
@@ -28,6 +30,10 @@ export default {
         rating: {
             type: Number,
             required: true
+        },
+        imgUrl: {
+            type: String,
+            required: true
         }
     }
 }
@@ -44,5 +50,15 @@ export default {
     font-weight: 1000;
     font-size: large;
     color: $product-card-price;
+}
+
+.card-img-top{
+    background-image: black;
+    background-size: cover;
+}
+.wallpaper-img{
+    background-color: #F0EEED;
+    padding: 10px;
+    border-radius: 20px;
 }
 </style>

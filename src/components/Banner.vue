@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 
 .bannerSection {
-    width: 100vw;
+    width: 100%;
     height: 663px;
     max-height: 663px;
     display: flex;
