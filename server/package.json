@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json -H localhost -p 9000"
+    "start": "json-server --watch ./data/db.json -H localhost -p 9000"
   },
   "keywords": [],
   "author": "",
