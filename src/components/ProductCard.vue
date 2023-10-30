@@ -6,7 +6,7 @@
         <div class="card-body">
             <h3 class="card-text">{{ productName }}</h3>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
-                :round-start-rating=" false "></star-rating>
+                :round-start-rating="false"></star-rating>
             <p class="card-value">R${{ productPrice }}</p>
         </div>
     </div>
@@ -40,6 +40,11 @@ export default {
 </script>
 
 <style lang="scss">
+.card {
+    align-content: center;
+    justify-content: center;
+}
+
 .card-text {
     font-weight: 1000;
     font-size: large;
@@ -52,11 +57,12 @@ export default {
     color: $product-card-price;
 }
 
-.card-img-top{
+.card-img-top {
     background-image: black;
     background-size: cover;
 }
-.wallpaper-img{
+
+.wallpaper-img {
     background-color: #F0EEED;
     padding: 10px;
     border-radius: 20px;

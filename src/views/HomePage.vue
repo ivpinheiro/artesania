@@ -62,10 +62,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .products-home {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
+  display:inline-flex;
+  width: 100%;
   overflow: auto;
   padding: 50px;
 }
