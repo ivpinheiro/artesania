@@ -1,7 +1,7 @@
 <template>
     <div class="card border-0" style="width: 18rem;">
         <div class="wallpaper-img">
-            <img src="../assets/img/products/product-1.png" class="card-img-top" alt="...">
+            <img :src="require(`@/assets/img/products/${imgUrl}`)" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
             <h3 class="card-text">{{ productName }}</h3>
@@ -18,6 +18,11 @@ import StarRating from 'vue-star-rating'
 export default {
     name: 'ProductCard',
     components: { StarRating },
+    data: function () {
+        return {
+            urlImg: ""
+        }
+    },
     props: {
         productName: {
             type: String,
@@ -35,6 +40,9 @@ export default {
             type: String,
             required: true
         }
+    },
+    created: function () {
+        this.urlImg = this.imgUrl
     }
 }
 </script>
