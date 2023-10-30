@@ -32,6 +32,20 @@ npm i
 npm run start
 ```
 
+## Project setup for Dev (Docker)
+
+### Build docker images
+
+```
+docker-compose build
+```
+
+### Build docker images
+
+```
+docker-compose up
+```
+
 ## Project setup for Deploy
 
 ### Follow step 1 of development and compiles and minifies for production

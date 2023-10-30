@@ -1,0 +1,31 @@
+version: '3'
+services:
+  # Servidor Vue.js
+  vue-app:
+    image: node:latest
+    container_name: artesania-vue
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "8080:8080"
+    command: [ "npm", "run", "serve" ]
+    networks:
+      - my-network
+
+  # Servidor JSON (json-server)
+  json-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: json-server
+    volumes:
+      - ./server/data:/data
+      - ./server/package.json:/app/package.json
+    ports:
+      - "9000:9000"
+    networks:
+      - my-network
+
+networks:
+  my-network:
