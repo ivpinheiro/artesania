@@ -1,0 +1,5 @@
+# Use uma imagem Node.js como base
+FROM node:latest
+
+# Inicie o Json Server quando o contêiner for iniciado
+CMD [ "npm", "run", "serve" ]

@@ -66,6 +66,7 @@ export default {
   width: 100%;
   overflow: auto;
   padding: 50px;
+  justify-content: center;
 }
 .item-product {
   padding: 10px;

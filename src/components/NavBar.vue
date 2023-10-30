@@ -25,7 +25,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Procurar produtos" aria-label="Search">
                     <!-- <SearchInput v-model="searchVal" /> -->
                 </form>
                 <div class="my-2 my-lg-0">

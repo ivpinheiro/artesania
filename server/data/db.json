@@ -95,48 +95,30 @@
     },
     {
       "id": 2,
-      "name": "Flores em Repouso",
-      "price": "168,00",
+      "name": "Mãe Natureza - Peça em madeira",
+      "price": "516,00",
       "alt": "",
-      "sale": "140,00",
-      "rating": 3.5,
-      "url": "product-1.png"
+      "sale": "430,00",
+      "rating": 4.5,
+      "url": "product-2.png"
     },
     {
       "id": 3,
-      "name": "Vaso Arte em Cerâmica",
+      "name": "Flores em Repouso",
       "price": "168,00",
       "alt": "",
       "sale": "140,00",
       "rating": 3.5,
-      "url": "product-1.png"
+      "url": "product-3.png"
     },
     {
       "id": 4,
-      "name": "Mãe Natureza - Peça em madeira",
-      "price": "168,00",
+      "name": "Vaso Arte em Cerâmica",
+      "price": "220,00",
       "alt": "",
-      "sale": "140,00",
-      "rating": 3.5,
-      "url": "product-1.png"
-    },
-    {
-      "id": 5,
-      "name": "Flores em Repouso",
-      "price": "168,00",
-      "alt": "",
-      "sale": "140,00",
-      "rating": 3.5,
-      "url": "product-1.png"
-    },
-    {
-      "id": 6,
-      "name": "Flores em Repouso",
-      "price": "168,00",
-      "alt": "",
-      "sale": "140,00",
-      "rating": 3.5,
-      "url": "product-1.png"
+      "sale": "",
+      "rating": 4.5,
+      "url": "product-4.png"
     }
   ]
 }
