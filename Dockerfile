@@ -13,8 +13,5 @@ COPY ./server/data/db.json ./
 # Instale o Json Server globalmente
 RUN npm install -g json-server
 
-# Exponha a porta em que o Json Server irá funcionar
-EXPOSE 9000
-
 # Inicie o Json Server quando o contêiner for iniciado
-CMD ["json-server", "--watch", "db.json", "-H", "localhost", "-p", "9000"]
+CMD ["json-server", "--watch", "db.json", "--host", "localhost", "--port", "9000"]
