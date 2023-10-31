@@ -9,7 +9,7 @@
                 :round-start-rating="false"></star-rating>
             <p class="card-value" v-if="productSale === ''">R${{ productPrice }}</p>
             <p class="card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{ productPrice
-            }}<span class="badge rounded-pill text-bg-danger" style="padding: 8px;">-{{ discountCalc }}%</span></span></p>
+            }}</span><span class="badge rounded-pill text-bg-danger">-{{ discountCalc }}%</span></p>
         </div>
     </div>
 </template>
@@ -92,7 +92,8 @@ export default {
 }
 
 .badge{
-    padding: 25px;
+    padding: 8px; 
+    margin-left: 10px;    
 }
 
 .wallpaper-img {

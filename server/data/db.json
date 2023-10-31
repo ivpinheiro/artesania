@@ -164,13 +164,33 @@
     {
       "id": 8,
       "name": "Rio de Janeiro",
-      "price": "150,00",
+      "price": "350,00",
       "alt": "",
       "sale": "212,00",
       "rating": 4.5,
       "url": "product-8.png",
       "best-seller": true,
       "new-product": false
+    }
+  ],
+  "clients": [
+    {
+      "id":"1",
+      "name":"Maria F.",
+      "comment":"A Artesania é minha loja favorita para encontrar peças artesanais únicas. Sempre encontro presentes especiais para amigos e familiares aqui",
+      "rating": 5.0
+    },
+    {
+      "id":"2",
+      "name":"Ricardo A.",
+      "comment":"Eu realmente valorizo a qualidade dos produtos da Artesania. Eles têm uma seleção incrível de arte local e artesanato, e eu adoro apoiar artistas independentes.",
+      "rating": 5.0
+    },
+    {
+      "id":"3",
+      "name":"Pedro R.",
+      "comment":"Eu realmente valorizo a qualidade dos produtos da Artesania. Eles têm uma seleção incrível de arte local e artesanato, e eu adoro apoiar artistas independentes.",
+      "rating": 5.0
     }
   ]
 }

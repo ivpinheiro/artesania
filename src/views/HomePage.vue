@@ -18,12 +18,12 @@
       <div class="products-home new-products">
         <div class="col-md-0" v-for="product in newProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url" ></ProductCard>
+            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
       </div>
 
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
-      
+
       <hr class="h-divider">
 
       <h3 class="best-seller-text">MAIS VENDIDOS</h3>
@@ -35,9 +35,18 @@
       </div>
 
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
-      
+
     </div>
     <OurArtists />
+
+    <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
+
+    <div class="products-home comments">
+      <div class="col-md-0" v-for="client in clientComments" :key="client">
+        <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
+        </CommentCard>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -45,6 +54,7 @@
 import { ElementService } from '../services/ElementService.js'
 import SpinnerLoader from '../components/SpinnerLoader.vue'
 import ProductCard from '../components/ProductCard.vue'
+import CommentCard from '../components/CommentCard.vue'
 import BannerComponent from '../components/Banner.vue'
 import ArtistNames from '../components/ArtistNames.vue'
 import CallToActionButtons from '../components/ButtonsSectionOriginal.vue'
@@ -58,7 +68,8 @@ export default {
     ArtistNames,
     CallToActionButtons,
     SpinnerLoader,
-    OurArtists
+    OurArtists,
+    CommentCard
   },
   data: function () {
     return {
@@ -66,27 +77,31 @@ export default {
       products: [],
       newProducts: [],
       bestSellerProducts: [],
+      clientComments: [],
       errorMessage: null
     }
   },
   created: async function () {
     try {
-      this.loading = true;
-      let response = await ElementService.getAllProducts();
-      this.products = response.data;
-      this.newProducts = this.products.filter(product => product["new-product"]);
-      this.bestSellerProducts = this.products.filter(product => product["best-seller"]);
-      this.loading = false;
+      this.loading = true
+      let responseProducts = await ElementService.getAllProducts()
+      let responseComments = await ElementService.getAllClientComments()
+      this.products = responseProducts.data
+      this.clientComments = responseComments.data
+      this.newProducts = this.products.filter(product => product["new-product"])
+      this.bestSellerProducts = this.products.filter(product => product["best-seller"])
+      this.loading = false
     } catch (error) {
-      this.errorMessage = error;
-      this.loading = false;
+      this.errorMessage = error
+      this.loading = false
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 .new-products-text,
-.best-seller-text {
+.best-seller-text,
+.client-comment-text {
   color: $home-show-case-title;
   width: 100%;
   padding: 50px;
@@ -94,25 +109,29 @@ export default {
   font-size: 40px;
   font-weight: bolder;
 }
-.btn{
+
+
+.btn {
   color: $home-show-case-title;
   font-weight: bolder;
   align-items: center;
   justify-content: center;
-  border-radius: 50px; 
+  border-radius: 50px;
   background-color: white;
   border: 1px solid rgba(128, 128, 128, 0.097);
   height: 75px;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: white;
 }
+
 .h-divider {
-  margin: 50px auto; 
+  margin: 50px auto;
   height: 1px;
   width: 90%;
   border-top: 1px solid gray;
-  padding: 5px 0; 
+  padding: 5px 0;
 }
 
 
