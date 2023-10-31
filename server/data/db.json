@@ -91,7 +91,9 @@
       "alt": "",
       "sale": "",
       "rating": 4.5,
-      "url": "product-1.png"
+      "url": "product-1.png",
+      "best-seller": false,
+      "new-product": true
     },
     {
       "id": 2,
@@ -100,7 +102,9 @@
       "alt": "",
       "sale": "430,00",
       "rating": 4.5,
-      "url": "product-2.png"
+      "url": "product-2.png",
+      "best-seller": false,
+      "new-product": true
     },
     {
       "id": 3,
@@ -109,7 +113,9 @@
       "alt": "",
       "sale": "140,00",
       "rating": 3.5,
-      "url": "product-3.png"
+      "url": "product-3.png",
+      "best-seller": false,
+      "new-product": true
     },
     {
       "id": 4,
@@ -118,7 +124,53 @@
       "alt": "",
       "sale": "",
       "rating": 4.5,
-      "url": "product-4.png"
+      "url": "product-4.png",
+      "best-seller": false,
+      "new-product": true
+    },
+    {
+      "id": 5,
+      "name": "Santo",
+      "price": "300,00",
+      "alt": "",
+      "sale": "",
+      "rating": 3.0,
+      "url": "product-5.png",
+      "best-seller": true,
+      "new-product": false
+    },
+    {
+      "id": 6,
+      "name": "Natureza Silenciosa",
+      "price": "145,00",
+      "alt": "",
+      "sale": "",
+      "rating": 4.0,
+      "url": "product-6.png",
+      "best-seller": true,
+      "new-product": false
+    },
+    {
+      "id": 7,
+      "name": "Vaso Geométrico",
+      "price": "254,00",
+      "alt": "",
+      "sale": "212,00",
+      "rating": 5.0,
+      "url": "product-7.png",
+      "best-seller": true,
+      "new-product": false
+    },
+    {
+      "id": 8,
+      "name": "Rio de Janeiro",
+      "price": "150,00",
+      "alt": "",
+      "sale": "212,00",
+      "rating": 4.5,
+      "url": "product-8.png",
+      "best-seller": true,
+      "new-product": false
     }
   ]
 }

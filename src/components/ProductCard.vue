@@ -1,5 +1,5 @@
 <template>
-    <div class="card border-0" style="width: 18rem;">
+    <div class="card border-0">
         <div class="wallpaper-img">
             <img :src="require(`@/assets/img/products/${imgUrl}`)" class="card-img-top" alt="...">
         </div>
@@ -51,6 +51,7 @@ export default {
 .card {
     align-content: center;
     justify-content: center;
+    width: 20rem;
 }
 
 .card-text {

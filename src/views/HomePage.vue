@@ -13,14 +13,31 @@
         </div>
       </div>
     </div>
-
-    <div class="products-home">
-      <div class="col-md-0" v-for="product of products" :key="product">
-        <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-          :rating="product.rating" :imgUrl="product.url"></ProductCard>
+    <div class="home-showcase">
+      <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
+      <div class="products-home new-products">
+        <div class="col-md-0" v-for="product in newProducts" :key="product">
+          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
+            :rating="product.rating" :imgUrl="product.url"></ProductCard>
+        </div>
       </div>
+
+      <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
+      
+      <hr class="h-divider">
+
+      <h3 class="best-seller-text">MAIS VENDIDOS</h3>
+      <div class="products-home best-seller">
+        <div class="col-md-0" v-for="product in bestSellerProducts" :key="product">
+          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
+            :rating="product.rating" :imgUrl="product.url"></ProductCard>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
+      
     </div>
-    <OurArtists/>
+    <OurArtists />
   </div>
 </template>
 
@@ -47,6 +64,8 @@ export default {
     return {
       loading: false,
       products: [],
+      newProducts: [],
+      bestSellerProducts: [],
       errorMessage: null
     }
   },
@@ -55,22 +74,57 @@ export default {
       this.loading = true;
       let response = await ElementService.getAllProducts();
       this.products = response.data;
+      this.newProducts = this.products.filter(product => product["new-product"]);
+      this.bestSellerProducts = this.products.filter(product => product["best-seller"]);
       this.loading = false;
     } catch (error) {
       this.errorMessage = error;
       this.loading = false;
     }
-  },
+  }
 }
 </script>
 <style lang="scss" scoped>
+.new-products-text,
+.best-seller-text {
+  color: $home-show-case-title;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.btn{
+  color: $home-show-case-title;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px; 
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.097);
+  height: 75px;
+}
+.btn:hover{
+  background-color: white;
+}
+.h-divider {
+  margin: 50px auto; 
+  height: 1px;
+  width: 90%;
+  border-top: 1px solid gray;
+  padding: 5px 0; 
+}
+
+
 .products-home {
-  display:inline-flex;
+  display: inline-flex;
   width: 100%;
   overflow: auto;
   padding: 50px;
   justify-content: center;
+  flex-direction: row;
 }
+
 .item-product {
   padding: 10px;
 }

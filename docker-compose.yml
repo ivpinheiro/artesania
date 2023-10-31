@@ -22,7 +22,7 @@ services:
     container_name: json-server
     volumes:
       - ./server/data:/data
-      - ./server/package.json:/app/package.json
+      - ./server/package.json:/data/package.json
     ports:
       - "9000:9000"
     networks:
