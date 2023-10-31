@@ -20,6 +20,7 @@
           :rating="product.rating" :imgUrl="product.url"></ProductCard>
       </div>
     </div>
+    <OurArtists/>
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import ProductCard from '../components/ProductCard.vue'
 import BannerComponent from '../components/Banner.vue'
 import ArtistNames from '../components/ArtistNames.vue'
 import CallToActionButtons from '../components/ButtonsSectionOriginal.vue'
+import OurArtists from '../components/OurArtists.vue'
 
 export default {
   name: 'HomeView',
@@ -38,7 +40,8 @@ export default {
     BannerComponent,
     ArtistNames,
     CallToActionButtons,
-    SpinnerLoader
+    SpinnerLoader,
+    OurArtists
   },
   data: function () {
     return {
