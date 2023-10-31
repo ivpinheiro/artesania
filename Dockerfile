@@ -14,4 +14,4 @@ COPY ./server/data/db.json ./
 RUN npm install -g json-server
 
 # Inicie o Json Server quando o contêiner for iniciado
-CMD ["json-server", "--watch", "db.json", "--host", "localhost", "--port", "9000"]
+ENTRYPOINT ["json-server", "--watch", "db.json", "--host", "localhost", "--port", "9000"]
