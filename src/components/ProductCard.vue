@@ -7,7 +7,9 @@
             <h3 class="card-text">{{ productName }}</h3>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
                 :round-start-rating="false"></star-rating>
-            <p class="card-value">R${{ productPrice }}</p>
+            <p class="card-value" v-if="productSale === ''">R${{ productPrice }}</p>
+            <p class="card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{ productPrice
+            }}<span class="badge rounded-pill text-bg-danger" style="padding: 8px;">-{{ discountCalc }}%</span></span></p>
         </div>
     </div>
 </template>
@@ -32,6 +34,10 @@ export default {
             type: String,
             required: true
         },
+        productSale: {
+            type: String,
+            required: false
+        },
         rating: {
             type: Number,
             required: true
@@ -43,6 +49,13 @@ export default {
     },
     created: function () {
         this.urlImg = this.imgUrl
+    },
+    computed: {
+        discountCalc() {
+            let value = 1 - (parseFloat(this.productSale) / parseFloat(this.productPrice))
+            value = Math.abs(value * 100)
+            return value.toFixed(0);
+        }
     }
 }
 </script>
@@ -69,6 +82,17 @@ export default {
 .card-img-top {
     background-image: black;
     background-size: cover;
+}
+
+.sale-value {
+    color: #00000060;
+    text-decoration: line-through;
+    font-size: large;
+    font-weight: 1000;
+}
+
+.badge{
+    padding: 25px;
 }
 
 .wallpaper-img {

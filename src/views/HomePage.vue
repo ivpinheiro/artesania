@@ -18,7 +18,7 @@
       <div class="products-home new-products">
         <div class="col-md-0" v-for="product in newProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :imgUrl="product.url"></ProductCard>
+            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url" ></ProductCard>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
       <div class="products-home best-seller">
         <div class="col-md-0" v-for="product in bestSellerProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :imgUrl="product.url"></ProductCard>
+            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
       </div>
 
