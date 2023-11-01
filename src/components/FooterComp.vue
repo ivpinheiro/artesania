@@ -180,13 +180,13 @@
       <hr class="h-divider">
     </div>
 
-    <div class="col-lg d-flex justify-content-center">
+    <div class="col-lg text-center">
       <!-- Left -->
       Artesania © 2023, Todos os direitos reservados
     <!-- Left -->
     </div>
     
-    <div class="col-lg d-flex justify-content-center">
+    <div class="col-lg text-center">
     <!-- Right -->
       <img src = ../assets/img/footer/BadgeVisa.svg>
       <img src = ../assets/img/footer/BadgeMasterCard.svg>
@@ -198,7 +198,7 @@
       
     <!-- Right -->
     </div>
-    <div class="col-lg d-flex justify-content-center">
+    <div class="col-lg text-center">
       <img src = ../assets/img/footer/site-seguro-google.svg>
     </div>
     
