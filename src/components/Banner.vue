@@ -43,8 +43,7 @@ export default {
 }
 .bannerSection {
     width: 100%;
-    height: 663px;
-    max-height: 663px;
+    height: 816px;
     display: flex;
     align-items: center;
     background-color: #F3F3DC;
@@ -54,6 +53,7 @@ export default {
     height: 100%;
     width: 55%;
     padding: 100px 100px 100px 70px;
+    overflow: hidden;
 }
 .firstSection .headline{
     color: #000;

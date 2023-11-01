@@ -45,6 +45,7 @@
     font-weight: 600;
     font-size: 26px;
     width: 280px;
+    min-width: fit-content;
     justify-content: center;
     align-items: center;
     text-align: center;
