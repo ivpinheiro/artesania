@@ -4,7 +4,7 @@
             <img :src="require(`@/assets/img/products/${imgUrl}`)" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
-            <h3 class="card-text">{{ productName }}</h3>
+            <h5 class="card-title" id="card-title">{{ productName }}</h5>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
                 :round-start-rating="false"></star-rating>
             <p class="card-value" v-if="productSale === ''">R${{ productPrice }}</p>
@@ -61,17 +61,17 @@ export default {
 </script>
 
 <style lang="scss">
+#card-title {
+    font-family: Inter;
+    font-size: x-large;
+    font-weight: 900;
+    color: $product-card-title;
+}
+
 .card {
     align-content: center;
     justify-content: center;
-    width: 100%;
-    
-}
-
-.card-text {
-    font-weight: 1000;
-    font-size: large;
-    color: $product-card-title;
+    max-width: 300px;
 }
 
 .card-value {
@@ -82,7 +82,7 @@ export default {
 
 .card-img-top {
     background-image: black;
-    background-size: cover;
+    background-size: cover;    
 }
 
 .sale-value {
@@ -92,9 +92,9 @@ export default {
     font-weight: 1000;
 }
 
-.badge{
-    padding: 8px; 
-    margin-left: 10px;    
+.badge {
+    padding: 8px;
+    margin-left: 10px;
 }
 
 .wallpaper-img {
