@@ -12,8 +12,8 @@
         <div class="row d-flex justify-content-around">
         
           <!--Grid column-->
-          <div class="col-lg-6" style="color:#FFFFFF">
-            <h2 class="subscribe-offers fw-bold pt-3">
+          <div class="subscribe-offers col-lg-6">
+            <h2 class="fw-bold pt-3">
               FIQUE ATUALIZADO SOBRE NOSSAS ÚLTIMAS OFERTAS
             </h2>
           </div>
@@ -24,12 +24,12 @@
             <!-- Email input -->
             <span class="text-email">Digite seu e-mail</span>
             <div class="input-group flex-nowrap mb-2">
-              <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><i
+              <span class="input-group-text" id="addon-wrapping"><i
                 class="fa-regular fa-envelope"></i></span>                  
                 <input type="text" class="form-control" placeholder="" aria-label="Digite seu e-mail"
-                aria-describedby="addon-wrapping" style="border:none">
+                aria-describedby="addon-wrapping">
               </div>              
-            <button type="" class="btn btn-outline-light mb-2" style="border-radius: 30px; width: 100%;">
+            <button type="" class="subs-button btn btn-outline-light mb-2">
               Inscreva-se e receba novidades
             </button>
           </div>
@@ -51,7 +51,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h3 class="text-uppercase fw-bold mb-4 brand-name d-flex justify-content-center" style="color: #9D3207; font-size: 35px">
+          <h3 class="brand text-uppercase fw-bold mb-4">
             ARTESANIA
           </h3>
           <p>
@@ -62,18 +62,18 @@
   <section class="socialmedia-section d-flex justify-content-center p-4">
     
     <!-- Right -->
-    <div class="d-flex justify-content-center">
+    <div class="social-icons">
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-facebook-f" style="font-size: 25px;"></i>
+        <i class="fab fa-facebook-f"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-twitter" style="font-size: 25px;"></i>
+        <i class="fab fa-twitter"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-google" style="font-size: 25px;"></i>
+        <i class="fab fa-google"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-instagram" style="font-size: 25px;"></i>
+        <i class="fab fa-instagram"></i>
       </a>
   
     </div>
@@ -86,7 +86,7 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
+          <h6 class="link-name text-uppercase fw-bold mb-4">
             A EMPRESA
           </h6>
           <p>
@@ -107,7 +107,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="ajuda text-uppercase fw-bold mb-4" style="color: #9D3207">
+          <h6 class="link-name text-uppercase fw-bold mb-4">
             AJUDA
           </h6>
           <p>
@@ -128,7 +128,7 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="faq text-uppercase fw-bold mb-4" style="color: #9D3207">
+          <h6 class="link-name text-uppercase fw-bold mb-4">
             FAQ
           </h6>
           <p>
@@ -149,7 +149,7 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
+          <h6 class="link-name text-uppercase fw-bold mb-4">
             RECURSOS
           </h6>
           <p>
@@ -175,9 +175,9 @@
 
   <!-- Copyright -->
   
-  <div class="row d-flex justify-content-center" style="width: 100%; margin-left:4px">
+  <div class="h-div row d-flex justify-content-center">
     <div>
-      <hr class="h-divider" style="height:1px; border-width:0; color:gray; background-color:gray; width: 99%;">
+      <hr class="h-divider">
     </div>
 
     <div class="col-lg d-flex justify-content-center">
@@ -227,6 +227,42 @@
     padding: 25px;
   }
 
+  .subscribe-offers{
+    color: white;
+  }
+
+  .input-group-text{
+    background-color: white;
+    border:none;
+  }
+
+  .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .subs-button{
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .brand{
+    display: flex;
+    justify-content: center;
+    color: #9D3207;
+    font-size: 35px;
+  }
+
+  .social-icons{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: $letter-footer-color;
+  }
+
+  .link-name{
+    color: #9D3207;
+  }
   .text-email{
     display: flex;
     text-align: center;
@@ -237,6 +273,11 @@
     margin: 0;
     color:#FFFFFF;
     font-weight: 900;
+  }
+
+  .h-div{
+    width: 100%;
+    margin-left: 1px;
   }
 
 </style>
