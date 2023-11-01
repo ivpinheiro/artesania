@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .card {
     //height: 100%;
     //align-content: center;

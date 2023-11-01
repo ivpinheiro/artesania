@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #card-title {
     font-family: Inter;
     font-size: x-large;
