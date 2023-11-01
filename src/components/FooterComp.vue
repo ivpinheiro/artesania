@@ -1,13 +1,6 @@
 <template>
   <!-- Footer -->
-<footer class="footer-comp text-center text-lg-start text-muted" id="footer">
-
-  <!--div class="subscribe-footer container text-center text-md-start mt-5">
-
-  </div><!-->
-  
-  
-  
+<footer class="footer-comp text-center text-lg-start text-muted p-1" id="footer">
     
   <!-- Grid container -->
   <div class="subs-footer container p-2">
@@ -58,9 +51,9 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
+          <h3 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
             <i class="brand-name"></i>ARTESANIA
-          </h6>
+          </h3>
           <p>
             Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em branco.
           </p>
@@ -182,15 +175,18 @@
 
   <!-- Copyright -->
   
-  <div class="row d-flex justify-content-around">
-    <hr />
+  <div class="row d-flex justify-content-center" style="width: 100%; margin-left:4px">
+    <div>
+      <hr class="h-divider" style="height:1px; border-width:0; color:gray; background-color:gray; width: 99%;">
+    </div>
+
     <div class="col-lg">
       <!-- Left -->
       Artesania © 2023, Todos os direitos reservados
     <!-- Left -->
     </div>
     
-    <div class="col-lg-5 col-sm-4">
+    <div class="col-lg-6 col-sm-4">
     <!-- Right -->
       <img src = ../assets/img/footer/BadgeVisa.svg>
       <img src = ../assets/img/footer/BadgeMasterCard.svg>
@@ -220,36 +216,27 @@
 </script>
 
 <style lang="scss" scoped>
+
   .footer-comp{
     background: linear-gradient(white 15%, 0%, $footer-color 85%);
-  }
-
-  .ccBanner{
-    flex-direction: row-reverse;
   }
 
   .subs-footer{
     background-color: $footer-color2;
     border-radius: 20px;
     padding: 25px;
-
   }
 
-  .btn-subs{
-    background-color: #FFFFFF;
-    border-radius: 20px;
-  }
-  
   .text-email{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 15px;
-  padding-top: 0px;
-  margin: 0;
-  color:#FFFFFF;
-  font-weight: 900;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    margin: 0;
+    color:#FFFFFF;
+    font-weight: 900;
   }
 
 </style>
