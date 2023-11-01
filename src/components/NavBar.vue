@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar sticky-top navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />

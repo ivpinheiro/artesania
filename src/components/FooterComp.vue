@@ -29,12 +29,11 @@
           <!--Grid column-->
           <div class="input-comp col-sm-3 pt-2">
             <!-- Email input -->
-            <div class="form-outline form-white mb-2">
-              <input type="email" id="form5Example21" class="form-control" style="border-radius: 20px">
-              <i class="fa fa-envelope" style="color:#FFFFFF"></i>
-              <label class="form-label" for="form5Example21" style="color:#FFFFFF">_Digite seu e-mail</label>
+            <div class="input-group flex-nowrap mb-2">
+              <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><i class="fa-regular fa-envelope"></i></span>
+              <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
             </div>
-            <button type="submit" class="btn btn-outline-light mb-4" style="border-radius: 30px">
+            <button type="" class="btn btn-outline-light mb-4" style="border-radius: 30px; width: 100%">
               Inscreva-se para receber novidades
             </button>
           </div>

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <AcessibilityMenu></AcessibilityMenu>
-    <NavBar></NavBar>
+    <div class="sticky-top">
+      <AcessibilityMenu></AcessibilityMenu>
+      <NavBar></NavBar>
+    </div>    
     <div class="content">
       <router-view />
     </div>
