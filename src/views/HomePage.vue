@@ -15,7 +15,7 @@
     </div>
     <div class="home-showcase">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
-      <div class="products-home new-products">
+      <div class="products-home new-products ">
         <div class="col-md-0" v-for="product in newProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
@@ -42,7 +42,7 @@
     <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
 
     <div class="products-home comments">
-      <div class="col-md-0" v-for="client in clientComments" :key="client">
+      <div class="col-sm-3" v-for="client in clientComments" :key="client">
         <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
         </CommentCard>
       </div>
