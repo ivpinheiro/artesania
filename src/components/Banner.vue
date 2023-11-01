@@ -3,20 +3,20 @@
     <div class="bannerSection">
         <div class="firstSection">
             <div><h1 class="headline">ENCONTRE <span class="attention">ARTISTAS</span> QUE TE COMPLETEM</h1></div>
-            <div><h6 class="subline">Descubra um universo de expressão artística onde a arte contemporânea brasileira encontra seu lar. Apresentamos uma seleção meticulosa de obras, cada uma contando sua própria história.</h6></div>
+            <div><h6 class="subline" id="subline">Descubra um universo de expressão artística onde a arte contemporânea brasileira encontra seu lar. Apresentamos uma seleção meticulosa de obras, cada uma contando sua própria história.</h6></div>
             <button class="buttonPrimary">Ver Coleção</button>
             <div class="proves">
                 <div>
                     <h1 class="boldTitle">200+</h1>
-                    <h3 class="lightTitle">Artistas Independentes</h3>
+                    <h3 class="lightTitle" id="lightTitle1">Artistas Independentes</h3>
                 </div>
                 <div>
                     <h1 class="boldTitle">2,000+</h1>
-                    <h3 class="lightTitle">Produtos de Alta Qualidade</h3>
+                    <h3 class="lightTitle" id="lightTitle2">Produtos de Alta Qualidade</h3>
                 </div>
                 <div>
                     <h1 class="boldTitle">30,000+</h1>
-                    <h3 class="lightTitle">Clientes Atendidos</h3>
+                    <h3 class="lightTitle" id="lightTitle3">Clientes Atendidos</h3>
                 </div>
             </div>
             
