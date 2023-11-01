@@ -1,9 +1,9 @@
 <template>
     <div class="buttons_space">
         <div class="buttons_section">
-            <button class="buttonPrimary">ENTRAR</button>
-            <button class="buttonPrimary">CADASTRAR-SE</button>
-            <button class="buttonPrimary">ÁREA DO ARTISTA</button>
+            <button class="buttonPrimary"><span>ENTRAR</span></button>
+            <button class="buttonPrimary"><span>CADASTRAR-SE</span></button>
+            <button class="buttonPrimary"><span>ÁREA DO ARTISTA</span></button>
         </div>
     </div>
 </template>

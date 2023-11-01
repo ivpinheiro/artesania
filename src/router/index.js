@@ -44,29 +44,4 @@ const router = createRouter({
   routes,
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var increaseFontButton = document.getElementById("increase-font-button");
-  var decreaseFontButton = document.getElementById("decrease-font-button");
-
-  var fontSize = 16; // Tamanho de fonte inicial em pixels
-
-  increaseFontButton.addEventListener("click", function () {
-    fontSize += 2;
-    document.body.style.fontSize = fontSize + "px";
-    document.getElementById("subline").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle1").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle2").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle3").style.fontSize = fontSize + "px";
-  });
-
-  decreaseFontButton.addEventListener("click", function () {
-    fontSize -= 2;
-    document.body.style.fontSize = fontSize + "px";
-    document.getElementById("subline").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle1").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle2").style.fontSize = fontSize + "px";
-    document.getElementById("lightTitle3").style.fontSize = fontSize + "px";
-  });
-});
-
 export default router;

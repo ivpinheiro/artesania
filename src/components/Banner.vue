@@ -2,7 +2,8 @@
     
     <div class="bannerSection">
         <div class="firstSection">
-            <div><h1 class="headline">ENCONTRE <span class="attention">ARTISTAS</span> QUE TE COMPLETEM</h1></div>
+            <div><h2 class="headline">ENCONTRE <span class="attention">ARTISTAS</span> QUE TE COMPLETEM NA</h2></div>
+            <h1 class="attention-artesania">ARTESANIA</h1>
             <div><h6 class="subline" id="subline">Descubra um universo de expressão artística onde a arte contemporânea brasileira encontra seu lar. Apresentamos uma seleção meticulosa de obras, cada uma contando sua própria história.</h6></div>
             <button class="buttonPrimary">Ver Coleção</button>
             <div class="proves">
@@ -33,7 +34,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.attention-artesania {
+    color: #9D3207;
+    font-size: 64px;
+    font-family: 'Inter';
+    font-weight: 800;
+    line-height: 1;
+}
 .bannerSection {
     width: 100%;
     height: 663px;
