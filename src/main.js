@@ -23,7 +23,7 @@ function fontSizeController() {
   const decreaseFontButton = document.getElementById("decrease-font-button");
   increaseFontButton.addEventListener("click", function () {
     const elementsWithTextClass = document.querySelectorAll(
-      "p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
+      "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
     );
     elementsWithTextClass.forEach(function (element) {
       const currentFontSize = window.getComputedStyle(element).fontSize;
@@ -35,7 +35,7 @@ function fontSizeController() {
 
   decreaseFontButton.addEventListener("click", function () {
     const elementsWithTextClass = document.querySelectorAll(
-      "p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
+      "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
     );
     elementsWithTextClass.forEach(function (element) {
       const currentFontSize = window.getComputedStyle(element).fontSize;
