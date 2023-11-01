@@ -39,7 +39,8 @@
   }
   
   .buttonPrimary {
-    color: #fff;
+    background-color: #fff;
+    color: #9D3207;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 26px;
@@ -48,16 +49,15 @@
     align-items: center;
     text-align: center;
     cursor: pointer;
-    border: 2px solid transparent; /* Adiciona uma borda transparente */
-    transition: all 0.3s; /* Transição suave para todas as propriedades */
+    border-radius: 60px;
+    transition: all 0.3s;
     font-weight: 900;
+    padding: 10px;
   }
   
   .buttonPrimary:hover {
-    color: #9D3207;
-    background-color: #fff;
-    border-color: #9D3207; /* Cor da borda no hover */
-    border-radius: 60px;
+    color: #fff;
+    background-color: #9D3207;
   }
   </style>
   
