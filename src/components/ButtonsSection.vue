@@ -43,6 +43,11 @@ export default {
     font-family: 'Inter';
     font-weight: 600;
 }
+
+.buttonPrimary{
+    border: 0.5px solid;
+    border-radius: 20px;
+}
 .buttonPrimary:hover {
     background-color: transparent;
     border:2px solid #9D3207;
