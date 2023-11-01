@@ -90,7 +90,7 @@ export default {
 
 .card-text {
     font-weight: 100;
-    font-size: 1vw;
+    font-size: 100%;
     color: black;
 }
 
