@@ -4,7 +4,7 @@
     <ArtistNames></ArtistNames>
     <CallToActionButtons></CallToActionButtons>
 
-    <div v-if="loading">
+    <div v-if="loading" >
       <div class="container">
         <div class="row">
           <div class="col">
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="home-showcase">
+    <div class="home-showcase" id="acabou-chegar">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
       <div class="products-home new-products ">
         <div class="col-md-0" v-for="product in newProducts" :key="product">
@@ -26,7 +26,7 @@
 
       <hr class="h-divider">
 
-      <h3 class="best-seller-text">MAIS VENDIDOS</h3>
+      <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="products-home best-seller">
         <div class="col-md-0" v-for="product in bestSellerProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
@@ -37,9 +37,9 @@
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
 
     </div>
-    <OurArtists />
+    <OurArtists id="nossos_artistas" />
 
-    <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
+    <h3 class="client-comment-text" >NOSSOS CLIENTES</h3>
 
     <div class="products-home comments">
       <div class="col-sm-3" v-for="client in clientComments" :key="client">

@@ -1,20 +1,21 @@
 <template>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Ir para acabou de chegar [1]</a>
+            <a class="nav-link active" aria-current="page" href="#acabou-chegar">Ir para acabou de chegar [1]</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Ir para mais vendidos [2]</a>
+            <a class="nav-link" href="#mais-vendidos">Ir para mais vendidos [2]</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Ir para nossos artistas [3]</a>
+            <a class="nav-link" href="#nossos_artistas">Ir para nossos artistas [3]</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Ir para rodapé [4]</a>
+            <a class="nav-link" href="#footer">Ir para rodapé [4]</a>
         </li>        
         <li class="nav-item">
-            <a class="nav-link" href="#">A+ | A-</a>
+            <div class="nav-link-joint"><span class="nav-link" id="increase-font-button">A+</span> | <span class="nav-link" id="decrease-font-button">A-</span></div>
         </li> 
+        
         <li class="nav-item">
             <i class="fa-solid fa-circle-half-stroke fa-color"></i>
             <span class="self-contrast">Autocontraste</span>
@@ -30,7 +31,8 @@ export default {
 <style lang="scss" scoped>
 .nav{
     background-color: $acessibility-menu-color;
-    height: 30px;
+    min-height: 30px;
+    max-height: min-content;
     justify-content: center;
     align-items: center;
 }
@@ -39,6 +41,27 @@ export default {
     margin: 0;
     padding: 0 10px;
     color: white;
+}
+.nav-link-joint{
+    color: $nav-link-color;    
+    margin: 0;
+    padding: 0 10px;
+    color: white;
+    display: flex;
+}
+.nav-link:hover{
+    color: #fff;
+    font-weight: 800;
+}
+.nav-link:visited{
+    color: #fff;
+    font-weight: 800;
+}
+.self-contrast:hover{
+    font-weight: 800;
+}
+.nav-item{
+    cursor: pointer;
 }
 .fa-color {
     color: white;

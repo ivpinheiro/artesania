@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-<footer class="footer-comp text-center text-lg-start text-muted">
+<footer class="footer-comp text-center text-lg-start text-muted" id="footer">
 
   <!--div class="subscribe-footer container text-center text-md-start mt-5">
 
