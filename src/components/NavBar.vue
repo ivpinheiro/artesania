@@ -24,8 +24,15 @@
                         <a class="nav-link active" aria-current="page" href="#">Novidades</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurar produtos" aria-label="Search">
+                <form class="d-flex" role="search">                    
+                    <div class="form-control me-2">
+                        <div class="input-group">
+                            <span class="input-group-text" id="addon-wrapping"
+                                style="background-color: white; border:none"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="search" class="form-control" placeholder="Procurar produtos" aria-label="Digite seu e-mail"
+                                aria-describedby="addon-wrapping" style="border:none">
+                        </div>
+                    </div>
                     <!-- <SearchInput v-model="searchVal" /> -->
                 </form>
                 <div class="my-2 my-lg-0">
@@ -115,5 +122,13 @@ export default {
 
 .fa-inverse {
     color: $nav-btn-color;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.form-control{
+    border-radius: 30px;
 }
 </style>
