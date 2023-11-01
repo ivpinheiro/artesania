@@ -37,7 +37,11 @@
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
 
     </div>
+    <hr class="h-divider">
+
     <OurArtists id="nossos_artistas" />
+    
+    <hr class="h-divider">
 
     <h3 class="client-comment-text" >NOSSOS CLIENTES</h3>
 

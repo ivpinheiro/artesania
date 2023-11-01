@@ -1,5 +1,5 @@
 <template>
-    <div class="card border-0">
+    <div class="conteiner card border-0">
         <div class="card text-bg mb-3" style="max-width: 18rem">
             <div class="card-rating">
                 <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false" :rating="Number(rating)"
