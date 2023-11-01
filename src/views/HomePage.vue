@@ -142,7 +142,7 @@ export default {
 .products-home {
   display: inline-flex;
   width: 100%;
-  overflow: auto;
+  overflow: inherit;
   padding: 50px;
   justify-content: center;
   flex-direction: row;

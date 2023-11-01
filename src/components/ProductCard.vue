@@ -64,7 +64,8 @@ export default {
 .card {
     align-content: center;
     justify-content: center;
-    width: 20rem;
+    width: 100%;
+    
 }
 
 .card-text {

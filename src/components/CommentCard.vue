@@ -1,13 +1,13 @@
 <template>
     <div class="conteiner card border-0">
-        <div class="card text-bg mb-3" style="max-width: 18rem">
+        <div class="card text-bg mb-3" style="max-width: 100%">
             <div class="card-rating">
                 <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false" :rating="Number(rating)"
                     :round-start-rating="false">
                 </star-rating>
             </div>
             <div class="card-body">
-                <h5 class="card-title-title before">{{ cartTitle }}
+                <h5 class="card-title-title">{{ cartTitle }}
                     <img src="./../assets/img/artists/circle-check-solid.svg" class="titleChecked">
                 </h5>
                 <p class="card-text">{{ comment }}</p>
@@ -61,7 +61,7 @@ export default {
     align-items: stretch;
     justify-content: center;
     padding: 0.5vw;
-    width: 20rem;
+    width: 100%;
     background-color: white;
     //display: flex;
 }
@@ -77,7 +77,7 @@ export default {
 .card-title-title {
     
     font-weight: 1000;
-    font-size: large;
+    font-size: 100%;
     color: $comment-card-title;
 }
 .titleChecked{
