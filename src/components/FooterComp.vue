@@ -51,29 +51,29 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h3 class="text-uppercase fw-bold mb-4" style="color: #9D3207">
-            <i class="brand-name"></i>ARTESANIA
+          <h3 class="text-uppercase fw-bold mb-4 brand-name d-flex justify-content-center" style="color: #9D3207; font-size: 35px">
+            ARTESANIA
           </h3>
           <p>
             Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em branco.
           </p>
 
           <!-- Section: Social media -->
-  <section class="socialmedia-section d-flex justify-content-center justify-content-lg-between p-4">
+  <section class="socialmedia-section d-flex justify-content-center p-4">
     
     <!-- Right -->
-    <div>
+    <div class="d-flex justify-content-center">
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f" style="font-size: 25px;"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter" style="font-size: 25px;"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-google"></i>
+        <i class="fab fa-google" style="font-size: 25px;"></i>
       </a>
       <a href="" class="me-4 link-secondary">
-        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram" style="font-size: 25px;"></i>
       </a>
   
     </div>
