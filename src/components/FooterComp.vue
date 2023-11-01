@@ -218,7 +218,7 @@
 
 <style lang="scss" scoped>
   .footer-comp{
-    background-color: $footer-color;   
+    background: linear-gradient(white 15%, 0%, $footer-color 85%);
   }
 
   .ccBanner{
@@ -236,7 +236,5 @@
     background-color: #FFFFFF;
     border-radius: 20px;
   }
-
-
   
 </style>
