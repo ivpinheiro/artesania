@@ -26,8 +26,7 @@
               <div class="d-flex" role="email">
                 <div class="form-control flex-nowrap mb-2">
                   <div class="input-group">
-                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><i
-                        class="fa-regular fa-envelope"></i></span>
+                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><font-awesome-icon icon="envelope" /></span>
                     <input type="email" class="form-control" placeholder="Digite seu e-mail"
                       aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
                   </div>

@@ -17,10 +17,10 @@ import NavBar from './components/NavBar.vue'
 import AcessibilityMenu from './components/AcessibilityMenu.vue'
 import FooterComp from './components/FooterComp.vue'
 
-export default ({
+export default {
   name: 'App',
   components: { NavBar, AcessibilityMenu, FooterComp }
-})
+}
 </script>
 
 <style lang="scss" scoped>

@@ -4,7 +4,7 @@
     <ArtistNames></ArtistNames>
     <CallToActionButtons></CallToActionButtons>
 
-    <div v-if="loading" >
+    <div v-if="loading">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -29,8 +29,7 @@
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="products-home best-seller">
         <div class="col-md-0" v-for="product in bestSellerProducts" :key="product">
-          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price" :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
       </div>
 
@@ -40,10 +39,10 @@
     <hr class="h-divider">
 
     <OurArtists id="nossos_artistas" />
-    
+
     <hr class="h-divider">
 
-    <h3 class="client-comment-text" >NOSSOS CLIENTES</h3>
+    <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
 
     <div class="products-home comments">
       <div class="col-sm-3" v-for="client in clientComments" :key="client">
@@ -55,7 +54,7 @@
 </template>
 
 <script>
-import { ElementService } from '../services/ElementService.js'
+import { ElementService } from '../services/ElementService.ts'
 import SpinnerLoader from '../components/SpinnerLoader.vue'
 import ProductCard from '../components/ProductCard.vue'
 import CommentCard from '../components/CommentCard.vue'
@@ -94,6 +93,8 @@ export default {
       this.clientComments = responseComments.data
       this.newProducts = this.products.filter(product => product["new-product"])
       this.bestSellerProducts = this.products.filter(product => product["best-seller"])
+      this.newProducts = this.newProducts.map(product => ({ ...product })); // Clone the objects
+      this.bestSellerProducts = this.bestSellerProducts.map(product => ({ ...product })); // Clone the objects
       this.loading = false
     } catch (error) {
       this.errorMessage = error

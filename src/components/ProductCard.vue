@@ -1,7 +1,7 @@
 <template>
     <div class="card border-0">
         <div class="wallpaper-img">
-            <img :src="require(`@/assets/img/products/${imgUrl}`)" class="card-img-top" alt="...">
+            <img :src="getImageUrl(urlImg)" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
             <h5 class="card-title" id="card-title">{{ productName }}</h5>
@@ -16,6 +16,7 @@
 
 <script>
 import StarRating from 'vue-star-rating'
+
 
 export default {
     name: 'ProductCard',
@@ -56,6 +57,12 @@ export default {
             value = Math.abs(value * 100)
             return value.toFixed(0);
         }
+    },
+    setup() {
+        const getImageUrl = (name) => {
+            return new URL(`../assets/img/products/${name}`, import.meta.url).href
+        }
+        return { getImageUrl }
     }
 }
 </script>
@@ -82,7 +89,7 @@ export default {
 
 .card-img-top {
     background-image: black;
-    background-size: cover;    
+    background-size: cover;
 }
 
 .sale-value {

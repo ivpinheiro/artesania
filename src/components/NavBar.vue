@@ -28,7 +28,7 @@
                     <div class="form-control me-2">
                         <div class="input-group">
                             <span class="input-group-text" id="addon-wrapping"
-                                style="background-color: white; border:none"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass" /></span>
                             <input type="search" class="form-control" placeholder="Procurar produtos" aria-label="Digite seu e-mail"
                                 aria-describedby="addon-wrapping" style="border:none">
                         </div>
@@ -37,10 +37,10 @@
                 </form>
                 <div class="my-2 my-lg-0">
                     <router-link to="/">
-                        <i class="fa-solid fa-cart-shopping fa-inverse"></i>
+                        <font-awesome-icon class="fa-inverse" icon="cart-shopping" />
                     </router-link>
                     <router-link to="/">
-                        <i class="fa-regular fa-circle-user fa-inverse"></i>
+                        <font-awesome-icon class="fa-inverse" icon="circle-user" />
                     </router-link>
                 </div>
             </div>
@@ -122,6 +122,7 @@ export default {
 
 .fa-inverse {
     color: $nav-btn-color;
+    padding: 5px;
 }
 
 .form-control:focus {
