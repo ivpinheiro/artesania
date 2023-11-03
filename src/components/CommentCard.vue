@@ -1,6 +1,6 @@
 <template>
-    <div class="conteiner card border-0">
-        <div class="card text-bg mb-3" style="max-width: 100%">
+    <div class="container contrast card border-0">
+        <div class="card contrast text-bg mb-3" style="max-width: 100%">
             <div class="card-rating">
                 <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false" :rating="Number(rating)"
                     :round-start-rating="false">
@@ -99,5 +99,12 @@ export default {
     text-decoration: line-through;
     font-size: large;
     font-weight: 1000;
+}
+.high-contrast {
+  color: white;
+  background: black;
+}
+.high-contrast-text {
+  color: white;
 }
 </style>

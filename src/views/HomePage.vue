@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home contrast">
     <BannerComponent></BannerComponent>
     <ArtistNames></ArtistNames>
     <CallToActionButtons></CallToActionButtons>
@@ -148,8 +148,14 @@ export default {
   justify-content: center;
   flex-direction: row;
 }
-
 .item-product {
   padding: 10px;
+}
+.high-contrast {
+  color: white;
+  background: black;
+}
+.high-contrast-text {
+  color: white;
 }
 </style>
