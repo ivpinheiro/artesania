@@ -18,7 +18,7 @@
         
         <li class="nav-item">
             <i class="fa-solid fa-circle-half-stroke fa-color"></i>
-            <span class="high-contrast-b" id="toggle-high-contrast">Autocontraste</span>
+            <span class="high-contrast-b" id="toggle-high-contrast">Alto Contraste</span>
         </li>
     </ul>
 </template>

@@ -26,7 +26,7 @@
               <div class="d-flex" role="email">
                 <div class="form-control flex-nowrap mb-2">
                   <div class="input-group">
-                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><font-awesome-icon icon="envelope" /></span>
+                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><font-awesome-icon icon="envelope" class="mail"/></span>
                     <input type="email" class="form-control" placeholder="Digite seu e-mail"
                       aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
                   </div>
@@ -68,16 +68,16 @@
               <!-- Right -->
               <div class="social-icons">
                 <a href="" class="me-4 link-secondary">
-                  <i class="fab fa-facebook-f"></i>
+                  <font-awesome-icon icon="facebook-f" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <i class="fab fa-twitter"></i>
+                  <font-awesome-icon icon="x-twitter" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <i class="fab fa-google"></i>
+                  <font-awesome-icon icon="google" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <i class="fab fa-instagram"></i>
+                  <font-awesome-icon icon="instagram" />
                 </a>
 
               </div>
@@ -283,7 +283,9 @@ export default {
   color: #FFFFFF;
   font-weight: 900;
 }
-
+.mail{
+  color: black;
+}
 .h-div {
   width: 100%;
   margin-left: 1px;
