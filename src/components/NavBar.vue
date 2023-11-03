@@ -28,7 +28,7 @@
                     <div class="form-control me-2">
                         <div class="input-group">
                             <span class="input-group-text" id="addon-wrapping"
-                                style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass" /></span>
+                                style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass" class="magnifying-g"/></span>
                             <input type="search" class="form-control" placeholder="Procurar produtos" aria-label="Digite seu e-mail"
                                 aria-describedby="addon-wrapping" style="border:none">
                         </div>
@@ -140,4 +140,8 @@ export default {
 .high-contrast-text {
     color: white !important;
 }
+.magnifying-g{
+    color: black !important;
+}
+
 </style>
