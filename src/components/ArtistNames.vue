@@ -1,6 +1,6 @@
 <template>
     
-    <div class="artistsNamesSection">
+    <div class="artistsNamesSection contrast">
         
         <div><h1 class="headline">Beatriz Milhazes </h1></div>
         <div><h1 class="headline">Lucas Simões </h1></div>
@@ -33,5 +33,12 @@ export default {
     font-family: 'Indie Flower';
 
 }
+.high-contrast {
+  color: white;
+  background: black;
+}
 
+.high-contrast-text {
+  color: white !important;
+}
 </style>
