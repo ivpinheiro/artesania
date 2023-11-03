@@ -1,6 +1,6 @@
 <template>
-    <div class="buttons_space">
-      <div class="buttons_section">
+    <div class="buttons_space contrast">
+      <div class="buttons_section contrast">
         <div class="buttonPrimary">ENTRAR</div>
         <div class="verticalLine"></div>
         <div class="buttonPrimary">CADASTRAR-SE</div>
@@ -60,5 +60,18 @@
     color: #fff;
     background-color: #9D3207;
   }
+
+.high-contrast {
+  color: white;
+  background: black;
+}
+
+.high-contrast-text {
+  color: black;
+}
+
+.high-contrast:hover{
+  display: none;
+}
   </style>
   
