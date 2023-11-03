@@ -117,7 +117,7 @@ export default {
 
 
 .btn {
-  color: $home-show-case-title;
+  color: $home-show-case-title !important;
   font-weight: bolder;
   align-items: center;
   justify-content: center;

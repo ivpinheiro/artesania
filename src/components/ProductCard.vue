@@ -1,5 +1,5 @@
 <template>
-    <div class="card border-0">
+    <div class="card border-0 contrast">
         <div class="wallpaper-img">
             <img :src="getImageUrl(urlImg)" class="card-img-top" alt="...">
         </div>
