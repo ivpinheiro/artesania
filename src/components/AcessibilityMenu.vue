@@ -17,7 +17,7 @@
         </li> 
         
         <li class="nav-item">
-            <i class="fa-solid fa-circle-half-stroke fa-color"></i>
+            <font-awesome-icon class="fa-color" icon="fa-solid fa-circle-half-stroke" />
             <span class="high-contrast-b" id="toggle-high-contrast">Alto Contraste</span>
         </li>
     </ul>

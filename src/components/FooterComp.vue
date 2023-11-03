@@ -26,7 +26,9 @@
               <div class="d-flex" role="email">
                 <div class="form-control flex-nowrap mb-2">
                   <div class="input-group">
-                    <span class="input-group-text" id="addon-wrapping" style="background-color: white; border:none"><font-awesome-icon icon="envelope" class="mail"/></span>
+                    <span class="input-group-text" id="addon-wrapping"
+                      style="background-color: white; border:none"><font-awesome-icon icon="envelope"
+                        class="mail" /></span>
                     <input type="email" class="form-control" placeholder="Digite seu e-mail"
                       aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
                   </div>
@@ -68,16 +70,19 @@
               <!-- Right -->
               <div class="social-icons">
                 <a href="" class="me-4 link-secondary">
-                  <font-awesome-icon icon="facebook-f" />
+                  <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <font-awesome-icon icon="x-twitter" />
+                  <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <font-awesome-icon icon="google" />
+                  <font-awesome-icon class="fa" icon="fa-brands fa-pinterest" />
                 </a>
                 <a href="" class="me-4 link-secondary">
-                  <font-awesome-icon icon="instagram" />
+                  <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
+                </a>
+                <a href="" class="me-4 link-secondary">
+                  <font-awesome-icon class="fa" icon="fa-brands fa-google" />
                 </a>
 
               </div>
@@ -283,18 +288,21 @@ export default {
   color: #FFFFFF;
   font-weight: 900;
 }
-.mail{
+
+.mail {
   color: black;
 }
+
 .h-div {
   width: 100%;
   margin-left: 1px;
 }
+
 .high-contrast {
   color: white;
   background: black;
 }
+
 .high-contrast-text {
   color: white;
-}
-</style>
+}</style>

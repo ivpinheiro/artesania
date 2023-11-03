@@ -61,7 +61,7 @@ export default {
         // Get all elements in the document
         const elements = document.getElementsByClassName("contrast")
         const textElements = document.querySelectorAll(
-          "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn")
+          "a, p, h1, h2, h3, h4, h5, h6, .fa, span, .badge, .buttonPrimary, .btn")
 
         // Iterate through all elements using forEach
         Array.from(elements).forEach(function(body) {
