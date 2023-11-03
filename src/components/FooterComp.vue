@@ -305,4 +305,5 @@ export default {
 
 .high-contrast-text {
   color: white;
-}</style>
+}
+</style>

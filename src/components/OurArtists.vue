@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="firstSection">
+        <div class="firstSection contrast">
             <div><h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1></div>
             <div class="line">
                 <div id="luana">  <p class="luanaName">Luana Silva</p></div>
@@ -122,5 +122,12 @@ export default {
     height: 95%;
     width: 49%;
     border-radius: 20px;
+}
+.high-contrast {
+    color: white;
+    background: black;
+}
+.high-contrast-text {
+    color: white !important;
 }
 </style>
