@@ -116,11 +116,12 @@ export default {
 }
 
 .high-contrast {
-  color: white;
-  background: black;
+    color: white;
+    background: black;
 }
 
 .high-contrast-text {
-  color: white !important;
+    background: black;
+    color: white !important;
 }
 </style>

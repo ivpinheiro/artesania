@@ -109,4 +109,12 @@ export default {
     padding: 10px;
     border-radius: 20px;
 }
+
+high-contrast{
+    color: white;
+    background: black;
+}
+.high-contrast-text{
+    color: white !important;
+}
 </style>
