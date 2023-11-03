@@ -22,6 +22,7 @@ export default {
   components: { NavBar, AcessibilityMenu, FooterComp },
   mounted () {
     this.fontSizeController()
+    this.highContrast()
   },
   methods: {
     fontSizeController() {
@@ -50,10 +51,30 @@ export default {
           element.style.fontSize = newSize + "px"
         })
       })
+    },
+    highContrast() {
+      // Get the toggle button
+      const toggleButton = document.getElementById("toggle-high-contrast")
+
+      // Add a click event listener to the toggle button
+      toggleButton.addEventListener("click", function() {
+        // Get all elements in the document
+        const elements = document.getElementsByClassName("contrast")
+        const textElements = document.querySelectorAll(
+          "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn")
+
+        // Iterate through all elements using forEach
+        Array.from(elements).forEach(function(body) {
+          // Toggle the "high-contrast" class on each element
+          body.classList.toggle("high-contrast")
+        })
+        Array.from(textElements).forEach(function (text){
+          text.classList.toggle("high-contrast-text")
+        })
+      })
     }
   }
 }
-
 </script>
 
 <style lang="scss" scoped>

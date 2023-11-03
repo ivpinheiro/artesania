@@ -18,7 +18,7 @@
         
         <li class="nav-item">
             <i class="fa-solid fa-circle-half-stroke fa-color"></i>
-            <span class="self-contrast">Autocontraste</span>
+            <span class="high-contrast-b" id="toggle-high-contrast">Autocontraste</span>
         </li>
     </ul>
 </template>
@@ -57,7 +57,7 @@ export default {
     color: #fff;
     font-weight: 800;
 }
-.self-contrast:hover{
+.high-contrast_:hover{
     font-weight: 800;
 }
 .nav-item{
@@ -67,7 +67,7 @@ export default {
     color: white;
     text-decoration: none;
 }
-.self-contrast{
+.high-contrast-b{
     color: white;
     text-transform: capitalize;
     padding: 0 5px;

@@ -1,9 +1,9 @@
 <template>
   <!-- Footer -->
-  <footer class="footer-comp text-center text-lg-start text-muted p-1" id="footer">
+  <footer class="footer-comp contrast text-center text-lg-start text-muted p-1" id="footer">
 
     <!-- Grid container -->
-    <div class="subs-footer container p-2">
+    <div class="subs-footer contrast container p-2">
 
       <!-- Section: Form -->
       <section class="">
@@ -48,7 +48,7 @@
 
 
     <!-- Section: Links  -->
-    <section class="links-section">
+    <section class="links-section contrast">
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
@@ -179,7 +179,7 @@
 
     <!-- Copyright -->
 
-    <div class="h-div row d-flex justify-content-center">
+    <div class="h-div contrast row d-flex justify-content-center">
       <div>
         <hr class="h-divider">
       </div>
@@ -287,5 +287,12 @@ export default {
 .h-div {
   width: 100%;
   margin-left: 1px;
+}
+.high-contrast {
+  color: white;
+  background: black;
+}
+.high-contrast-text {
+  color: white;
 }
 </style>
