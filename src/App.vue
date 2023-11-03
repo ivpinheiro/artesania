@@ -7,9 +7,7 @@
     <div class="content">
       <router-view />
     </div>
-    <div>
-      <FooterComp></FooterComp>
-    </div>
+    <FooterComp></FooterComp>
   </div>
 </template>
 <script>

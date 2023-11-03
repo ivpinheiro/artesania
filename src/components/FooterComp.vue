@@ -1,9 +1,9 @@
 <template>
   <!-- Footer -->
-  <footer class="footer-comp contrast text-center text-lg-start text-muted p-1" id="footer">
+  <footer class="footer-comp contrast text-center text-lg-start text-muted p-0" id="footer">
 
     <!-- Grid container -->
-    <div class="subs-footer contrast container p-2">
+    <div class="container subs-footer contrast p-2">
 
       <!-- Section: Form -->
       <section class="">
@@ -47,13 +47,12 @@
       </section>
       <!-- Section: Form -->
     </div>
-
-
+    
     <!-- Section: Links  -->
     <section class="links-section contrast">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start pt-5">
         <!-- Grid row -->
-        <div class="row mt-3">
+        <div class="row pt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
@@ -181,14 +180,9 @@
       </div>
     </section>
     <!-- Section: Links  -->
-
+    <hr class="h-divider">
     <!-- Copyright -->
-
-    <div class="h-div contrast row d-flex justify-content-center">
-      <div>
-        <hr class="h-divider">
-      </div>
-
+    <section class="row contrast d-flex justify-content-around m-0">
       <div class="col-lg text-center">
         <!-- Left -->
         Artesania © 2023, Todos os direitos reservados
@@ -211,7 +205,7 @@
         <img src=../assets/img/footer/site-seguro-google.svg>
       </div>
 
-    </div>
+    </section>
 
     <!-- Copyright -->
   </footer>
@@ -225,7 +219,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.form-control,
+
 .input-group-text {
   border-radius: 30px;
 }
@@ -237,7 +231,6 @@ export default {
 .subs-footer {
   background-color: $footer-color2;
   border-radius: 20px;
-  padding: 25px;
 }
 
 .subscribe-offers {
@@ -292,12 +285,12 @@ export default {
 .mail {
   color: black;
 }
-
-.h-div {
-  width: 100%;
-  margin-left: 1px;
+.h-divider {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  border-top: 1px solid gray;
 }
-
 .high-contrast {
   color: white;
   background: black;
@@ -305,4 +298,5 @@ export default {
 
 .high-contrast-text {
   color: white;
-}</style>
+}
+</style>
