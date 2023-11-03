@@ -1,5 +1,5 @@
 <template>
-    <ul class="nav justify-content-center">
+    <ul class="nav contrast justify-content-center">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#acabou-chegar">Ir para acabou de chegar [1]</a>
         </li>
@@ -72,5 +72,9 @@ export default {
     text-transform: capitalize;
     padding: 0 5px;
     font-size: 18px;
+}
+
+.high-contrast{
+    background: black;
 }
 </style>

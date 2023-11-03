@@ -7,7 +7,7 @@
       "alt": "",
       "sale": "",
       "rating": 4.5,
-      "url": "product-1.png",
+      "url": "product-1.svg",
       "best-seller": false,
       "new-product": true
     },
@@ -18,7 +18,7 @@
       "alt": "",
       "sale": "430,00",
       "rating": 4.5,
-      "url": "product-2.png",
+      "url": "product-2.svg",
       "best-seller": false,
       "new-product": true
     },
@@ -29,7 +29,7 @@
       "alt": "",
       "sale": "140,00",
       "rating": 3.5,
-      "url": "product-3.png",
+      "url": "product-3.svg",
       "best-seller": false,
       "new-product": true
     },
@@ -40,7 +40,7 @@
       "alt": "",
       "sale": "",
       "rating": 4.5,
-      "url": "product-4.png",
+      "url": "product-4.svg",
       "best-seller": false,
       "new-product": true
     },
@@ -51,7 +51,7 @@
       "alt": "",
       "sale": "",
       "rating": 3.0,
-      "url": "product-5.png",
+      "url": "product-5.svg",
       "best-seller": true,
       "new-product": false
     },
@@ -62,7 +62,7 @@
       "alt": "",
       "sale": "",
       "rating": 4.0,
-      "url": "product-6.png",
+      "url": "product-6.svg",
       "best-seller": true,
       "new-product": false
     },
@@ -73,7 +73,7 @@
       "alt": "",
       "sale": "212,00",
       "rating": 5.0,
-      "url": "product-7.png",
+      "url": "product-7.svg",
       "best-seller": true,
       "new-product": false
     },
@@ -84,7 +84,7 @@
       "alt": "",
       "sale": "212,00",
       "rating": 4.5,
-      "url": "product-8.png",
+      "url": "product-8.svg",
       "best-seller": true,
       "new-product": false
     }
