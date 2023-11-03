@@ -57,7 +57,7 @@ export default {
     color: #fff;
     font-weight: 800;
 }
-.high-contrast_:hover{
+.high-contrast-b:hover{
     font-weight: 800;
 }
 .nav-item{
