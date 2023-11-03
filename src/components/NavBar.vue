@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar contrast navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />
@@ -131,5 +131,13 @@ export default {
 }
 .form-control{
     border-radius: 30px;
+}
+
+.high-contrast {
+    color: white;
+    background: black;
+}
+.high-contrast-text {
+    color: white !important;
 }
 </style>

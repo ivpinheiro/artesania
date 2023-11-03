@@ -1,7 +1,7 @@
 <template>
     
-    <div class="bannerSection">
-        <div class="firstSection">
+    <div class="bannerSection contrast">
+        <div class="firstSection contrast">
             <div><h2 class="headline">ENCONTRE <span class="attention">ARTISTAS</span> QUE TE COMPLETEM NA</h2></div>
             <h1 class="attention-artesania">ARTESANIA</h1>
             <div><h6 class="subline" id="subline">Descubra um universo de expressão artística onde a arte contemporânea brasileira encontra seu lar. Apresentamos uma seleção meticulosa de obras, cada uma contando sua própria história.</h6></div>
@@ -113,5 +113,14 @@ export default {
 .subline{
     max-width: 545px;
     margin-top: 30px;
+}
+
+.high-contrast {
+  color: white;
+  background: black;
+}
+
+.high-contrast-text {
+  color: white !important;
 }
 </style>
