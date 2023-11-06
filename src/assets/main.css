@@ -10,22 +10,17 @@ body {
     background-color: #fff !important;
 }
 
-.contact-img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-.contact-img-big {
-    width: 200px;
-    border-radius: 50%;
-}
-
 .loader-img {
     width: 250px;
 }
 
-.container-card {
-    background-color: #1987542f;
+.high-contrast {
+    color: white;
+    background: black;
+}
+
+.high-contrast-text {
+    color: white;
 }
 
 a,
@@ -37,4 +32,8 @@ a,
     font-family: inherit;
     font-weight: inherit;
     cursor: pointer;
+}
+
+.content-body {
+    min-height: 35vh;
 }

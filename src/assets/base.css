@@ -84,12 +84,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.high-contrast {
-  color: white;
-  background: black;
-}
-
-.high-contrast-text {
-  color: white;
-}

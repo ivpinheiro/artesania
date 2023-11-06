@@ -4,7 +4,7 @@
       <AcessibilityMenu></AcessibilityMenu>
       <NavBar></NavBar>
     </div>    
-    <div class="content">
+    <div class="content-body">
       <router-view />
     </div>
     <FooterComp></FooterComp>
