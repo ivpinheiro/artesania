@@ -60,7 +60,7 @@ import ProductCard from '../components/ProductCard.vue'
 import CommentCard from '../components/CommentCard.vue'
 import BannerComponent from '../components/Banner.vue'
 import ArtistNames from '../components/ArtistNames.vue'
-import CallToActionButtons from '../components/ButtonsSectionOriginal.vue'
+import CallToActionButtons from '../components/ButtonsSection.vue'
 import OurArtists from '../components/OurArtists.vue'
 
 export default {

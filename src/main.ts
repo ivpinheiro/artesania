@@ -15,7 +15,7 @@ import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js'
 /**
  * Font Awesome import  
  * */ 
-import FontAwesomeIcon from "@/utilities/fontawesome-icons";
+import FontAwesomeIcon from "@/utilities/FontAwesomeIcons";
 
 const app = createApp(App)
 

@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import { GlobalUtils } from './utilities/global-utils.ts'
+import { GlobalUtils } from './utilities/GlobalUtils.ts'
 import NavBar from './components/NavBar.vue'
 import AcessibilityMenu from './components/AcessibilityMenu.vue'
 import FooterComp from './components/FooterComp.vue'
@@ -28,3 +28,4 @@ export default {
 
 <style lang="scss" scoped>
 </style>
+./utilities/GlobalUtils.js

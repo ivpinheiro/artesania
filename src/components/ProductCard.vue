@@ -9,18 +9,18 @@
                 :round-start-rating="false"></star-rating>
             <p class="card-value" v-if="productSale === ''">R${{ productPrice }}</p>
             <p class="card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{ productPrice
-            }}</span><span class="badge rounded-pill text-bg-danger">-{{ discountCalc }}%</span></p>
+            }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
         </div>
     </div>
 </template>
 
 <script>
 import StarRating from 'vue-star-rating'
-
+import { ProductUtils } from '../utilities/ProductUtils.ts'
 
 export default {
     name: 'ProductCard',
-    components: { StarRating },
+    components: { StarRating, ProductUtils },
     data: function () {
         return {
             urlImg: ""
@@ -52,10 +52,8 @@ export default {
         this.urlImg = this.imgUrl
     },
     computed: {
-        discountCalc() {
-            let value = 1 - (parseFloat(this.productSale) / parseFloat(this.productPrice))
-            value = Math.abs(value * 100)
-            return value.toFixed(0);
+        calcProductDiscount(){
+            return ProductUtils.ProductDiscount.discountCalculator(parseFloat(this.productSale), parseFloat(this.productPrice))
         }
     },
     setup() {
@@ -110,11 +108,12 @@ export default {
     border-radius: 20px;
 }
 
-high-contrast{
+high-contrast {
     color: white;
     background: black;
 }
-.high-contrast-text{
+
+.high-contrast-text {
     color: white !important;
 }
 </style>
