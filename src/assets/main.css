@@ -27,3 +27,14 @@ body {
 .container-card {
     background-color: #1987542f;
 }
+
+a,
+.link-class-none {
+    all: initial;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="buttons_space contrast">
-      <div class="buttons_section contrast">
-        <div class="buttonPrimary">ENTRAR</div>
+      <div class="buttons_section contrast">       
+        <div class="buttonPrimary"><RouterLink class="link-class-none" to="/login">ENTRAR</RouterLink></div>        
         <div class="verticalLine"></div>
         <div class="buttonPrimary">CADASTRAR-SE</div>
         <div class="verticalLine"></div>
