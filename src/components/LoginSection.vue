@@ -1,5 +1,5 @@
 <template>
-    <div class="card border-0">
+    <div class="card border-0 contrast">
         <div class="login-info">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label" id="lblUser"><b>Usuário</b></label>
@@ -47,4 +47,12 @@
     border-bottom-style: solid #000;
 }
 
+.high-contrast {
+    color: white;
+    background: black;
+}
+
+.high-contrast-text {
+    color: white;
+}
 </style>
