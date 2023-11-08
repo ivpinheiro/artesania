@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    //height: 100%;
+    height: 100%;
     //align-content: center;
     align-items: stretch;
     justify-content: center;

@@ -183,14 +183,15 @@
     <hr class="h-divider">
     <!-- Copyright -->
     <section class="row contrast d-flex justify-content-around m-0">
-      <div class="col-lg text-center">
-        <!-- Left -->
-        Artesania © 2023, Todos os direitos reservados
-        <!-- Left -->
-      </div>
 
+        <!-- Copyright -->
+      <div class="col-lg text-center"> 
+        Artesania © 2023, Todos os direitos reservados
+      </div>
+      <!-- Copyright -->
+
+      <!-- Payments -->
       <div class="col-lg text-center">
-        <!-- Right -->
         <img src=../assets/img/footer/BadgeVisa.svg>
         <img src=../assets/img/footer/BadgeMasterCard.svg>
         <img src=../assets/img/footer/BadgePayPal.svg>
@@ -198,16 +199,14 @@
         <img src=../assets/img/footer/BadgeGooglePay.svg>
         <img src=../assets/img/footer/BadgeBarCode.svg>
         <img src=../assets/img/footer/BadgePix.svg>
-
-        <!-- Right -->
       </div>
+
+      <!-- Security -->
       <div class="col-lg text-center">
         <img src=../assets/img/footer/site-seguro-google.svg>
       </div>
-
     </section>
-
-    <!-- Copyright -->
+    
   </footer>
   <!-- Footer -->
 </template>
