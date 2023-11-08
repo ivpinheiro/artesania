@@ -27,19 +27,19 @@ export default {
 .login-background{
     background-image: url("./../assets/img/banner/login-background.svg");
     width: 100%;
-    height: 816px;
+    height: auto;
     display: flex;
     align-items: center;
 }
 
 .firstSection{
-    height: 100%;
+
     width: 60%;
-    padding: 8% 5% 8% 5%;
+    padding: 1% 5% 1% 5%;
 }
 
 .secondSection{
-    height: 100%;
+
     width: 40%;
     
 }
