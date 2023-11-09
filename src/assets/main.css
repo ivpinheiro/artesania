@@ -27,3 +27,8 @@ body {
 .container-card {
     background-color: #1987542f;
 }
+@media (max-width: 1060px) {
+    .desktop-only {
+      display: none;
+    }
+}

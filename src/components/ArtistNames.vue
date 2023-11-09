@@ -20,7 +20,7 @@ export default {
 
 .artistsNamesSection {
     width: 100%;
-    height: 110px;
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: #EAB766;

@@ -8,11 +8,16 @@ class FontSizeController {
                     "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
                 )
                 elementsWithTextClass.forEach(function (element) {
-                    const currentFontSize = window.getComputedStyle(element).fontSize
-                    const currentSizeNumeric = parseFloat(currentFontSize)
-                    const newSize = currentSizeNumeric + 2
-                    element.style.fontSize = newSize + "px"
-                })
+                    const htmlElement = element as HTMLElement;
+                    const currentFontSize = window.getComputedStyle(htmlElement).fontSize;
+                    if (currentFontSize.endsWith('px')) {
+                      const currentSizeNumeric = parseFloat(currentFontSize);
+                      if (!isNaN(currentSizeNumeric)) {
+                        // Increase font size by 2 pixels and apply it
+                        htmlElement.style.fontSize = `${currentSizeNumeric + 2}px`;
+                      }
+                    }
+                  });
             })
 
             decreaseFontButton.addEventListener("click", function () {
@@ -20,11 +25,16 @@ class FontSizeController {
                     "a, p, h1, h2, h3, h4, h5, h6, span, .badge, .buttonPrimary, .btn"
                 )
                 elementsWithTextClass.forEach(function (element) {
-                    const currentFontSize = window.getComputedStyle(element).fontSize
-                    const currentSizeNumeric = parseFloat(currentFontSize)
-                    const newSize = currentSizeNumeric - 2
-                    element.style.fontSize = newSize + "px"
-                })
+                    const htmlElement = element as HTMLElement;
+                    const currentFontSize = window.getComputedStyle(htmlElement).fontSize;
+                    if (currentFontSize.endsWith('px')) {
+                      const currentSizeNumeric = parseFloat(currentFontSize);
+                      if (!isNaN(currentSizeNumeric)) {
+                        // Increase font size by 2 pixels and apply it
+                        htmlElement.style.fontSize = `${currentSizeNumeric - 2}px`;
+                      }
+                    }
+                  });
             })
         }
     }

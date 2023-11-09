@@ -46,37 +46,31 @@ export default {
 
 
 .luanaName {
-    position: absolute;
-    top: 10%; 
-    left: 15%; 
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 5%; 
+    left: 5%; 
     color: white; 
     font-size: 24px; 
-    text-align: center; 
 }
 .apoName {
-    position: absolute; 
+    position: relative; 
     top: 62%; 
     right: 2%; 
-    transform: translate(-50%, -50%); 
     color: white; 
     font-size: 24px; 
     text-align: center; 
 }
 .lucasName {
-    position: absolute; 
+    position: relative; 
     top: 70%; 
-    right: 45%; 
-    transform: translate(-50%, -50%);
+    left: 5%; 
     color: white; 
     font-size: 24px; 
-    text-align: center; 
 }
 .miraName {
-    position: absolute; 
+    position: relative; 
     top: 60%; 
     right: 20%; 
-    transform: translate(-50%, -50%); 
     color: white; 
     font-size: 24px; 
     text-align: center; 
@@ -97,6 +91,7 @@ export default {
     background-position: center; 
     height: 93%;
     width: 65%;
+    overflow: hidden;
     border-radius: 20px;
 }
 #apo{
@@ -106,6 +101,7 @@ export default {
     height: 93%;
     width: 33%;
     border-radius: 20px;
+    overflow: hidden;
 }
 #lucas{
     background-image: url('./../assets/img/artists/LucasSantos.svg');
@@ -113,6 +109,7 @@ export default {
     background-position: center;
     height: 95%;
     width: 49%;
+    overflow: hidden;
     border-radius: 20px;
 }
 #mira{
@@ -121,6 +118,7 @@ export default {
     background-position: center;
     height: 95%;
     width: 49%;
+    overflow: hidden;
     border-radius: 20px;
 }
 .high-contrast {

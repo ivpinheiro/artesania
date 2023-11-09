@@ -1,15 +1,15 @@
 <template>
-    <ul class="nav contrast justify-content-center">
-        <li class="nav-item">
+    <ul class="nav contrast justify-content-center flex-on-cell">
+        <li class="nav-item desktop-only">
             <a class="nav-link active" aria-current="page" href="#acabou-chegar">Ir para acabou de chegar [1]</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item desktop-only">
             <a class="nav-link" href="#mais-vendidos">Ir para mais vendidos [2]</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item desktop-only">
             <a class="nav-link" href="#nossos_artistas">Ir para nossos artistas [3]</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item desktop-only">
             <a class="nav-link" href="#footer">Ir para rodapé [4]</a>
         </li>        
         <li class="nav-item">
@@ -76,5 +76,12 @@ export default {
 
 .high-contrast{
     background: black;
+}
+@media (max-width: 1060px) {
+    .flex-on-cell {
+        display: flex;
+        justify-content: space-between !important;
+        padding: 0 10px;
+    }
 }
 </style>
