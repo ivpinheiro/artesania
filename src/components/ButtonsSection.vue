@@ -33,9 +33,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 28px 110px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .buttonPrimary {
@@ -73,5 +72,5 @@
 .high-contrast:hover{
   display: none;
 }
-  </style>
+</style>
   

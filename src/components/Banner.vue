@@ -23,7 +23,8 @@
             
 
         </div>
-        <div class="secondSection"></div>
+        <div class="secondSection">
+            </div>
     </div>
 </template>
 
@@ -43,16 +44,17 @@ export default {
 }
 .bannerSection {
     width: 100%;
-    height: 816px;
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: #F3F3DC;
+    align-items: stretch;
 }
 .firstSection{
     background-color: #F3F3DC;
     height: 100%;
     width: 55%;
-    padding: 100px 100px 100px 70px;
+    padding: 20px 100px 20px 70px;
     overflow: hidden;
 }
 .firstSection .headline{
@@ -104,9 +106,9 @@ export default {
 }
 .secondSection{
     background-image: url('./../assets/img/banner/GirassoisDeVanGogh.png');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem na div */
-    height: 100%;
+    background-size: cover;
+    background-position: center;
+   height: auto;
     width: 45%;
 }
 
