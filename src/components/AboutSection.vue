@@ -67,7 +67,6 @@ export default {
 }
 
 .image-about {
-
     width: 150px;
 }
 

@@ -16,15 +16,14 @@ import AboutSection from "../components/AboutSection.vue"
 
 export default {
     name: 'loginPage',
-    components:{
+    components: {
         LoginSection,
         AboutSection
     }
 }
 </script>
 <style lang="scss">
-    
-.login-background{
+.login-background {
     background-image: url("./../assets/img/banner/login-background.svg");
     width: 100%;
     height: auto;
@@ -32,16 +31,13 @@ export default {
     align-items: center;
 }
 
-.firstSection{
-
+.firstSection {
     width: 60%;
-    padding: 1% 5% 1% 5%;
+    padding: 1% 5% 20% 5%;
+    margin: 0 10% 0 10%;
 }
 
-.secondSection{
-
-    width: 40%;
-    
+.secondSection {
+    width: 35%;
 }
-
 </style>

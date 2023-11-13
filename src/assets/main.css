@@ -14,7 +14,6 @@ body {
     width: 250px;
 }
 
-<<<<<<< HEAD
 .high-contrast {
     color: white;
     background: black;
@@ -36,7 +35,7 @@ a,
 }
 
 .content-body {
-    min-height: 35vh;
+    min-height: 10vh;
 }
 
 .container-card {
