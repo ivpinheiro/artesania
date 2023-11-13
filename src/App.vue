@@ -2,8 +2,8 @@
   <div>
     <div class="sticky-top">
       <AcessibilityMenu></AcessibilityMenu>
-      <NavBar></NavBar>
-    </div>    
+      <NavBar v-if="isHidden"></NavBar>
+    </div>
     <div class="content-body">
       <router-view />
     </div>
@@ -19,13 +19,16 @@ import FooterComp from './components/FooterComp.vue'
 export default {
   name: 'App',
   components: { GlobalUtils, NavBar, AcessibilityMenu, FooterComp },
-  mounted () {
+  mounted() {
     GlobalUtils.FontSizeController.fontSizeController()
-    GlobalUtils.HighContrastToggle.highContrast()
+    GlobalUtils.HighContrastToggle.highContrast()    
+  },
+  computed: {
+    isHidden() {
+      return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route)
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
-./utilities/GlobalUtils.js
+<style lang="scss" scoped></style>

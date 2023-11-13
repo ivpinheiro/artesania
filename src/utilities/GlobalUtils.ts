@@ -1,3 +1,5 @@
+import type { RouteLocationNormalizedLoaded } from 'vue-router'
+
 class FontSizeController {
     static fontSizeController() {
         const increaseFontButton = document.getElementById("increase-font-button")
@@ -11,13 +13,13 @@ class FontSizeController {
                     const htmlElement = element as HTMLElement;
                     const currentFontSize = window.getComputedStyle(htmlElement).fontSize;
                     if (currentFontSize.endsWith('px')) {
-                      const currentSizeNumeric = parseFloat(currentFontSize);
-                      if (!isNaN(currentSizeNumeric)) {
-                        // Increase font size by 2 pixels and apply it
-                        htmlElement.style.fontSize = `${currentSizeNumeric + 2}px`;
-                      }
+                        const currentSizeNumeric = parseFloat(currentFontSize);
+                        if (!isNaN(currentSizeNumeric)) {
+                            // Increase font size by 2 pixels and apply it
+                            htmlElement.style.fontSize = `${currentSizeNumeric + 2}px`;
+                        }
                     }
-                  });
+                });
             })
 
             decreaseFontButton.addEventListener("click", function () {
@@ -28,13 +30,13 @@ class FontSizeController {
                     const htmlElement = element as HTMLElement;
                     const currentFontSize = window.getComputedStyle(htmlElement).fontSize;
                     if (currentFontSize.endsWith('px')) {
-                      const currentSizeNumeric = parseFloat(currentFontSize);
-                      if (!isNaN(currentSizeNumeric)) {
-                        // Increase font size by 2 pixels and apply it
-                        htmlElement.style.fontSize = `${currentSizeNumeric - 2}px`;
-                      }
+                        const currentSizeNumeric = parseFloat(currentFontSize);
+                        if (!isNaN(currentSizeNumeric)) {
+                            // Increase font size by 2 pixels and apply it
+                            htmlElement.style.fontSize = `${currentSizeNumeric - 2}px`;
+                        }
                     }
-                  });
+                });
             })
         }
     }
@@ -65,7 +67,14 @@ class HighContrastToggle {
     }
 }
 
+class HiddenElementsByPath {
+    static hiddenElements(router: RouteLocationNormalizedLoaded): boolean {
+        return !router.path.includes('/login');
+    }
+}
+
 export const GlobalUtils = {
     FontSizeController,
-    HighContrastToggle
-};
+    HighContrastToggle,
+    HiddenElementsByPath
+}
