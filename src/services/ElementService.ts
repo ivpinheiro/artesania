@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export class ElementService {
-    static serverURL = 'http://localhost:9000';
+    static serverURL = 'https://artesania-json-server.vercel.app';
     static getAllClientComments(){
         let dataURL = `${this.serverURL}/clients`;
         return axios.get(dataURL);
