@@ -20,7 +20,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="input-comp col-sm-3">
+            <div class="input-comp col-lg-3">
               <!-- Email input -->
               <span class="text-email">Digite seu e-mail</span>
               <div class="d-flex" role="email">

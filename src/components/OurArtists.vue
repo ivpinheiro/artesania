@@ -3,12 +3,12 @@
         <div class="firstSection contrast">
             <div><h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1></div>
             <div class="line">
-                <div id="luana">  <p class="luanaName">Luana Silva</p></div>
-                <div id="apo">  <p class="apoName">Apo Whag-Od</p></div>
+                <div id="luana" class="full-on-mobile">  <p class="luanaName">Luana Silva</p></div>
+                <div id="apo" class="full-on-mobile">  <p class="apoName">Apo Whag-Od</p></div>
             </div>
             <div class="line">
-                <div id="lucas"> <p class="lucasName">Lucas Santos</p></div>
-                <div id="mira"> <p class="miraName">Mira Maroni</p></div>
+                <div id="lucas" class="full-on-mobile"> <p class="lucasName">Lucas Santos</p></div>
+                <div id="mira" class="full-on-mobile"> <p class="miraName">Mira Maroni</p></div>
             </div>
         </div>
     </div>
@@ -26,14 +26,13 @@ export default {
     padding: 60px 70px 60px 70px;
     width: 100%;
     height: 663px;
-    max-height: 663px;
-   
     align-items: center;
     background-color: #EAB766;
     border-radius: 40px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    
+    margin: 80px 0px;
+    @media (max-width: 1160px){
+        height: fit-content;
+    }
 }
 .firstSection .headline{
     color: #9D3207;
@@ -84,6 +83,16 @@ export default {
     position: relative;
     font-family: 'Inter';
     font-weight: 800;
+    @media (max-width: 1160px){
+        flex-direction: column;
+    }
+}
+.full-on-mobile{
+    @media (max-width: 1160px){
+        width: 100% !important;
+        height: 140px!important;
+        margin: 10px;
+    }
 }
 #luana{
     background-image: url('./../assets/img/artists/LuanaSilva.svg');
