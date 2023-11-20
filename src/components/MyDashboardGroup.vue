@@ -17,7 +17,10 @@
             </div>
         </div>
         <div class="secondSection">
-
+            <h1 class="title">Encomendas</h1>
+            <h2 class="subtitle">Novas</h2>
+            <h2 class="subtitle">Faturadas</h2>
+            <h2 class="subtitle">Enviadas</h2>
         </div>
 
     </div>
@@ -64,6 +67,17 @@ export default {
 .highlight{
     color: #9D3207; 
 }
+.title{
+    color: #9D3207;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.subtitle{
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
 
 .circle{
     display: flex;
@@ -82,7 +96,7 @@ export default {
     width: 20%;
     padding: 10px 10px 10px 10px;
     overflow: hidden;
-    margin: 3% 0% 3% 10%;
+    margin: 3% 0% 3% 8%;
     border-radius: 25px;
     @media (max-width: 1060px) {
         width: 100%;
@@ -91,7 +105,7 @@ export default {
 }
 
 .secondSection{
-    background-color: #EAB766;
+    background-color: #fff;
     height: 900px;
     width: 60%;
     margin: 3% 2%;
