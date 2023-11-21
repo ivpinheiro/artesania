@@ -29,12 +29,10 @@
 
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="card-deck products-home best-seller">
-        <div class="card-deck products-home new-products">
           <div class="card border-0" v-for="product in bestSellerProducts" :key="product">
             <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
               :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
-          </div>
-        </div>
+          </div>        
       </div>
 
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
