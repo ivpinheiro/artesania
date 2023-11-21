@@ -192,18 +192,18 @@
 
       <!-- Payments -->
       <div class="col-lg text-center">
-        <img src=../assets/img/footer/BadgeVisa.svg>
-        <img src=../assets/img/footer/BadgeMasterCard.svg>
-        <img src=../assets/img/footer/BadgePayPal.svg>
-        <img src=../assets/img/footer/BadgeApple.svg>
-        <img src=../assets/img/footer/BadgeGooglePay.svg>
-        <img src=../assets/img/footer/BadgeBarCode.svg>
-        <img src=../assets/img/footer/BadgePix.svg>
+        <img src=@/assets/img/footer/BadgeVisa.svg>
+        <img src=@/assets/img/footer/BadgeMasterCard.svg>
+        <img src=@/assets/img/footer/BadgePayPal.svg>
+        <img src=@/assets/img/footer/BadgeApple.svg>
+        <img src=@/assets/img/footer/BadgeGooglePay.svg>
+        <img src=@/assets/img/footer/BadgeBarCode.svg>
+        <img src=@/assets/img/footer/BadgePix.svg>
       </div>
 
       <!-- Security -->
       <div class="col-lg text-center">
-        <img src=../assets/img/footer/site-seguro-google.svg>
+        <img src=@/assets/img/footer/site-seguro-google.svg>
       </div>
     </section>
     

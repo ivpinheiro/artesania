@@ -95,7 +95,7 @@ export default {
     }
 }
 #luana{
-    background-image: url('./../assets/img/artists/LuanaSilva.svg');
+    background-image: url('@/assets/img/artists/LuanaSilva.svg');
     background-size: cover; 
     background-position: center; 
     height: 93%;
@@ -104,7 +104,7 @@ export default {
     border-radius: 20px;
 }
 #apo{
-    background-image: url('./../assets/img/artists/ApoWhang.svg');
+    background-image: url('@/assets/img/artists/ApoWhang.svg');
     background-size: cover;
     background-position: center;
     height: 93%;
@@ -113,7 +113,7 @@ export default {
     overflow: hidden;
 }
 #lucas{
-    background-image: url('./../assets/img/artists/LucasSantos.svg');
+    background-image: url('@/assets/img/artists/LucasSantos.svg');
     background-size: cover;
     background-position: center;
     height: 95%;
@@ -122,7 +122,7 @@ export default {
     border-radius: 20px;
 }
 #mira{
-    background-image: url('./../assets/img/artists/MiraMaroni.svg');
+    background-image: url('@/assets/img/artists/MiraMaroni.svg');
     background-size: cover; 
     background-position: center;
     height: 95%;

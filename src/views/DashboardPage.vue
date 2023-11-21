@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import { ElementService } from '../services/ElementService.ts'
-import SpinnerLoader from '../components/SpinnerLoader.vue'
-import DashboardComponent from '../components/MyDashboardGroup.vue'
+import { ElementService } from '@/services/ElementService.ts'
+import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
+import DashboardComponent from '@/components/MyDashboardGroup.vue'
 
 export default {
   name: 'HomeView',

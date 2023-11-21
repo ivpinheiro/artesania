@@ -1,7 +1,7 @@
 <template>
     <div class="about text-center contrast">
         <div class="about-logo">
-            <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+            <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
             <span class="logo-name contrast">ARTESANIA</span>
         </div>
         <div class="about-txt">

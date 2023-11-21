@@ -16,7 +16,7 @@
 
 <script>
 import StarRating from 'vue-star-rating'
-import { ProductUtils } from '../utilities/ProductUtils.ts'
+import { ProductUtils } from '@/utilities/ProductUtils.ts'
 
 export default {
     name: 'ProductCard',
@@ -58,7 +58,7 @@ export default {
     },
     setup() {
         const getImageUrl = (name) => {
-            return new URL(`../assets/img/products/${name}`, import.meta.url).href
+            return new URL(`../../assets/img/products/${name}`, import.meta.url).href
         }
         return { getImageUrl }
     }

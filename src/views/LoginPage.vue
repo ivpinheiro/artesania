@@ -11,8 +11,8 @@
 
 <script>
 
-import LoginSection from "../components/LoginSection.vue"
-import AboutSection from "../components/AboutSection.vue"
+import LoginSection from "@/components/sections/LoginSection.vue"
+import AboutSection from "@/components/sections/AboutSection.vue"
 
 export default {
     name: 'loginPage',

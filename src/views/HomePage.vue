@@ -54,14 +54,14 @@
 </template>
 
 <script>
-import { ElementService } from '../services/ElementService.ts'
-import SpinnerLoader from '../components/SpinnerLoader.vue'
-import ProductCard from '../components/ProductCard.vue'
-import CommentCard from '../components/CommentCard.vue'
-import BannerComponent from '../components/Banner.vue'
-import ArtistNames from '../components/ArtistNames.vue'
-import CallToActionButtons from '../components/ButtonsSection.vue'
-import OurArtists from '../components/OurArtists.vue'
+import { ElementService } from '@/services/ElementService.ts'
+import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
+import ProductCard from '@/components/cards/ProductCard.vue'
+import CommentCard from '@/components/cards/CommentCard.vue'
+import BannerComponent from '@/components/banners/Banner.vue'
+import ArtistNames from '@/components/sections/ArtistNamesSection.vue'
+import CallToActionButtons from '@/components/sections/ButtonsSection.vue'
+import OurArtists from '@/components/sections/OurArtistsSection.vue'
 
 export default {
   name: 'HomeView',

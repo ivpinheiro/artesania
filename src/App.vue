@@ -11,10 +11,10 @@
   </div>
 </template>
 <script>
-import { GlobalUtils } from './utilities/GlobalUtils.ts'
-import NavBar from './components/NavBar.vue'
-import AcessibilityMenu from './components/AcessibilityMenu.vue'
-import FooterComp from './components/FooterComp.vue'
+import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
+import NavBar from '@/components/menus/NavBar.vue'
+import AcessibilityMenu from '@/components/menus/AcessibilityMenu.vue'
+import FooterComp from '@/components/footer/FooterComp.vue'
 
 export default {
   name: 'App',

@@ -2,7 +2,7 @@
     <nav class="navbar contrast navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />
+                <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />
                 <span id="brand-name">ARTESANIA</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
