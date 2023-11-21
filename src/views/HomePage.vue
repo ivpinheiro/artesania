@@ -13,10 +13,11 @@
         </div>
       </div>
     </div>
+
     <div class="home-showcase" id="acabou-chegar">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
-      <div class="products-home new-products ">
-        <div class="col-md-0" v-for="product in newProducts" :key="product">
+      <div class="card-deck products-home new-products">
+        <div class="card border-0" v-for="product in newProducts" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
@@ -27,9 +28,12 @@
       <hr class="h-divider">
 
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
-      <div class="products-home best-seller">
-        <div class="col-md-0" v-for="product in bestSellerProducts" :key="product">
-          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price" :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+      <div class="card-deck products-home best-seller">
+        <div class="card-deck products-home new-products">
+          <div class="card border-0" v-for="product in bestSellerProducts" :key="product">
+            <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
+              :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+          </div>
         </div>
       </div>
 
@@ -115,7 +119,6 @@ export default {
   font-weight: bolder;
 }
 
-
 .btn {
   color: $home-show-case-title !important;
   font-weight: bolder;
@@ -131,6 +134,12 @@ export default {
   background-color: white;
 }
 
+.cards-conteiner {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+}
+
 .h-divider {
   margin: 50px auto;
   height: 1px;
@@ -139,22 +148,24 @@ export default {
   padding: 5px 0;
 }
 
-
 .products-home {
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
   width: 100%;
-  overflow: inherit;
   padding: 50px;
-  justify-content: center;
-  flex-direction: row;
 }
+
 .item-product {
   padding: 10px;
 }
+
 .high-contrast {
   color: white;
   background: black;
 }
+
 .high-contrast-text {
   color: white;
 }

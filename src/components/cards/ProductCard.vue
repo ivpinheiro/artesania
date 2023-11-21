@@ -1,14 +1,15 @@
 <template>
-    <div class="card border-0 contrast">
+    <div class="contrast product-card">
         <div class="wallpaper-img">
-            <img :src="getImageUrl(urlImg)" class="card-img-top" alt="...">
+            <img :src="getImageUrl(urlImg)" class="card-img card-img-top" alt="...">
         </div>
-        <div class="card-body">
-            <h5 class="card-title" id="card-title">{{ productName }}</h5>
+        <div class="card-body text-center">
+            <h5 class="card-title word-wrap-break-word" id="card-title">{{ productName }}</h5>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
                 :round-start-rating="false"></star-rating>
-            <p class="card-value" v-if="productSale === ''">R${{ productPrice }}</p>
-            <p class="card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{ productPrice
+            <p class="card-text card-value" v-if="productSale === ''">R${{ productPrice }}</p>
+            <p class="card-text card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{
+                productPrice
             }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
         </div>
     </div>
@@ -52,7 +53,7 @@ export default {
         this.urlImg = this.imgUrl
     },
     computed: {
-        calcProductDiscount(){
+        calcProductDiscount() {
             return ProductUtils.ProductDiscount.discountCalculator(parseFloat(this.productSale), parseFloat(this.productPrice))
         }
     },
@@ -71,9 +72,10 @@ export default {
     font-size: x-large;
     font-weight: 900;
     color: $product-card-title;
+    padding: 10px;
 }
 
-.card {
+.product-card {
     align-content: center;
     justify-content: center;
     max-width: 300px;
@@ -85,7 +87,7 @@ export default {
     color: $product-card-price;
 }
 
-.card-img-top {
+.card-img {
     background-image: black;
     background-size: cover;
 }
@@ -108,7 +110,7 @@ export default {
     border-radius: 20px;
 }
 
-high-contrast {
+.high-contrast {
     color: white;
     background: black;
 }
