@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="../assets/img/loading.gif" alt="loader" class="loader-img d-block m-auto">
+                <img src="@/assets/img/loading.gif" alt="loader" class="loader-img d-block m-auto">
             </div>
         </div>
     </div>
