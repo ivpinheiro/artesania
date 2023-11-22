@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { ElementService } from '@/services/ElementService.ts'
+import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import ProductCard from '@/components/cards/ProductCard.vue'
 import CommentCard from '@/components/cards/CommentCard.vue'
@@ -66,7 +66,7 @@ import CallToActionButtons from '@/components/sections/ButtonsSection.vue'
 import OurArtists from '@/components/sections/OurArtistsSection.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'HomePage',
   components: {
     ProductCard,
     BannerComponent,
@@ -95,8 +95,8 @@ export default {
       this.clientComments = responseComments.data
       this.newProducts = this.products.filter(product => product["new-product"])
       this.bestSellerProducts = this.products.filter(product => product["best-seller"])
-      this.newProducts = this.newProducts.map(product => ({ ...product })); // Clone the objects
-      this.bestSellerProducts = this.bestSellerProducts.map(product => ({ ...product })); // Clone the objects
+      this.newProducts = this.newProducts.map(product => ({ ...product }))
+      this.bestSellerProducts = this.bestSellerProducts.map(product => ({ ...product }))
       this.loading = false
     } catch (error) {
       this.errorMessage = error
@@ -168,3 +168,4 @@ export default {
   color: white;
 }
 </style>
+@/services/ProductService

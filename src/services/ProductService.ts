@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export class ElementService {
+export class ProductService {
     static serverURL = 'https://artesania-json-server.vercel.app';
     static getAllClientComments(){
         let dataURL = `${this.serverURL}/clients`;

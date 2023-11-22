@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomePage.vue'
-import LoginPage from '../views/LoginPage.vue'
-import DashboardPage from '../views/DashboardPage.vue'
+import HomePage from '@/views/HomePage.vue'
+import LoginPage from '@/views/LoginPage.vue'
+import DashboardPage from '@/views/DashboardPage.vue'
+import ArtistsGallery from '@/views/ArtistsGallery.vue'
 
 
 const router = createRouter({
@@ -10,7 +11,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomePage
     },
     {
       path: '/login',
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: DashboardPage
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: ArtistsGallery
     }
   ]
 })
