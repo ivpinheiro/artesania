@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/views/HomePage.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import DashboardPage from '@/views/DashboardPage.vue'
-import SignPage from '../views/SignInPage.vue'
+import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 
 

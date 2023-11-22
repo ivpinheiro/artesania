@@ -6,7 +6,7 @@
     <div class="dashboard">
         <div class="firstSection">
             <div class="circle">
-                <img src="./../assets/img/artist-dashboard/profile-logo-artist.svg" alt="Meu Perfil">
+                <img src="@/assets/img/artist-dashboard/profile-logo-artist.svg" alt="Meu Perfil">
             </div>
             <div class="buttonsGroup">
                 <div class="button dark">Encomendas</div>

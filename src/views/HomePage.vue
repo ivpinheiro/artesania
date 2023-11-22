@@ -89,8 +89,8 @@ export default {
   created: async function () {
     try {
       this.loading = true
-      let responseProducts = await ElementService.getAllProducts()
-      let responseComments = await ElementService.getAllClientComments()
+      let responseProducts = await ProductService.getAllProducts()
+      let responseComments = await ProductService.getAllClientComments()
       this.products = responseProducts.data
       this.clientComments = responseComments.data
       this.newProducts = this.products.filter(product => product["new-product"])
