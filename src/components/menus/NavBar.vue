@@ -2,7 +2,7 @@
     <nav class="navbar contrast navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" />
+                <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Logo da Artesania" />
                 <span id="brand-name">ARTESANIA</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -37,10 +37,10 @@
                 </form>
                 <div class="my-2 my-lg-0">
                     <router-link to="/">
-                        <font-awesome-icon class="fa-inverse" icon="cart-shopping" />
+                        <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho"/>
                     </router-link>
                     <router-link to="/">
-                        <font-awesome-icon class="fa-inverse" icon="circle-user" />
+                        <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta"/>
                     </router-link>
                 </div>
             </div>

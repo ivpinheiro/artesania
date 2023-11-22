@@ -203,7 +203,7 @@
 
       <!-- Security -->
       <div class="col-lg text-center">
-        <img alt="Site Seguro Google" src=@/assets/img/footer/site-seguro-google.svg>
+        <img alt="Site 100% Seguro Google" src=@/assets/img/footer/site-seguro-google.svg>
       </div>
     </section>
     
