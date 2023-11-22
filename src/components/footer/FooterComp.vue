@@ -67,20 +67,20 @@
             <section class="socialmedia-section d-flex justify-content-center p-4">
 
               <!-- Right -->
-              <div class="social-icons">
-                <a href="" class="me-4 link-secondary">
+              <div alt="Redes Sociais" class="social-icons">
+                <a href="" alt="Ir para Facebook" class="me-4 link-secondary">
                   <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="" alt="Ir para Instagram" class="me-4 link-secondary">
                   <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="" alt="Ir para Pinterest" class="me-4 link-secondary">
                   <font-awesome-icon class="fa" icon="fa-brands fa-pinterest" />
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="" alt="Ir para Twitter x" class="me-4 link-secondary">
                   <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="" lt="Ir para Google" class="me-4 link-secondary">
                   <font-awesome-icon class="fa" icon="fa-brands fa-google" />
                 </a>
 
@@ -192,18 +192,18 @@
 
       <!-- Payments -->
       <div class="col-lg text-center">
-        <img src=@/assets/img/footer/BadgeVisa.svg>
-        <img src=@/assets/img/footer/BadgeMasterCard.svg>
-        <img src=@/assets/img/footer/BadgePayPal.svg>
-        <img src=@/assets/img/footer/BadgeApple.svg>
-        <img src=@/assets/img/footer/BadgeGooglePay.svg>
-        <img src=@/assets/img/footer/BadgeBarCode.svg>
-        <img src=@/assets/img/footer/BadgePix.svg>
+        <img alt="Visa" src=@/assets/img/footer/BadgeVisa.svg>
+        <img alt="MasterCard" src=@/assets/img/footer/BadgeMasterCard.svg>
+        <img alt="PayPal" src=@/assets/img/footer/BadgePayPal.svg>
+        <img alt="Apple Pay" src=@/assets/img/footer/BadgeApple.svg>
+        <img alt="Google Pay" src=@/assets/img/footer/BadgeGooglePay.svg>
+        <img alt="Boleto" src=@/assets/img/footer/BadgeBarCode.svg>
+        <img alt="Pix" src=@/assets/img/footer/BadgePix.svg>
       </div>
 
       <!-- Security -->
       <div class="col-lg text-center">
-        <img src=@/assets/img/footer/site-seguro-google.svg>
+        <img alt="Site Seguro Google" src=@/assets/img/footer/site-seguro-google.svg>
       </div>
     </section>
     
