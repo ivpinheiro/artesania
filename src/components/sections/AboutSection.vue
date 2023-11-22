@@ -52,8 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-    background-color: #Eab766;
-    height: 100%;
+    
     padding: 10% 20% 10% 20%;
     display: flex;
     flex-direction: column;
