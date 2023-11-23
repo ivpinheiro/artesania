@@ -168,4 +168,3 @@ export default {
   color: white;
 }
 </style>
-@/services/ProductService

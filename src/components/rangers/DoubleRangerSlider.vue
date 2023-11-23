@@ -219,5 +219,5 @@ input[type="number"] {
 
 .high-contrast-text {
     color: white;
-}  
+}
 </style>

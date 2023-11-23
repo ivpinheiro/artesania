@@ -3,7 +3,7 @@
         <div class="firstSection">
             <LoginSection></LoginSection>
         </div>
-            <AboutSection></AboutSection>
+        <AboutSection></AboutSection>
     </div>
 </template>
 
@@ -11,12 +11,16 @@
 
 import LoginSection from "@/components/sections/LoginSection.vue"
 import AboutSection from "@/components/sections/AboutSection.vue"
+import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
 
 export default {
     name: 'loginPage',
     components: {
         LoginSection,
         AboutSection
+    }, mounted() {
+        GlobalUtils.FontSizeController.fontSizeController()
+        GlobalUtils.HighContrastToggle.highContrast()
     }
 }
 </script>
@@ -31,6 +35,4 @@ export default {
 .firstSection {
     padding: 10rem 10rem;
 }
-
-
 </style>

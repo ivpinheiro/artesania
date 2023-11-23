@@ -66,7 +66,12 @@
         </div>
       </div>
       <div class="secondSection contrast">
-        <p>Card's de produtos</p>
+        <div class="card-deck products">
+          <div class="card border-0" v-for="product in products" :key="product">
+            <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
+              :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -78,17 +83,20 @@
 import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import DoubleRangerSlider from '@/components/rangers/DoubleRangerSlider.vue'
+import ProductCard from '@/components/cards/ProductCard.vue'
 
 export default {
   name: 'ArtistsGallery',
   components: {
     SpinnerLoader,
-    DoubleRangerSlider
+    DoubleRangerSlider,
+    ProductCard
   },
   data() {
     return {
       collapseFilterPrice: true,
-      collapseFilterStyle: true
+      collapseFilterStyle: true,
+      products: []
     };
   },
   methods: {
@@ -98,6 +106,17 @@ export default {
       } else if (componentCollapsed === 'collapseFilterStyle') {
         this.collapseFilterStyle = !this.collapseFilterStyle
       }
+    }
+  },
+  created: async function () {
+    try {
+      this.loading = true
+      let responseProducts = await ProductService.getAllProducts()
+      this.products = responseProducts.data
+      this.loading = false
+    } catch (error) {
+      this.errorMessage = error
+      this.loading = false
     }
   }
 }
@@ -178,13 +197,13 @@ export default {
 
 .secondSection {
   background-color: #fff;
-  height: 900px;
+  height: auto;
   width: 60%;
   margin: 3% 2%;
   border-radius: 3%;
 
   @media (max-width: 1060px) {
-    height: 115px;
+    height: auto;
     background-position: top;
     width: 100%;
   }
@@ -212,6 +231,16 @@ export default {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+}
+
+.products {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  /* Reduzir o padding */
 }
 
 .high-contrast-text {

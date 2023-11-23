@@ -15,12 +15,16 @@
 
 import SignSection from "@/components/sections/SignSection.vue"
 import AboutSection from "@/components/sections/AboutSection.vue"
+import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
 
 export default {
     name: 'signPage',
     components: {
         SignSection,
         AboutSection
+    }, mounted() {
+        GlobalUtils.FontSizeController.fontSizeController()
+        GlobalUtils.HighContrastToggle.highContrast()
     }
 }
 </script>
