@@ -17,7 +17,7 @@
     <div class="home-showcase" id="acabou-chegar">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
       <div class="card-deck products-home new-products">
-        <div class="card border-0" v-for="product in newProducts" :key="product">
+        <div class="card border-0" v-for="product in newProducts.slice(0, 4)" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
@@ -29,7 +29,7 @@
 
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="card-deck products-home best-seller">
-          <div class="card border-0" v-for="product in bestSellerProducts" :key="product">
+          <div class="card border-0" v-for="product in bestSellerProducts.slice(0, 4)" :key="product">
             <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
               :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
           </div>        
@@ -64,6 +64,7 @@ import BannerComponent from '@/components/banners/Banner.vue'
 import ArtistNames from '@/components/sections/ArtistNamesSection.vue'
 import CallToActionButtons from '@/components/sections/ButtonsSection.vue'
 import OurArtists from '@/components/sections/OurArtistsSection.vue'
+import { ProductUtils } from '@/utilities/ProductUtils.ts'
 
 export default {
   name: 'HomePage',
@@ -74,7 +75,8 @@ export default {
     CallToActionButtons,
     SpinnerLoader,
     OurArtists,
-    CommentCard
+    CommentCard,
+    ProductUtils
   },
   data: function () {
     return {
@@ -95,8 +97,8 @@ export default {
       this.clientComments = responseComments.data
       this.newProducts = this.products.filter(product => product["new-product"])
       this.bestSellerProducts = this.products.filter(product => product["best-seller"])
-      this.newProducts = this.newProducts.map(product => ({ ...product }))
-      this.bestSellerProducts = this.bestSellerProducts.map(product => ({ ...product }))
+      this.newProducts = ProductUtils.ProductList.shuffleArray(this.newProducts.map(product => ({ ...product }))) 
+      this.bestSellerProducts = ProductUtils.ProductList.shuffleArray(this.bestSellerProducts.map(product => ({ ...product })))      
       this.loading = false
     } catch (error) {
       this.errorMessage = error

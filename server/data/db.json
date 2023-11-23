@@ -87,6 +87,94 @@
       "url": "product-8.svg",
       "best-seller": true,
       "new-product": false
+    },
+    {
+      "id": 9,
+      "name": "Abstração do Pensamento",
+      "price": "145,00",
+      "alt": "",
+      "sale": "",
+      "rating": 3.5,
+      "url": "product-9.svg",
+      "best-seller": false,
+      "new-product": false
+    },
+    {
+      "id": 10,
+      "name": "Formas no Caos",
+      "price": "260,00",
+      "alt": "",
+      "sale": "240,00",
+      "rating": 4.7,
+      "url": "product-10.svg",
+      "best-seller": true,
+      "new-product": true
+    },
+    {
+      "id": 11,
+      "name": "Comunidade",
+      "price": "180",
+      "alt": "",
+      "sale": "",
+      "rating": 5.0,
+      "url": "product-11.svg",
+      "best-seller": false,
+      "new-product": true
+    },
+    {
+      "id": 12,
+      "name": "Multidão",
+      "price": "499,00",
+      "alt": "",
+      "sale": "",
+      "rating": 3.9,
+      "url": "product-12.svg",
+      "best-seller": true,
+      "new-product": true
+    },
+    {
+      "id": 13,
+      "name": "Essência Africana",
+      "price": "7500,00",
+      "alt": "",
+      "sale": "5400,00",
+      "rating": 4.8,
+      "url": "product-13.svg",
+      "best-seller": false,
+      "new-product": false
+    },
+    {
+      "id": 14,
+      "name": "Cultura",
+      "price": "8500,00",
+      "alt": "",
+      "sale": "7000,00",
+      "rating": 5.0,
+      "url": "product-14.svg",
+      "best-seller": false,
+      "new-product": false
+    },
+    {
+      "id": 15,
+      "name": "Morro",
+      "price": "1960,00",
+      "alt": "",
+      "sale": "899,90",
+      "rating": 4.3,
+      "url": "product-15.svg",
+      "best-seller": true,
+      "new-product": false
+    },
+    {
+      "id": 16,
+      "name": "Aves Brasileiras",
+      "price": "750,00",
+      "alt": "",
+      "sale": "437,95",
+      "rating": 3.3,
+      "url": "product-16.svg",
+      "best-seller": false,
+      "new-product": true
     }
   ],
   "clients": [
