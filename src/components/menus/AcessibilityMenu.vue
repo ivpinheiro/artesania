@@ -25,8 +25,15 @@
 </template>
   
 <script>
+import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
+
 export default {
-    name: 'AcessibilityMenu'
+    name: 'AcessibilityMenu',
+    computed:{
+        isHidden(){
+            return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route)
+        }
+    }
 };
 </script>
 <style lang="scss" scoped>
