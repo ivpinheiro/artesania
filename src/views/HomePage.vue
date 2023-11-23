@@ -155,6 +155,12 @@ export default {
   padding: 50px;
 }
 
+.comments{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .item-product {
   padding: 10px;
 }
