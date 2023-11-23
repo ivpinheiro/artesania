@@ -5,37 +5,68 @@
       <p>Home > Mira Maroni > <span class="highlight">Meu painel</span></p>
     </div>
     <div class="gallery">
-      <div class="firstSection">
-        <div class="filter-title filters">
-          <h3>Filtros</h3>
-          <font-awesome-icon class="f-icon-filter" icon="fa-solid fa-arrow-up-short-wide" />
+      <div class="firstSection contrast">
+        <div class="filter-title-div filters">
+          <h3 class="filter-title">Filtros</h3>
+          <font-awesome-icon class="f-icon-filter filter-title contrast" icon="fa-solid fa-arrow-up-short-wide" />
         </div>
 
         <hr class="divider">
 
         <div class="filter-price filters">
-          <h2>Preços</h2>
-          <DoubleRangerSlider></DoubleRangerSlider>
-        </div>
-
-        <div class="filter-style filters">
-          <p class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <font-awesome-icon :icon="isCollapsed ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
-              data-bs-toggle="collapse" href="#collapseExample" @click="toggleCollapse"
-              :class="{ 'rotate-icon': isCollapsed }" />
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body border-0">
-              <p>Abstrado</p>
-              <p>Abstrado</p>
-              <p>Abstrado</p>
-              <p>Abstrado</p>
+          <div class="filter-title-div">
+            <h3 class="filter-title">Preços</h3>
+            <p class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <font-awesome-icon class="fa-chevron"
+                :icon="collapseFilterPrice ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
+                data-bs-toggle="collapse" href="#collapse-filter-price" @click="toggleCollapse('collapseFilterPrice')"
+                :class="{ 'rotate-icon': collapseFilterPrice }" />
+            </p>
+          </div>
+          <div class="collapse show" id="collapse-filter-price">
+            <div class="card card-body border-0 contrast">
+              <DoubleRangerSlider></DoubleRangerSlider>
             </div>
           </div>
         </div>
+
+        <hr class="divider">
+
+        <div class="filter-style filters contrast">
+          <div class="filter-title-div">
+            <h3 class="filter-title">Estilos</h3>
+            <p class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <font-awesome-icon class="fa-chevron"
+                :icon="collapseFilterStyle ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
+                data-bs-toggle="collapse" href="#collapse-filter-style" @click="toggleCollapse('collapseFilterStyle')"
+                :class="{ 'rotate-icon': collapseFilterStyle }" />
+            </p>
+          </div>
+
+          <div class="collapse show" id="collapse-filter-style">
+            <div class="card card-body border-0 contrast">
+              <p class="art-styles">Abstrado<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Brasilidade<font-awesome-icon icon="fa-solid fa-chevron-right" />
+              </p>
+              <p class="art-styles">Decoração<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Desenho<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Escultura<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Arte Social<font-awesome-icon icon="fa-solid fa-chevron-right" />
+              </p>
+              <p class="art-styles">Natureza Morta<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="btn-filter filters">
+          <button class="btn buttonPrimary">Aplicar Filtro</button>
+          <button class="btn buttonPrimary">Fazer Encomenda</button>
+        </div>
       </div>
-      <div class="secondSection">
-        <p>A</p>
+      <div class="secondSection contrast">
+        <p>Card's de produtos</p>
       </div>
 
     </div>
@@ -56,34 +87,52 @@ export default {
   },
   data() {
     return {
-      isCollapsed: true
+      collapseFilterPrice: true,
+      collapseFilterStyle: true
     };
   },
   methods: {
-    toggleCollapse() {
-      this.isCollapsed = !this.isCollapsed;
+    toggleCollapse(componentCollapsed) {
+      if (componentCollapsed === 'collapseFilterPrice') {
+        this.collapseFilterPrice = !this.collapseFilterPrice
+      } else if (componentCollapsed === 'collapseFilterStyle') {
+        this.collapseFilterStyle = !this.collapseFilterStyle
+      }
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 .filter-title {
+  font-family: Inter;
+  font-weight: 1000;
+  color: $filter-title;
+}
+
+.filter-title-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .filters {
-  padding: 10px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
-.filter-title h3 {
+.filter-title-div h3 {
   margin: 0;
 }
 
 .f-icon-filter {
   font-size: 25px;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-chevron {
+  margin-top: 10px;
 }
 
 .gallery {
@@ -108,11 +157,12 @@ export default {
 
 .firstSection {
   background-color: #ffff;
+  max-height: 900px;
   height: auto;
   width: 20%;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 15px 15px 15px;
   overflow: hidden;
-  margin: 3% 0% 3% 3%;
+  margin: 2% 0% 2% 2%;
   border-radius: 25px;
   border: 2px solid #e6e6e6;
 
@@ -140,12 +190,37 @@ export default {
   }
 }
 
+.art-styles {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
 .high-contrast {
   color: white;
   background: black;
 }
 
+.buttonPrimary {
+  background-color: #9D3207;
+  margin-bottom: 10%;
+  border-radius: 50px;
+  width: 90%;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .high-contrast-text {
   color: white;
+}
+
+.btn-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
