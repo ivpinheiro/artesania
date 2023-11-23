@@ -1,6 +1,6 @@
 <template>
     <div class="container contrast card border-0">
-        <div class="card contrast text-bg mb-3" style="max-width: 100%">
+        <div class="card contrast text-bg mb-3">
             <div class="card-rating">
                 <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false" :rating="Number(rating)"
                     :round-start-rating="false">
@@ -56,12 +56,10 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    height: 100%;
-    //align-content: center;
-    align-items: stretch;
+    width: 20rem;
+    height: 20rem;
     justify-content: center;
     padding: 0.5vw;
-    width: 100%;
     background-color: white;
     //display: flex;
 }
