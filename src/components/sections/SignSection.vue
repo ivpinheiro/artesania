@@ -96,4 +96,7 @@
 .high-contrast-text {
     color: white;
 }
+
+
+
 </style>

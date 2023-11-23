@@ -3,9 +3,7 @@
         <div class="firstSection">
             <LoginSection></LoginSection>
         </div>
-        <div class="secondSection">
             <AboutSection></AboutSection>
-        </div>
     </div>
 </template>
 
@@ -22,22 +20,17 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .login-background {
     background-image: url("./../assets/img/banner/login-background.svg");
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100vw;
 }
 
 .firstSection {
-    width: 60%;
-    padding: 1% 5% 20% 5%;
-    margin: 0 10% 0 10%;
+    padding: 10rem 10rem;
 }
 
-.secondSection {
-    width: 35%;
-}
+
 </style>

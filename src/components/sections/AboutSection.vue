@@ -1,59 +1,67 @@
 <template>
-    <div class="about text-center contrast">
-        <div class="about-logo">
-            <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
-            <span class="logo-name contrast">ARTESANIA</span>
-        </div>
-        <div class="about-txt">
-            <p>
-                Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em branco.
-            </p>
-        </div>
-        <div class="about-company">
-            <!-- Links -->
-            <h6 class="link-name text-uppercase fw-bold mb-4">
-                A EMPRESA
-            </h6>
-            <p>
-                <a href="#!" class="text-reset">Sobre Nós</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">Features</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">Works</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">Carreira</a>
-            </p>
-        </div>
-        <div class="about-icons">
-            <a href="" class="me-4 link-secondary">
-                <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <font-awesome-icon class="fa" icon="fa-brands fa-github" />
-            </a>
-        </div>
+    <div style="height: auto;">
+        <AcessibilityMenu></AcessibilityMenu>
+        <div class="about text-center contrast">
+            <div class="about-logo"> 
+                <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+                <span class="logo-name contrast">ARTESANIA</span>
+            </div>
+            <div class="about-txt">
+                <p>
+                    Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em branco.
+                </p>
+            </div>
+            <div class="about-company">
+                <!-- Links -->
+                <h6 class="link-name text-uppercase fw-bold mb-4">
+                    A EMPRESA
+                </h6>
+                <p>
+                    <a href="#!" class="text-reset">Sobre Nós</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">Features</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">Works</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-reset">Carreira</a>
+                </p>
+            </div>
+            <div class="about-icons">
+                <a href="" class="me-4 link-secondary">
+                    <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <font-awesome-icon class="fa" icon="fa-brands fa-github" />
+                </a>
+            </div>
+        </div>   
     </div>
 </template>
 
 <script>
+import AcessibilityMenu from '../menus/AcessibilityMenu.vue';
+
 export default {
-    name: 'AboutSection'
+    name: "AboutSection",
+    components: { AcessibilityMenu }
 }
 </script>
 
 <style lang="scss" scoped>
 .about {
-    
-    padding: 10% 20% 10% 20%;
+    background-color: #Eab766;
+    padding: 5rem 5rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,5 +114,11 @@ export default {
 
 .high-contrast-text {
     color: white;
+}
+
+@media(max-width: 768px){
+    .about{
+        display: none;
+    }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="sticky-top">
-      <AcessibilityMenu></AcessibilityMenu>
+      <AcessibilityMenu v-if="isHidden"></AcessibilityMenu>
       <NavBar v-if="isHidden"></NavBar>
     </div>
     <div class="content-body">
