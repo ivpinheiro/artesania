@@ -65,6 +65,15 @@
       </div>
       <div class="secondSection contrast">
         <div class="card-deck products">
+          <div v-if="loading">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <SpinnerLoader />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card border-0" v-for="product in pagedElements" :key="product">
             <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
               :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
@@ -96,6 +105,7 @@ export default {
   },
   data() {
     return {
+      loading: false,
       collapseFilterPrice: true,
       collapseFilterStyle: true,
       products: [],
@@ -152,7 +162,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
 .filter-title {
   font-family: Inter;
   font-weight: 1000;
@@ -183,6 +192,7 @@ export default {
 
 .fa-chevron {
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .gallery {

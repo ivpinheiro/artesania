@@ -4,19 +4,18 @@
     <ArtistNames></ArtistNames>
     <CallToActionButtons></CallToActionButtons>
 
-    <div v-if="loading">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <SpinnerLoader />
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="home-showcase" id="acabou-chegar">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
       <div class="card-deck products-home new-products">
+        <div v-if="loading">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <SpinnerLoader />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card border-0" v-for="product in newProducts.slice(0, 4)" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
@@ -29,6 +28,15 @@
 
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="card-deck products-home best-seller">
+        <div v-if="loading">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <SpinnerLoader />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card border-0" v-for="product in bestSellerProducts.slice(0, 4)" :key="product">
           <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
@@ -47,6 +55,15 @@
     <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
 
     <div class="products-home comments">
+      <div v-if="loading">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <SpinnerLoader />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-3" v-for="client in clientComments" :key="client">
         <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
         </CommentCard>

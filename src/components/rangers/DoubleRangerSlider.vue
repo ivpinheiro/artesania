@@ -8,12 +8,12 @@
         </div>
         <div class="form_control">
             <div class="form_control_container">
-                <p>R$</p>
+                <p class="form-control-container-title">R$</p>
                 <input class="form-control-container-input no-spinners" type="number" id="fromInput"
                     :value="this.startPriceValue" :min="this.minPriceValue" :max="this.maxPriceValue" disabled="true" />
             </div>
             <div class="form_control_container">
-                <p>R$</p>
+                <p class="form-control-container-title">R$</p>
                 <input class="form-control-container-input no-spinners" type="number" id="toInput"
                     :value="this.endPriceValue" :min="this.minPriceValue" :max="this.maxPriceValue" disabled="true" />
             </div>
@@ -206,10 +206,16 @@ input[type="number"] {
     appearance: textfield;
     color: black;
     min-width: 50px;
-    max-width: 65px;
+    max-width: 73px;
     height: 30px;
     border: none;
     background: #fff;
+    font-weight: 900;
+}
+
+.form-control-container-title {
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .high-contrast {

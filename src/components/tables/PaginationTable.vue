@@ -64,10 +64,10 @@ export default {
     --bs-pagination-padding-x: 1.75rem;
     --bs-pagination-padding-y: 1rem;
     --bs-pagination-font-size: 1.35rem;
-    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(157, 50, 7, 0.62);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(157, 50, 7, 0.080);
     --bs-pagination-disabled-color: black;
-    --bs-pagination-disabled-bg: rgba(157, 50, 7, 0.3);
-    --bs-pagination-disabled-border-color: rgba(157, 50, 7, 0.3);
+    --bs-pagination-disabled-bg: rgba(157, 50, 7, 0.080);
+    --bs-pagination-disabled-border-color: rgba(157, 50, 7, 0.080);
     --bs-pagination-hover-color: #black;
     --bs-pagination-hover-bg: #ffff;
     --bs-pagination-color: var(--bs-link-color);
@@ -76,11 +76,11 @@ export default {
     --bs-pagination-border-color: var(--bs-border-color);
     --bs-pagination-border-radius: var(--bs-border-radius);
     --bs-pagination-hover-border-color: var(--bs-border-color);
-    --bs-pagination-focus-color: var(--bs-link-hover-color);
-    --bs-pagination-focus-bg: var(--bs-secondary-bg);
+    --bs-pagination-focus-color: #black;
+    --bs-pagination-focus-bg: rgba(157, 50, 7, 0.3);
     --bs-pagination-active-color: #fff;
-    --bs-pagination-active-bg: #0d6efd;
-    --bs-pagination-active-border-color: #0d6efd;
+    --bs-pagination-active-bg: rgba(157, 50, 7, 0.3);
+    --bs-pagination-active-border-color: rgba(157, 50, 7, 0.3);
 }
 
 .custom-link {
