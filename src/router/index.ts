@@ -4,6 +4,7 @@ import LoginPage from '@/views/LoginPage.vue'
 import DashboardPage from '@/views/DashboardPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
+import PaymentPage from '@/views/PaymentPage.vue'
 
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/gallery',
       name: 'gallery',
       component: ArtistsGallery
+    },
+    {
+      path: '/payment',
+      name: 'payment',
+      component: PaymentPage
     }
   ]
 })

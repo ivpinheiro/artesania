@@ -56,8 +56,8 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     padding: 0.5vw;
     background-color: white;
