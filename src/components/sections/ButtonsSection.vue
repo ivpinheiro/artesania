@@ -5,7 +5,7 @@
         <div class="verticalLine"></div>
         <div class="buttonPrimary">CADASTRAR-SE</div>
         <div class="verticalLine"></div>
-        <div class="buttonPrimary">ÁREA DO ARTISTA</div>
+        <div class="buttonPrimary"><RouterLink class="link-class-none" to="/dashboard">ÁREA DO ARTISTA</RouterLink></div>
       </div>
     </div>
   </template>
