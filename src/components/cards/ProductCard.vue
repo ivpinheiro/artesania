@@ -1,5 +1,5 @@
 <template>
-    <div class="contrast product-card">
+    <div class="card product-card contrast">
         <div class="wallpaper-img">
             <img :src="getImageUrl(urlImg)" class="card-img card-img-top" alt="...">
         </div>
@@ -11,6 +11,9 @@
             <p class="card-text card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{
                 productPrice
             }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
+            <div class="btn-purchase">
+                <button class="btn buttonPrimary contrast">Comprar</button>
+            </div>
         </div>
     </div>
 </template>
@@ -67,6 +70,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+    --bs-card-border-width: none;
+}
+
+
 #card-title {
     font-family: Inter;
     font-size: x-large;
@@ -78,7 +86,9 @@ export default {
 .product-card {
     align-content: center;
     justify-content: center;
-    max-width: 300px;
+    width: 300px;
+    height: 600px;
+    position: relative;
 }
 
 .card-value {
@@ -108,6 +118,28 @@ export default {
     background-color: #F0EEED;
     padding: 10px;
     border-radius: 20px;
+}
+
+.buttonPrimary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9D3207;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    width: 75%;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .high-contrast {

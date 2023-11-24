@@ -1,6 +1,7 @@
 <template>
-    <div class="container mt-3 text-center"> <!-- Adicione a classe "text-center" para centralizar todo o conteúdo -->
-        <nav v-if="totalPages > 1">
+    <div class="mt-3 text-center contrast">
+        <!-- Adicione a classe "text-center" para centralizar todo o conteúdo -->
+        <nav class="pagination-m" v-if="totalPages > 1">
             <ul class="pagination justify-content-center pagination-lg">
                 <li class="page-item" :class="{ 'disabled': currentPage === 1 }">
                     <a class="page-link custom-link" href="#" @click="changePage(1)">Primeira página</a>
@@ -54,11 +55,15 @@ export default {
 </script>
   
 <style lang="scss" scoped>
+.pagination-m {
+    margin-top: 10vh;
+}
+
 .pagination {
     font-family: inter;
-    --bs-pagination-padding-x: 0.75rem;
-    --bs-pagination-padding-y: 0.375rem;
-    --bs-pagination-font-size: 1rem;
+    --bs-pagination-padding-x: 1.75rem;
+    --bs-pagination-padding-y: 1rem;
+    --bs-pagination-font-size: 1.35rem;
     --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(157, 50, 7, 0.62);
     --bs-pagination-disabled-color: black;
     --bs-pagination-disabled-bg: rgba(157, 50, 7, 0.3);
@@ -81,12 +86,24 @@ export default {
 .custom-link {
     background-color: ffff;
     color: black;
+    font-weight: 1000;
+    font-size: 20px;
 }
 
 .page-link.active,
 .active>.page-link {
     background-color: $pagination;
     border-color: $pagination;
+    font-weight: 300;
+}
+
+.high-contrast-text {
+    color: white;
+}
+
+.high-contrast {
+    color: white;
+    background: black;
 }
 </style>
 

@@ -17,10 +17,9 @@
           <div class="filter-title-div">
             <h3 class="filter-title">Preços</h3>
             <p class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <font-awesome-icon class="fa-chevron"
-                :icon="collapseFilterPrice ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
-                data-bs-toggle="collapse" href="#collapse-filter-price" @click="toggleCollapse('collapseFilterPrice')"
-                :class="{ 'rotate-icon': collapseFilterPrice }" />
+              <font-awesome-icon :icon="collapseFilterPrice ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
+                data-bs-toggle="collapse" href="#collapse-filter-price" :class="{ 'rotate-icon': collapseFilterPrice }"
+                class="fa-chevron" />
             </p>
           </div>
           <div class="collapse show" id="collapse-filter-price">
@@ -36,10 +35,9 @@
           <div class="filter-title-div">
             <h3 class="filter-title">Estilos</h3>
             <p class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <font-awesome-icon class="fa-chevron"
-                :icon="collapseFilterStyle ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
-                data-bs-toggle="collapse" href="#collapse-filter-style" @click="toggleCollapse('collapseFilterStyle')"
-                :class="{ 'rotate-icon': collapseFilterStyle }" />
+              <font-awesome-icon :icon="collapseFilterStyle ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
+                data-bs-toggle="collapse" href="#collapse-filter-style" :class="{ 'rotate-icon': collapseFilterStyle }"
+                class="fa-chevron" />
             </p>
           </div>
 
@@ -102,7 +100,9 @@ export default {
       collapseFilterStyle: true,
       products: [],
       pageSize: 6,
-      currentPage: 1
+      currentPage: 1,
+      chevronElement: Object,
+      inTransition: false
     };
   },
   computed: {
@@ -116,13 +116,6 @@ export default {
     }
   },
   methods: {
-    toggleCollapse(componentCollapsed) {
-      if (componentCollapsed === 'collapseFilterPrice') {
-        this.collapseFilterPrice = !this.collapseFilterPrice
-      } else if (componentCollapsed === 'collapseFilterStyle') {
-        this.collapseFilterStyle = !this.collapseFilterStyle
-      }
-    },
     changePage(page) {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
@@ -139,10 +132,27 @@ export default {
       this.errorMessage = error
       this.loading = false
     }
+  },
+  mounted() {
+    const collapseFilterPrice = document.getElementById('collapse-filter-price');
+    collapseFilterPrice.addEventListener('show.bs.collapse', () => {
+      this.collapseFilterPrice = !this.collapseFilterPrice
+    });
+    collapseFilterPrice.addEventListener('hide.bs.collapse', () => {
+      this.collapseFilterPrice = !this.collapseFilterPrice
+    });
+    const collapseFilterStyle = document.getElementById('collapse-filter-style');
+    collapseFilterStyle.addEventListener('show.bs.collapse', () => {
+      this.collapseFilterStyle = !this.collapseFilterStyle
+    });
+    collapseFilterStyle.addEventListener('hide.bs.collapse', () => {
+      this.collapseFilterStyle = !this.collapseFilterStyle
+    });
   }
 }
 </script>
 <style lang="scss" scoped>
+
 .filter-title {
   font-family: Inter;
   font-weight: 1000;
@@ -219,9 +229,12 @@ export default {
 .secondSection {
   background-color: #fff;
   height: auto;
-  width: 60%;
-  margin: 3% 2%;
+  width: 65%;
+  margin: 2% 0% 2% 2%;
   border-radius: 3%;
+  padding: 15px 15px 15px 15px;
+  overflow: hidden;
+  margin: 2% 0% 2% 2%;
 
   @media (max-width: 1060px) {
     height: auto;
