@@ -67,11 +67,13 @@
       </div>
       <div class="secondSection contrast">
         <div class="card-deck products">
-          <div class="card border-0" v-for="product in products" :key="product">
+          <div class="card border-0" v-for="product in pagedElements" :key="product">
             <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
               :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
           </div>
         </div>
+        <PaginationTable :total-pages="totalPages" :current-page="currentPage" :change-page="changePage">
+        </PaginationTable>
       </div>
 
     </div>
@@ -84,20 +86,34 @@ import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import DoubleRangerSlider from '@/components/rangers/DoubleRangerSlider.vue'
 import ProductCard from '@/components/cards/ProductCard.vue'
+import PaginationTable from '@/components/tables/PaginationTable.vue'
 
 export default {
   name: 'ArtistsGallery',
   components: {
     SpinnerLoader,
     DoubleRangerSlider,
-    ProductCard
+    ProductCard,
+    PaginationTable
   },
   data() {
     return {
       collapseFilterPrice: true,
       collapseFilterStyle: true,
-      products: []
+      products: [],
+      pageSize: 6,
+      currentPage: 1
     };
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.products.length / this.pageSize);
+    },
+    pagedElements() {
+      const startIndex = (this.currentPage - 1) * this.pageSize;
+      const endIndex = startIndex + this.pageSize;
+      return this.products.slice(startIndex, endIndex);
+    }
   },
   methods: {
     toggleCollapse(componentCollapsed) {
@@ -105,6 +121,11 @@ export default {
         this.collapseFilterPrice = !this.collapseFilterPrice
       } else if (componentCollapsed === 'collapseFilterStyle') {
         this.collapseFilterStyle = !this.collapseFilterStyle
+      }
+    },
+    changePage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.currentPage = page;
       }
     }
   },
