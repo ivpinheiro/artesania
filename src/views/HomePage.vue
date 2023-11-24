@@ -29,10 +29,10 @@
 
       <h3 class="best-seller-text" id="mais-vendidos">MAIS VENDIDOS</h3>
       <div class="card-deck products-home best-seller">
-          <div class="card border-0" v-for="product in bestSellerProducts.slice(0, 4)" :key="product">
-            <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-              :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
-          </div>        
+        <div class="card border-0" v-for="product in bestSellerProducts.slice(0, 4)" :key="product">
+          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
+            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+        </div>
       </div>
 
       <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
@@ -97,8 +97,8 @@ export default {
       this.clientComments = responseComments.data
       this.newProducts = this.products.filter(product => product["new-product"])
       this.bestSellerProducts = this.products.filter(product => product["best-seller"])
-      this.newProducts = ProductUtils.ProductList.shuffleArray(this.newProducts.map(product => ({ ...product }))) 
-      this.bestSellerProducts = ProductUtils.ProductList.shuffleArray(this.bestSellerProducts.map(product => ({ ...product })))      
+      this.newProducts = ProductUtils.ProductList.shuffleArray(this.newProducts.map(product => ({ ...product })))
+      this.bestSellerProducts = ProductUtils.ProductList.shuffleArray(this.bestSellerProducts.map(product => ({ ...product })))
       this.loading = false
     } catch (error) {
       this.errorMessage = error
@@ -157,7 +157,7 @@ export default {
   padding: 50px;
 }
 
-.comments{
+.comments {
   display: flex;
   flex-direction: row;
   align-items: center;
