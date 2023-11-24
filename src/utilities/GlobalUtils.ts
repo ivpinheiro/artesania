@@ -68,9 +68,8 @@ class HighContrastToggle {
 }
 
 class HiddenElementsByPath {
-    static hiddenElements(router: RouteLocationNormalizedLoaded): boolean {
-        //return !router.path.includes('/login'); 
-        return !['/login', '/sign'].includes(router.path);
+    static hiddenElements(router: RouteLocationNormalizedLoaded, paths: string[]): boolean {
+        return paths ? !paths.includes(router.path) : false;
     }
 }
 

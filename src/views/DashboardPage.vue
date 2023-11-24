@@ -17,7 +17,7 @@
 <script>
 import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
-import DashboardComponent from '@/components/MyDashboardGroup.vue'
+import DashboardComponent from '@/components/dashboard/MyDashboardGroup.vue'
 
 export default {
   name: 'DashboardPage',

@@ -12,11 +12,12 @@
             </li>
             <li class="nav-item desktop-only">
                 <a class="nav-link" href="#footer">Ir para rodapé [4]</a>
-            </li> 
-        </span>       
+            </li>
+        </span>
         <li class="nav-item">
-            <div class="nav-link-joint"><span class="nav-link" id="increase-font-button">A+</span> | <span class="nav-link" id="decrease-font-button">A-</span></div>
-        </li>  
+            <div class="nav-link-joint"><span class="nav-link" id="increase-font-button">A+</span> | <span class="nav-link"
+                    id="decrease-font-button">A-</span></div>
+        </li>
         <li class="nav-item">
             <font-awesome-icon class="fa-color" icon="fa-solid fa-circle-half-stroke" />
             <span class="high-contrast-b" id="toggle-high-contrast">Alto Contraste</span>
@@ -29,15 +30,21 @@ import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
 
 export default {
     name: 'AcessibilityMenu',
-    computed:{
-        isHidden(){
-            return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route)
+    props: {
+        hiddenFullElements: {
+            type: [],
+            required: true
+        }
+    },
+    computed: {
+        isHidden() {
+            return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route, this.hiddenFullElements)
         }
     }
 };
 </script>
 <style lang="scss" scoped>
-.nav{
+.nav {
     background-color: $acessibility-menu-color;
     min-height: fit-content;
     max-height: min-content;
@@ -45,47 +52,56 @@ export default {
     justify-content: center;
     align-items: center;
 }
-.nav-link{
-    color: $nav-link-color;    
+
+.nav-link {
+    color: $nav-link-color;
     margin: 0;
     padding: 0 10px;
     color: white;
 }
-.nav-link-joint{
-    color: $nav-link-color;    
+
+.nav-link-joint {
+    color: $nav-link-color;
     margin: 0;
     padding: 0 10px;
     color: white;
     display: flex;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #fff;
     font-weight: 800;
 }
-.nav-link:visited{
+
+.nav-link:visited {
     color: #fff;
     font-weight: 800;
 }
-.high-contrast-b:hover{
+
+.high-contrast-b:hover {
     font-weight: 800;
 }
-.nav-item{
+
+.nav-item {
     cursor: pointer;
 }
+
 .fa-color {
     color: white;
     text-decoration: none;
 }
-.high-contrast-b{
+
+.high-contrast-b {
     color: white;
     text-transform: capitalize;
     padding: 0 5px;
     font-size: 18px;
 }
 
-.high-contrast{
+.high-contrast {
     background: black;
 }
+
 @media (max-width: 1060px) {
     .flex-on-cell {
         display: flex;
