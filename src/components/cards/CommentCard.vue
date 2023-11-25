@@ -75,21 +75,17 @@ export default {
     display: flex;
     padding-left: 15px;
     width: 100%;
-
 }
 
 .card-title-title {
-
     font-weight: 1000;
     font-size: 100%;
     color: $comment-card-title;
 }
 
 .titleChecked {
-    //color: #01ab01;
     width: 17px;
     margin-right: 5px;
-    /* Adjust the spacing between the icon and text */
     margin-bottom: 3px;
     display: inline-block;
 }

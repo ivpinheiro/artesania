@@ -206,7 +206,6 @@
         <img alt="Site 100% Seguro Google" src=@/assets/img/footer/site-seguro-google.svg>
       </div>
     </section>
-
   </footer>
   <!-- Footer -->
 </template>

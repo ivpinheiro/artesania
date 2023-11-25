@@ -44,6 +44,6 @@ a,
 
 @media (max-width: 1060px) {
     .desktop-only {
-      display: none !important;
+        display: none !important;
     }
 }

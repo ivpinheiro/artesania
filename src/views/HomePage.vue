@@ -188,9 +188,6 @@ export default {
   align-items: center;
 }*/
 
-.item-product {
-  padding: 10px;
-}
 
 @media screen and (max-width: 990px) {
   .client-comments-card {
