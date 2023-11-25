@@ -1,17 +1,24 @@
 <template>
-    <div class="container contrast card border-0">
-        <div class="card contrast text-bg mb-3">
-            <div class="card-rating">
-                <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false" :rating="Number(rating)"
-                    :round-start-rating="false">
-                </star-rating>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="contrast card border-0">
+                    <div class="card contrast text-bg mb-3">
+                        <div class="card-rating">
+                            <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false"
+                                :rating="Number(rating)" :round-start-rating="false">
+                            </star-rating>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title-title">{{ cartTitle }}
+                                <img src="@/assets/img/artists/circle-check-solid.svg" class="titleChecked">
+                            </h5>
+                            <p class="card-text">{{ comment }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title-title">{{ cartTitle }}
-                    <img src="@/assets/img/artists/circle-check-solid.svg" class="titleChecked">
-                </h5>
-                <p class="card-text">{{ comment }}</p>
-            </div>
+
         </div>
     </div>
 </template>
@@ -65,23 +72,24 @@ export default {
 }
 
 .card-rating {
-    display: flex; 
-    padding-left: 15px;  
+    display: flex;
+    padding-left: 15px;
     width: 100%;
-    
+
 }
 
-
 .card-title-title {
-    
+
     font-weight: 1000;
     font-size: 100%;
     color: $comment-card-title;
 }
-.titleChecked{
+
+.titleChecked {
     //color: #01ab01;
     width: 17px;
-    margin-right: 5px; /* Adjust the spacing between the icon and text */
+    margin-right: 5px;
+    /* Adjust the spacing between the icon and text */
     margin-bottom: 3px;
     display: inline-block;
 }
@@ -98,11 +106,13 @@ export default {
     font-size: large;
     font-weight: 1000;
 }
+
 .high-contrast {
-  color: white;
-  background: black;
+    color: white;
+    background: black;
 }
+
 .high-contrast-text {
-  color: white;
+    color: white;
 }
 </style>

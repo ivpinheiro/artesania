@@ -47,7 +47,7 @@
       </section>
       <!-- Section: Form -->
     </div>
-    
+
     <!-- Section: Links  -->
     <section class="links-section contrast">
       <div class="container text-center text-md-start pt-5">
@@ -184,8 +184,8 @@
     <!-- Copyright -->
     <section class="row contrast d-flex justify-content-around m-0">
 
-        <!-- Copyright -->
-      <div class="col-lg text-center"> 
+      <!-- Copyright -->
+      <div class="col-lg text-center">
         Artesania © 2023, Todos os direitos reservados
       </div>
       <!-- Copyright -->
@@ -206,7 +206,7 @@
         <img alt="Site 100% Seguro Google" src=@/assets/img/footer/site-seguro-google.svg>
       </div>
     </section>
-    
+
   </footer>
   <!-- Footer -->
 </template>
@@ -218,7 +218,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .input-group-text {
   border-radius: 30px;
 }
@@ -239,6 +238,10 @@ export default {
 .input-group-text {
   background-color: white;
   border: none;
+}
+
+.form-control {
+  border-radius: 50px;
 }
 
 .form-control:focus {
@@ -284,12 +287,14 @@ export default {
 .mail {
   color: black;
 }
+
 .h-divider {
   margin: auto;
   padding: 10px;
   width: 90%;
   border-top: 1px solid gray;
 }
+
 .high-contrast {
   color: white;
   background: black;
@@ -297,5 +302,4 @@ export default {
 
 .high-contrast-text {
   color: white;
-}
-</style>
+}</style>

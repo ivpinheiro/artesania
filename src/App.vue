@@ -6,7 +6,7 @@
       <NavBar v-if="isHidden"></NavBar>
     </div>
     <div class="content-body">
-      <BreadCrumbComponent></BreadCrumbComponent>
+      <!-- <BreadCrumbComponent></BreadCrumbComponent> -->
       <router-view />
     </div>
     <FooterComp v-if="isHidden"></FooterComp>

@@ -54,7 +54,7 @@
 
     <h3 class="client-comment-text">NOSSOS CLIENTES</h3>
 
-    <div class="products-home comments">
+    <div class="card-deck client-comments-card comments">
       <div v-if="loading">
         <div class="container">
           <div class="row">
@@ -64,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3" v-for="client in clientComments" :key="client">
+      <div class="card border-0" v-for="client in clientComments" :key="client">
         <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
         </CommentCard>
       </div>
@@ -174,6 +174,14 @@ export default {
   padding: 50px;
 }
 
+.client-comments-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 50px;
+}
+
 /*.comments{
   display: flex;
   flex-direction: row;
@@ -182,6 +190,12 @@ export default {
 
 .item-product {
   padding: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .client-comments-card {
+    flex-wrap: wrap;
+  }
 }
 
 .high-contrast {
