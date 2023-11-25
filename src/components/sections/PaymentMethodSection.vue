@@ -28,6 +28,7 @@ export default {
 .card-content{
     background-color: #f0eeed;
     border-radius: 5%;
+    width: 100%;
     height: 100%;
     padding: 1rem
 }

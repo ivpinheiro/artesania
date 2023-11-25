@@ -5,7 +5,7 @@
     <div class="pay-conteudo">
         <PaymentMethodSection></PaymentMethodSection>
         <PaymentFormSection></PaymentFormSection>
-        
+
         <div class="card-content">   
             <div class="details">
                 <b>Detalhes de compra</b>
@@ -42,11 +42,16 @@ export default {
 }
 
 .pay-conteudo{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+    padding: 0rem 5rem;
+    
+    /*display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0rem 5rem;
-    margin: 1rem;
+    margin: 1rem;*/
 }
 
 .confirm-area{
@@ -60,7 +65,7 @@ export default {
     border: 0px;
     border-radius: 62px;
     width: 25vh;
-    height: 5vh;
+    height: auto;
     color: #fff;
     font-weight: 600;
 }
