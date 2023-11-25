@@ -35,8 +35,9 @@ export default {
 
 
 .method-options{
-    padding: 3rem 0rem;
-    align-items: center;
+    display: flex;
+    padding-top: 7rem;
+    flex-direction: column;
 }
 
 .method .buttonPrimary{
