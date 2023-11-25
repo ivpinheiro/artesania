@@ -1,16 +1,11 @@
 <template>
     <div class="breadcrumbs">
-        <BreadCrumbComponent></BreadCrumbComponent>
+        <p> ... > Meu Painel > Pedidos > <span class="highlight"><b>Encomenda Nº123</b></span></p>
     </div>
     <div class="pay-conteudo">
         <PaymentMethodSection></PaymentMethodSection>
         <PaymentFormSection></PaymentFormSection>
-
-        <div class="card-content">
-            <div class="details">
-                <b>Detalhes de compra</b>
-            </div>
-        </div>
+        <PaymentDetailSection></PaymentDetailSection>
     </div>
     <div class="confirm-area">
         <button class="buttonPrimary-continue">Continuar</button>
@@ -21,15 +16,16 @@
 
 import PaymentMethodSection from "@/components/sections/PaymentMethodSection.vue"
 import PaymentFormSection from '@/components/sections/PaymentFormSection.vue'
-import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
+import PaymentDetailSection from '@/components/sections/PaymentDetailSection.vue'
+
 
 export default {
     name: 'paymentPage',
     components: {
-        PaymentMethodSection,
-        PaymentFormSection,
-        BreadCrumbComponent
-    }
+    PaymentMethodSection,
+    PaymentFormSection,
+    PaymentDetailSection
+}
 }
 
 </script>
@@ -37,6 +33,11 @@ export default {
 <style lang="css" scoped>
 .breadcrumbs {
     margin: 20px 8%;
+    padding-bottom: 1rem;
+}
+
+.highlight{
+    color: #9D3207;        
 }
 
 .pay-conteudo {

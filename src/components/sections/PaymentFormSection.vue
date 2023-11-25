@@ -5,17 +5,17 @@
 
             <div class="forms-options">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label" id="lblCartao"><b>Numero do Cartão</b></label>
-                    <input type="number" class="form-control" id="inputCard" placeholder="Numero do seu cartão">
+                    <label for="inputCard" class="form-label" id="lblCartao"><b>Numero do Cartão</b></label>
+                    <input type="number" class="form-control" name="inputCard" id="inputCard" placeholder="Numero do seu cartão">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label" id="lblNomeCartao"><b>Nome impresso no cartão</b></label>
-                    <input type="text" class="form-control" id="inputCardName" placeholder="Nome do seu cartão">
-                 </div>
-                 <div class="forms-double">
+                    <label for="inputCardName" class="form-label" id="lblNomeCartao"><b>Nome impresso no cartão</b></label>
+                    <input type="text" class="form-control" name="inputCardName" id="inputCardName" placeholder="Nome do seu cartão">
+                </div>
+                <div class="forms-double">
                     <div class="select-align">
-                        <label for="exampleFormControlInput1" class="form-label" id="lblMes"><b>MES</b></label>
-                        <select class="select-option" name="selectMouth">
+                        <label for="selectMouth" class="form-label" id="lblMes"><b>MES</b></label>
+                        <select class="select-double" name="selectMouth">
                             <option></option>
                             <option value="JAN">Janeiro</option><option value="FEV">Fevereiro</option>
                             <option value="MAR">Março</option><option value="ABR">Abril</option>
@@ -26,8 +26,8 @@
                         </select>
                     </div>
                     <div class="select-align">
-                        <label for="exampleFormControlInput1" class="form-label" id="lblAno"><b>ANO</b></label>
-                        <select class="selction-option" name="selectYear">
+                        <label for="selectYear" class="form-label" id="lblAno"><b>ANO</b></label>
+                        <select class="select-double" name="selectYear">
                             <option></option>
                             <option>1990</option><option>1991</option><option>1992</option><option>1993</option>
                             <option>1994</option><option>1995</option><option>1996</option><option>1997</option>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label" id="lblParcelas"><b>Parcelas</b></label><br>
+                    <label for="selectParcelas" class="form-label" id="lblParcelas"><b>Parcelas</b></label><br>
                     <select class="select-option" name="selectParcelas" width="100px">
                         <option></option>
                         <option value="1x">1x</option><option value="2x">2x</option><option value="3x">3x</option>
@@ -53,12 +53,12 @@
                 </div>
                 <div class="forms-double">
                     <div class="select-align">
-                        <label for="exampleFormControlInput1" class="form-label" id="lblCVV"><b>CVV</b></label>
-                        <input type="number" class="form-control" id="inputCVV" placeholder="">
+                        <label for="inputCVV" class="form-label" id="lblCVV"><b>CVV</b></label>
+                        <input type="number" class="form-control" name="inputCVV" id="inputCVV" placeholder="">
                     </div>
                     <div class="select-align">
-                        <label for="exampleFormControlInput1" class="form-label" id="lblCPF"><b>CPF do titular</b></label>
-                        <input type="number" class="form-control" id="inputCPF" placeholder="Seu CPF">
+                        <label for="inputCPF" class="form-label" id="lblCPF"><b>CPF do titular</b></label>
+                        <input type="number" class="form-control" name="inputCPF" id="inputCPF" placeholder="Seu CPF">
                     </div>
                 </div>
             </div>
@@ -86,20 +86,42 @@ export default {
     padding: 1rem
 }
 
-.forms-double{
-   display: flex;
-   justify-content: space-between;
+.forms-options{
+    padding-top: 1rem;
 }
 
-.select-align{
+.forms-double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-align {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-
-
-.selection-option{
+.select-double{
     border-radius: 10%;
+    border-style: solid 1px #000;
+    width: 20vh;
+}
+
+.form-control{
+    border: solid 1px #000;
+}
+
+#inputCPF{
+    width: 90%;
+}
+#inputCVV{
+    width: 90%;
+}
+
+.select-option{
+    width: 100%;
+    border-radius: 10%;
+    border-style: solid 1px #000;
 }
 
 </style>
