@@ -43,8 +43,7 @@ export default {
         if (newRoute.meta && newRoute.meta.breadcrumb) {
           const breadcrumbExists = routeHistoryStore.previousRouteMetaBreadcrumbs.some(breadcrumb => breadcrumb.path === newRoute.path)
           if (!breadcrumbExists) {
-            routeHistoryStore.addPreviousRouteMetaBreadcrumb(newRoute);
-            console.log(routeHistoryStore.previousRouteMetaBreadcrumbs);
+            routeHistoryStore.addPreviousRouteMetaBreadcrumb(newRoute)
           }
         }
       },

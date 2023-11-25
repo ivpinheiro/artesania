@@ -7,10 +7,10 @@ export const useBreadcrumbStore = defineStore({
     }),
     actions: {
         addPreviousRouteMetaBreadcrumb(metaBreadcrumb: string) {
-            this.previousRouteMetaBreadcrumbs.push(metaBreadcrumb);
+            this.previousRouteMetaBreadcrumbs.push(metaBreadcrumb)
         },
         clearPreviousRouteMetaBreadcrumbs() {
-            this.previousRouteMetaBreadcrumbs = [];
+            this.previousRouteMetaBreadcrumbs = []
         }
     }
 });

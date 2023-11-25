@@ -5,7 +5,7 @@ import DashboardPage from '@/views/DashboardPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
-
+import { authMiddleWare } from '@/middlewares/AuthMiddleWare'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,7 +39,8 @@ const router = createRouter({
       name: 'dashboard',
       component: DashboardPage,
       meta: {
-        breadcrumb: 'Painel'
+        breadcrumb: 'Painel',
+        middleware: authMiddleWare.oauthMiddleWare
       }
     },
     {
@@ -60,5 +61,14 @@ const router = createRouter({
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  const middleware = to.meta.middleware
+  if (middleware && typeof middleware === 'function') {
+    middleware(to, from, next)
+  } else {
+    next()
+  }
+});
 
 export default router
