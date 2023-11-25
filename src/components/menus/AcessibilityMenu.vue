@@ -32,9 +32,11 @@ export default {
     name: 'AcessibilityMenu',
     props: {
         hiddenFullElements: {
-            type: [],
-            required: true
-        }
+            type: Array,
+            validator: (value) => {
+                return value.every((item) => typeof item === 'string');
+            }
+        },
     },
     computed: {
         isHidden() {

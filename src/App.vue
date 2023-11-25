@@ -1,12 +1,10 @@
 <template>
   <div>
     <div class="sticky-top">
-      <AcessibilityMenu v-if="isHidden" :hiddenFullElements="[this.hiddenElementsLogin, this.hiddenElementsSignin]">
-      </AcessibilityMenu>
+      <AcessibilityMenu v-if="isHidden" :hiddenFullElements='[this.hiddenElementsLogin, this.hiddenElementsSignin]' />
       <NavBar v-if="isHidden"></NavBar>
     </div>
     <div class="content-body">
-      <!-- <BreadCrumbComponent></BreadCrumbComponent> -->
       <router-view />
     </div>
     <FooterComp v-if="isHidden"></FooterComp>
@@ -17,7 +15,7 @@ import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
 import NavBar from '@/components/menus/NavBar.vue'
 import AcessibilityMenu from '@/components/menus/AcessibilityMenu.vue'
 import FooterComp from '@/components/footer/FooterComp.vue'
-import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
+import { useBreadcrumbStore } from '@/stores/breadcrumbStore'
 
 export default {
   name: 'App',
@@ -27,7 +25,7 @@ export default {
       hiddenElementsSignin: '/sign',
     }
   },
-  components: { GlobalUtils, NavBar, AcessibilityMenu, FooterComp, BreadCrumbComponent },
+  components: { GlobalUtils, NavBar, AcessibilityMenu, FooterComp },
   mounted() {
     GlobalUtils.FontSizeController.fontSizeController()
     GlobalUtils.HighContrastToggle.highContrast()
@@ -36,6 +34,21 @@ export default {
     isHidden() {
       return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route, [this.hiddenElementsLogin, this.hiddenElementsSignin])
     }
+  },
+  watch: {
+    '$route': {
+      immediate: true,
+      handler(newRoute, oldRoute) {
+        const routeHistoryStore = useBreadcrumbStore()
+        if (newRoute.meta && newRoute.meta.breadcrumb) {
+          const breadcrumbExists = routeHistoryStore.previousRouteMetaBreadcrumbs.some(breadcrumb => breadcrumb.path === newRoute.path)
+          if (!breadcrumbExists) {
+            routeHistoryStore.addPreviousRouteMetaBreadcrumb(newRoute);
+            console.log(routeHistoryStore.previousRouteMetaBreadcrumbs);
+          }
+        }
+      },
+    },
   }
 }
 </script>

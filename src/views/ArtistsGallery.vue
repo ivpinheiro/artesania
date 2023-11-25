@@ -2,7 +2,7 @@
   <div class="contrast">
     <hr class="divider">
     <div class="breadcrumbs">
-      <p>Home > Mira Maroni > <span class="highlight">Meu painel</span></p>
+      <BreadCrumbComponent></BreadCrumbComponent>
     </div>
     <div class="gallery">
       <div class="firstSection contrast">
@@ -94,6 +94,7 @@ import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import DoubleRangerSlider from '@/components/rangers/DoubleRangerSlider.vue'
 import ProductCard from '@/components/cards/ProductCard.vue'
 import PaginationTable from '@/components/tables/PaginationTable.vue'
+import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
 
 export default {
   name: 'ArtistsGallery',
@@ -101,7 +102,8 @@ export default {
     SpinnerLoader,
     DoubleRangerSlider,
     ProductCard,
-    PaginationTable
+    PaginationTable,
+    BreadCrumbComponent
   },
   data() {
     return {
