@@ -13,32 +13,50 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomePage
+      component: HomePage,
+      meta: {
+        breadcrumb: 'Página Inicial'
+      }
     },
     {
       path: '/login',
       name: 'login',
-      component: LoginPage
+      component: LoginPage,
+      meta: {
+        breadcrumb: 'Login'
+      }
     },
     {
       path: '/sign',
       name: '/sign',
-      component: SignPage
+      component: SignPage,
+      meta: {
+        breadcrumb: 'Cadastre-se'
+      }
     },
     {
       path: '/dashboard',
       name: 'dashboard',
-      component: DashboardPage
+      component: DashboardPage,
+      meta: {
+        breadcrumb: 'Painel'
+      }
     },
     {
       path: '/gallery',
       name: 'gallery',
-      component: ArtistsGallery
+      component: ArtistsGallery,
+      meta: {
+        breadcrumb: 'Galeria'
+      }
     },
     {
       path: '/payment',
       name: 'payment',
-      component: PaymentPage
+      component: PaymentPage,
+      meta: {
+        breadcrumb: 'Pagamento'
+      }
     }
   ]
 })

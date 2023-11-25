@@ -22,7 +22,11 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
+      <RouterLink class="text-decoration-none" to="/gallery">
+        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">
+          Ver Tudo
+        </button>
+      </RouterLink>
 
       <hr class="h-divider">
 
@@ -42,9 +46,11 @@
             :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
         </div>
       </div>
-
-      <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">Ver Tudo</button>
-
+      <RouterLink class="text-decoration-none" to="/gallery">
+        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">
+          Ver Tudo
+        </button>
+      </RouterLink>
     </div>
     <hr class="h-divider">
 

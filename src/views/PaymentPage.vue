@@ -1,12 +1,12 @@
 <template>
     <div class="breadcrumbs">
-        <p> ... > Meu Painel > Pedidos > <span class="highlight">Encomenda Nº123</span></p>
+        <BreadCrumbComponent></BreadCrumbComponent>
     </div>
     <div class="pay-conteudo">
         <PaymentMethodSection></PaymentMethodSection>
         <PaymentFormSection></PaymentFormSection>
 
-        <div class="card-content">   
+        <div class="card-content">
             <div class="details">
                 <b>Detalhes de compra</b>
             </div>
@@ -15,38 +15,36 @@
     <div class="confirm-area">
         <button class="buttonPrimary-continue">Continuar</button>
     </div>
-    
-
 </template>
 
 <script>
 
 import PaymentMethodSection from "@/components/sections/PaymentMethodSection.vue"
 import PaymentFormSection from '@/components/sections/PaymentFormSection.vue'
-
+import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
 
 export default {
     name: 'paymentPage',
     components: {
         PaymentMethodSection,
         PaymentFormSection,
+        BreadCrumbComponent
     }
 }
 
 </script>
 
 <style lang="css" scoped>
-
 .breadcrumbs {
     margin: 20px 8%;
 }
 
-.pay-conteudo{
+.pay-conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5rem;
     padding: 0rem 5rem;
-    
+
     /*display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -54,13 +52,13 @@ export default {
     margin: 1rem;*/
 }
 
-.confirm-area{
+.confirm-area {
     display: flex;
     justify-content: center;
     padding: 1rem 0 5rem 0;
 }
 
-.buttonPrimary-continue{
+.buttonPrimary-continue {
     background-color: #9D3207;
     border: 0px;
     border-radius: 62px;
@@ -69,6 +67,4 @@ export default {
     color: #fff;
     font-weight: 600;
 }
-
-
 </style>
