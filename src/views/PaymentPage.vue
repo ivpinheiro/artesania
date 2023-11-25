@@ -1,6 +1,6 @@
 <template>
     <div class="breadcrumbs">
-        <p> ... > Meu Painel > Pedidos > <span class="highlight"><b>Encomenda Nº123</b></span></p>
+        <BreadCrumbComponent></BreadCrumbComponent>
     </div>
     <div class="pay-conteudo">
         <PaymentMethodSection></PaymentMethodSection>
@@ -14,6 +14,7 @@
 
 <script>
 
+import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
 import PaymentMethodSection from "@/components/sections/PaymentMethodSection.vue"
 import PaymentFormSection from '@/components/sections/PaymentFormSection.vue'
 import PaymentDetailSection from '@/components/sections/PaymentDetailSection.vue'
@@ -22,10 +23,11 @@ import PaymentDetailSection from '@/components/sections/PaymentDetailSection.vue
 export default {
     name: 'paymentPage',
     components: {
-    PaymentMethodSection,
-    PaymentFormSection,
-    PaymentDetailSection
-}
+        BreadCrumbComponent,
+        PaymentMethodSection,
+        PaymentFormSection,
+        PaymentDetailSection
+    }
 }
 
 </script>
