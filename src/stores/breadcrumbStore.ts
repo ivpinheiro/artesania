@@ -3,13 +3,11 @@ import { defineStore } from 'pinia';
 export const useBreadcrumbStore = defineStore({
     id: 'list',
     state: () => ({
-        previousRouteMetaBreadcrumbs: []
+        previousRouteMetaBreadcrumbs: [] as string[]
     }),
     actions: {
-        addPreviousRouteMetaBreadcrumb(metaBreadcrumb) {
-            if (!this.previousRouteMetaBreadcrumbs.includes(metaBreadcrumb)) {
-                this.previousRouteMetaBreadcrumbs.push(metaBreadcrumb);
-            }
+        addPreviousRouteMetaBreadcrumb(metaBreadcrumb: string) {
+            this.previousRouteMetaBreadcrumbs.push(metaBreadcrumb);
         },
         clearPreviousRouteMetaBreadcrumbs() {
             this.previousRouteMetaBreadcrumbs = [];
