@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="contrast card border-0">
+            <div class="col-md-12 col-sm-12 contrast">
+                <div class=" card border-0 contrast">
                     <div class="card contrast text-bg mb-3">
                         <div class="card-rating">
                             <star-rating :inline="true" :star-size="22" :read-only="true" :show-rating="false"
