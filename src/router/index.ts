@@ -5,6 +5,7 @@ import DashboardPage from '@/views/DashboardPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
+import ProductPage from '@/views/ProductPage.vue'
 import { authMiddleWare } from '@/middlewares/AuthMiddleWare'
 
 const router = createRouter({
@@ -57,6 +58,14 @@ const router = createRouter({
       component: PaymentPage,
       meta: {
         breadcrumb: 'Pagamento'
+      }
+    },
+    {
+      path: '/products/view/:productId',
+      name: 'ProductPage',
+      component: ProductPage,
+      meta: {
+        breadcrumb: 'Obra'
       }
     }
   ]

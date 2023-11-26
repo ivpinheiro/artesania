@@ -10,4 +10,8 @@ export class ProductService {
         let dataURL = `${this.serverURL}/products`;
         return axios.get(dataURL);
     }
+    static getProduct(elementId: number){
+        let dataURL = `${this.serverURL}/products/${elementId}`;
+        return axios.get(dataURL);
+    }
 }

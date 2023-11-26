@@ -75,8 +75,9 @@
             </div>
           </div>
           <div class="card border-0" v-for="product in pagedElements" :key="product">
-            <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-              :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+            <SimpleProductCard class="item-product" :productId="product.id" :productName="product.name"
+              :productPrice="product.price" :rating="product.rating" :productSale="product.sale" :imgUrl="product.url">
+            </SimpleProductCard>
           </div>
         </div>
         <PaginationTable :total-pages="totalPages" :current-page="currentPage" :change-page="changePage">
@@ -92,7 +93,7 @@
 import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import DoubleRangerSlider from '@/components/rangers/DoubleRangerSlider.vue'
-import ProductCard from '@/components/cards/ProductCard.vue'
+import SimpleProductCard from '@/components/cards/SimpleProductCard.vue'
 import PaginationTable from '@/components/tables/PaginationTable.vue'
 import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
 
@@ -101,7 +102,7 @@ export default {
   components: {
     SpinnerLoader,
     DoubleRangerSlider,
-    ProductCard,
+    SimpleProductCard,
     PaginationTable,
     BreadCrumbComponent
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="contrast">
     <DashboardComponent></DashboardComponent>
-    
+
     <div v-if="loading">
       <div class="container contrast">
         <div class="row">
@@ -32,8 +32,8 @@ export default {
   color: white;
   background: black;
 }
+
 .high-contrast-text {
   color: white;
 }
 </style>
-@/services/ProductService

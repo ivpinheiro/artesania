@@ -12,7 +12,9 @@
                 productPrice
             }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
             <div class="btn-purchase">
-                <button class="btn buttonPrimary contrast">Comprar</button>
+                <router-link :to="`/products/view/${productId}`" class="btn buttonPrimary contrast">
+                    Comprar
+                </router-link>
             </div>
         </div>
     </div>
@@ -23,7 +25,7 @@ import StarRating from 'vue-star-rating'
 import { ProductUtils } from '@/utilities/ProductUtils.ts'
 
 export default {
-    name: 'ProductCard',
+    name: 'SimpleProductCard',
     components: { StarRating, ProductUtils },
     data: function () {
         return {
@@ -31,6 +33,10 @@ export default {
         }
     },
     props: {
+        productId: {
+            type: Number,
+            required: true
+        },
         productName: {
             type: String,
             required: true

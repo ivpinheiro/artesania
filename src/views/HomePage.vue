@@ -17,8 +17,9 @@
           </div>
         </div>
         <div class="card border-0" v-for="product in newProducts.slice(0, 4)" :key="product">
-          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+          <SimpleProductCard class="item-product" :productId="product.id" :productName="product.name"
+            :productPrice="product.price" :rating="product.rating" :productSale="product.sale" :imgUrl="product.url">
+          </SimpleProductCard>
         </div>
       </div>
 
@@ -42,8 +43,9 @@
           </div>
         </div>
         <div class="card border-0" v-for="product in bestSellerProducts.slice(0, 4)" :key="product">
-          <ProductCard class="item-product" :productName="product.name" :productPrice="product.price"
-            :rating="product.rating" :productSale="product.sale" :imgUrl="product.url"></ProductCard>
+          <SimpleProductCard class="item-product" :productId="product.id" :productName="product.name"
+            :productPrice="product.price" :rating="product.rating" :productSale="product.sale" :imgUrl="product.url">
+          </SimpleProductCard>
         </div>
       </div>
       <RouterLink class="text-decoration-none" to="/gallery">
@@ -81,7 +83,7 @@
 <script>
 import { ProductService } from '@/services/ProductService.ts'
 import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
-import ProductCard from '@/components/cards/ProductCard.vue'
+import SimpleProductCard from '@/components/cards/SimpleProductCard.vue'
 import CommentCard from '@/components/cards/CommentCard.vue'
 import BannerComponent from '@/components/banners/Banner.vue'
 import ArtistNames from '@/components/sections/ArtistNamesSection.vue'
@@ -92,7 +94,7 @@ import { ProductUtils } from '@/utilities/ProductUtils.ts'
 export default {
   name: 'HomePage',
   components: {
-    ProductCard,
+    SimpleProductCard,
     BannerComponent,
     ArtistNames,
     CallToActionButtons,
