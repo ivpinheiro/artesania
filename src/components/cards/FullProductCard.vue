@@ -1,5 +1,5 @@
 <template>
-    <div class="container d-flex">
+    <div class="container d-flex justify-content-center">
         <div v-if="loading">
             <div class="container contrast">
                 <div class="row">
@@ -9,13 +9,13 @@
                 </div>
             </div>
         </div>
-        <div class="firstSection contrast">
+        <div class="firstSection contrast" v-if="!loading">
             <div class="wallpaper-img">
                 <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
             </div>
         </div>
 
-        <div class="secondSection contrast">
+        <div class="secondSection contrast" v-if="!loading">
             <h5 class="card-title word-wrap-break-word" id="card-title">{{ product.name }}</h5>
             <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true"
                 :rating="Number(product.rating)" :round-start-rating="false"></star-rating>
