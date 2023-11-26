@@ -6,6 +6,7 @@ import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
 import ProductPage from '@/views/ProductPage.vue'
+import NegotiationChat from '@/views/NegotiationChat.vue'
 import { authMiddleWare } from '@/middlewares/AuthMiddleWare'
 
 const router = createRouter({
@@ -66,6 +67,14 @@ const router = createRouter({
       component: ProductPage,
       meta: {
         breadcrumb: 'Obra'
+      }
+    },
+    {
+      path: '/chat',
+      name: 'NegotiationChat',
+      component: NegotiationChat,
+      meta: {
+        breadcrumb: 'Chat'
       }
     }
   ]
