@@ -44,9 +44,13 @@ export default {
     },
     created: async function () {
         try {
-            let response = await ProductService.getProduct(this.$route.params.productId)
-            this.product = response.data
-            this.showBreadCrumb = true
+            if (this.$route.path.includes('products')) {
+                let response = await ProductService.getProduct(this.$route.params.productId)
+                this.product = response.data
+                this.showBreadCrumb = true
+            } else {
+                this.showBreadCrumb = true
+            }
         } catch (error) {
             this.errorMessage = error
         }

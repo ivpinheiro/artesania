@@ -19,7 +19,7 @@
             <p class="d-grid gap-2 d-md-flex justify-content-md-end">
               <font-awesome-icon :icon="collapseFilterPrice ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
                 data-bs-toggle="collapse" href="#collapse-filter-price" :class="{ 'rotate-icon': collapseFilterPrice }"
-                class="fa-chevron" />
+                class="fa-chevron-collapse" />
             </p>
           </div>
           <div class="collapse show" id="collapse-filter-price">
@@ -37,21 +37,21 @@
             <p class="d-grid gap-2 d-md-flex justify-content-md-end">
               <font-awesome-icon :icon="collapseFilterStyle ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"
                 data-bs-toggle="collapse" href="#collapse-filter-style" :class="{ 'rotate-icon': collapseFilterStyle }"
-                class="fa-chevron" />
+                class="fa-chevron-collapse" />
             </p>
           </div>
 
           <div class="collapse show" id="collapse-filter-style">
             <div class="card card-body border-0 contrast">
-              <p class="art-styles">Abstrado<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Brasilidade<font-awesome-icon icon="fa-solid fa-chevron-right" />
+              <p class="art-styles">Abstrado<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Brasilidade<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
               </p>
-              <p class="art-styles">Decoração<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Desenho<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Escultura<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Arte Social<font-awesome-icon icon="fa-solid fa-chevron-right" />
+              <p class="art-styles">Decoração<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Desenho<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Escultura<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Arte Social<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
               </p>
-              <p class="art-styles">Natureza Morta<font-awesome-icon icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Natureza Morta<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
             </div>
           </div>
         </div>
@@ -193,9 +193,14 @@ export default {
   align-items: center;
 }
 
-.fa-chevron {
+.fa-chevron-item {
+  cursor: pointer;
+}
+
+.fa-chevron-collapse {
   margin-top: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .gallery {
@@ -262,6 +267,7 @@ export default {
   align-content: center;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .high-contrast {
