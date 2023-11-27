@@ -52,6 +52,24 @@
             </div>   
         </div>
     </div>
+    <div class="review-area">
+        <div class="title-options-review">
+            <div class="leftContent">
+                <b>Todas as avaliações</b>
+            </div>
+            <div class="RightContent">
+                <button class="buttonReview"><img src="@/assets/Filter.svg" alt="Filtro de pesquisa"></button>
+                <button class="buttonReview">Recentes</button>
+                <button class="buttonPrimary write">Comentar</button>
+            </div>
+        </div>
+        <div class="comment-review">
+            <div class="card border-0" v-for="client in clientComments" :key="client">
+                <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
+                </CommentCard>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -60,13 +78,15 @@ import StarRating from 'vue-star-rating'
 import { ProductUtils } from '@/utilities/ProductUtils.ts'
 import { ProductService } from '@/services/ProductService.ts'
 import { GlobalUtils } from '@/utilities/GlobalUtils'
+import CommentCard from '@/components/cards/CommentCard.vue'
 
 export default {
     name: 'FullProductCard',
-    components: { StarRating, ProductUtils, SpinnerLoader, GlobalUtils },
+    components: { StarRating, ProductUtils, SpinnerLoader, GlobalUtils, CommentCard },
     data: function () {
         return {
             product: {},
+            clientComments: [],
             loading: true,
             counterBuy: 0
         }
@@ -92,7 +112,9 @@ export default {
         try {
             this.loading = true
             let response = await ProductService.getProduct(this.productId)
+            let responseComments = await ProductService.getAllClientComments()
             this.product = response.data
+            this.clientComments = responseComments.data
             this.loading = false
 
             return  GlobalUtils.PurchaseQuantity.initializeCounter();
@@ -276,6 +298,53 @@ export default {
     font-weight: bold;
     font-size: 20px;
     bottom: 0;
+}
+
+.review-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-options-review{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 1rem;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #000;
+}
+
+.leftContent{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.RightContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonReview{
+    width: auto;
+    margin: 0rem 0.5rem;
+    border-style: none;
+    border-radius: 25px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.write{
+    width: 100%;
+    margin: 0;
+}
+
+.comment-review{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px;
 }
 
 .high-contrast {
