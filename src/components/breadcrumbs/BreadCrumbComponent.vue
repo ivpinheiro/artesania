@@ -60,17 +60,21 @@ export default {
 
 <style lang="scss" scoped>
 .breadcrumb {
-    padding: 10px;
+    padding: 10px 0px;
+    white-space: pre;
+    cursor: pointer;
+    margin: 0px 10%;
 }
+
 
 .page-active {
     font-weight: bold;
-    color: black;
+    color: #9D3207;
 }
 
 .page-inactive {
     font-weight: bold;
-    color: rgb(#000000, 0.6);
+    color: rgba(0, 0, 0, 0.80);
 }
 
 .high-contrast {

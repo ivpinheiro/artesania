@@ -42,7 +42,7 @@ const router = createRouter({
       name: 'dashboard',
       component: DashboardPage,
       meta: {
-        breadcrumb: 'Painel',
+        breadcrumb: 'Artista  /  Painel',
         middleware: authMiddleWare.oauthMiddleWare
       }
     },
@@ -83,7 +83,11 @@ const router = createRouter({
         breadcrumb: 'Chat'
       }
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    // sempre rolar para o topo quando mudar de rota
+    return { top: 0 }
+  }
 })
 
 router.beforeEach((to, from, next) => {

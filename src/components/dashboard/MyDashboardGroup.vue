@@ -229,15 +229,6 @@ th {
   margin: 0px 8%;
 }
 
-.breadcrumbs {
-  margin: 20px 8%;
-
-  p {
-    font-weight: 500;
-    font-size: 16px;
-  }
-}
-
 .highlight {
   color: #9D3207;
 }
