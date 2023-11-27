@@ -73,8 +73,8 @@ export default {
   }
 
   .buttonPrimary {
-    margin: 5px;
-    width: 450px;
+    margin: 5px 0px;
+    width: 80%;
   }
 }
 

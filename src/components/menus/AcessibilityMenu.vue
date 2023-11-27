@@ -1,6 +1,6 @@
 <template>
     <ul class="nav contrast justify-content-center flex-on-cell">
-        <span style="display: flex;" v-if="isHidden">
+        <span class="desktop-only" style="display: flex;" v-if="isHidden">
             <li class="nav-item desktop-only">
                 <a class="nav-link active" aria-current="page" href="#acabou-chegar">Ir para acabou de chegar [1]</a>
             </li>

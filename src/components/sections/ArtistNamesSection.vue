@@ -27,6 +27,9 @@ export default {
     padding: 31px 49px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 420px) {
+        display:none;
+    }
 }
 .artistsNamesSection .headline{
     color: #9D3207;

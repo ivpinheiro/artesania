@@ -41,6 +41,9 @@ export default {
     font-weight: 800;
     line-height: 1;
     text-align: center;
+    @media (max-width: 760px) {
+        font-size: 45px;
+    }
 }
 
 

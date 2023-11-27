@@ -44,6 +44,9 @@ export default {
     font-family: 'Inter';
     font-weight: 800;
     line-height: 1;
+    @media (max-width: 760px){
+        font-size: 45px;
+    }
 }
 
 .bannerSection {
@@ -78,11 +81,15 @@ export default {
     font-family: 'Inter';
     font-weight: 800;
     line-height: 1;
+    @media (max-width: 760px){
+        font-size: 45px;
+    }
 }
 
 .firstSection .headline .attention {
     color: #9D3207;
     font-weight: 800;
+    
 }
 
 .firstSection .buttonPrimary {
@@ -129,13 +136,9 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media (max-width: 1160px) {
-        right: 40%;
-    }
-
     @media (max-width: 1060px) {
-        right: 10%;
-        margin-top: 0px;
+        right: 4%;
+        margin-top: 75px;
     }
 }
 
