@@ -15,7 +15,7 @@ import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
 import NavBar from '@/components/menus/NavBar.vue'
 import AcessibilityMenu from '@/components/menus/AcessibilityMenu.vue'
 import FooterComp from '@/components/footer/FooterComp.vue'
-import { useBreadcrumbStore } from '@/stores/breadcrumbStore'
+import { useBreadcrumbStore } from '@/stores/main'
 
 export default {
   name: 'App',

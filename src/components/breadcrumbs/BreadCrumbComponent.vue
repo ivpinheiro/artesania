@@ -4,11 +4,13 @@
             :class="{ 'active': index === (listValues.length - 1), 'breadcrumb-item-last': index === (listValues.length - 1) }"
             :aria-current="index === (listValues.length - 1) ? 'page' : null">
             <template v-if="index !== (listValues.length - 1)">
-                <a class="text-decoration-none page-inactive" :href="value.path"
-                    v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ product.name }}</a>
-                <a v-else class="text-decoration-none page-inactive" :href="value.path">
+                <router-link class="text-decoration-none page-inactive" :to="value.path"
+                    v-if="isProductBreadcrumb(value.meta.breadcrumb)" @click="handleBreadcrumbClick(item, index)">{{
+                        product.name }}</router-link>
+                <router-link v-else class="text-decoration-none page-inactive" :to="value.path"
+                    @click="handleBreadcrumbClick(item, index)">
                     {{ value.meta.breadcrumb }}
-                </a>
+                </router-link>
             </template>
             <template v-else>
                 <p class="d-flex page-active" v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ value.meta.breadcrumb +
@@ -18,10 +20,10 @@
         </li>
     </ol>
 </template>
-  
+
 <script>
-import { useBreadcrumbStore } from '@/stores/breadcrumbStore'
-import { ProductService } from '@/services/ProductService.ts'
+import { useBreadcrumbStore } from '@/stores/main'
+import { ProductService } from '@/services/ProductService'
 
 export default {
     name: 'BreadCrumbComponent',
@@ -35,11 +37,24 @@ export default {
     computed: {
         listValues() {
             return useBreadcrumbStore().previousRouteMetaBreadcrumbs
+        },
+        breadcrumbItems() {
+            return useBreadcrumbStore().previousRouteMetaBreadcrumbs
         }
     },
     methods: {
         isProductBreadcrumb(breadcrumb) {
             return typeof breadcrumb === 'string' && breadcrumb.includes('Obra')
+        },
+        handleBreadcrumbClick(item, index) {
+            const store = useBreadcrumbStore()
+            if (index < this.breadcrumbItems.length - 1) {
+                const slicedBreadcrumbs = this.breadcrumbItems.slice(0, index + 1)
+                store.clearPreviousRouteMetaBreadcrumbs()
+                slicedBreadcrumbs.forEach(metaBreadcrumb => {
+                    store.addPreviousRouteMetaBreadcrumb(metaBreadcrumb)
+                })
+            }
         }
     },
     created: async function () {

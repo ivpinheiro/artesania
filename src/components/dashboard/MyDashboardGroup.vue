@@ -1,8 +1,4 @@
-<template>
-  <hr class="divider">
-  <div class="breadcrumbs">
-    <BreadCrumbComponent></BreadCrumbComponent>
-  </div>
+<template>  
   <div class="dashboard">
     <div class="firstSection">
       <div class="circle">
@@ -219,16 +215,6 @@ th {
   background-color: #000;
 }
 
-.divider {
-  height: 2px;
-  /* define a espessura da linha */
-  background-color: rgba(0, 0, 0, 0.10);
-  /* define a cor da linha */
-  border: none;
-  /* remove qualquer borda padrão */
-  margin: 0px 8%;
-}
-
 .highlight {
   color: #9D3207;
 }
@@ -328,4 +314,5 @@ th {
     width: 90%;
     margin: 3% 7%;
   }
-}</style>
+}
+</style>

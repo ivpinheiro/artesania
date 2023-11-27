@@ -1,23 +1,25 @@
 <template>
-    <div class="card product-card contrast">
-        <div class="wallpaper-img">
-            <img :src="getImageUrl(urlImg)" class="card-img card-img-top" alt="...">
-        </div>
-        <div class="card-body text-center">
-            <h5 class="card-title word-wrap-break-word" id="card-title">{{ productName }}</h5>
-            <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
-                :round-start-rating="false"></star-rating>
-            <p class="card-text card-value" v-if="productSale === ''">R${{ productPrice }}</p>
-            <p class="card-text card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{
-                productPrice
-            }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
-            <div class="btn-purchase">
-                <router-link :to="`/products/view/${productId}`" class="btn buttonPrimary contrast">
-                    Comprar
-                </router-link>
+    <router-link :to="`/products/view/${productId}`" class="text-decoration-none">
+        <div class="card product-card contrast">
+            <div class="wallpaper-img">
+                <img :src="getImageUrl(urlImg)" class="card-img card-img-top" alt="...">
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title word-wrap-break-word" id="card-title">{{ productName }}</h5>
+                <star-rating :inline="true" :star-size="25" :read-only="true" :show-rating="true" :rating="Number(rating)"
+                    :round-start-rating="false"></star-rating>
+                <p class="card-text card-value" v-if="productSale === ''">R${{ productPrice }}</p>
+                <p class="card-text card-value" v-if="productSale !== ''">R${{ productSale }} <span class="sale-value"> R${{
+                    productPrice
+                }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
+                <div class="btn-purchase">
+                    <router-link :to="`/products/view/${productId}`" class="btn buttonPrimary contrast">
+                        Comprar
+                    </router-link>
+                </div>
             </div>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>

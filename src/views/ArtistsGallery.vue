@@ -43,15 +43,22 @@
 
           <div class="collapse show" id="collapse-filter-style">
             <div class="card card-body border-0 contrast">
-              <p class="art-styles">Abstrado<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Brasilidade<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
+              <p class="art-styles">Abstrado<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
               </p>
-              <p class="art-styles">Decoração<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Desenho<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Escultura<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
-              <p class="art-styles">Arte Social<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
+              <p class="art-styles">Brasilidade<font-awesome-icon class="fa-chevron-item"
+                  icon="fa-solid fa-chevron-right" />
               </p>
-              <p class="art-styles">Natureza Morta<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Decoração<font-awesome-icon class="fa-chevron-item"
+                  icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Desenho<font-awesome-icon class="fa-chevron-item" icon="fa-solid fa-chevron-right" />
+              </p>
+              <p class="art-styles">Escultura<font-awesome-icon class="fa-chevron-item"
+                  icon="fa-solid fa-chevron-right" /></p>
+              <p class="art-styles">Arte Social<font-awesome-icon class="fa-chevron-item"
+                  icon="fa-solid fa-chevron-right" />
+              </p>
+              <p class="art-styles">Natureza Morta<font-awesome-icon class="fa-chevron-item"
+                  icon="fa-solid fa-chevron-right" /></p>
             </div>
           </div>
         </div>
@@ -214,15 +221,6 @@ export default {
   margin: 0px 8%;
 }
 
-.breadcrumbs {
-  margin: 20px 8%;
-
-  p {
-    font-weight: 500;
-    font-size: 16px;
-  }
-}
-
 .firstSection {
   background-color: #ffff;
   max-height: 900px;
@@ -304,5 +302,4 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-</style>
+}</style>
