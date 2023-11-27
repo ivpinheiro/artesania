@@ -1,0 +1,36 @@
+<template>
+    <div class="contrast">
+        <div class="video-icon">
+            <a href="https://meet.google.com/">
+                <p class="video-title">Solicitar Chamada de video</p>
+                <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="User" />
+            </a>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'VideoChat'
+}
+</script>
+
+<style>
+
+.video-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.video-title{
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #9D3207
+}
+
+</style>

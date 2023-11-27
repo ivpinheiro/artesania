@@ -3,8 +3,13 @@
         <div class="breadcrumbs">
             <BreadCrumbComponent></BreadCrumbComponent>
         </div>
-        <div class="chat-conteudo">
-            <ChatWindow></ChatWindow>
+        <div class="container">
+            <div class="chat-area">
+                <ChatWindow></ChatWindow>
+            </div>
+            <div class="video-area">
+                <VideoChat></VideoChat>
+            </div>
         </div>
         <div class="confirm-area">
             <button class="buttonPrimary-aceitar">Aceitar</button>
@@ -17,13 +22,15 @@
 
 import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
 import ChatWindow from "@/components/chat/ChatWindow.vue"
+import VideoChat from "@/components/chat/VideoChat.vue"
 
 
 export default {
     name: 'NegotiationChat',
     components: {
         BreadCrumbComponent,
-        ChatWindow
+        ChatWindow,
+        VideoChat
     }
 }
 
@@ -33,23 +40,6 @@ export default {
 .breadcrumbs {
     margin: 20px 8%;
     padding-bottom: 1rem;
-}
-
-.highlight{
-    color: #9D3207;        
-}
-
-.pay-conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5rem;
-    padding: 0rem 5rem;
-
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0rem 5rem;
-    margin: 1rem;*/
 }
 
 .confirm-area {
