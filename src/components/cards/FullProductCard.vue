@@ -10,8 +10,21 @@
             </div>
         </div>
         <div class="firstSection contrast" v-if="!loading">
-            <div class="wallpaper-img">
-                <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
+            <div class="other-imgs">
+                <div class="wallpaper-img img-minSize">
+                    <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
+                </div>
+                <div class="wallpaper-img img-minSize">
+                    <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
+                </div>
+                <div class="wallpaper-img img-minSize">
+                    <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="img-principal">
+                <div class="wallpaper-img">
+                    <img :src="getImageUrl(product.url)" class="card-img card-img-top" alt="...">
+                </div>
             </div>
         </div>
 
@@ -24,6 +37,37 @@
                     R${{
                         product.price
                     }}</span><span class="badge rounded-pill text-bg-danger">-{{ calcProductDiscount }}%</span></p>
+            <div class="buy-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lacus libero.
+            </div>
+            <div class="cart-options">
+                <div class="qtdCart">
+                    <button  class="buttonCounter" id="decrease-button">-</button>
+                    <span><b>{{ counterBuy }}</b></span>
+                    <button class="buttonCounter" id="increase-button">+</button>
+                </div>
+                <div class="addOnCart">
+                    <button class="buttonPrimary">Adicionar</button>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="review-area">
+        <div class="title-options-review">
+            <div class="leftContent">
+                <b>Todas as avaliações</b>
+            </div>
+            <div class="RightContent">
+                <button class="buttonReview"><img src="@/assets/Filter.svg" alt="Filtro de pesquisa"></button>
+                <button class="buttonReview">Recentes</button>
+                <button class="buttonPrimary write">Comentar</button>
+            </div>
+        </div>
+        <div class="comment-review">
+            <div class="card border-0" v-for="client in clientComments" :key="client">
+                <CommentCard class="item-product" :cartTitle="client.name" :comment="client.comment" :rating="client.rating">
+                </CommentCard>
+            </div>
         </div>
     </div>
 </template>
@@ -33,14 +77,18 @@ import SpinnerLoader from '@/components/loaders/SpinnerLoader.vue'
 import StarRating from 'vue-star-rating'
 import { ProductUtils } from '@/utilities/ProductUtils.ts'
 import { ProductService } from '@/services/ProductService.ts'
+import { GlobalUtils } from '@/utilities/GlobalUtils'
+import CommentCard from '@/components/cards/CommentCard.vue'
 
 export default {
     name: 'FullProductCard',
-    components: { StarRating, ProductUtils, SpinnerLoader },
+    components: { StarRating, ProductUtils, SpinnerLoader, GlobalUtils, CommentCard },
     data: function () {
         return {
             product: {},
-            loading: true
+            clientComments: [],
+            loading: true,
+            counterBuy: 0
         }
     },
     props: {
@@ -64,10 +112,29 @@ export default {
         try {
             this.loading = true
             let response = await ProductService.getProduct(this.productId)
+            let responseComments = await ProductService.getAllClientComments()
             this.product = response.data
+            this.clientComments = responseComments.data
             this.loading = false
+
+            return  GlobalUtils.PurchaseQuantity.initializeCounter();
         } catch (error) {
             this.errorMessage = error;
+        }
+    },
+    methods: {
+        addOne(index) {
+            this.$set(this.counter, index, this.counter[index] + 1);
+        },
+        minusOne(index) {
+            this.counterBuy--;
+            this.$set(this.counter, index, this.counter[index] - 1);
+        },
+        addOne(){
+            this.counterBuy++;
+        },
+        minusOne(){
+            this.counterBuy--;
         }
     }
 }
@@ -75,18 +142,29 @@ export default {
 
 <style lang="scss" scoped>
 .firstSection {
+   /*  width: 60%;
+    height: auto;
+    max-height: 900px;
+    padding: 1rem;
+    margin: 2% 0% 2% 2%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; */
+
+    border-radius: 25px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background-color: #ffff;
+    /* background-color: #F0EEED; */
     max-height: 900px;
     height: auto;
     width: 60%;
-    padding: 15px 15px 15px 15px;
+    /* padding: 1rem; */
+    margin: 2rem;
+ /*    padding: 15px 15px 15px 15px; */
     overflow: hidden;
-    margin: 2% 0% 2% 2%;
+/*     margin: 2% 0% 2% 2%; */
     border-radius: 25px;
-    border: 2px solid #e6e6e6;
+    /* border: 2px solid #e6e6e6; */
 
     @media (max-width: 1060px) {
         width: 50%;
@@ -94,13 +172,24 @@ export default {
     }
 }
 
+.other-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    /* background-color: #fff; */
+    border-radius: 25px;
+    width: fit-content;
+}
+
 .secondSection {
     background-color: #fff;
+    padding: 1rem;
     height: auto;
     width: 40%;
     border-radius: 3%;
     overflow: hidden;
-    margin: 2% 0% 2% 2%;
+    margin: 2rem;
     border: 2px solid #e6e6e6;
 
     @media (max-width: 1060px) {
@@ -140,10 +229,58 @@ export default {
     margin-left: 10px;
 }
 
-.wallpaper-img {
+.img-principal{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 25px;
+    
     background-color: #F0EEED;
-    padding: 10px;
+}
+.wallpaper-img {
+    width: 100%;
     border-radius: 20px;
+}
+
+.img-minSize{
+    width: 70%;
+    padding: 0 1rem 1rem 0;
+}
+
+.buy-description{
+    padding-bottom: 5rem;
+}
+
+.cart-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.qtdCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: #F0EEED;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+
+    margin-bottom: 5%;
+
+    span{
+        padding: 0.2rem 1rem;
+    }
+}
+
+.buttonCounter{
+    border-style: none;
+    border-radius: 50px;
+    padding: 0 1em;
+
+    background-color: darkgray;
 }
 
 .buttonPrimary {
@@ -151,15 +288,63 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: #9D3207;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     border-radius: 50px;
-    width: 75%;
-    height: 50px;
+    border-style: none;
+    width: 15rem;
+    height: auto;
     color: #fff;
+    
     font-weight: bold;
     font-size: 20px;
-    position: absolute;
     bottom: 0;
+}
+
+.review-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-options-review{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 1rem;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #000;
+}
+
+.leftContent{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.RightContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonReview{
+    width: auto;
+    margin: 0rem 0.5rem;
+    border-style: none;
+    border-radius: 25px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.write{
+    width: 100%;
+    margin: 0;
+}
+
+.comment-review{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px;
 }
 
 .high-contrast {

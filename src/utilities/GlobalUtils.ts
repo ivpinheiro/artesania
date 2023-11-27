@@ -42,6 +42,33 @@ class FontSizeController {
     }
 }
 
+class PurchaseQuantity{
+    static PurchaseQuantity(){
+        const increaseButton = document.getElementById("increase-button")
+        const decreaseButton = document.getElementById("decrease-button")
+        if (increaseButton && decreaseButton) {
+            let counter = 0;      
+            const counterSpan = document.querySelector(".qtdCart span");
+            const updateCounter = () => {
+                if (counterSpan) {
+                    counterSpan.textContent = counter.toString();
+                }
+            };
+            increaseButton.addEventListener("click", () => {
+                counter++;
+                updateCounter();
+            }); 
+            decreaseButton.addEventListener("click", () => {
+                if (counter > 0) {
+                    counter--;
+                updateCounter();
+                }
+            });
+        } 
+    }
+}
+
+
 class HighContrastToggle {
     static highContrast() {
         // Get the toggle button
@@ -75,6 +102,7 @@ class HiddenElementsByPath {
 
 export const GlobalUtils = {
     FontSizeController,
+    PurchaseQuantity,
     HighContrastToggle,
     HiddenElementsByPath
 }
