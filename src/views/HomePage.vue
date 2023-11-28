@@ -24,7 +24,7 @@
       </div>
 
       <RouterLink class="text-decoration-none" to="/gallery">
-        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">
+        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-4 mx-auto">
           Ver Tudo
         </button>
       </RouterLink>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <RouterLink class="text-decoration-none" to="/gallery">
-        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-2 mx-auto">
+        <button type="button" class="btn btn-light btn-lg d-grid gap-2 col-4 mx-auto">
           Ver Tudo
         </button>
       </RouterLink>
@@ -151,12 +151,12 @@ export default {
   justify-content: center;
   border-radius: 50px;
   background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.097);
+  border: 2px solid rgba(128, 128, 128, 0.097);
   height: 75px;
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: white;  
 }
 
 .cards-conteiner {

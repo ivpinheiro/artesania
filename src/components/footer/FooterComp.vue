@@ -240,7 +240,7 @@ export default {
   align-items: center;
   background-color: $footer-color2;
   border-radius: 20px;
-  padding: 1.5vh;
+  padding: 3vh;
   @media (max-width: 1060px) {
     max-width: 95%;
   }  
