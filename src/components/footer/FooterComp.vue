@@ -3,7 +3,7 @@
   <footer class="footer-comp contrast text-center text-lg-start text-muted p-0" id="footer">
 
     <!-- Grid container -->
-    <div class="container subs-footer contrast p-2">
+    <div class="container subs-footer contrast">
 
       <!-- Section: Form -->
       <section class="">
@@ -223,11 +223,27 @@ export default {
 
 .footer-comp {
   background: linear-gradient(white 15%, 0%, $footer-color 85%);
+  @media (max-width: 530px) {
+    background: linear-gradient(white 5%, 0%, $footer-color 85%);
+  }  
+  @media (min-width: 531px) and (max-width: 650px) {
+    background: linear-gradient(white 7%, 0%, $footer-color 85%);
+  } 
+  @media (min-width: 651px) and (max-width: 770px) {
+    background: linear-gradient(white 9%, 0%, $footer-color 85%);
+  } 
 }
 
 .subs-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $footer-color2;
   border-radius: 20px;
+  padding: 1.5vh;
+  @media (max-width: 1060px) {
+    max-width: 95%;
+  }  
 }
 
 .subscribe-offers {
