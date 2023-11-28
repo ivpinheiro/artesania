@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/views/HomePage.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import DashboardPage from '@/views/DashboardPage.vue'
+import OrderAgreementPage from '@/views/OrderAgreementPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
@@ -42,7 +43,7 @@ const router = createRouter({
       name: 'dashboard',
       component: DashboardPage,
       meta: {
-        breadcrumb: 'Artista  /  Painel',
+        breadcrumb: 'Mira Morani  /  Meu Painel',
         middleware: authMiddleWare.oauthMiddleWare
       }
     },
@@ -82,7 +83,15 @@ const router = createRouter({
       meta: {
         breadcrumb: 'Chat'
       }
-    }
+    }, 
+    {
+      path: '/dashboard/encomenda',
+      name: 'OrderAgreement',
+      component: OrderAgreementPage,
+      meta: {
+        breadcrumb: 'Pedidos / Encomenda Nº123'
+      }
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     // sempre rolar para o topo quando mudar de rota
