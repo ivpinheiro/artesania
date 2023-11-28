@@ -3,8 +3,19 @@
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Logo da Artesania" />
-                <span id="brand-name">ARTESANIA</span>
+                <span class="collapse navbar-collapse" id="brand-name">ARTESANIA</span>
             </a>
+            <form class="form-search d-flex justify-content-center" role="search">
+                <div class="form-mobile form-control me-2">
+                    <div class="input-group">
+                        <span class="input-group-text" id="addon-wrapping"
+                            style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass"
+                                class="magnifying-g" /></span>
+                        <input type="search" class="form-control" placeholder="Procurar"
+                            aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
+                    </div>
+                </div>
+            </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,35 +23,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page">Artistas independentes</a>
+                        <a class="nav-link active text-center m-1" aria-current="page">Artistas independentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Pinturas</a>
+                        <a class="nav-link active text-center m-1" aria-current="page" href="#">Pinturas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Fotografia</a>
+                        <a class="nav-link active text-center m-1" aria-current="page" href="#">Fotografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                        <a class="nav-link active text-center m-1" aria-current="page" href="#">Novidades</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">                    
-                    <div class="form-control me-2">
+                <form class="form-search d-flex justify-content-center" role="search">
+                    <div class="form-desktop form-control me-2">
                         <div class="input-group">
                             <span class="input-group-text" id="addon-wrapping"
-                                style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass" class="magnifying-g"/></span>
-                            <input type="search" class="form-control" placeholder="Procurar produtos" aria-label="Digite seu e-mail"
-                                aria-describedby="addon-wrapping" style="border:none">
+                                style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass"
+                                    class="magnifying-g" /></span>
+                            <input type="search" class="form-control" placeholder="Procurar produtos"
+                                aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
                         </div>
                     </div>
-                    <!-- <SearchInput v-model="searchVal" /> -->
                 </form>
-                <div class="my-2 my-lg-0">
-                    <router-link to="/">
-                        <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho"/>
+                <div class="d-flex align-items-center justify-content-center">
+                    <router-link to="/" class="me-3">
+                        <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta" />
                     </router-link>
                     <router-link to="/">
-                        <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta"/>
+                        <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho" />
                     </router-link>
                 </div>
             </div>
@@ -106,6 +117,22 @@ export default {
     margin-left: auto;
 }
 
+.form-search {
+    max-width: 60%;
+}
+
+@media (max-width: 990px) {
+    .form-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .form-mobile {
+        display: none;
+    }
+}
+
 .form-control {
     width: auto;
 }
@@ -123,13 +150,15 @@ export default {
 .fa-inverse {
     color: $nav-btn-color;
     padding: 5px;
+    font-size: 1.35em;
 }
 
 .form-control:focus {
     outline: none;
     box-shadow: none;
 }
-.form-control{
+
+.form-control {
     border-radius: 30px;
 }
 
@@ -137,11 +166,12 @@ export default {
     color: white;
     background: black;
 }
+
 .high-contrast-text {
     color: white !important;
 }
-.magnifying-g{
+
+.magnifying-g {
     color: black !important;
 }
-
 </style>
