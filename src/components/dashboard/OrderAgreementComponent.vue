@@ -176,6 +176,10 @@ table {
   padding: 15px;
   border-radius: 20px;
   margin-bottom: 20px;
+  @media (max-width: 1060px) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
 }
 th,
 td {
@@ -214,10 +218,22 @@ th {
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 1060px) {
+    flex-direction: column;
+    align-items: center;
 
+  }
+}
+.checkbox-group label{
+  padding-left: 10px;
+  @media (max-width: 1060px) {
+    font-size: 12px;
+  }
+  @media (max-width: 780px) {
+    font-size: 10px;
+  }
 }
 .chat-container {
-  //width: 300px; /* Ajuste conforme necessário */
   margin: 0 auto;
   background-color: #f0f0f0;
   border-radius: 15px;
@@ -247,9 +263,12 @@ th {
   background: url('path-to-your-grid-background.png') no-repeat center center;
   background-size: cover; /* ou 'contain', dependendo de como você quer que o fundo apareça */
   border-radius: 18px;
-    width: 45%;
-    padding: 9px;
-    background-color: #fff;
+  width: 45%;
+  padding: 9px;
+  background-color: #fff;
+  @media (max-width: 1060px) {
+    width: 80%;
+  }
 }
 .title-value{
   color: #333;
@@ -316,6 +335,7 @@ th {
   background-color: #b24a00;
   border-radius: 50%;
   margin: 0 5px;
+  min-width: 20px;
 }
 #highlight {
   background-color: #F8E1BE;
@@ -331,16 +351,16 @@ th {
     color: #9D3207;
     text-align: center;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-}
-
-.artist-icon {
-  margin-right: 18px;
-  height: 22px;
-  cursor: pointer;
+    @media (max-width: 1060px) {
+      font-size: 14px;
+    }
+    @media (max-width: 780px) {
+      font-size: 12px;
+    }
 }
 .options-group{
   background-color: #f0f0f0;
@@ -350,46 +370,22 @@ th {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-}
-
-.see-more {
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  margin-bottom: 40px;
-  margin-top: 10px;
-  margin-left: 10px;
-  cursor: pointer;
+    @media (max-width: 1060px) {
+      flex-wrap: wrap;
+    }
 }
 
 .dashboard {
   display: flex;
   flex-direction: column;
   margin: 0% 15%;
-}
-
-.button {
-  width: 80%;
-  height: fit-content;
-  background-color: #9D3207;
-  margin: 3%;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  padding: 2%;
-}
-
-.button.dark {
-  background-color: #000;
-}
-
-.highlight {
-  color: #9D3207;
+  @media (max-width: 780px) {
+    margin: 0% 5%;
+    overflow: hidden;
+  }
+  @media (max-width: 580px) {
+    margin: 0% 2%;
+  }
 }
 
 .title {
@@ -400,99 +396,11 @@ th {
   font-weight: 900;
   line-height: normal;
   margin-top: 20px;
+  @media (max-width: 1060px) {
+    font-size: 26px;
+  }
 }
 .no-margin{
   margin:0px !important;
-}
-
-.subtitle {
-  color: #000;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.circle {
-  display: flex;
-  justify-content: center;
-  margin-top: 20%;
-}
-
-.buttonsGroup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40%;
-}
-
-.firstSection {
-  background-color: #EAB766;
-  height: auto;
-  width: 20%;
-  padding: 10px 10px 10px 10px;
-  overflow: hidden;
-  margin: 3% 0% 3% 8%;
-  border-radius: 25px;
-
-  @media (max-width: 1260px) {
-    width: 30%;
-  }
-
-  @media (max-width: 1060px) {
-    width: 50%;
-  }
-
-  @media (max-width: 886px) {
-    display: none;
-  }
-}
-
-.firstSectionMobile {
-  display: none;
-
-  @media (max-width: 886px) {
-    width: 90%;
-    background-color: #EAB766;
-    height: auto;
-    padding: 10px 10px 10px 10px;
-    overflow: hidden;
-    margin: 0% 0% 3% 8%;
-    border-radius: 25px;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    cursor: pointer;
-
-    .circle {
-      display: flex;
-      justify-content: center;
-      margin-top: 0;
-      height: 75px;
-    }
-
-    .button {
-      width: 220px;
-      padding: 0px 10px;
-      float: left;
-      align-items: center;
-      margin-top: 0;
-
-    }
-  }
-
-}
-
-.secondSection {
-  background-color: #fff;
-  height: fit-content;
-  width: 60%;
-  margin: 3% 2%;
-  border-radius: 3%;
-
-  @media (max-width: 1060px) {
-    height: fit-content;
-    background-position: top;
-    width: 90%;
-    margin: 3% 7%;
-  }
 }
 </style>
