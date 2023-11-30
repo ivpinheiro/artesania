@@ -9,6 +9,7 @@ import PaymentPage from '@/views/PaymentPage.vue'
 import ProductPage from '@/views/ProductPage.vue'
 import ConfirmPaymentPage from '@/views/ConfirmPaymentPage.vue'
 import NegotiationChat from '@/views/NegotiationChat.vue'
+import OrderPage from '@/views/OrderPage.vue'
 import { authMiddleWare } from '@/middlewares/AuthMiddleWare'
 
 const router = createRouter({
@@ -91,6 +92,15 @@ const router = createRouter({
       meta: {
         breadcrumb: 'Pedidos / Encomenda Nº123'
       }
+    },
+    {
+      path: '/orderPage',
+      name: 'OrderPage',
+      component: OrderPage,
+      meta: {
+        breadcrumb: 'Pedidos / Encomenda'
+      }
+
     },
   ],
   scrollBehavior(to, from, savedPosition) {
