@@ -82,14 +82,6 @@ export default {
     font-size: 100%;
     color: $comment-card-title;
 }
-
-.titleChecked {
-    width: 17px;
-    margin-right: 5px;
-    margin-bottom: 3px;
-    display: inline-block;
-}
-
 .card-text {
     font-weight: 100;
     font-size: 100%;

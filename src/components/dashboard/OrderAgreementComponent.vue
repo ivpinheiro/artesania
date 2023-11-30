@@ -136,10 +136,13 @@
       </div>
       
     </div>
-    <h1 class="title">Qual o valor da encomenda?</h1>
-    <div class="value-container">
-      <p class="title-value">Valor em R$</p>
-      <p class="content-value">R$ 15.000,00</p>
+
+    <div class="order-value">
+      <h1 class="title">Qual o valor da encomenda?</h1>
+      <div class="value-container">
+        <p class="title-value">Valor em R$</p>
+        <p class="content-value">R$ 15.000,00</p>
+      </div>
     </div>
     <div class="button-group">
       <button class="buttonPrimary">
@@ -170,10 +173,22 @@ table {
   font-family: 'Inter';
 
 }
+
+.order-value{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .value-container{
   background-color: #f0f0f0;
   width: 45%;
-  padding: 15px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   border-radius: 20px;
   margin-bottom: 20px;
   @media (max-width: 1060px) {
@@ -276,6 +291,8 @@ th {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
+
+  align-self: self-start;
 }
 .content-value{
   color: var(--gray-900, #001246);
@@ -396,6 +413,8 @@ th {
   font-weight: 900;
   line-height: normal;
   margin-top: 20px;
+  padding: 1rem;
+  align-self: self-start;
   @media (max-width: 1060px) {
     font-size: 26px;
   }

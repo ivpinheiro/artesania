@@ -29,7 +29,8 @@ export default {
   components: {
     OrderAgreement,
     SpinnerLoader,
-    BreadCrumbComponent
+    BreadCrumbComponent,
+    ProductService
   }
 }
 </script>

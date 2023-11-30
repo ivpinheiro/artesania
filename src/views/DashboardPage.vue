@@ -5,7 +5,6 @@
       <BreadCrumbComponent></BreadCrumbComponent>
     </div>
     <DashboardComponent></DashboardComponent>
-
     <div v-if="loading">
       <div class="container contrast">
         <div class="row">
