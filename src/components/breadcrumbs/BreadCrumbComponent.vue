@@ -75,10 +75,10 @@ export default {
 
 <style lang="scss" scoped>
 .breadcrumb {
-    padding: 10px 0px;
+    padding: 0px 0px;
     white-space: pre;
     cursor: pointer;
-    margin: 0px 10%;
+    margin: 0px 0%;
 }
 
 
