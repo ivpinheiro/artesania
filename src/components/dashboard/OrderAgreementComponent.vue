@@ -207,7 +207,7 @@ th {
   width: 25%;
 }
 .buttonPrimary{
-  background-color: #EAB766;
+  background-color: #9D3207;
     margin-top: 20px;
     border: 0px;
     border-radius: 62px;
