@@ -145,7 +145,7 @@
       </div>
     </div>
     <div class="button-group">
-      <RouterLink class="link-class-none" to="/dashboard/confirmation">
+      <RouterLink class="link-class-none" to="confirmation">
         <button class="buttonPrimary">
           Enviar Orçamento
         </button>
@@ -279,7 +279,6 @@ th {
 .audio-player {
   display: flex;
   align-items: center;
-  background: url('path-to-your-grid-background.png') no-repeat center center;
   background-size: cover; /* ou 'contain', dependendo de como você quer que o fundo apareça */
   border-radius: 18px;
   width: 45%;

@@ -51,13 +51,17 @@ a,
 .breadcrumbs {
     margin: 20px 8%;
 
-    p {
         font-weight: 500;
         font-size: 16px;
-    }
+    
 }
 .breadcrumb-item {
-    p {
-        margin: 0px !important;
-    }
+    margin: 0px !important;
+    text-decoration: none;
+}
+.breadcrumb-area{
+    padding: 0px !important;
+}
+.text-decoration{
+    text-decoration: none;
 }
