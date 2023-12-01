@@ -250,7 +250,7 @@ th {
 }
 .chat-container {
   margin: 0 auto;
-  background-color: #f0f0f0;
+  background-color: #f0eeed;
   border-radius: 15px;
   padding: 30px;
   display: flex;
@@ -339,12 +339,15 @@ th {
 }
 
 .mic-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #9D3207; /* ou a cor de sua escolha */
   border: none;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 100%;
   cursor: pointer;
   width: 40px;
+  height: 40px;
 }
 .indicator {
   height: 20px;
@@ -413,7 +416,7 @@ th {
   font-weight: 900;
   line-height: normal;
   margin-top: 20px;
-  padding: 1rem;
+  padding: 2rem 0; 
   align-self: self-start;
   @media (max-width: 1060px) {
     font-size: 26px;
