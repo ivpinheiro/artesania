@@ -11,6 +11,7 @@ import ProductPage from '@/views/ProductPage.vue'
 import ConfirmPaymentPage from '@/views/ConfirmPaymentPage.vue'
 import NegotiationChat from '@/views/NegotiationChat.vue'
 import OrderPage from '@/views/OrderPage.vue'
+import OrderShipping from '@/views/OrderShipping.vue'
 import { authMiddleWare } from '@/middlewares/AuthMiddleWare'
 
 const router = createRouter({
@@ -85,6 +86,11 @@ const router = createRouter({
       path: '/confirmPayment',
       name: 'confirmPayment',
       component: ConfirmPaymentPage,
+    },
+    {
+      path: '/orderShipping',
+      name: '/orderShipping',
+      component: OrderShipping,
     },
     {
       path: '/chat',

@@ -50,9 +50,11 @@ export default {
 .luanaName {
     position: relative;
     top: 5%; 
-    left: 5%; 
+    left: 10%; 
     color: white; 
-    font-size: 24px; 
+    font-size: 24px;
+    font-family: 'Inter';
+    font-weight: 600; 
 }
 .apoName {
     position: relative; 
@@ -60,6 +62,8 @@ export default {
     right: 2%; 
     color: white; 
     font-size: 24px; 
+    font-family: 'Inter';
+    font-weight: 600; 
     text-align: center; 
 }
 .lucasName {
@@ -68,6 +72,8 @@ export default {
     left: 5%; 
     color: white; 
     font-size: 24px; 
+    font-family: 'Inter';
+    font-weight: 600; 
 }
 .miraName {
     position: relative; 
@@ -75,6 +81,8 @@ export default {
     right: 20%; 
     color: white; 
     font-size: 24px; 
+    font-family: 'Inter';
+    font-weight: 600; 
     text-align: center; 
 }
 
