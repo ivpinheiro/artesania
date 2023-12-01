@@ -9,7 +9,8 @@
       "rating": 4.5,
       "url": "product-1.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "1"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "rating": 4.5,
       "url": "product-2.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "1"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "rating": 3.5,
       "url": "product-3.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "3"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "rating": 4.5,
       "url": "product-4.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "4"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "rating": 3.0,
       "url": "product-5.svg",
       "best-seller": true,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "rating": 4.0,
       "url": "product-6.svg",
       "best-seller": true,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "1"
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "rating": 5.0,
       "url": "product-7.svg",
       "best-seller": true,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "rating": 4.5,
       "url": "product-8.svg",
       "best-seller": true,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
       "rating": 3.5,
       "url": "product-9.svg",
       "best-seller": false,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 10,
@@ -108,7 +117,8 @@
       "rating": 4.7,
       "url": "product-10.svg",
       "best-seller": true,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "5"
     },
     {
       "id": 11,
@@ -119,7 +129,8 @@
       "rating": 5.0,
       "url": "product-11.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "5"
     },
     {
       "id": 12,
@@ -130,7 +141,8 @@
       "rating": 3.9,
       "url": "product-12.svg",
       "best-seller": true,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "5"
     },
     {
       "id": 13,
@@ -141,7 +153,8 @@
       "rating": 4.8,
       "url": "product-13.svg",
       "best-seller": false,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 14,
@@ -152,7 +165,8 @@
       "rating": 5.0,
       "url": "product-14.svg",
       "best-seller": false,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 15,
@@ -163,7 +177,8 @@
       "rating": 4.3,
       "url": "product-15.svg",
       "best-seller": true,
-      "new-product": false
+      "new-product": false,
+      "artist-id": "5"
     },
     {
       "id": 16,
@@ -174,63 +189,446 @@
       "rating": 3.3,
       "url": "product-16.svg",
       "best-seller": false,
-      "new-product": true
+      "new-product": true,
+      "artist-id": "5"
     }
   ],
   "clients": [
     {
-      "id":"1",
-      "name":"Maria F.",
-      "comment":"A Artesania é minha loja favorita para encontrar peças artesanais únicas. Sempre encontro presentes especiais para amigos e familiares aqui",
+      "id": "1",
+      "name": "Maria F.",
+      "comment": "A Artesania é minha loja favorita para encontrar peças artesanais únicas. Sempre encontro presentes especiais para amigos e familiares aqui",
       "rating": 5.0
     },
     {
-      "id":"2",
-      "name":"Ricardo A.",
-      "comment":"Tenho um imenso apreço pela excelência dos produtos da Artesania. Sua gama diversificada de arte local e artesanato é verdadeiramente impressionante, e sinto uma grande satisfação em contribuir para o apoio a artistas independentes.",
+      "id": "2",
+      "name": "Ricardo A.",
+      "comment": "Tenho um imenso apreço pela excelência dos produtos da Artesania. Sua gama diversificada de arte local e artesanato é verdadeiramente impressionante, e sinto uma grande satisfação em contribuir para o apoio a artistas independentes.",
       "rating": 5.0
     },
     {
-      "id":"3",
-      "name":"Pedro R.",
-      "comment":"Eu realmente valorizo a qualidade dos produtos da Artesania. Eles têm uma seleção incrível de arte local e artesanato, e eu adoro apoiar artistas independentes.",
+      "id": "3",
+      "name": "Pedro R.",
+      "comment": "Eu realmente valorizo a qualidade dos produtos da Artesania. Eles têm uma seleção incrível de arte local e artesanato, e eu adoro apoiar artistas independentes.",
       "rating": 5.0
+    }
+  ],
+  "artists": [
+    {
+      "id": 1,
+      "name": "Isabela Almeida",
+      "artist-bio": "Isabela é uma pintora contemporânea conhecida por suas obras abstratas que retratam emoções humanas.",
+      "rating": 4.8,
+      "sales": 1200,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Abstrato",
+        "Emoções",
+        "Cores Vivas"
+      ]
     },
     {
-      "id": "4",
-      "name": "Samantha D.",
-      "comment":"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
-      "rating": 4.5
+      "id": 2,
+      "name": "Rafael Oliveira",
+      "artist-bio": "Rafael é um escultor especializado em obras de arte feitas a partir de materiais reciclados.",
+      "rating": 4.5,
+      "sales": 800,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Escultura",
+        "Reciclagem",
+        "Arte Sustentável"
+      ]
     },
     {
-      "id":"5",
-      "name": "Alex M.",
-      "comment":"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
-      "rating": 4.0
+      "id": 3,
+      "name": "Marina Santos",
+      "artist-bio": "Marina é uma fotógrafa premiada por suas imagens emocionais que retratam a natureza.",
+      "rating": 4.9,
+      "sales": 1500,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Fotografia",
+        "Natureza",
+        "Paisagens"
+      ]
     },
     {
-      "id":"6",
-      "name": "Ethan R.",
-      "comment":"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
-      "rating": 4.5
+      "id": 4,
+      "name": "Pedro Costa",
+      "artist-bio": "Pedro é um artista digital que cria ilustrações surreais e futuristas.",
+      "rating": 4.7,
+      "sales": 1100,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte Digital",
+        "Ilustração",
+        "Surrealismo"
+      ]
     },
     {
-      "id":"6",
-      "name": "Olivia P.",
-      "comment":"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
-      "rating": 4.0
+      "id": 5,
+      "name": "Larissa Ferreira",
+      "artist-bio": "Larissa é uma artesã conhecida por suas peças únicas de cerâmica feitas à mão.",
+      "rating": 4.6,
+      "sales": 950,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Cerâmica",
+        "Artesanato",
+        "Feito à Mão"
+      ]
     },
     {
-      "id":"7",
-      "name": "Liam K.",
-      "comment":"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
-      "rating": 4.0
+      "id": 6,
+      "name": "Gustavo Silva",
+      "artist-bio": "Gustavo é um músico talentoso que compõe trilhas sonoras para filmes e jogos.",
+      "rating": 4.9,
+      "sales": 1300,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Música",
+        "Trilha Sonora",
+        "Composição"
+      ]
     },
     {
-      "id":"8",
-      "name": "Ava H.",
-      "comment":"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
-      "rating": 4.5
+      "id": 7,
+      "name": "Camila Ribeiro",
+      "artist-bio": "Camila é uma escritora que cria poesias e contos inspirados em experiências pessoais.",
+      "rating": 4.8,
+      "sales": 1050,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Escrita Criativa",
+        "Poesia",
+        "Contos"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Lucas Gonçalves",
+      "artist-bio": "Lucas é um ator versátil conhecido por suas performances no teatro e no cinema.",
+      "rating": 4.7,
+      "sales": 1000,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Atuação",
+        "Teatro",
+        "Cinema"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Juliana Lima",
+      "artist-bio": "Juliana é uma bailarina renomada por suas coreografias inovadoras e expressivas.",
+      "rating": 4.9,
+      "sales": 1200,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Dança",
+        "Ballet",
+        "Coreografia"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Diego Fernandes",
+      "artist-bio": "Diego é um designer gráfico que cria obras modernas e minimalistas.",
+      "rating": 4.6,
+      "sales": 900,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Design Gráfico",
+        "Minimalismo",
+        "Modernidade"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Amanda Barbosa",
+      "artist-bio": "Amanda é uma artista de rua famosa por suas pinturas murais inspiradoras.",
+      "rating": 4.8,
+      "sales": 1100,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte de Rua",
+        "Pintura Mural",
+        "Inspiração Urbana"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Bruno Oliveira",
+      "artist-bio": "Bruno é um cineasta premiado por seus documentários impactantes sobre questões sociais.",
+      "rating": 4.9,
+      "sales": 1250,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Cinema",
+        "Documentário",
+        "Questões Sociais"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Carolina Santos",
+      "artist-bio": "Carolina é uma artista de performance que cria obras interativas e provocativas.",
+      "rating": 4.7,
+      "sales": 950,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte de Performance",
+        "Interatividade",
+        "Provocação"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Eduardo Lima",
+      "artist-bio": "Eduardo é um artista de grafite que transforma espaços urbanos com suas pinturas vibrantes.",
+      "rating": 4.8,
+      "sales": 1050,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Grafite",
+        "Arte Urbana",
+        "Transformação"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Fernanda Costa",
+      "artist-bio": "Fernanda é uma artista multimídia que combina tecnologia e arte em suas instalações.",
+      "rating": 4.9,
+      "sales": 1150,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte Multimídia",
+        "Tecnologia",
+        "Instalações"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Gabriel Ferreira",
+      "artist-bio": "Gabriel é um arquiteto paisagista conhecido por suas criações harmoniosas e sustentáveis.",
+      "rating": 4.7,
+      "sales": 1000,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arquitetura Paisagística",
+        "Harmonia",
+        "Sustentabilidade"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Helena Gonçalves",
+      "artist-bio": "Helena é uma artista têxtil que produz tapeçarias intricadas e detalhadas.",
+      "rating": 4.6,
+      "sales": 900,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte Têxtil",
+        "Tapeçaria",
+        "Detalhamento"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ícaro Lima",
+      "artist-bio": "Ícaro é um ilustrador de quadrinhos reconhecido por suas narrativas envolventes.",
+      "rating": 4.8,
+      "sales": 1100,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Ilustração de Quadrinhos",
+        "Narrativa",
+        "Envolvimento"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Joana Pereira",
+      "artist-bio": "Joana é uma artista de esculturas em madeira que retrata figuras humanas.",
+      "rating": 4.9,
+      "sales": 1200,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Escultura em Madeira",
+        "Figuras Humanas",
+        "Expressão"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Kevin Silva",
+      "artist-bio": "Kevin é um pintor realista que retrata paisagens urbanas com grande detalhamento.",
+      "rating": 4.7,
+      "sales": 1000,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Pintura Realista",
+        "Paisagens Urbanas",
+        "Detalhamento"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Laura Oliveira",
+      "artist-bio": "Laura é uma artista de colagem que cria composições surreais com recortes de revistas.",
+      "rating": 4.8,
+      "sales": 1050,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte de Colagem",
+        "Composição",
+        "Surrealismo"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Marcelo Santos",
+      "artist-bio": "Marcelo é um artista gráfico que trabalha com arte vetorial e formas abstratas.",
+      "rating": 4.6,
+      "sales": 950,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte Vetorial",
+        "Abstração",
+        "Formas Abstratas"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Natalia Fernandes",
+      "artist-bio": "Natalia é uma fotógrafa documentalista que capta a essência de diferentes culturas.",
+      "rating": 4.9,
+      "sales": 1250,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Fotografia Documental",
+        "Culturas",
+        "Essência"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Otávio Silva",
+      "artist-bio": "Otávio é um escultor contemporâneo que trabalha principalmente com metal.",
+      "rating": 4.7,
+      "sales": 1000,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Escultura Contemporânea",
+        "Metal",
+        "Expressão"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Paula Costa",
+      "artist-bio": "Paula é uma ilustradora infantil que cria personagens encantadores para livros.",
+      "rating": 4.8,
+      "sales": 1100,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Ilustração Infantil",
+        "Personagens Encantadores",
+        "Livros"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Quiteria Lima",
+      "artist-bio": "Quiteria é uma artista de arte urbana que produz intervenções artísticas em espaços públicos.",
+      "rating": 4.9,
+      "sales": 1200,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte Urbana",
+        "Intervenção Artística",
+        "Espaços Públicos"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Ricardo Oliveira",
+      "artist-bio": "Ricardo é um músico de jazz conhecido por suas performances cativantes e improvisações.",
+      "rating": 4.7,
+      "sales": 1050,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Música Jazz",
+        "Performance Cativante",
+        "Improvisação"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Sara Almeida",
+      "artist-bio": "Sara é uma pintora expressionista que utiliza cores vivas em suas obras emocionais.",
+      "rating": 4.6,
+      "sales": 900,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Pintura Expressionista",
+        "Cores Vivas",
+        "Emoções"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Thiago Barbosa",
+      "artist-bio": "Thiago é um fotógrafo de moda reconhecido por suas composições inovadoras.",
+      "rating": 4.8,
+      "sales": 1100,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Fotografia de Moda",
+        "Composição Inovadora",
+        "Estilo"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Ursula Costa",
+      "artist-bio": "Ursula é uma escultora de cerâmica que cria peças abstratas e funcionais.",
+      "rating": 4.9,
+      "sales": 1250,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Escultura em Cerâmica",
+        "Abstração",
+        "Funcionalidade"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Valentina Santos",
+      "artist-bio": "Valentina é uma ilustradora digital que cria personagens fantásticos para jogos.",
+      "rating": 4.7,
+      "sales": 1000,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Ilustração Digital",
+        "Personagens Fantásticos",
+        "Jogos"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Xavier Fernandes",
+      "artist-bio": "Xavier é um artista de instalações que utiliza materiais reciclados em suas obras.",
+      "rating": 4.8,
+      "sales": 1050,
+      "artist-profile-url": "",
+      "tag-arts": [
+        "Arte de Instalação",
+        "Reciclagem",
+        "Sustentabilidade"
+      ]
     }
   ]
 }

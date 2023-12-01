@@ -144,10 +144,17 @@ export default {
   },
   created: async function () {
     try {
-      this.loading = true
-      let responseProducts = await ProductService.getAllProducts()
-      this.products = responseProducts.data
-      this.loading = false
+      if (this.$route.params.artistId !== undefined) {
+        this.loading = true
+        let responseProducts = await ProductService.getAllProducts()
+        this.products = responseProducts.data.filter(product => product["artist-id"] === this.$route.params.artistId)
+        this.loading = false
+      } else {
+        this.loading = true
+        let responseProducts = await ProductService.getAllProducts()
+        this.products = responseProducts.data
+        this.loading = false
+      }
     } catch (error) {
       this.errorMessage = error
       this.loading = false
@@ -302,4 +309,5 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}</style>
+}
+</style>

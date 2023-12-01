@@ -59,6 +59,14 @@ const router = createRouter({
       }
     },
     {
+      path: '/gallery/artist/:artistId',
+      name: 'artist-gallery',
+      component: ArtistsGallery,
+      meta: {
+        breadcrumb: 'Galeria'
+      }
+    },
+    {
       path: '/payment',
       name: 'payment',
       component: PaymentPage,
@@ -93,7 +101,7 @@ const router = createRouter({
       }
     }, 
     {
-      path: '/dashboard/encomenda',
+      path: '/dashboard/order',
       name: 'OrderAgreement',
       component: OrderAgreementPage,
       meta: {
