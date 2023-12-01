@@ -2,7 +2,7 @@
     <div class="sign-background">
         <div class="firstSection">
             <div class="logo-mobile">
-                <RouterLink to="/">
+                <RouterLink to="/" class="text-decoration-none">
                     <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
                     <span class="logo-name contrast">ARTESANIA</span>
                 </RouterLink>
@@ -44,12 +44,16 @@ export default {
     display: none;
 }
 .firstSection{
-    padding: 10rem 5rem;
+    padding: 4rem 5rem;
 }
 
 @media(max-width: 768px){
     .sign-background{
         grid-template-columns: 1fr;
+    }
+
+    .image-about{
+        margin-left: 25%;
     }
     .card{
         margin: 0.5rem;
@@ -61,7 +65,7 @@ export default {
         align-items: center;
         background-color: whitesmoke;
         img{
-          width: 8rem;  
+            width: 8rem;  
         }
     }
 
@@ -74,7 +78,6 @@ export default {
         padding-left: 0;
     }
     .firstSection{
-        
         padding: 0;
     }
 }
