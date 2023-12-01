@@ -59,7 +59,7 @@
             </div>
             <div class="RightContent">
                 <button class="buttonReview"><img src="@/assets/Filter.svg" alt="Filtro de pesquisa"></button>
-                <button class="buttonReview">Recentes</button>
+                <button class="buttonReview recent">Recentes</button>
                 <button class="buttonPrimary write">Comentar</button>
             </div>
         </div>
@@ -255,7 +255,6 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 0;
-
 }
 
 .qtdCart{
@@ -298,6 +297,10 @@ export default {
     font-weight: bold;
     font-size: 20px;
     bottom: 0;
+
+    @media (max-width:768px){
+        width: 12rem;
+    }
 }
 
 .review-area{
@@ -312,6 +315,10 @@ export default {
     padding: 1rem;
     justify-content: space-evenly;
     border-bottom: 1px solid #000;
+
+    @media (max-width:768px){
+        width: 100%;
+    }
 }
 
 .leftContent{
@@ -322,6 +329,12 @@ export default {
 .RightContent{
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 768px){
+        .recent{
+            display: none;
+        }
+    }
 }
 
 .buttonReview{
@@ -345,6 +358,10 @@ export default {
     align-items: flex-start;
     width: 100%;
     padding: 50px;
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .high-contrast {
@@ -355,4 +372,37 @@ export default {
 .high-contrast-text {
     color: white !important;
 }
+
+@media(max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .other-imgs{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-minSize{
+        width: 118px;
+    }
+
+    .secondSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        overflow: none;
+        margin-bottom: 1rem;
+    }
+}
+
 </style>
