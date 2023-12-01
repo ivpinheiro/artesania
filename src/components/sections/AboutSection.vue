@@ -2,9 +2,11 @@
     <div style="height: auto;">
         <AcessibilityMenu></AcessibilityMenu>
         <div class="about text-center contrast">
-            <div class="about-logo"> 
-                <img src="../../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
-                <span class="logo-name contrast">ARTESANIA</span>
+            <div class="about-logo">
+                <RouterLink to="/" class="text-decoration-none"> 
+                    <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+                    <span class="logo-name contrast">ARTESANIA</span>
+                </RouterLink>
             </div>
             <div class="about-txt">
                 <p>
@@ -75,6 +77,7 @@ export default {
 
 .image-about {
     width: 150px;
+    margin-left: 15%;
 }
 
 .logo-name {

@@ -2,8 +2,10 @@
     <div class="sign-background">
         <div class="firstSection">
             <div class="logo-mobile">
-                <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
-                <span class="logo-name contrast">ARTESANIA</span>
+                <RouterLink to="/">
+                    <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+                    <span class="logo-name contrast">ARTESANIA</span>
+                </RouterLink>
             </div>
             <SignSection></SignSection>
         </div>      
