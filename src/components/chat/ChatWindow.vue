@@ -14,8 +14,8 @@
 
 
             <div class="message-input">
-                <img src="@/assets/img/chat/chat_microfone.svg" alt="Logo da Artesania" />
-                <img src="@/assets/img/chat/chat_image_upload.svg" alt="Logo da Artesania" />
+                <img src="@/assets/img/chat/chat_microfone.svg" alt="imagem de um microfone" />
+                <img src="@/assets/img/chat/chat_image_upload.svg" alt="simbolo de upload de imagem" />
 
                 <input v-model="newMessage" type="text" placeholder="Escreva sua mensagem aqui..." @keyup.enter="sendUserMessage" />
                 <button @click="sendUserMessage">Enviar</button>

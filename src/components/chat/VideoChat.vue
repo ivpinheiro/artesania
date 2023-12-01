@@ -31,4 +31,13 @@ export default {
     color: #9D3207
 }
 
+.high-contrast {
+  color: white;
+  background: black;
+}
+
+.high-contrast-text {
+  color: white;
+}
+
 </style>
