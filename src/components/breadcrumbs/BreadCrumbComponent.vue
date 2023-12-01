@@ -1,24 +1,28 @@
 <template>
-    <ol class="breadcrumb contrast" v-if="showBreadCrumb">
-        <li class="breadcrumb-item" v-for="(value, index) in listValues" :key="index"
-            :class="{ 'active': index === (listValues.length - 1), 'breadcrumb-item-last': index === (listValues.length - 1) }"
-            :aria-current="index === (listValues.length - 1) ? 'page' : null">
-            <template v-if="index !== (listValues.length - 1)">
-                <router-link class="text-decoration-none page-inactive" :to="value.path"
-                    v-if="isProductBreadcrumb(value.meta.breadcrumb)" @click="handleBreadcrumbClick(item, index)">{{
-                        product.name }}</router-link>
-                <router-link v-else class="text-decoration-none page-inactive" :to="value.path"
-                    @click="handleBreadcrumbClick(item, index)">
-                    {{ value.meta.breadcrumb }}
-                </router-link>
-            </template>
-            <template v-else>
-                <p class="d-flex page-active" v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ value.meta.breadcrumb +
-                    ': ' + product.name }}</p>
-                <p class="d-flex page-active" v-else>{{ value.meta.breadcrumb }}</p>
-            </template>
-        </li>
-    </ol>
+    <div class="breadcrumb-area">
+        <ol class="breadcrumb contrast" v-if="showBreadCrumb">
+            <li class="breadcrumb-item" v-for="(value, index) in listValues" :key="index"
+                :class="{ 'active': index === (listValues.length - 1), 'breadcrumb-item-last': index === (listValues.length - 1) }"
+                :aria-current="index === (listValues.length - 1) ? 'page' : null">
+                <template v-if="index !== (listValues.length - 1)">
+                    <router-link class="text-decoration-none page-inactive" :to="value.path"
+                        v-if="isProductBreadcrumb(value.meta.breadcrumb)" @click="handleBreadcrumbClick(item, index)">{{
+                            product.name }}
+                    </router-link>
+                    <router-link v-else class="text-decoration page-inactive" :to="value.path"
+                        @click="handleBreadcrumbClick(item, index)">
+                        {{ value.meta.breadcrumb }}
+                    </router-link>
+                </template>
+                <template v-else>
+                    <p class="d-flex page-active" v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ value.meta.breadcrumb +
+                        ': ' + product.name }}</p>
+                    <p class="d-flex page-active" v-else>{{ value.meta.breadcrumb }}</p>
+                </template>
+            </li>
+        </ol>
+    </div>
+    
 </template>
 
 <script>
@@ -74,6 +78,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.breadcrumb-area{
+    padding: 0 7rem;
+}
 .breadcrumb {
     padding: 0px 0px;
     white-space: pre;
@@ -89,7 +97,7 @@ export default {
 
 .page-inactive {
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.80);
+    color: #000
 }
 
 .high-contrast {
