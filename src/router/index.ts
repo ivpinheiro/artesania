@@ -63,7 +63,7 @@ const router = createRouter({
       name: 'artist-gallery',
       component: ArtistsGallery,
       meta: {
-        breadcrumb: 'Galeria: '
+        breadcrumb: 'Galeria'
       }
     },
     {

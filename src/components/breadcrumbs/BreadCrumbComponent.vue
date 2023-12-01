@@ -11,7 +11,10 @@
                     </router-link>
                     <router-link v-else class="text-decoration page-inactive" :to="value.path"
                         @click="handleBreadcrumbClick(item, index)">
-                        {{ value.meta.breadcrumb }}
+                        {{ value.meta.breadcrumb }}<span class="text-decoration page-inactive"
+                            v-if="value.meta.breadcrumb.includes('Galeria') && listValues[1].path.includes('gallery/artist')">{{
+                                ': ' +
+                                this.artist.name }}</span>
                     </router-link>
                 </template>
                 <template v-else>
@@ -22,7 +25,7 @@
                 </template>
             </li>
             <template v-if="this.$route.path.includes('gallery/artist')">
-                <p class="d-flex page-active">{{ this.artist.name }}</p>
+                <p class="d-flex page-active">{{ ': ' + this.artist.name }}</p>
             </template>
         </ol>
     </div>
@@ -68,13 +71,15 @@ export default {
     created: async function () {
         try {
             if (this.$route.path.includes('gallery/artist')) {
-                let response = await ProductService.getAllArtist(this.$route.params.artistId)
-                this.artist = response.data
+                let responseArtist = await ProductService.getAllArtist(this.$route.params.artistId)
+                this.artist = responseArtist.data
                 this.showBreadCrumb = true
             }
             if (this.$route.path.includes('products')) {
-                let response = await ProductService.getProduct(this.$route.params.productId)
-                this.product = response.data
+                let reponseProduct = await ProductService.getProduct(this.$route.params.productId)
+                let responseArtist = await ProductService.getAllArtist(reponseProduct.data["artist-id"])
+                this.product = reponseProduct.data
+                this.artist = responseArtist.data
                 this.showBreadCrumb = true
             } else {
                 this.showBreadCrumb = true
