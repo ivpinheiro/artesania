@@ -26,7 +26,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .login-background {
-    background-image: url("./../assets/img/banner/login-background.svg");
+    background-image: url("@/assets/img/banner/login-background.svg");
     display: grid;
     grid-template-columns: 3fr 1fr;
     width: 100vw;
