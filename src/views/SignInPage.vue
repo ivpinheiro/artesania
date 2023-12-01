@@ -2,7 +2,7 @@
     <div class="sign-background">
         <div class="firstSection">
             <div class="logo-mobile">
-                <img src="../assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+                <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
                 <span class="logo-name contrast">ARTESANIA</span>
             </div>
             <SignSection></SignSection>
@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 
 .sign-background {
-    background-image: url("./../assets/img/banner/login-background.svg");
+    background-image: url("@/assets/img/banner/login-background.svg");
     display: grid;
     grid-template-columns: 3fr 1fr;
     width: 100vw;

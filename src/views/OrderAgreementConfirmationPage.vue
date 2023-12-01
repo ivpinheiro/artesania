@@ -26,6 +26,7 @@ import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vu
 export default {
   name: 'OrderAgreementConfirmationPage',
   components: {
+    ProductService,
     OrderAgreementConfirmation,
     SpinnerLoader,
     BreadCrumbComponent
