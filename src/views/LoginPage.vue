@@ -1,9 +1,12 @@
 <template>
-    <div class="login-background">
+    <div class="login-section">
         <div class="firstSection">
             <LoginSection></LoginSection>
         </div>
-        <AboutSection></AboutSection>
+
+        <div class="secondSection">
+            <AboutSection></AboutSection>
+        </div>
     </div>
 </template>
 
@@ -25,11 +28,19 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.login-background {
+.login-section {
+    display: flex;
     background-image: url("@/assets/img/banner/login-background.svg");
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    width: 100vw;
+    height: 100vh;
+}
+
+.firstSection {
+    width: 70%;
+}
+
+.secondSection {
+    width: 30%;
+    height: 500px;
 }
 
 .firstSection {

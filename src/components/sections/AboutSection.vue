@@ -1,56 +1,61 @@
 <template>
-    <div style="height: auto;">
-        <AcessibilityMenu></AcessibilityMenu>
-        <div class="about text-center contrast">
-            <div class="about-logo">
-                <RouterLink to="/" class="text-decoration-none"> 
-                    <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
-                    <span class="logo-name contrast">ARTESANIA</span>
-                </RouterLink>
+    <div class="about-section contrast">
+        <div class="about-content">
+            <div class="about-acessibility contrast">
+                <AcessibilityMenu></AcessibilityMenu>
             </div>
-            <div class="about-txt">
-                <p>
-                    Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em branco.
-                </p>
+            <div class="about-content-text contrast text-center">
+                <div class="about-logo">
+                    <RouterLink to="/" class="text-decoration-none">
+                        <img src="@/assets/img/navbar/artesania-logo-old.svg" alt="Artesania" class="image-about" />
+                        <span class="logo-name contrast">ARTESANIA</span>
+                    </RouterLink>
+                </div>
+                <div class="about-txt">
+                    <p>
+                        Transformando sonhos em obras de arte, uma pincelada de cada vez, porque a vida é nossa tela em
+                        branco.
+                    </p>
+                </div>
+                <div class="about-company">
+                    <!-- Links -->
+                    <h6 class="link-name text-uppercase fw-bold mb-4">
+                        A EMPRESA
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Sobre Nós</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Features</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Works</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Carreira</a>
+                    </p>
+                </div>
+                <div class="about-icons">
+                    <a href="" class="me-4 link-secondary">
+                        <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <font-awesome-icon class="fa" icon="fa-brands fa-github" />
+                    </a>
+                </div>
             </div>
-            <div class="about-company">
-                <!-- Links -->
-                <h6 class="link-name text-uppercase fw-bold mb-4">
-                    A EMPRESA
-                </h6>
-                <p>
-                    <a href="#!" class="text-reset">Sobre Nós</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-reset">Features</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-reset">Works</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-reset">Carreira</a>
-                </p>
-            </div>
-            <div class="about-icons">
-                <a href="" class="me-4 link-secondary">
-                    <font-awesome-icon class="fa" icon="fa-brands fa-x-twitter" />
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <font-awesome-icon class="fa" icon="fa-brands fa-facebook-f" />
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <font-awesome-icon class="fa" icon="fa-brands fa-instagram" />
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <font-awesome-icon class="fa" icon="fa-brands fa-github" />
-                </a>
-            </div>
-        </div>   
+        </div>
     </div>
 </template>
 
 <script>
-import AcessibilityMenu from '../menus/AcessibilityMenu.vue';
+import AcessibilityMenu from '@/components/menus/AcessibilityMenu.vue';
 
 export default {
     name: "AboutSection",
@@ -59,14 +64,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about {
-    background-color: #Eab766;
-    padding: 5rem 5rem;
+.about-section {
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+
+.about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #Eab766;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.about-content-text {
+    padding: 2em;
+    text-align: center;
+}
+
+.about-acessibility {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
 .about-logo {
@@ -97,7 +118,7 @@ export default {
     display: flex;
     padding-top: 30%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .link-name {
@@ -119,8 +140,8 @@ export default {
     color: white;
 }
 
-@media(max-width: 768px){
-    .about{
+@media(max-width: 768px) {
+    .about {
         display: none;
     }
 }
