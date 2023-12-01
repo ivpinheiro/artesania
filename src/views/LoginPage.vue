@@ -31,7 +31,7 @@ export default {
 .login-section {
     display: flex;
     background-image: url("@/assets/img/banner/login-background.svg");
-    height: 100vh;
+    overflow: hidden;
 }
 
 .firstSection {
@@ -40,7 +40,6 @@ export default {
 
 .secondSection {
     width: 30%;
-    height: 500px;
 }
 
 .firstSection {

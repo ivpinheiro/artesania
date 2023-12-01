@@ -14,4 +14,7 @@ export class ProductService {
         let dataURL = `${this.serverURL}/products/${elementId}`;
         return axios.get(dataURL);
     }
-}
+    static getAllArtists(){
+        let dataURL = `${this.serverURL}/artists`;
+        return axios.get(dataURL);
+    }}

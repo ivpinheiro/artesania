@@ -11,7 +11,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title-title">{{ cartTitle }}
-                                <img src="@/assets/img/artists/circle-check-solid.svg" class="titleChecked">
+                                <img src="@/assets/img/cards/circle-check-solid.svg" class="titleChecked">
                             </h5>
                             <p class="card-text">{{ comment }}</p>
                         </div>

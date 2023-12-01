@@ -1,6 +1,6 @@
 <template>
-    <div class="about-section contrast">
-        <div class="about-content">
+    <div class="about-section">
+        <div class="about-content contrast">
             <div class="about-acessibility contrast">
                 <AcessibilityMenu></AcessibilityMenu>
             </div>
