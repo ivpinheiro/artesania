@@ -1,97 +1,101 @@
 <template>
-    <div class="contrast">
-        <div class="chat-container">
-            <div class="message-list">
-                <!-- Lista de mensagens -->
-                <div v-for="(message, index) in messages" :key="index" class="message" :class="{ 'user': message.sender === 'user', 'artist': message.sender === 'artist' }">
-                    <div class="message-content">{{ message.content }}</div>
-                
-                    <img v-if="message.sender === 'user'" src="@/assets/img/artists/ApoWhang.svg" class="profile-image user-profile" alt="User" />
+  <div class="contrast">
+    <div class="chat-container">
+      <div class="message-list">
+        <!-- Lista de mensagens -->
+        <div v-for="(message, index) in messages" :key="index" class="message"
+          :class="{ 'user': message.sender === 'user', 'artist': message.sender === 'artist' }">
+          <div class="message-content">{{ message.content }}</div>
 
-                    <img v-if="message.sender === 'artist'" src="@/assets/img/artists/MiraMaroni.svg" class="profile-image artist-profile" alt="Artist" />
-                </div>
-            </div>
+          <img v-if="message.sender === 'user'" src="@/assets/img/artists/artist-id-1.svg"
+            class="profile-image user-profile" alt="User" />
 
-
-            <div class="message-input">
-                <img src="@/assets/img/chat/chat_microfone.svg" alt="imagem de um microfone" />
-                <img src="@/assets/img/chat/chat_image_upload.svg" alt="simbolo de upload de imagem" />
-
-                <input v-model="newMessage" type="text" placeholder="Escreva sua mensagem aqui..." @keyup.enter="sendUserMessage" />
-                <button @click="sendUserMessage">Enviar</button>
-            </div>
+          <img v-if="message.sender === 'artist'" src="@/assets/img/artists/artist-id-2.svg"
+            class="profile-image artist-profile" alt="Artist" />
         </div>
+      </div>
+
+
+      <div class="message-input">
+        <img src="@/assets/img/chat/chat_microfone.svg" alt="imagem de um microfone" />
+        <img src="@/assets/img/chat/chat_image_upload.svg" alt="simbolo de upload de imagem" />
+
+        <input v-model="newMessage" type="text" placeholder="Escreva sua mensagem aqui..."
+          @keyup.enter="sendUserMessage" />
+        <button @click="sendUserMessage">Enviar</button>
+      </div>
     </div>
-  </template>
+  </div>
+</template>
   
 <script>
-  export default {
-    data() {
-      return {
-        newMessage: '',
-        messages: []
-      };
-    },
-    methods: {
-      sendUserMessage() {
-        if (this.newMessage.trim()) {
-          this.messages.push({
-            content: this.newMessage,
-            sender: 'user'
-          });
-          this.newMessage = ''; 
-          this.autoReply(); 
-        }
-      },
-      autoReply() {
-        setTimeout(() => {
-          this.messages.push({
-            content: 'Olá, sua encomenda foi aceita! O preço estipulado para sua arte é de R$1500,00.',
-            sender: 'artist'
-          });
-        }, 2000);
+export default {
+  data() {
+    return {
+      newMessage: '',
+      messages: []
+    };
+  },
+  methods: {
+    sendUserMessage() {
+      if (this.newMessage.trim()) {
+        this.messages.push({
+          content: this.newMessage,
+          sender: 'user'
+        });
+        this.newMessage = '';
+        this.autoReply();
       }
+    },
+    autoReply() {
+      setTimeout(() => {
+        this.messages.push({
+          content: 'Olá, sua encomenda foi aceita! O preço estipulado para sua arte é de R$1500,00.',
+          sender: 'artist'
+        });
+      }, 2000);
     }
-  };
+  }
+};
 </script>
   
 <style scoped>
-  .chat-container {
-    background-color: #f0eeed;
-    border-radius: 5%;
-    width: 50%;
-    padding: 1rem;
-    margin-left: 25%;
-    margin-top: 1%;
-    margin-bottom: 10%;
-    border: 0px;
-    height: auto;
-    color: #fff;
-    font-weight: 600;
-  }
+.chat-container {
+  background-color: #f0eeed;
+  border-radius: 5%;
+  width: 50%;
+  padding: 1rem;
+  margin-left: 25%;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  border: 0px;
+  height: auto;
+  color: #fff;
+  font-weight: 600;
+}
 
 .message-list {
   height: 400px;
   overflow-y: auto;
-  background: #ececec; 
+  background: #ececec;
 }
 
 .message {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
 }
 
 .message-content {
-    max-width: 70%;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px #ccc;
-    color: black;
-    word-wrap: break-word;
-    border-radius: 20px;
-    background: white;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px #ccc;
+  color: black;
+  word-wrap: break-word;
+  border-radius: 20px;
+  background: white;
 }
 
 .profile-image {
@@ -101,29 +105,30 @@
   margin-right: 10px;
 }
 
-.user{
+.user {
   justify-content: flex-end;
 }
 
-.user-message{
+.user-message {
   justify-content: flex-end;
 }
 
-.artist{
+.artist {
   justify-content: flex-start;
 }
 
-.artist-message{
+.artist-message {
   justify-content: flex-start;
 }
 
 .user-profile {
-  order: 2; /* Muda a ordem visualmente para aparecer depois da mensagem */
+  order: 2;
+  /* Muda a ordem visualmente para aparecer depois da mensagem */
   margin-left: 10px;
 }
 
 .artist-profile {
-  order: -1; 
+  order: -1;
   margin-right: 10px;
 }
 
@@ -131,7 +136,7 @@
 .message-input {
   display: flex;
   padding: 10px;
-  background: #f0eeed; 
+  background: #f0eeed;
 }
 
 .message-input input {
@@ -165,5 +170,4 @@
 
 .high-contrast-text {
   color: white;
-}
-</style>
+}</style>
