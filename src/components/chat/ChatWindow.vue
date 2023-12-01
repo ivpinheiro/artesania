@@ -131,7 +131,7 @@
 .message-input {
   display: flex;
   padding: 10px;
-  background: #f2f2f2; 
+  background: #f0eeed; 
 }
 
 .message-input input {

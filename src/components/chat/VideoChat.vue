@@ -1,10 +1,8 @@
 <template>
     <div class="contrast">
         <div class="video-icon">
-            <a href="https://meet.google.com/">
-                <p class="video-title">Solicitar Chamada de video</p>
-                <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="User" />
-            </a>
+            <p class="video-title">Solicitar Chamada de video</p>
+            <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="User" />
         </div>
     </div>
 </template>

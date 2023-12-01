@@ -83,7 +83,7 @@ const router = createRouter({
       name: 'NegotiationChat',
       component: NegotiationChat,
       meta: {
-        breadcrumb: 'Chat'
+        breadcrumb: 'Mira Morani  /  Chat '
       }
     }, 
     {
