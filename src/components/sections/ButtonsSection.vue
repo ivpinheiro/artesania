@@ -5,7 +5,9 @@
         <RouterLink class="link-class-none" to="/login">ENTRAR</RouterLink>
       </div>
       <div class="verticalLine"></div>
-      <div class="buttonPrimary">CADASTRAR-SE</div>
+      <div class="buttonPrimary">
+        <RouterLink class="link-class-none" to="/sign">CADASTRAR-SE</RouterLink>
+      </div>
       <div class="verticalLine"></div>
       <div class="buttonPrimary">
         <RouterLink class="link-class-none" to="/dashboard">ÁREA DO ARTISTA</RouterLink>
