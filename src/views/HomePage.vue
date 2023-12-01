@@ -37,7 +37,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <SpinnerLoader />
+                <SpinnerLoader/>
               </div>
             </div>
           </div>
