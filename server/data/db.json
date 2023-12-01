@@ -220,7 +220,7 @@
       "artist-bio": "Isabela é uma pintora contemporânea conhecida por suas obras abstratas que retratam emoções humanas.",
       "rating": 4.8,
       "sales": 1200,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-1",
       "tag-arts": [
         "Abstrato",
         "Emoções",
@@ -233,7 +233,7 @@
       "artist-bio": "Rafael é um escultor especializado em obras de arte feitas a partir de materiais reciclados.",
       "rating": 4.5,
       "sales": 800,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-2",
       "tag-arts": [
         "Escultura",
         "Reciclagem",
@@ -246,7 +246,7 @@
       "artist-bio": "Marina é uma fotógrafa premiada por suas imagens emocionais que retratam a natureza.",
       "rating": 4.9,
       "sales": 1500,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-3",
       "tag-arts": [
         "Fotografia",
         "Natureza",
@@ -259,7 +259,7 @@
       "artist-bio": "Pedro é um artista digital que cria ilustrações surreais e futuristas.",
       "rating": 4.7,
       "sales": 1100,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-4",
       "tag-arts": [
         "Arte Digital",
         "Ilustração",
@@ -272,7 +272,7 @@
       "artist-bio": "Larissa é uma artesã conhecida por suas peças únicas de cerâmica feitas à mão.",
       "rating": 4.6,
       "sales": 950,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-5",
       "tag-arts": [
         "Cerâmica",
         "Artesanato",
@@ -285,7 +285,7 @@
       "artist-bio": "Gustavo é um músico talentoso que compõe trilhas sonoras para filmes e jogos.",
       "rating": 4.9,
       "sales": 1300,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-6",
       "tag-arts": [
         "Música",
         "Trilha Sonora",
@@ -298,7 +298,7 @@
       "artist-bio": "Camila é uma escritora que cria poesias e contos inspirados em experiências pessoais.",
       "rating": 4.8,
       "sales": 1050,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-7",
       "tag-arts": [
         "Escrita Criativa",
         "Poesia",
@@ -311,7 +311,7 @@
       "artist-bio": "Lucas é um ator versátil conhecido por suas performances no teatro e no cinema.",
       "rating": 4.7,
       "sales": 1000,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-8",
       "tag-arts": [
         "Atuação",
         "Teatro",
@@ -324,7 +324,7 @@
       "artist-bio": "Juliana é uma bailarina renomada por suas coreografias inovadoras e expressivas.",
       "rating": 4.9,
       "sales": 1200,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-9",
       "tag-arts": [
         "Dança",
         "Ballet",
@@ -337,7 +337,7 @@
       "artist-bio": "Diego é um designer gráfico que cria obras modernas e minimalistas.",
       "rating": 4.6,
       "sales": 900,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-10",
       "tag-arts": [
         "Design Gráfico",
         "Minimalismo",
@@ -350,7 +350,7 @@
       "artist-bio": "Amanda é uma artista de rua famosa por suas pinturas murais inspiradoras.",
       "rating": 4.8,
       "sales": 1100,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-11",
       "tag-arts": [
         "Arte de Rua",
         "Pintura Mural",
@@ -363,7 +363,7 @@
       "artist-bio": "Bruno é um cineasta premiado por seus documentários impactantes sobre questões sociais.",
       "rating": 4.9,
       "sales": 1250,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-12",
       "tag-arts": [
         "Cinema",
         "Documentário",
@@ -376,7 +376,7 @@
       "artist-bio": "Carolina é uma artista de performance que cria obras interativas e provocativas.",
       "rating": 4.7,
       "sales": 950,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-13",
       "tag-arts": [
         "Arte de Performance",
         "Interatividade",
@@ -389,7 +389,7 @@
       "artist-bio": "Eduardo é um artista de grafite que transforma espaços urbanos com suas pinturas vibrantes.",
       "rating": 4.8,
       "sales": 1050,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-14",
       "tag-arts": [
         "Grafite",
         "Arte Urbana",
@@ -402,7 +402,7 @@
       "artist-bio": "Fernanda é uma artista multimídia que combina tecnologia e arte em suas instalações.",
       "rating": 4.9,
       "sales": 1150,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-15",
       "tag-arts": [
         "Arte Multimídia",
         "Tecnologia",
@@ -415,7 +415,7 @@
       "artist-bio": "Gabriel é um arquiteto paisagista conhecido por suas criações harmoniosas e sustentáveis.",
       "rating": 4.7,
       "sales": 1000,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-16",
       "tag-arts": [
         "Arquitetura Paisagística",
         "Harmonia",
@@ -428,7 +428,7 @@
       "artist-bio": "Helena é uma artista têxtil que produz tapeçarias intricadas e detalhadas.",
       "rating": 4.6,
       "sales": 900,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-17",
       "tag-arts": [
         "Arte Têxtil",
         "Tapeçaria",
@@ -441,7 +441,7 @@
       "artist-bio": "Ícaro é um ilustrador de quadrinhos reconhecido por suas narrativas envolventes.",
       "rating": 4.8,
       "sales": 1100,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-18",
       "tag-arts": [
         "Ilustração de Quadrinhos",
         "Narrativa",
@@ -454,7 +454,7 @@
       "artist-bio": "Joana é uma artista de esculturas em madeira que retrata figuras humanas.",
       "rating": 4.9,
       "sales": 1200,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-19",
       "tag-arts": [
         "Escultura em Madeira",
         "Figuras Humanas",
@@ -467,7 +467,7 @@
       "artist-bio": "Kevin é um pintor realista que retrata paisagens urbanas com grande detalhamento.",
       "rating": 4.7,
       "sales": 1000,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-20",
       "tag-arts": [
         "Pintura Realista",
         "Paisagens Urbanas",
@@ -480,7 +480,7 @@
       "artist-bio": "Laura é uma artista de colagem que cria composições surreais com recortes de revistas.",
       "rating": 4.8,
       "sales": 1050,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-21",
       "tag-arts": [
         "Arte de Colagem",
         "Composição",
@@ -493,7 +493,7 @@
       "artist-bio": "Marcelo é um artista gráfico que trabalha com arte vetorial e formas abstratas.",
       "rating": 4.6,
       "sales": 950,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-22",
       "tag-arts": [
         "Arte Vetorial",
         "Abstração",
@@ -506,7 +506,7 @@
       "artist-bio": "Natalia é uma fotógrafa documentalista que capta a essência de diferentes culturas.",
       "rating": 4.9,
       "sales": 1250,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-23",
       "tag-arts": [
         "Fotografia Documental",
         "Culturas",
@@ -519,7 +519,7 @@
       "artist-bio": "Otávio é um escultor contemporâneo que trabalha principalmente com metal.",
       "rating": 4.7,
       "sales": 1000,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-24",
       "tag-arts": [
         "Escultura Contemporânea",
         "Metal",
@@ -532,7 +532,7 @@
       "artist-bio": "Paula é uma ilustradora infantil que cria personagens encantadores para livros.",
       "rating": 4.8,
       "sales": 1100,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-25",
       "tag-arts": [
         "Ilustração Infantil",
         "Personagens Encantadores",
@@ -545,7 +545,7 @@
       "artist-bio": "Quiteria é uma artista de arte urbana que produz intervenções artísticas em espaços públicos.",
       "rating": 4.9,
       "sales": 1200,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-26",
       "tag-arts": [
         "Arte Urbana",
         "Intervenção Artística",
@@ -558,7 +558,7 @@
       "artist-bio": "Ricardo é um músico de jazz conhecido por suas performances cativantes e improvisações.",
       "rating": 4.7,
       "sales": 1050,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-27",
       "tag-arts": [
         "Música Jazz",
         "Performance Cativante",
@@ -571,7 +571,7 @@
       "artist-bio": "Sara é uma pintora expressionista que utiliza cores vivas em suas obras emocionais.",
       "rating": 4.6,
       "sales": 900,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-28",
       "tag-arts": [
         "Pintura Expressionista",
         "Cores Vivas",
@@ -584,7 +584,7 @@
       "artist-bio": "Thiago é um fotógrafo de moda reconhecido por suas composições inovadoras.",
       "rating": 4.8,
       "sales": 1100,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-29",
       "tag-arts": [
         "Fotografia de Moda",
         "Composição Inovadora",
@@ -597,7 +597,7 @@
       "artist-bio": "Ursula é uma escultora de cerâmica que cria peças abstratas e funcionais.",
       "rating": 4.9,
       "sales": 1250,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-30",
       "tag-arts": [
         "Escultura em Cerâmica",
         "Abstração",
@@ -610,7 +610,7 @@
       "artist-bio": "Valentina é uma ilustradora digital que cria personagens fantásticos para jogos.",
       "rating": 4.7,
       "sales": 1000,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-31",
       "tag-arts": [
         "Ilustração Digital",
         "Personagens Fantásticos",
@@ -623,7 +623,7 @@
       "artist-bio": "Xavier é um artista de instalações que utiliza materiais reciclados em suas obras.",
       "rating": 4.8,
       "sales": 1050,
-      "artist-profile-url": "",
+      "artist-profile-url": "artist-id-32",
       "tag-arts": [
         "Arte de Instalação",
         "Reciclagem",
