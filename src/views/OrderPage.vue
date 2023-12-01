@@ -22,16 +22,32 @@
                 </button>
             </div>
             <div class="indicator-container">
-                <div class="chat-bubble img">
+                <div class="chat-bubble imgs">
                     <img src="@/assets/img/products/ImageSent-1.svg" alt="imagem enviada 1">
                     <img src="@/assets/img/products/ImageSent-2.svg" alt="imagem enviada 2">
                     <img src="@/assets/img/products/ImageSent-3.svg" alt="imagem enviada 3">
                     <div class="more-imgs">
                         <img src="@/assets/img/products/ImageSent-4.svg" alt="Mais duas imagens">
-                            <img src="@/assets/img/products/moreImgs.svg" alt="Mais duas imagens" class="sopreposeImg">
+                            <div class="moreImgs-text">
+                                <span>+2</span>
+                            </div>
                     </div>
                 </div>
             </div>
+            <div class="conversation-area">
+                <input type="text" name="txtArtistIput" id="txtArtistInput">
+                <div class="conversationButton-area">
+                    <button class="sendImg">
+                        <img src="@/assets/img/chat/chat_image_upload.svg" alt="Enviar Imagem" class="buttonSend">
+                    </button>
+                    <button class="mic-conversation">   
+                        <img src="./../assets/img/chat/chat_microfone.svg" alt="Enviar Audio" class="buttonSend">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="submitOrder">
+            <button class="buttonPrimary">Finalizar</button>
         </div>
     </div>
 </template>
@@ -150,7 +166,7 @@ export default {
     width: 40px;
     height: 40px;
 }
-.img{
+.imgs{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
@@ -159,6 +175,69 @@ export default {
 .more-imgs{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+.moreImgs-text{
+    position: absolute;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.conversation-area{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0 0 0;
+}
+
+#txtArtistInput{
+    background-color: rgba(51, 51, 51, 35%);
+    border-style: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    margin: 0rem 1rem;
+}
+
+.conversationButton-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+
+    color: rgba(51, 51, 51, 80%);
+}
+
+.sendImg{
+    border-style: none;
+}
+
+.mic-conversation{
+    border-style:none;
+    background-color: none;
+}
+
+.submitOrder{
+    padding: 2rem 0;
+}
+
+.buttonPrimary {
+    background-color: #9D3207;
+    border: 0px;
+    border-radius: 62px;
+    width: 200px;
+    height: auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 
 </style>
