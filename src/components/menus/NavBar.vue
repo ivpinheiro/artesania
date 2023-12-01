@@ -48,7 +48,11 @@
                 </form>
                 <div class="d-flex align-items-center justify-content-center">
                     <router-link to="/" class="me-3">
-                        <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta" />
+                        <!-- Exibe este ícone se o usuário estiver logado -->
+                        <font-awesome-icon v-if="estaLogado" class="fa-inverse" icon="circle-user" alt="minha conta" />
+                
+                        <!-- Exibe este ícone se o usuário NÃO estiver logado -->
+                        <font-awesome-icon v-else class="fa-inverse" icon="circle-user" alt="minha conta" />
                     </router-link>
                     <router-link to="/">
                         <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho" />
@@ -74,6 +78,12 @@ export default {
     //         searchVal
     //     }
     // }
+    computed: {
+        estaLogado() {
+            // Verifica o status de login a partir do localStorage
+            return localStorage.getItem('statusLogin') === 'Logado';
+        }
+    }
 }
 </script>
 

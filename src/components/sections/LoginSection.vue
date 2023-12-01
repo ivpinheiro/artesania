@@ -9,7 +9,7 @@
                 <label for="exampleFormControlInput1" class="form-label" id="lblPassword"><b>Senha</b></label>
                 <input type="password" class="form-control">
             </div>
-            <button class="buttonPrimary">Entrar</button>
+            <RouterLink to="/"><button class="buttonPrimary" id="buttonLogin" @click="buttonLoginClick">Entrar</button></RouterLink>
         </div>
         
         <button class="SocialSign"><font-awesome-icon class="fa" id="social-sign" icon="fa-brands fa-google"/>Entrar com Google</button>
@@ -25,8 +25,14 @@
 
 <script>
     export default{
-        name: 'LoginSection'
+        name: 'LoginSection',
+        methods: {
+            buttonLoginClick() {
+                localStorage.setItem('statusLogin', 'Logado');
+            }
+        }
     }
+    
 </script>
 
 <style lang="scss" scoped>

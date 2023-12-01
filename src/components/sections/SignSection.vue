@@ -21,7 +21,7 @@
                 <label for="exampleFormControlInput1" class="form-label" id="lblPasswordConfirm"><b>Confirmar Senha</b></label>
                 <input type="passwordC" class="form-control">
             </div>
-            <button class="buttonPrimary">Cadastrar</button>
+            <RouterLink to="/"><button class="buttonPrimary">Cadastrar</button></RouterLink>
         </div>
         
         <div class="has-login">
