@@ -143,16 +143,15 @@ export default {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    margin-top: 20px;
-    padding: 1rem;
+    padding: 2rem 0;
     align-self: self-start;
     @media (max-width: 1060px) {
         font-size: 26px;
     }
 }
-.no-margin{
+/* .no-margin{
     margin:0px !important;
-}
+} */
 
 .tabs{
     display: flex;
@@ -179,7 +178,7 @@ export default {
 }
 
 .options-group{
-    background-color: #f0f0f0;
+    background-color: #f0eeed;
     margin-top: 5px;
     margin-bottom: 8px;
     border-radius: 15px;
