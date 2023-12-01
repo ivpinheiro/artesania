@@ -25,7 +25,7 @@
         </div>
         
         <div class="has-login">
-            <a href="#!" class="text-reset"><b>Possuo Cadastro></b></a>
+            <RouterLink to="/login" class="text-decoration-none haslogin-txt"><b>Possuo Cadastro>></b></RouterLink>
         </div> 
     </div>
 </template>
@@ -86,8 +86,12 @@
     align-items: center;
     font-size: 100%;
     margin: 2%;
-
 }
+
+.haslogin-txt{
+    color: #000;
+}
+
 .high-contrast {
     color: white;
     background: black;

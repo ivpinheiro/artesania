@@ -11,7 +11,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <SpinnerLoader />
+                <SpinnerLoader/>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
     </div>
     <hr class="h-divider">
 
-    <OurArtists id="nossos_artistas" />
+    <OurArtists id="nossos_artistas"/>
 
     <hr class="h-divider">
 

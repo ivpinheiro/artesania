@@ -16,8 +16,8 @@
         <button class="SocialSign"><font-awesome-icon class="fa" id="social-sign" icon="fa-brands fa-facebook"/>Entrar com Facebook</button>
 
         <div class="forgot-firstTime">
-            <a href="#!" class="text-reset"><b>Esqueceu a senha></b></a>
-            <a href="#!" class="text-reset"><b>Primeiro Acesso></b></a>
+            <RouterLink to="/sign" class="text-reset"><b>Esqueceu a senha></b></RouterLink>
+            <RouterLink to="/sign" class="text-reset"><b>Primeiro Acesso></b></RouterLink>
         </div>
         
     </div>
