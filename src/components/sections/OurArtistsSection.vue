@@ -4,16 +4,24 @@
             <div>
                 <h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1>
             </div>
-            <div class="line" v-for="(artist, index) in artists.slice(0, 2)" :key="index">
-                <div :id="`${this.cssStyles[index]}`" class="full-on-mobile"
-                    :style="{ 'backgroundImage': 'url(' + getImageUrl(artist['artist-profile-url']) + ')' }">
-                    <p :class="`${this.cssStyles[index]}Name`">{{ artist.name }}</p>
+            <div class="line">
+                <div class="artist-container" v-for="(artist, index) in artists.slice(0, 2)" :key="index">
+                    <router-link :to="`/gallery/artist/${artist.id}`" class="text-decoration-none">
+                        <div :id="`${this.cssStyles[index]}`" class="full-on-mobile"
+                            :style="{ 'backgroundImage': 'url(' + getImageUrl(artist['artist-profile-url']) + ')' }">
+                            <p :class="`${this.cssStyles[index]}Name`" class="artist-name-global">{{ artist.name }}</p>
+                        </div>
+                    </router-link>
                 </div>
             </div>
-            <div class="line" v-for="(artist, index) in artists.slice(2, 4)" :key="index">
-                <div :id="`${this.cssStyles[index + 2]}`" class="full-on-mobile"
-                    :style="{ 'backgroundImage': 'url(' + getImageUrl(artist['artist-profile-url']) + ')' }">
-                    <p :class="`${this.cssStyles[index + 2]}Name`">{{ artist.name }}</p>
+            <div class="line">
+                <div class="artist-container" v-for="(artist, index) in artists.slice(2, 4)" :key="index">
+                    <router-link :to="`/gallery/artist/${artist.id}`" class="text-decoration-none">
+                        <div :id="`${this.cssStyles[index + 2]}`" class="full-on-mobile"
+                            :style="{ 'backgroundImage': 'url(' + getImageUrl(artist['artist-profile-url']) + ')' }">
+                            <p :class="`${this.cssStyles[index + 2]}Name`">{{ artist.name }}</p>
+                        </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -66,6 +74,11 @@ export default {
     @media (max-width: 1160px) {
         height: fit-content;
     }
+}
+
+.artist-container {
+    flex: 1;
+    padding: 0 5px;
 }
 
 .firstSection .headline {
@@ -149,7 +162,7 @@ export default {
     background-size: cover;
     background-position: center;
     height: 93%;
-    width: 65%;
+    width: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -158,7 +171,7 @@ export default {
     background-size: cover;
     background-position: center;
     height: 93%;
-    width: 33%;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -167,7 +180,7 @@ export default {
     background-size: cover;
     background-position: center;
     height: 95%;
-    width: 49%;
+    width: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -176,7 +189,7 @@ export default {
     background-size: cover;
     background-position: center;
     height: 95%;
-    width: 49%;
+    width: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
