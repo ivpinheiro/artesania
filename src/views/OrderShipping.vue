@@ -13,12 +13,10 @@
         </div>
         
         <h1 class="title">Resumo da encomenda</h1>
-        <div class="bigger-container">
-    
-            <OrderOptionsTableVertical></OrderOptionsTableVertical>
-            
-            <div class="orderDetails-area">
-                <div class="chat-container">
+         
+            <div class="bigger-container">
+                <OrderOptionsTableVertical></OrderOptionsTableVertical>
+                <div class="chat-container">          
                     <div class="indicator-container">
                         <div class="chat-bubble">Olá, como vai? Eu gostaria que minha pintura fosse abstrata com elementos em preto e branco</div>
                         <div class="indicator"></div>
@@ -43,17 +41,16 @@
                             <img src="@/assets/img/products/ImageSent-3.svg" alt="imagem enviada 3">
                             <div class="more-imgs">
                                 <img src="@/assets/img/products/ImageSent-4.svg" alt="Mais duas imagens">
-                                    <div class="moreImgs-text">
-                                        <span>+2</span>
-                                    </div>
+                                <div class="moreImgs-text">
+                                    <span>+2</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</template>
+    </template>
 
 <script>
 
@@ -78,23 +75,45 @@ export default {
     padding-bottom: 1rem;
 }
 
+
+
 .content{
     color: #5a5a5a;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 2rem;
 }
 
 .bigger-container{
+    background-color: #f0f0f0;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
     padding: 0rem 5rem;
     top: 50%;
+    margin: 0% 15%;
+    align-items: center; 
+    justify-items: center; 
+    @media (max-width: 780px) {
+        margin: 0% 5%;
+        overflow: hidden;   
+    }
+    @media (max-width: 580px) {
+        margin: 0% 2%;
+    }
+}
+
+.chat-container {
+    /* margin: 0 auto; */
+    align-items: flex-end;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .confirm-text{
-    padding: 2rem 0;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,21 +133,14 @@ export default {
     font-weight: 900;
     line-height: normal;
     margin-top: 20px;
+    margin: 0% 15%;
     padding: 1rem;
     align-self: self-start;
     @media (max-width: 1060px) {
         font-size: 26px;
     }
 }
-.chat-container {
-    /* margin: 0 auto; */
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+
 .indicator-container {
     display: flex;
     justify-content: center;
