@@ -22,7 +22,7 @@
       "url": "product-2.svg",
       "best-seller": false,
       "new-product": true,
-      "artist-id": "1"
+      "artist-id": "2"
     },
     {
       "id": 3,
@@ -58,7 +58,7 @@
       "url": "product-5.svg",
       "best-seller": true,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "1"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "url": "product-6.svg",
       "best-seller": true,
       "new-product": false,
-      "artist-id": "1"
+      "artist-id": "2"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "url": "product-7.svg",
       "best-seller": true,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "3"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "url": "product-8.svg",
       "best-seller": true,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "4"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "url": "product-9.svg",
       "best-seller": false,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "1"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "url": "product-10.svg",
       "best-seller": true,
       "new-product": true,
-      "artist-id": "5"
+      "artist-id": "2"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "url": "product-11.svg",
       "best-seller": false,
       "new-product": true,
-      "artist-id": "5"
+      "artist-id": "3"
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
       "url": "product-12.svg",
       "best-seller": true,
       "new-product": true,
-      "artist-id": "5"
+      "artist-id": "4"
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "url": "product-13.svg",
       "best-seller": false,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "1"
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
       "url": "product-14.svg",
       "best-seller": false,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "2"
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
       "url": "product-15.svg",
       "best-seller": true,
       "new-product": false,
-      "artist-id": "5"
+      "artist-id": "3"
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
       "url": "product-16.svg",
       "best-seller": false,
       "new-product": true,
-      "artist-id": "5"
+      "artist-id": "4"
     }
   ],
   "clients": [
@@ -216,8 +216,8 @@
   "artists": [
     {
       "id": 1,
-      "name": "Isabela Almeida",
-      "artist-bio": "Isabela é uma pintora contemporânea conhecida por suas obras abstratas que retratam emoções humanas.",
+      "name": "Marcio Almeida",
+      "artist-bio": "Marcio é um pintor contemporâneo conhecido por suas obras abstratas que retratam emoções humanas.",
       "rating": 4.8,
       "sales": 1200,
       "artist-profile-url": "artist-id-1",
@@ -229,8 +229,8 @@
     },
     {
       "id": 2,
-      "name": "Rafael Oliveira",
-      "artist-bio": "Rafael é um escultor especializado em obras de arte feitas a partir de materiais reciclados.",
+      "name": "Rafaela Oliveira",
+      "artist-bio": "Rafaela é um escultora especializada em obras de arte feitas a partir de materiais reciclados.",
       "rating": 4.5,
       "sales": 800,
       "artist-profile-url": "artist-id-2",
@@ -268,8 +268,8 @@
     },
     {
       "id": 5,
-      "name": "Larissa Ferreira",
-      "artist-bio": "Larissa é uma artesã conhecida por suas peças únicas de cerâmica feitas à mão.",
+      "name": "Fábio Ferreira",
+      "artist-bio": "Fábio é uma artesão conhecido por suas peças únicas de cerâmica feitas à mão.",
       "rating": 4.6,
       "sales": 950,
       "artist-profile-url": "artist-id-5",
@@ -346,8 +346,8 @@
     },
     {
       "id": 11,
-      "name": "Amanda Barbosa",
-      "artist-bio": "Amanda é uma artista de rua famosa por suas pinturas murais inspiradoras.",
+      "name": "Luiz Barbosa",
+      "artist-bio": "Luiz é um artista de rua famoso por suas pinturas murais inspiradoras.",
       "rating": 4.8,
       "sales": 1100,
       "artist-profile-url": "artist-id-11",
@@ -359,8 +359,8 @@
     },
     {
       "id": 12,
-      "name": "Bruno Oliveira",
-      "artist-bio": "Bruno é um cineasta premiado por seus documentários impactantes sobre questões sociais.",
+      "name": "Bruna Oliveira",
+      "artist-bio": "Bruna é uma cineasta premiada por seus documentários impactantes sobre questões sociais.",
       "rating": 4.9,
       "sales": 1250,
       "artist-profile-url": "artist-id-12",
@@ -372,8 +372,8 @@
     },
     {
       "id": 13,
-      "name": "Carolina Santos",
-      "artist-bio": "Carolina é uma artista de performance que cria obras interativas e provocativas.",
+      "name": "Josino Santos",
+      "artist-bio": "Josino é um artista de performance que cria obras interativas e provocativas.",
       "rating": 4.7,
       "sales": 950,
       "artist-profile-url": "artist-id-13",
@@ -398,8 +398,8 @@
     },
     {
       "id": 15,
-      "name": "Fernanda Costa",
-      "artist-bio": "Fernanda é uma artista multimídia que combina tecnologia e arte em suas instalações.",
+      "name": "Fernando Costa",
+      "artist-bio": "Fernando é um artista multimídia que combina tecnologia e arte em suas instalações.",
       "rating": 4.9,
       "sales": 1150,
       "artist-profile-url": "artist-id-15",
@@ -424,8 +424,8 @@
     },
     {
       "id": 17,
-      "name": "Helena Gonçalves",
-      "artist-bio": "Helena é uma artista têxtil que produz tapeçarias intricadas e detalhadas.",
+      "name": "José Gonçalves",
+      "artist-bio": "José é um artista têxtil que produz tapeçarias intricadas e detalhadas.",
       "rating": 4.6,
       "sales": 900,
       "artist-profile-url": "artist-id-17",
@@ -437,8 +437,8 @@
     },
     {
       "id": 18,
-      "name": "Ícaro Lima",
-      "artist-bio": "Ícaro é um ilustrador de quadrinhos reconhecido por suas narrativas envolventes.",
+      "name": "Erica Lima",
+      "artist-bio": "Erica é uma ilustradora de quadrinhos reconhecido por suas narrativas envolventes.",
       "rating": 4.8,
       "sales": 1100,
       "artist-profile-url": "artist-id-18",
@@ -463,8 +463,8 @@
     },
     {
       "id": 20,
-      "name": "Kevin Silva",
-      "artist-bio": "Kevin é um pintor realista que retrata paisagens urbanas com grande detalhamento.",
+      "name": "Bianca Silva",
+      "artist-bio": "Bianca é uma pintora realista que retrata paisagens urbanas com grande detalhamento.",
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-20",
@@ -476,8 +476,8 @@
     },
     {
       "id": 21,
-      "name": "Laura Oliveira",
-      "artist-bio": "Laura é uma artista de colagem que cria composições surreais com recortes de revistas.",
+      "name": "Leonardo Oliveira",
+      "artist-bio": "Leonardo é um artista de colagem que cria composições surreais com recortes de revistas.",
       "rating": 4.8,
       "sales": 1050,
       "artist-profile-url": "artist-id-21",
@@ -489,8 +489,8 @@
     },
     {
       "id": 22,
-      "name": "Marcelo Santos",
-      "artist-bio": "Marcelo é um artista gráfico que trabalha com arte vetorial e formas abstratas.",
+      "name": "Marcela Santos",
+      "artist-bio": "Marcela é uma artista gráfico que trabalha com arte vetorial e formas abstratas.",
       "rating": 4.6,
       "sales": 950,
       "artist-profile-url": "artist-id-22",
@@ -502,8 +502,8 @@
     },
     {
       "id": 23,
-      "name": "Natalia Fernandes",
-      "artist-bio": "Natalia é uma fotógrafa documentalista que capta a essência de diferentes culturas.",
+      "name": "Gabriel Fernandes",
+      "artist-bio": "Gabriel é um fotógrafo documentalista que capta a essência de diferentes culturas.",
       "rating": 4.9,
       "sales": 1250,
       "artist-profile-url": "artist-id-23",
@@ -515,8 +515,8 @@
     },
     {
       "id": 24,
-      "name": "Otávio Silva",
-      "artist-bio": "Otávio é um escultor contemporâneo que trabalha principalmente com metal.",
+      "name": "Aline Silva",
+      "artist-bio": "Aline é uma escultora contemporânea que trabalha principalmente com metal.",
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-24",
