@@ -145,12 +145,16 @@
       </div>
     </div>
     <div class="button-group">
-      <button class="buttonPrimary">
-        Enviar Orçamento
-      </button>
-      <button class="buttonSecondary">
-        Recusar Pedido
-      </button>
+      <RouterLink class="link-class-none" to="/dashboard/confirmation">
+        <button class="buttonPrimary">
+          Enviar Orçamento
+        </button>
+      </RouterLink>
+      <RouterLink class="link-class-none" to="/dashboard">
+        <button class="buttonSecondary">
+          Recusar Pedido
+        </button>
+      </RouterLink>
     </div>
   </div>
 </template>

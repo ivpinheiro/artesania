@@ -3,6 +3,7 @@ import HomePage from '@/views/HomePage.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import DashboardPage from '@/views/DashboardPage.vue'
 import OrderAgreementPage from '@/views/OrderAgreementPage.vue'
+import OrderAgreementConfirmationPage from '@/views/OrderAgreementConfirmationPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
@@ -82,7 +83,7 @@ const router = createRouter({
       name: 'NegotiationChat',
       component: NegotiationChat,
       meta: {
-        breadcrumb: 'Chat'
+        breadcrumb: 'Mira Morani  /  Chat '
       }
     }, 
     {
@@ -102,6 +103,15 @@ const router = createRouter({
       }
 
     },
+    {
+      path: '/dashboard/confirmation',
+      name: 'OrderAgreementConfirmationPage',
+      component: OrderAgreementConfirmationPage,
+      meta: {
+        breadcrumb: 'Mira Morani  /  Meu Painel '
+      }
+    },
+    
   ],
   scrollBehavior(to, from, savedPosition) {
     // sempre rolar para o topo quando mudar de rota

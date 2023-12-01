@@ -32,17 +32,6 @@
           <th>Frete</th>
           <th>Ações</th>
         </tr>
-        <tr id="highlight">
-          <td>11:20 PM</td>
-          <td>Luiz Benedetto</td>
-          <td>Correios</td>
-          <td>
-            <RouterLink class="link-class-none" to="/dashboard/encomenda">
-            <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
-            </RouterLink>
-            <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
-          </td>
-        </tr>
         <tr>
           <td>11:21 PM</td>
           <td>Thamyres Silva</td>
@@ -80,6 +69,17 @@
           <th>Cliente</th>
           <th>Frete</th>
           <th>Ações</th>
+        </tr>
+        <tr id="highlight">
+          <td>11:20 PM</td>
+          <td>Luiz Benedetto</td>
+          <td>Correios</td>
+          <td>
+            <RouterLink class="link-class-none" to="/dashboard/encomenda">
+            <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
+            </RouterLink>
+            <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
+          </td>
         </tr>
         <tr>
           <td>11:24 PM</td>

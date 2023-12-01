@@ -1,5 +1,5 @@
 <template>
-    <div class="constrat">
+    <div class="contrast">
         <div class="breadcrumbs">
             <BreadCrumbComponent></BreadCrumbComponent>
         </div>
@@ -12,8 +12,8 @@
             </div>
         </div>
         <div class="confirm-area">
-            <button class="buttonPrimary-aceitar">Aceitar</button>
-            <button class="buttonPrimary-cancelar">Cancelar</button>
+            <button class="buttonPrimary-aceitar contrast">Aceitar</button>
+            <button class="buttonPrimary-cancelar contrast">Cancelar</button>
         </div>
     </div>
 </template>
