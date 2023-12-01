@@ -46,7 +46,6 @@ export default {
             let response = await ProductService.getAllArtists()
             this.artists = response.data
             this.loading = false
-            console.log(this.artists)
         } catch (error) {
             this.errorMessage = error
             this.loading = false

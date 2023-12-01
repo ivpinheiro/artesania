@@ -15,14 +15,17 @@
                     </router-link>
                 </template>
                 <template v-else>
-                    <p class="d-flex page-active" v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ value.meta.breadcrumb +
+                    <p class="d-flex page-active" v-if="isProductBreadcrumb(value.meta.breadcrumb)">{{ value.meta.breadcrumb
+                        +
                         ': ' + product.name }}</p>
                     <p class="d-flex page-active" v-else>{{ value.meta.breadcrumb }}</p>
                 </template>
             </li>
+            <template v-if="this.$route.path.includes('gallery/artist')">
+                <p class="d-flex page-active">{{ this.artist.name }}</p>
+            </template>
         </ol>
     </div>
-    
 </template>
 
 <script>
@@ -35,6 +38,7 @@ export default {
         return {
             newValue: '',
             product: {},
+            artist: {},
             showBreadCrumb: false
         }
     },
@@ -63,6 +67,11 @@ export default {
     },
     created: async function () {
         try {
+            if (this.$route.path.includes('gallery/artist')) {
+                let response = await ProductService.getAllArtist(this.$route.params.artistId)
+                this.artist = response.data
+                this.showBreadCrumb = true
+            }
             if (this.$route.path.includes('products')) {
                 let response = await ProductService.getProduct(this.$route.params.productId)
                 this.product = response.data
@@ -78,10 +87,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.breadcrumb-area{
+.breadcrumb-area {
     padding: 0 7rem;
 }
+
 .breadcrumb {
     padding: 0px 0px;
     white-space: pre;
