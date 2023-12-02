@@ -22,4 +22,8 @@ export class ProductService {
         let dataURL = `${this.serverURL}/artists/${artistId}`;
         return axios.get(dataURL);
     }
+    static getAnchors() {
+        let dataURL = `${this.serverURL}/pathAnchor`;
+        return axios.get(dataURL);
+    }
 }

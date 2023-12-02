@@ -1,17 +1,9 @@
 <template>
-    <ul class="nav contrast justify-content-center flex-on-cell">
-        <span class="desktop-only" style="display: flex;" v-if="isHidden">
-            <li class="nav-item desktop-only">
-                <a class="nav-link active" aria-current="page" href="#acabou-chegar">Ir para acabou de chegar [1]</a>
-            </li>
-            <li class="nav-item desktop-only">
-                <a class="nav-link" href="#mais-vendidos">Ir para mais vendidos [2]</a>
-            </li>
-            <li class="nav-item desktop-only">
-                <a class="nav-link" href="#nossos_artistas">Ir para nossos artistas [3]</a>
-            </li>
-            <li class="nav-item desktop-only">
-                <a class="nav-link" href="#footer">Ir para rodapé [4]</a>
+    <ul class="nav contrast justify-content-center flex-on-cell" :key="this.$route.path">
+        <span class="desktop-only" style="display: flex;" v-if="shouldRender">
+            <li class="nav-item desktop-only" v-for="(item, index) in pageAnchor[0].listPathAncor" :key="index">
+                <a class="nav-link" :href="`#${Object.keys(item)}`">Ir para: {{ item[Object.keys(item)] }} [{{ index + 1
+                }}]</a>
             </li>
         </span>
         <li class="nav-item">
@@ -27,9 +19,18 @@
   
 <script>
 import { GlobalUtils } from '@/utilities/GlobalUtils.ts'
+import { ProductService } from '@/services/ProductService.ts'
 
 export default {
     name: 'AcessibilityMenu',
+    data() {
+        return {
+            anchors: [],
+            pageName: '',
+            pageAnchor: [],
+            loading: false
+        }
+    },
     props: {
         hiddenFullElements: {
             type: Array,
@@ -42,18 +43,33 @@ export default {
         isHidden() {
             return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route, this.hiddenFullElements)
         },
+        shouldRender() {
+            return this.isHidden && this.loading && this.pageAnchor[0]?.listPathAncor;
+        }
     },
     beforeRouteUpdate(to, from, next) {
         console.log(to.name);
         next();
     },
-    created() {
-        this.$watch(
-            () => this.$route,
-            (to, from) => {
-                console.log(to.name);
-            }
-        );
+    created: async function () {
+        try {
+            this.$watch(
+                () => this.$route,
+                async (to, from) => {
+                    this.pageName = to.name
+                    let responseProducts = await ProductService.getAnchors()
+                    this.anchors = responseProducts.data
+                    this.pageAnchor = this.anchors.filter(item => item.routerPageName.includes(this.pageName))
+                    console.log(this.pageAnchor.length)
+                    if (this.pageAnchor.length > 0) {
+                        this.loading = true
+                    }
+                }
+            )
+        } catch (error) {
+            this.errorMessage = error
+            this.loading = false
+        }
     },
 };
 </script>
@@ -62,7 +78,6 @@ export default {
     background-color: $acessibility-menu-color;
     min-height: fit-content;
     max-height: min-content;
-
     justify-content: center;
     align-items: center;
 }
