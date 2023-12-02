@@ -66,10 +66,13 @@
         <hr class="divider">
 
         <div class="btn-filter filters">
-          <button class="btn buttonPrimary">Aplicar Filtro</button>
-          <RouterLink to="/order/page" class="text-decoration-none">
-            <button class="btnOrder buttonPrimary">Fazer Encomenda</button>
-          </RouterLink>
+          <button class="btn btnOrder buttonPrimary">Aplicar Filtro</button>
+          <button class="btn btnOrder buttonPrimary">
+            <RouterLink to="/order/page"
+              class="d-flex justify-content-center align-items-center text-decoration-none router-link">
+              Fazer Encomenda
+            </RouterLink>
+          </button>
         </div>
       </div>
       <div class="secondSection contrast">
@@ -222,7 +225,7 @@ export default {
 .gallery {
   display: flex;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
@@ -296,6 +299,11 @@ export default {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  padding: 0;
+}
+
+.router-link:hover {
+  color: black;
 }
 
 .products {
@@ -319,10 +327,9 @@ export default {
 }
 
 @media (max-width: 768px) {
-    .btnOrder{
-      width: 80vw;
-      height: 50px;
-      border-style: none;
-    }
-} 
+  .btnOrder {
+    height: 50px;
+    border-style: none;
+  }
+}
 </style>

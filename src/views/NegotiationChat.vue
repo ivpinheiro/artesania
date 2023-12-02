@@ -12,11 +12,9 @@
             </div>
         </div>
         <div class="confirm-area">
-            <RouterLink to="/order/payment" class="text-decoration-none">
-                <button class="buttonPrimary-aceitar contrast">
-                    Aceitar
-                </button>
-            </RouterLink>
+            <button class="buttonPrimary-aceitar contrast">
+                <RouterLink to="/order/payment">Aceitar</RouterLink>
+            </button>
             <button class="buttonPrimary-cancelar contrast">Cancelar</button>
         </div>
     </div>

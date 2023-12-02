@@ -75,3 +75,17 @@ a,
     border: none;
     margin: 0px 8%;
 }
+
+
+a[routerLink] {
+    text-decoration: none;
+    color: inherit;
+    border-style: none;
+    text-decoration: none;
+}
+
+.router-link {
+    color: white;
+    text-decoration: none;
+    border-style: none;
+}
