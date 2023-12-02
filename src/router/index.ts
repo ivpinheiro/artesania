@@ -35,14 +35,14 @@ const router = createRouter({
     },
     {
       path: '/sign',
-      name: '/sign',
+      name: 'sign-in',
       component: SignPage,
       meta: {
         breadcrumb: 'Cadastre-se'
       }
     },
     {
-      path: '/dashboard',
+      path: '/dashboard/order',
       name: 'dashboard',
       component: DashboardPage,
       meta: {
@@ -67,7 +67,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/payment',
+      path: '/order/payment',
       name: 'payment',
       component: PaymentPage,
       meta: {
@@ -76,41 +76,41 @@ const router = createRouter({
     },
     {
       path: '/products/view/:productId',
-      name: 'ProductPage',
+      name: 'product-page',
       component: ProductPage,
       meta: {
         breadcrumb: 'Obra'
       }
     },
     {
-      path: '/confirmPayment',
-      name: 'confirmPayment',
+      path: '/order/payment/confirm',
+      name: 'confirm-payment',
       component: ConfirmPaymentPage,
     },
     {
-      path: '/orderShipping',
-      name: '/orderShipping',
+      path: '/order-shipping',
+      name: 'order-shipping',
       component: OrderShipping,
     },
     {
       path: '/chat',
-      name: 'NegotiationChat',
+      name: 'negotiation-chat',
       component: NegotiationChat,
       meta: {
         breadcrumb: 'Mira Morani  /  Chat '
       }
     }, 
     {
-      path: '/dashboard/order',
-      name: 'OrderAgreement',
+      path: '/dashboard/order/agreement',
+      name: 'order-agreement',
       component: OrderAgreementPage,
       meta: {
         breadcrumb: 'Pedidos / Encomenda Nº123'
       }
     },
     {
-      path: '/orderPage',
-      name: 'OrderPage',
+      path: '/order/page',
+      name: 'order-page',
       component: OrderPage,
       meta: {
         breadcrumb: 'Pedidos / Encomenda'
@@ -119,7 +119,7 @@ const router = createRouter({
     },
     {
       path: '/dashboard/confirmation',
-      name: 'OrderAgreementConfirmationPage',
+      name: 'order-agreement-confirmation-page',
       component: OrderAgreementConfirmationPage,
       meta: {
         breadcrumb: 'Mira Morani  /  Meu Painel '

@@ -630,5 +630,89 @@
         "Sustentabilidade"
       ]
     }
+  ],
+  "pathAnchor": [
+    {
+      "routerPageName": "home",
+      "listPathAncor": [
+        "acabou-de-chegar",
+        "mais-vendidos",
+        "nossos-artistas",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "gallery",
+      "listPathAncor": [
+        "galeria",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "order-page",
+      "listPathAncor": [
+        "encomenda",
+        "detalhes-do-pedido",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "order-shipping",
+      "listPathAncor": [
+        "obrigado",
+        "resumo-da-encomenda",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "dashboard",
+      "listPathAncor": [
+        "encomendas",
+        "faturadas",
+        "enviadas",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "order-agreement",
+      "listPathAncor": [
+        "encomenda",
+        "detalhes-do-pedido",
+        "qual-o-valor-da-encomenda",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "negotiation-chat",
+      "listPathAncor": [
+        "chat",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "payment",
+      "listPathAncor": [
+        "escolha-forma-de-pagamento",
+        "insira-informações-de-pagamento",
+        "detalhes-da-compra",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "confirm-payment",
+      "listPathAncor": [
+        "pagamento-confirmado",
+        "rodape"
+      ]
+    },
+    {
+      "routerPageName": "order-agreement-confirmation-page",
+      "listPathAncor": [
+        "encomendas",
+        "faturadas",
+        "enviadas",
+        "rodape"
+      ]
+    }
   ]
 }

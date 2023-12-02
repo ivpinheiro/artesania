@@ -67,7 +67,7 @@
 
         <div class="btn-filter filters">
           <button class="btn buttonPrimary">Aplicar Filtro</button>
-          <RouterLink to="/orderPage" class="text-decoration-none">
+          <RouterLink to="/order/page" class="text-decoration-none">
             <button class="btnOrder buttonPrimary">Fazer Encomenda</button>
           </RouterLink>
         </div>

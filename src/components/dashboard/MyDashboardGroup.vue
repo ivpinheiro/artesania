@@ -1,4 +1,4 @@
-<template>  
+<template>
   <div class="dashboard">
     <div class="firstSection">
       <div class="circle">
@@ -37,8 +37,8 @@
           <td>Luiz Benedetto</td>
           <td>Correios</td>
           <td>
-            <RouterLink class="link-class-none" to="/dashboard/order">
-            <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
+            <RouterLink class="link-class-none" to="/dashboard/order/agreement">
+              <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             </RouterLink>
             <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
           </td>

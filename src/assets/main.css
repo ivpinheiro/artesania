@@ -51,17 +51,27 @@ a,
 .breadcrumbs {
     margin: 20px 8%;
 
-        font-weight: 500;
-        font-size: 16px;
-    
+    font-weight: 500;
+    font-size: 16px;
+
 }
+
 .breadcrumb-item {
     margin: 0px !important;
     text-decoration: none;
 }
-.breadcrumb-area{
+
+.breadcrumb-area {
     padding: 0px !important;
 }
-.text-decoration{
+
+.text-decoration {
     text-decoration: none;
+}
+
+.divider {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.10);
+    border: none;
+    margin: 0px 8%;
 }

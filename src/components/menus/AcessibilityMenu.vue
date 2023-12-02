@@ -42,6 +42,13 @@ export default {
         isHidden() {
             return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route, this.hiddenFullElements)
         }
+    },
+    created: function () {
+        try {
+            console.log(this.$route.name)
+        } catch (error) {
+
+        }
     }
 };
 </script>

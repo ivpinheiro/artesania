@@ -10,7 +10,7 @@
       </div>
       <div class="verticalLine"></div>
       <div class="buttonPrimary">
-        <RouterLink class="link-class-none" to="/dashboard">ÁREA DO ARTISTA</RouterLink>
+        <RouterLink class="link-class-none" to="/dashboard/order">ÁREA DO ARTISTA</RouterLink>
       </div>
     </div>
   </div>
