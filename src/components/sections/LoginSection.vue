@@ -57,7 +57,7 @@
     margin-bottom: 10%;
     border: 0px;
     border-radius: 62px;
-    width: 50%;
+    width:  50%;
     height: 50px;
     color: #fff;
     font-weight: 600;

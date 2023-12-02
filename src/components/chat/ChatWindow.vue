@@ -14,7 +14,7 @@
             class="profile-image artist-profile" alt="Artist" />
         </div>
       </div>
-
+      <div class="message-list-manual"></div>
 
       <div class="message-input">
         <img src="@/assets/img/chat/chat_microfone.svg" alt="imagem de um microfone" />
@@ -63,11 +63,8 @@ export default {
 .chat-container {
   background-color: #f0eeed;
   border-radius: 5%;
-  width: 50%;
+  margin: 0 3rem;
   padding: 1rem;
-  margin-left: 25%;
-  margin-top: 1%;
-  margin-bottom: 10%;
   border: 0px;
   height: auto;
   color: #fff;
@@ -75,6 +72,7 @@ export default {
 }
 
 .message-list {
+  display: none;
   height: 400px;
   overflow-y: auto;
   background: #ececec;

@@ -1,21 +1,17 @@
 <template>
-    <div class="contrast" id="chat">
-        <div class="breadcrumbs">
-            <BreadCrumbComponent></BreadCrumbComponent>
-        </div>
-        <div class="container">
-            <div class="chat-area">
-                <ChatWindow></ChatWindow>
-            </div>
-            <div class="video-area">
-                <VideoChat></VideoChat>
-            </div>
+    <div class="breadcrumbs">
+        <BreadCrumbComponent></BreadCrumbComponent>
+    </div>
+    <div class="container">
+        <div class="chat-container contrast" id="chat">
+            <VideoChat></VideoChat>
+            <ChatWindow></ChatWindow>
         </div>
         <div class="confirm-area">
-            <button class="buttonPrimary-aceitar contrast">
-                <RouterLink to="/order/payment">Aceitar</RouterLink>
-            </button>
-            <button class="buttonPrimary-cancelar contrast">Cancelar</button>
+                <RouterLink to="/order/payment" class="text-decoration-none">
+                    <button class="buttonPrimary-aceitar contrast">Aceitar</button>
+                </RouterLink>
+                <button class="buttonPrimary-cancelar contrast">Cancelar</button>
         </div>
     </div>
 </template>
@@ -44,30 +40,52 @@ export default {
     padding-bottom: 1rem;
 }
 
-.confirm-area {
+.container{
     display: flex;
-    justify-content: center;
-    padding: 1rem 0 5rem 0;
+    flex-direction: column;
+}
+
+.chat-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.confirm-area {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (max-width: 1060px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 .buttonPrimary-aceitar {
-    background-color: #EAB766;
+    background-color: #9D3207;
+    margin-top: 20px;
     border: 0px;
     border-radius: 62px;
-    width: 25vh;
-    height: 40px;
+    width: 210px;
+    height: 52px;
     color: #fff;
+    font-family: 'Inter';
     font-weight: 600;
+    margin: 0 2rem;
 }
 
 .buttonPrimary-cancelar {
     background-color: #EDEDED;
+    margin-top: 20px;
     border: 0px;
     border-radius: 62px;
-    width: 25vh;
-    height: 40px;
-    color: #333;
+    width: 210px;
+    height: 52px;
+    color: #000;
+    font-family: 'Inter';
     font-weight: 600;
+    margin: 0 2rem;
 }
 
 .high-contrast {

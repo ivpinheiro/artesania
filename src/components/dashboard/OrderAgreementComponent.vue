@@ -19,7 +19,7 @@
         <div class="progress-bar"></div>
         <span class="time">12:52</span>
         <button class="mic-icon">
-          <img src="./../../assets/img/artist-dashboard/microfone.svg" alt="Microphone" />
+          <img src="@/assets/img/artist-dashboard/microfone.svg" alt="Microphone" />
         </button>
       </div>
 

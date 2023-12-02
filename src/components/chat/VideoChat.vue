@@ -1,5 +1,5 @@
 <template>
-    <div class="contrast">
+    <div class="container contrast">
         <div class="video-icon">
             <p class="video-title">Solicitar Chamada de video</p>
             <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="User" />
@@ -14,6 +14,12 @@ export default {
 </script>
 
 <style>
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .video-icon{
     display: flex;
