@@ -11,7 +11,7 @@
             <h3>Obrigado</h3><br>
             <p>A sua encomenda foi efetuada e enviada para o Artista!</p>
         </div>
-        <h1 class="title" id="resumo-da-encomenda">Resumo da encomenda</h1>
+        <h1 class="title" id="resumo-da-encomenda">Resumo da encomenda:</h1>
 
         <div class="bigger-container">
             <OrderOptionsTableVertical></OrderOptionsTableVertical>
@@ -31,7 +31,7 @@
                     <div class="progress-bar"></div>
                     <span class="time">12:52</span>
                     <button class="mic-icon">
-                        <img src="./../assets/img/artist-dashboard/microfone.svg" alt="Microfone">
+                        <img src="@/assets/img/artist-dashboard/microfone.svg" alt="Microfone">
                     </button>
                 </div>
                 <div class="indicator-container">
@@ -88,11 +88,11 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
-    padding: 0rem 5rem;
+    padding: 0rem 2rem;
     top: 50%;
     margin: 0% 15%;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
 
     @media (max-width: 780px) {
         margin: 0% 5%;
@@ -172,7 +172,7 @@ export default {
     align-items: center;
     background-size: cover;
     border-radius: 18px;
-    width: 45%;
+    width: 100%;
     padding: 9px;
     background-color: #fff;
 

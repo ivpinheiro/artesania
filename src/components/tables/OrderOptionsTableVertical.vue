@@ -67,7 +67,9 @@ export default {
 .dashboard {
     display: flex;
     flex-direction: column;
-    margin: 0% 15%;
+    width: 100%;
+    padding: 3rem;
+    /* margin: 0% 15%; */
     @media (max-width: 780px) {
         margin: 0% 5%;
         overflow: hidden;   
@@ -97,13 +99,12 @@ export default {
 .tabs {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    /* align-items: center;  */
     gap: 10px; 
 }
 
 .tab {
-    width: auto; 
-    text-align: center; 
+    margin-bottom: 2rem;
 }
 
 .tab span{
@@ -122,17 +123,9 @@ export default {
     }
 }
 
-.options-group{
-    background-color: #f0eeed;
-    margin-top: 5px;
-    margin-bottom: 8px;
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: 1060px) {
-        flex-wrap: wrap;
-    }
+.checkbox-group{
+    margin: 0.5rem 0;
 }
+
 
 </style>
