@@ -1,119 +1,6 @@
 <template>
+  <OrderOptionsTable></OrderOptionsTable>
   <div class="dashboard">
-    <h1 class="title no-margin" id="encomenda">Encomenda</h1>
-    <div class="tabs">
-      <div class="tab">
-        <span>Meio e Suporte</span>
-      </div>
-      <div class="tab">
-        <span>Técnica</span>
-      </div>
-      <div class="tab">
-        <span>Composição</span>
-      </div>
-      <div class="tab">
-        <span>Estilo</span>
-      </div>
-      <div class="tab">
-        <span>Textura</span>
-      </div>
-    </div>
-    <div class="options-group">
-      <div class="checkbox-group">
-        <div>
-          <input type="checkbox" id="oleo" value="Óleo">
-          <label for="oleo">Óleo</label>
-        </div>
-        <div>
-          <input type="checkbox" id="acrilico" value="Acrílico">
-          <label for="acrilico">Acrílico</label>
-        </div>
-        <div>
-          <input type="checkbox" id="aquarela" value="Aquarela">
-          <label for="aquarela">Aquarela</label>
-        </div>
-        <div>
-          <input type="checkbox" id="lapis" value="Lápis">
-          <label for="lapis">Lápis</label>
-        </div>
-      </div>
-
-      <div class="checkbox-group">
-        <div>
-          <input type="checkbox" id="suave" value="Suave">
-          <label for="suave">Suave</label>
-        </div>
-        <div>
-          <input type="checkbox" id="detalhado" value="Detalhado">
-          <label for="detalhado">Detalhado</label>
-        </div>
-        <div>
-          <input type="checkbox" id="expressivo" value="Expressivo">
-          <label for="expressivo">Expressivo</label>
-        </div>
-        <div>
-          <input type="checkbox" id="espatulagem" value="Espatulagem">
-          <label for="espatulagem">Espatulagem</label>
-        </div>
-      </div>
-
-      <div class="checkbox-group">
-        <div>
-          <input type="checkbox" id="tercos" value="Terços">
-          <label for="tercos">Terços</label>
-        </div>
-        <div>
-          <input type="checkbox" id="equilibrio" value="Equilíbrio">
-          <label for="equilibrio">Equilíbrio</label>
-        </div>
-        <div>
-          <input type="checkbox" id="padroes" value="Padrões">
-          <label for="padroes">Padrões</label>
-        </div>
-        <div>
-          <input type="checkbox" id="contraste" value="Contraste">
-          <label for="contraste">Contraste</label>
-        </div>
-      </div>
-
-      <div class="checkbox-group">
-        <div>
-          <input type="checkbox" id="realista" value="Realista">
-          <label for="realista">Realista</label>
-        </div>
-        <div>
-          <input type="checkbox" id="impressionista" value="Impressionista">
-          <label for="impressionista">Impressionista</label>
-        </div>
-        <div>
-          <input type="checkbox" id="abstrato" value="Abstrato">
-          <label for="abstrato">Abstrato</label>
-        </div>
-        <div>
-          <input type="checkbox" id="cubista" value="Cubista">
-          <label for="cubista">Cubista</label>
-        </div>
-      </div>
-
-      <div class="checkbox-group">
-        <div>
-          <input type="checkbox" id="uniforme" value="Uniforme">
-          <label for="uniforme">Uniforme</label>
-        </div>
-        <div>
-          <input type="checkbox" id="aspera" value="Áspera">
-          <label for="aspera">Áspera</label>
-        </div>
-        <div>
-          <input type="checkbox" id="texturizada_aspera" value="Texturizada áspera">
-          <label for="texturizada_aspera">Texturizada áspera</label>
-        </div>
-        <div>
-          <input type="checkbox" id="texturizada_suave" value="Texturizada suave">
-          <label for="texturizada_suave">Texturizada suave</label>
-        </div>
-      </div>
-    </div>
     <h1 class="title" id="detalhes-do-pedido">Detalhes do pedido</h1>
     <div class="chat-container">
       <div class="indicator-container">
@@ -142,7 +29,7 @@
       <h1 class="title" id="qual-o-valor-da-encomenda">Qual o valor da encomenda?</h1>
       <div class="value-container">
         <p class="title-value">Valor em R$</p>
-        <p class="content-value">R$ 15.000,00</p>
+        <input type="number" name="txtOrderValue" id="txtOrderValue">
       </div>
     </div>
     <div class="button-group">
@@ -162,11 +49,13 @@
 
 <script>
 import BreadCrumbComponent from '@/components/breadcrumbs/BreadCrumbComponent.vue'
+import OrderOptionsTable from '@/components/tables/OrderOptionsTable.vue'
 
 export default {
   name: 'OrderAgreementComponent',
   components: {
-    BreadCrumbComponent
+    BreadCrumbComponent,
+    OrderOptionsTable
   }
 }
 </script>
@@ -213,6 +102,20 @@ td {
 
 th {
   width: 25%;
+}
+
+#txtOrderValue{
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: #f0f0f0;
+  outline: none;
+
+  font-size: 26px;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .buttonPrimary {
@@ -435,7 +338,7 @@ th {
   flex-direction: column;
   margin: 0% 15%;
 
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     margin: 0% 5%;
     overflow: hidden;
   }
@@ -457,6 +360,11 @@ th {
 
   @media (max-width: 1060px) {
     font-size: 26px;
+  }
+
+  @media (max-width:768px){
+    margin: 0 !important;
+    padding: 1rem 0 0.5rem 0;
   }
 }
 

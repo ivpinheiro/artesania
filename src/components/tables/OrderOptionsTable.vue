@@ -24,7 +24,7 @@
                     <span>Meio e Suporte</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="oleo" value="Óleo" checked>
+                    <input type="checkbox" id="oleo" value="Óleo" >
                     <label for="oleo">Óleo</label>
                 </div>
                 <div>
@@ -45,7 +45,7 @@
                     <span>Técnica</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="suave" value="Suave" checked>
+                    <input type="checkbox" id="suave" value="Suave" >
                     <label for="suave">Suave</label>
                 </div>
                 <div>
@@ -53,7 +53,7 @@
                     <label for="detalhado">Detalhado</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="expressivo" value="Expressivo" checked>
+                    <input type="checkbox" id="expressivo" value="Expressivo" >
                     <label for="expressivo">Expressivo</label>
                 </div>
                 <div>
@@ -66,7 +66,7 @@
                     <span>Composição</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="tercos" value="Terços" checked>
+                    <input type="checkbox" id="tercos" value="Terços" >
                     <label for="tercos">Terços</label>
                 </div>
                 <div>
@@ -99,7 +99,7 @@
                     <label for="abstrato">Abstrato</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="cubista" value="Cubista" checked>
+                    <input type="checkbox" id="cubista" value="Cubista" >
                     <label for="cubista">Cubista</label>
                 </div>
             </div>
@@ -112,7 +112,7 @@
                     <label for="uniforme">Uniforme</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="aspera" value="Áspera" checked>
+                    <input type="checkbox" id="aspera" value="Áspera" >
                     <label for="aspera">Áspera</label>
                 </div>
                 <div>
