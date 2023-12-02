@@ -68,7 +68,7 @@
         <div class="btn-filter filters">
           <button class="btn buttonPrimary">Aplicar Filtro</button>
           <RouterLink to="/orderPage" class="text-decoration-none">
-            <button class="btn buttonPrimary">Fazer Encomenda</button>
+            <button class="btnOrder buttonPrimary">Fazer Encomenda</button>
           </RouterLink>
         </div>
       </div>
@@ -317,4 +317,12 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+    .btnOrder{
+      width: 80vw;
+      height: 50px;
+      border-style: none;
+    }
+} 
 </style>
