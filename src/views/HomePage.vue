@@ -4,7 +4,7 @@
     <ArtistNames></ArtistNames>
     <CallToActionButtons></CallToActionButtons>
 
-    <div class="home-showcase" id="acabou-chegar">
+    <div class="home-showcase" id="acabou-de-chegar">
       <h3 class="new-products-text">ACABOU DE CHEGAR</h3>
       <div class="card-deck products-home new-products">
         <div v-if="loading">
@@ -56,7 +56,7 @@
     </div>
     <hr class="h-divider">
 
-    <OurArtists id="nossos_artistas"/>
+    <OurArtists id="nossos-artistas"/>
 
     <hr class="h-divider">
 

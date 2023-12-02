@@ -1,5 +1,5 @@
 <template>
-    <div class="breadcrumb-area">
+    <div class="breadcrumb-area" id="escolha-forma-de-pagamento">
         <ol class="breadcrumb contrast" v-if="showBreadCrumb">
             <li class="breadcrumb-item" v-for="(value, index) in listValues" :key="index"
                 :class="{ 'active': index === (listValues.length - 1), 'breadcrumb-item-last': index === (listValues.length - 1) }"

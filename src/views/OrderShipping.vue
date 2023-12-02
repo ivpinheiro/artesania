@@ -3,7 +3,7 @@
     <div class="breadcrumbs">
         <BreadCrumbComponent></BreadCrumbComponent>
     </div>
-    <div class="content">
+    <div class="content" id="obrigado">
         <div class="confirm-icon">
             <img src="@/assets/confirmPayIcon.svg" alt="Icone de Confirmação de Pedido">
         </div>
@@ -11,7 +11,7 @@
             <h3>Obrigado</h3><br>
             <p>A sua encomenda foi efetuada e enviada para o Artista!</p>
         </div>
-        <h1 class="title">Resumo da encomenda</h1>
+        <h1 class="title" id="resumo-da-encomenda">Resumo da encomenda</h1>
 
         <div class="bigger-container">
             <OrderOptionsTableVertical></OrderOptionsTableVertical>
@@ -73,8 +73,6 @@ export default {
     margin: 20px 8%;
     padding-bottom: 1rem;
 }
-
-
 
 .content {
     color: #5a5a5a;

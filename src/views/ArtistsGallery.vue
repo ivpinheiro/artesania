@@ -4,7 +4,7 @@
     <div class="breadcrumbs">
       <BreadCrumbComponent></BreadCrumbComponent>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="galeria">
       <div class="firstSection contrast">
         <div class="filter-title-div filters">
           <h3 class="filter-title">Filtros</h3>

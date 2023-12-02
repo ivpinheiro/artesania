@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1 class="title no-margin">Encomenda</h1>
+    <h1 class="title no-margin" id="encomenda">Encomenda</h1>
     <div class="tabs">
       <div class="tab">
         <span>Meio e Suporte</span>
@@ -114,7 +114,7 @@
         </div>
       </div>
     </div>
-    <h1 class="title">Detalhes do pedido</h1>
+    <h1 class="title" id="detalhes-do-pedido">Detalhes do pedido</h1>
     <div class="chat-container">
       <div class="indicator-container">
         <div class="indicator"></div>
@@ -139,7 +139,7 @@
     </div>
 
     <div class="order-value">
-      <h1 class="title">Qual o valor da encomenda?</h1>
+      <h1 class="title" id="qual-o-valor-da-encomenda">Qual o valor da encomenda?</h1>
       <div class="value-container">
         <p class="title-value">Valor em R$</p>
         <p class="content-value">R$ 15.000,00</p>
@@ -462,4 +462,5 @@ th {
 
 /* .no-margin{
   margin:0px !important;
-} */</style>
+} */
+</style>

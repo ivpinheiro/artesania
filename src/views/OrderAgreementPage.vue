@@ -5,7 +5,6 @@
       <BreadCrumbComponent></BreadCrumbComponent>
     </div>
     <OrderAgreement></OrderAgreement>
-
     <div v-if="loading">
       <div class="container contrast">
         <div class="row">
@@ -31,6 +30,11 @@ export default {
     SpinnerLoader,
     BreadCrumbComponent,
     ProductService
+  },
+  data() {
+    return {
+      loading: false
+    }
   }
 }
 </script>

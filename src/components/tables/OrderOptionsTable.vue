@@ -1,7 +1,6 @@
 <template>
-    
-    <div class="dashboard">
-        <h1 class="title no-margin">Encomenda</h1> 
+    <div class="dashboard" id="encomenda">
+        <h1 class="title no-margin">Encomenda</h1>
         <div class="tabs">
             <div class="tab">
                 <span>Meio e Suporte</span>
@@ -18,7 +17,7 @@
             <div class="tab">
                 <span>Textura</span>
             </div>
-        </div>  
+        </div>
         <div class="options-group">
             <div class="checkbox-group">
                 <div class="tab-mobile">
@@ -138,17 +137,18 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
 .dashboard {
     display: flex;
     flex-direction: column;
     margin: 0% 15%;
+
     @media (max-width: 780px) {
         margin: 0% 5%;
         overflow: hidden;
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
     }
+
     @media (max-width: 580px) {
         margin: 0% 5%;
     }
@@ -163,23 +163,26 @@ export default {
     line-height: normal;
     padding: 2rem 0;
     align-self: self-start;
+
     @media (max-width: 1060px) {
         font-size: 26px;
     }
 }
+
 /* .no-margin{
     margin:0px !important;
 } */
 
-.tabs{
+.tabs {
     display: flex;
     justify-content: space-between;
 }
-.tab{
+
+.tab {
     width: 200px;
 }
 
-.tab span{
+.tab span {
     color: #9D3207;
     text-align: center;
     font-family: Inter;
@@ -187,15 +190,17 @@ export default {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+
     @media (max-width: 1060px) {
         font-size: 14px;
     }
+
     /* @media (max-width: 780px) {
         font-size: 12px;
     } */
 }
 
-.options-group{
+.options-group {
     background-color: #f0eeed;
     margin-top: 5px;
     margin-bottom: 8px;
@@ -203,6 +208,7 @@ export default {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+
     @media (max-width: 1060px) {
         flex-wrap: wrap;
     }
@@ -213,18 +219,19 @@ export default {
 } */
 
 @media(max-width: 768px) {
-    .title{
+    .title {
         padding-bottom: 0.5rem;
     }
-    .tabs{
-        display: none;
-    } 
 
-    .tab-mobile{
+    .tabs {
+        display: none;
+    }
+
+    .tab-mobile {
         width: 200px;
     }
 
-    .tab-mobile span{
+    .tab-mobile span {
         color: #9D3207;
         text-align: center;
         font-family: Inter;
@@ -232,19 +239,18 @@ export default {
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        
+
     }
-    
-    .options-group{
+
+    .options-group {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .checkbox-group{
+
+    .checkbox-group {
         display: flex;
         flex-direction: column;
         padding: 1rem 0;
         width: 100%;
     }
-}
-
-</style>
+}</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div class="content" id="pagamento-confirmado">
         <div class="confirm-icon">
             <img src="@/assets/confirmPayIcon.svg" alt="Icone de Confirmação de compra">
         </div>
@@ -19,8 +19,7 @@ export default {
 
 </script>
 <style lang="css" scoped>
-
-.content{
+.content {
     color: #5a5a5a;
     display: flex;
     flex-direction: column;
@@ -28,11 +27,10 @@ export default {
 
 }
 
-.confirm-text{
+.confirm-text {
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 </style>

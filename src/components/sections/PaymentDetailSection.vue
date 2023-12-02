@@ -1,5 +1,5 @@
 <template>
-    <div class="card-content">
+    <div class="card-content" id="detalhes-da-compra">
         <div class="method">
             <b>Detalhes da compra</b>
             <div class="detail-info">

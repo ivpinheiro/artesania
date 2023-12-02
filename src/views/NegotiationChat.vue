@@ -1,5 +1,5 @@
 <template>
-    <div class="contrast">
+    <div class="contrast" id="chat">
         <div class="breadcrumbs">
             <BreadCrumbComponent></BreadCrumbComponent>
         </div>

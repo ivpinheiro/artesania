@@ -29,6 +29,11 @@ export default {
     DashboardComponent,
     SpinnerLoader,
     BreadCrumbComponent
+  },
+  data() {
+    return {
+      loading: false
+    }
   }
 }
 </script>

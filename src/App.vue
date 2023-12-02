@@ -7,7 +7,7 @@
     <div class="content-body">
       <router-view />
     </div>
-    <FooterComp v-if="isHidden"></FooterComp>
+    <FooterComp v-if="isHidden" id="rodape"></FooterComp>
   </div>
 </template>
 <script>

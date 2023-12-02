@@ -23,7 +23,7 @@
       <div class="button dark"> ▼ Encomendas</div>
     </div>
     <div class="secondSection">
-      <h1 class="title">Encomendas</h1>
+      <h1 class="title" id="encomendas">Encomendas</h1>
       <h2 class="subtitle">Novas</h2>
       <table>
         <tr>
@@ -73,7 +73,7 @@
       </table>
       <p class="see-more">Veja mais <img class="artist-icon" src="@/assets/img/artist-dashboard/seta-direita.svg"
           alt="Seta para Direita"></p>
-      <h2 class="subtitle">Faturadas</h2>
+      <h2 class="subtitle" id="faturadas">Faturadas</h2>
       <table>
         <tr>
           <th>Hora</th>
@@ -94,7 +94,7 @@
       <p class="see-more">Veja mais <img class="artist-icon" src="@/assets/img/artist-dashboard/seta-direita.svg"
           alt="Seta para Direita"></p>
 
-      <h2 class="subtitle">Enviadas</h2>
+      <h2 class="subtitle" id="enviadas">Enviadas</h2>
       <table>
         <tr>
           <th>Hora</th>

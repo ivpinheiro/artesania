@@ -60,7 +60,6 @@ export default {
                     let responseProducts = await ProductService.getAnchors()
                     this.anchors = responseProducts.data
                     this.pageAnchor = this.anchors.filter(item => item.routerPageName.includes(this.pageName))
-                    console.log(this.pageAnchor.length)
                     if (this.pageAnchor.length > 0) {
                         this.loading = true
                     }

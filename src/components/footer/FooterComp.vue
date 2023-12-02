@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <footer class="footer-comp contrast text-center text-lg-start text-muted p-0" id="footer">
+  <footer class="footer-comp contrast text-center text-lg-start text-muted p-0">
 
     <!-- Grid container -->
     <div class="container subs-footer contrast">
