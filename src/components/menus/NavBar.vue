@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="sectionsArea">
                     <li class="nav-item">
                         <a class="nav-link active text-center m-1" aria-current="page">Artistas independentes</a>
                     </li>
@@ -47,12 +47,14 @@
                     </div>
                 </form>
                 <div class="d-flex align-items-center justify-content-center">
-                    <router-link to="/" class="me-3">
-                        <!-- Exibe este ícone se o usuário estiver logado -->
-                        <font-awesome-icon v-if="estaLogado" class="fa-inverse" icon="circle-user" alt="minha conta" />
-                
-                        <!-- Exibe este ícone se o usuário NÃO estiver logado -->
-                        <font-awesome-icon v-else class="fa-inverse" icon="circle-user" alt="minha conta" />
+                    <div v-if="estaLogado">
+                        <p  id="nameUser" @click="toggleMenu">Olá, Kamila!</p>
+                        <div v-if="showMenu" class="menu-options">
+                            <a href="/" @click="logout">Sair</a>
+                        </div>
+                    </div>
+                    <router-link v-else to="/login" class="me-3">
+                        <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta" />
                     </router-link>
                     <router-link to="/">
                         <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho" />
@@ -64,11 +66,6 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
-// import SearchInput from 'vue-search-input'
-// import 'vue-search-input/dist/styles.css'
-
-// const searchVal = ref('')
 
 export default {
     name: 'NavBar',
@@ -83,7 +80,21 @@ export default {
             // Verifica o status de login a partir do localStorage
             return localStorage.getItem('statusLogin') === 'Logado';
         }
-    }
+    },
+    data() {
+        return {
+            showMenu: false,
+        };
+    },
+    methods: {
+        toggleMenu() {
+            this.showMenu = !this.showMenu;
+        },
+        logout() {
+            localStorage.setItem('statusLogin', '');
+        },
+    },
+
 }
 </script>
 
@@ -96,13 +107,40 @@ export default {
     font-weight: bold;
     padding: 10px 0;
 }
-
+#nameUser{
+    min-width: 100px;
+    margin-bottom: 0px;
+    color: #9D3207;
+    font-weight: 500;
+    cursor: pointer;
+}
 #brand-name {
     font-family: Inter;
     font-weight: 900;
     font-size: 25px;
     color: #9D3207;
     padding-left: 1em;
+}
+.menu-options {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-options a:hover {
+    background-color: #f1f1f1;
+}
+#sectionsArea{
+    align-items: center;
 }
 
 .navbar-brand {
