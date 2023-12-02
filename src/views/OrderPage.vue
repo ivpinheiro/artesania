@@ -81,6 +81,10 @@ export default {
     flex-direction: column;
     align-items: center;
     margin: 0% 15%;
+
+    @media (max-width:768px){
+        margin: 0 5%;
+    }
 }
 
 .title {
@@ -96,6 +100,11 @@ export default {
 
     @media (max-width: 1060px) {
         font-size: 26px;
+    }
+
+    @media (max-width:768px){
+        margin: 0 !important;
+        padding: 1rem 0 0.5rem 0;
     }
 }
 

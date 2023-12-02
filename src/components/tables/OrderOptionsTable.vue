@@ -1,4 +1,5 @@
 <template>
+    
     <div class="dashboard">
         <h1 class="title no-margin">Encomenda</h1> 
         <div class="tabs">
@@ -17,9 +18,12 @@
             <div class="tab">
                 <span>Textura</span>
             </div>
-        </div>
+        </div>  
         <div class="options-group">
             <div class="checkbox-group">
+                <div class="tab-mobile">
+                    <span>Meio e Suporte</span>
+                </div>
                 <div>
                     <input type="checkbox" id="oleo" value="Óleo" checked>
                     <label for="oleo">Óleo</label>
@@ -38,6 +42,9 @@
                 </div>
             </div>
             <div class="checkbox-group">
+                <div class="tab-mobile">
+                    <span>Técnica</span>
+                </div>
                 <div>
                     <input type="checkbox" id="suave" value="Suave" checked>
                     <label for="suave">Suave</label>
@@ -56,6 +63,9 @@
                 </div>
             </div>
             <div class="checkbox-group">
+                <div class="tab-mobile">
+                    <span>Composição</span>
+                </div>
                 <div>
                     <input type="checkbox" id="tercos" value="Terços" checked>
                     <label for="tercos">Terços</label>
@@ -74,6 +84,9 @@
                 </div>
             </div>
             <div class="checkbox-group">
+                <div class="tab-mobile">
+                    <span>Estilo</span>
+                </div>
                 <div>
                     <input type="checkbox" id="realista" value="Realista">
                     <label for="realista">Realista</label>
@@ -92,6 +105,9 @@
                 </div>
             </div>
             <div class="checkbox-group">
+                <div class="tab-mobile">
+                    <span>Textura</span>
+                </div>
                 <div>
                     <input type="checkbox" id="uniforme" value="Uniforme">
                     <label for="uniforme">Uniforme</label>
@@ -129,10 +145,12 @@ export default {
     margin: 0% 15%;
     @media (max-width: 780px) {
         margin: 0% 5%;
-        overflow: hidden;   
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;   
     }
     @media (max-width: 580px) {
-        margin: 0% 2%;
+        margin: 0% 5%;
     }
 }
 
@@ -172,9 +190,9 @@ export default {
     @media (max-width: 1060px) {
         font-size: 14px;
     }
-    @media (max-width: 780px) {
+    /* @media (max-width: 780px) {
         font-size: 12px;
-    }
+    } */
 }
 
 .options-group{
@@ -187,6 +205,45 @@ export default {
     justify-content: space-between;
     @media (max-width: 1060px) {
         flex-wrap: wrap;
+    }
+}
+
+/* .tab-mobile{
+    display: none;
+} */
+
+@media(max-width: 768px) {
+    .title{
+        padding-bottom: 0.5rem;
+    }
+    .tabs{
+        display: none;
+    } 
+
+    .tab-mobile{
+        width: 200px;
+    }
+
+    .tab-mobile span{
+        color: #9D3207;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        
+    }
+    
+    .options-group{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .checkbox-group{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        width: 100%;
     }
 }
 
