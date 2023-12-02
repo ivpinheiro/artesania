@@ -53,7 +53,7 @@
             </div>
             <div class="submitOrder">
                 <button class="buttonPrimary">
-                    <RouterLink class="link-class-none" to="/order-shipping">Finalizar</RouterLink>
+                    <RouterLink class="link-class-none" to="/order/shipping">Finalizar</RouterLink>
                 </button>
             </div>
         </div>
