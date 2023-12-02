@@ -88,7 +88,7 @@ const router = createRouter({
       component: ConfirmPaymentPage,
     },
     {
-      path: '/order-shipping',
+      path: '/order/shipping',
       name: 'order-shipping',
       component: OrderShipping,
     },

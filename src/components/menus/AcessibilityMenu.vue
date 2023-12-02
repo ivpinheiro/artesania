@@ -41,15 +41,20 @@ export default {
     computed: {
         isHidden() {
             return GlobalUtils.HiddenElementsByPath.hiddenElements(this.$route, this.hiddenFullElements)
-        }
+        },
     },
-    created: function () {
-        try {
-            console.log(this.$route.name)
-        } catch (error) {
-
-        }
-    }
+    beforeRouteUpdate(to, from, next) {
+        console.log(to.name);
+        next();
+    },
+    created() {
+        this.$watch(
+            () => this.$route,
+            (to, from) => {
+                console.log(to.name);
+            }
+        );
+    },
 };
 </script>
 <style lang="scss" scoped>
