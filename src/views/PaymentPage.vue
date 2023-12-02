@@ -8,7 +8,9 @@
         <PaymentDetailSection></PaymentDetailSection>
     </div>
     <div class="confirm-area">
-        <button class="buttonPrimary-continue">Continuar</button>
+        <RouterLink to="/order/payment/confirm" class="text-decoration-none">
+            <button class="buttonPrimary-continue">Continuar</button>
+        </RouterLink>
     </div>
 </template>
 
@@ -38,8 +40,8 @@ export default {
     padding-bottom: 1rem;
 }
 
-.highlight{
-    color: #9D3207;        
+.highlight {
+    color: #9D3207;
 }
 
 .pay-conteudo {

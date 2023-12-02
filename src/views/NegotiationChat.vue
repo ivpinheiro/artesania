@@ -12,7 +12,11 @@
             </div>
         </div>
         <div class="confirm-area">
-            <button class="buttonPrimary-aceitar contrast">Aceitar</button>
+            <RouterLink to="/order/payment" class="text-decoration-none">
+                <button class="buttonPrimary-aceitar contrast">
+                    Aceitar
+                </button>
+            </RouterLink>
             <button class="buttonPrimary-cancelar contrast">Cancelar</button>
         </div>
     </div>
@@ -69,11 +73,11 @@ export default {
 }
 
 .high-contrast {
-  color: white;
-  background: black;
+    color: white;
+    background: black;
 }
 
 .high-contrast-text {
-  color: white;
+    color: white;
 }
 </style>
