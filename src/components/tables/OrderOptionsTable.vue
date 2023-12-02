@@ -214,9 +214,9 @@ export default {
     }
 }
 
-/* .tab-mobile{
+.tab-mobile{
     display: none;
-} */
+}
 
 @media(max-width: 768px) {
     .title {
@@ -228,6 +228,7 @@ export default {
     }
 
     .tab-mobile {
+        display: inline !important;
         width: 200px;
     }
 
