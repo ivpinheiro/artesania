@@ -2,7 +2,7 @@
     <div class="container contrast">
         <div class="video-icon">
             <p class="video-title">Solicitar Chamada de video</p>
-            <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="User" />
+            <img src="@/assets/img/chat/video_icon.svg" class="video-icon" alt="Botao para video chamada" />
         </div>
     </div>
 </template>
