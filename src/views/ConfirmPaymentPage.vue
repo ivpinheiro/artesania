@@ -6,7 +6,7 @@
         <div class="confirm-text">
             <h3>Pagamento Confirmado</h3><br>
             <p>Sua compra foi efetuada com sucesso!</p>
-            Um email foi enviado para meuemail@gmeuemail.com com detalhees do pedido
+            <p>Um email foi enviado para <b>meuemail@gmeuemail.com</b> com detalhees do pedido</p>
         </div>
     </div>
 </template>
@@ -25,6 +25,10 @@ export default {
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 768px) {
+        margin: 0 5%;
+    }
+
 }
 
 .confirm-text {
@@ -32,5 +36,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
 }
 </style>
