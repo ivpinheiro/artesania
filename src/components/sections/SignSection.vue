@@ -39,16 +39,29 @@
 <style lang="scss" scoped>
 .card{
     font-family: 'Inter';
-    padding: 5% 5% 5% 5%;
-    //width: 100%;
+    margin: 1% 5%;
+    padding: 2rem 30% 2rem 30%;
+    width: max-content;
     align-content: center;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     border-radius: 2%;
+
+    @media (max-width: 768px) {
+        margin: 0 5%;
+        padding: 1rem 17%;
+    }
 }
 
 .sign-info{
     width: auto;
+}
+
+.form-control{
+    border: none; /* Removendo todas as bordas */
+    border-bottom: 1px solid black; /* Adicionando apenas a borda inferior */
+    outline: none; /* Removendo a borda de foco ao clicar */
 }
 
 .card .buttonPrimary{

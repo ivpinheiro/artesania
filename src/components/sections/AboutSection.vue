@@ -1,5 +1,5 @@
 <template>
-    <div class="about-section">
+    <div class="about-section contrast">
         <div class="about-content contrast">
             <div class="about-acessibility contrast">
                 <AcessibilityMenu></AcessibilityMenu>
@@ -80,8 +80,8 @@ export default {
 }
 
 .about-content-text {
-    padding: 2em;
     text-align: center;
+    padding: 1rem 1rem;
 }
 
 .about-acessibility {
@@ -97,7 +97,7 @@ export default {
 }
 
 .image-about {
-    width: 150px;
+    width: 100px;
     margin-left: 15%;
 }
 
@@ -105,18 +105,23 @@ export default {
     display: flex;
     font-family: Inter;
     font-weight: 1000;
-    font-size: 38px;
+    font-size: 28px;
     color: #9D3207;
     padding-left: 0;
 }
 
 .about-txt {
-    padding-top: 5%;
+    padding-top: 3%;
+    font-size: 16px;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .about-company {
     display: flex;
-    padding-top: 30%;
+    padding-top: 15%;
     flex-direction: column;
     align-items: center;
 }
@@ -127,7 +132,7 @@ export default {
 }
 
 .about-icons {
-    padding-top: 25%;
+    padding-top: 1rem;
     color: #9D3207;
 }
 

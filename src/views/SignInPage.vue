@@ -37,14 +37,13 @@ export default {
     background-image: url("@/assets/img/banner/login-background.svg");
     display: grid;
     grid-template-columns: 3fr 1fr;
-    width: 100vw;
+    height: 100vh;
 }
 
 .logo-mobile{
     display: none;
 }
 .firstSection{
-    padding: 4rem 5rem;
 }
 
 @media(max-width: 768px){

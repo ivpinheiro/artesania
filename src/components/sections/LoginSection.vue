@@ -44,17 +44,23 @@
     align-items: center;
     background-color: #fff;
     border-radius: 2%;
+
+    overflow: hidden;
 }
 
 .login-info{
     width: 50%;
 }
 
+.form-control{
+    border: none; /* Removendo todas as bordas */
+    border-bottom: 1px solid black; /* Adicionando apenas a borda inferior */
+    outline: none; /* Removendo a borda de foco ao clicar */
+}
+
 .card .buttonPrimary{
     background-color: #9D3207;
     margin-left: 25%;
-    margin-top: 1%;
-    margin-bottom: 10%;
     border: 0px;
     border-radius: 62px;
     width:  50%;
@@ -84,7 +90,6 @@
     flex-direction: column;
     align-items: center;
     font-size: 100%;
-    margin: 2%;
 
 }
 .high-contrast {

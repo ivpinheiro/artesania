@@ -38,7 +38,7 @@ export default {
     display: grid;
     background-image: url("@/assets/img/banner/login-background.svg");
     grid-template-columns: 3fr 1fr;
-    width: 100vw;
+    height: 100vh;
 }
 
 .logo-mobile{
@@ -46,7 +46,7 @@ export default {
 }
 
 .firstSection {
-    padding: 5rem 5rem;
+    padding: 1rem 1rem;
 }
 
 
