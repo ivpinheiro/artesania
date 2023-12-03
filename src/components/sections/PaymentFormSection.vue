@@ -106,13 +106,14 @@ export default {
 }
 
 .select-double{
-    border-radius: 10%;
+    border-radius: 10px;
     border-style: solid 1px #000;
     width: 20vh;
 }
 
 .form-control{
     border: solid 1px #000;
+    border-radius: 10px;
 }
 
 #inputCPF{
@@ -124,7 +125,7 @@ export default {
 
 .select-option{
     width: 100%;
-    border-radius: 10%;
+    border-radius: 10px;
     border-style: solid 1px #000;
 }
 

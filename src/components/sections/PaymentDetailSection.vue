@@ -13,7 +13,7 @@
                     <input type="text" name="product" class="input-resume" id="inputProduct" placeholder="Produto Personalizdado" disabled>
                 </div>
                 <div class="ml-3">
-                    <label for="resumePayment" class="form-label" id="lblResume"><b>Resumo de Pagamento</b></label>
+                    <label for="resumePayment" class="form-label" id="lblResume"><b>Resumo de pagamento</b></label>
                     <input type="text" name="resumePayment" class="input-resume" id="inputRProduct" placeholder="Produtos: R$15.000,00" disabled>
                     <input type="text" name="resumePayment" class="input-resume" id="inputRFrete" placeholder="Frete: R$50,00" disabled>
                     <input type="text" name="resumePayment" class="input-resume" id="inputRTotal" placeholder="Total: R$15.050,00" disabled>
