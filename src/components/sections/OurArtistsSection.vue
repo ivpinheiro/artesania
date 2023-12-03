@@ -4,7 +4,7 @@
             <div>
                 <h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1>
             </div>
-            <div class="line">
+            <div class="line upper">
                 <div class="artist-container" v-for="(artist, index) in artists.slice(0, 2)" :key="index">
                     <router-link :to="`/gallery/artist/${artist.id}`" class="text-decoration-none">
                         <div :id="`${this.cssStyles[index]}`" class="full-on-mobile"
@@ -14,7 +14,7 @@
                     </router-link>
                 </div>
             </div>
-            <div class="line">
+            <div class="line lower">
                 <div class="artist-container" v-for="(artist, index) in artists.slice(2, 4)" :key="index">
                     <router-link :to="`/gallery/artist/${artist.id}`" class="text-decoration-none">
                         <div :id="`${this.cssStyles[index + 2]}`" class="full-on-mobile"
@@ -116,8 +116,8 @@ export default {
 
 .thirdName {
     position: relative;
-    top: 70%;
-    left: 5%;
+    top: 5%;
+    left: 10%;
     color: white;
     font-size: 24px;
     font-family: 'Inter';
@@ -148,6 +148,16 @@ export default {
         flex-direction: column;
     }
 }
+
+/* .upper{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.lower{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
 
 .full-on-mobile {
     @media (max-width: 1160px) {

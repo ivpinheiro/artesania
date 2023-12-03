@@ -36,7 +36,7 @@
           <td>11:20 PM</td>
           <td>Luiz Benedetto</td>
           <td>Correios</td>
-          <td>
+          <td class="td-icons">
             <RouterLink class="link-class-none" to="/dashboard/order/agreement">
               <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             </RouterLink>
@@ -47,7 +47,7 @@
           <td>11:21 PM</td>
           <td>Thamyres Silva</td>
           <td>Loggi</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
           </td>
@@ -56,7 +56,7 @@
           <td>11:22 PM</td>
           <td>Juliana Santos</td>
           <td>Correios</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
           </td>
@@ -65,7 +65,7 @@
           <td>11:23 PM</td>
           <td>Mateus Vinicius</td>
           <td>Fedex</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
           </td>
@@ -85,7 +85,7 @@
           <td>11:24 PM</td>
           <td>Ivan Pinheiro</td>
           <td>Correios</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/contact.svg" alt="Conversar">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/trash.svg" alt="Cancelar">
           </td>
@@ -106,7 +106,7 @@
           <td>10:30 PM</td>
           <td>São Paulo - SP</td>
           <td>A caminho</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/chat.svg" alt="Chat">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/list.svg" alt="Mais opções">
           </td>
@@ -115,7 +115,7 @@
           <td>10:31 PM</td>
           <td>Ubatuba - SP</td>
           <td>A caminho</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/chat.svg" alt="Chat">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/list.svg" alt="Mais opções">
           </td>
@@ -124,7 +124,7 @@
           <td>10:33 PM</td>
           <td>Montes Claros - MG</td>
           <td>A caminho</td>
-          <td>
+          <td class="td-icons">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/chat.svg" alt="Chat">
             <img class="artist-icon" src="@/assets/img/artist-dashboard/list.svg" alt="Mais opções">
           </td>
@@ -163,6 +163,14 @@ td {
   border: none;
   padding: 8px;
   text-align: left;
+}
+
+.td-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+
 }
 
 th {
@@ -213,7 +221,7 @@ th {
   padding: 2%;
 }
 
-.button.dark {
+.button .dark {
   background-color: #000;
 }
 
@@ -225,6 +233,10 @@ th {
   color: #9D3207;
   font-size: 64px;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 }
 
 .subtitle {
