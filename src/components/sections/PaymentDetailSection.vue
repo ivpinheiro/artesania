@@ -1,7 +1,7 @@
 <template>
     <div class="card-content" id="detalhes-da-compra">
         <div class="method">
-            <b>Detalhes da compra</b>
+            <b class="title-card">Detalhes da compra</b>
             <div class="detail-info">
                 <div class="ml-3">
                     <label for="adress" class="form-label" id="lblAdress"><b>Endereço de entrega</b></label>
@@ -42,6 +42,9 @@ export default {
     padding: 1rem
 }
 
+.title-card{
+    font-size: 20px;
+}
 .detail-info{
     padding-top: 1rem;
 }

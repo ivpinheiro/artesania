@@ -50,6 +50,13 @@ export default {
     grid-gap: 5rem;
     padding: 0rem 5rem;
 
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 5%;
+    }
+
     /*display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -68,7 +75,7 @@ export default {
     border: 0px;
     border-radius: 62px;
     width: 25vh;
-    height: auto;
+    height: 40px;
     color: #fff;
     font-weight: 600;
 }

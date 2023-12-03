@@ -1,7 +1,7 @@
 <template>
     <div class="card-content" id="insira-informações-de-pagamento">
         <div class="forms">
-            <b>Insira Informações de Pagamento</b>
+            <b class="title-card">Insira Informações de Pagamento</b>
 
             <div class="forms-options">
                 <div class="mb-3">
@@ -84,6 +84,10 @@ export default {
     width: 100%;
     height: 100%;
     padding: 1rem
+}
+
+.title-card{
+    font-size: 20px;
 }
 
 .forms-options{

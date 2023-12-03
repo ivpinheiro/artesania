@@ -1,7 +1,7 @@
 <template>
     <div class="card-content">
         <div class="method">
-            <b>Escolha forma de pagamento</b>
+            <b class="title-card">Escolha forma de pagamento</b>
             <div class="method-options">
                 <button class="buttonPrimary">Crédito</button>
                 <button class="buttonPrimary-pix">Pix</button>
@@ -25,6 +25,9 @@ export default {
     background-color: whitesmoke;
 }
 
+.title-card{
+    font-size: 20px;
+}
 .card-content{
     background-color: #f0eeed;
     border-radius: 5%;
@@ -38,6 +41,11 @@ export default {
     display: flex;
     padding-top: 7rem;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        padding: 5rem 0;
+    }
+
 }
 
 .method .buttonPrimary{
