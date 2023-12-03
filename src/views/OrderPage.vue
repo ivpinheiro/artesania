@@ -5,7 +5,7 @@
             <BreadCrumbComponent></BreadCrumbComponent>
         </div>
         <OrderOptionsTable></OrderOptionsTable>
-        <div class="orderDetails-area" id="detalhes-do-pedido">
+        <div class="orderDetails-area">
             <h1 class="title">Detalhes do pedido</h1>
             <div class="chat-container">
                 <div class="indicator-container">

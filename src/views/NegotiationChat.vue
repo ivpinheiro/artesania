@@ -9,9 +9,9 @@
         </div>
         <div class="confirm-area">
                 <RouterLink to="/order/payment" class="text-decoration-none">
-                    <button class="buttonPrimary-aceitar contrast">Aceitar</button>
+                    <button class="buttonPrimary contrast" id="btnAceitar">Aceitar</button>
                 </RouterLink>
-                <button class="buttonPrimary-cancelar contrast">Cancelar</button>
+                <button class="buttonPrimary contrast" id="btnCancelar">Cancelar</button>
         </div>
     </div>
 </template>
@@ -43,11 +43,20 @@ export default {
 .container{
     display: flex;
     flex-direction: column;
+    @media (max-width:768px) {
+        padding: 0 !important
+    }
 }
 
 .chat-container{
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 5%;        
+    }
 }
 
 .confirm-area {
@@ -60,9 +69,14 @@ export default {
         align-items: center;
 
     }
+
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: columns;
+    }
 }
 
-.buttonPrimary-aceitar {
+.buttonPrimary{
     background-color: #9D3207;
     margin-top: 20px;
     border: 0px;
@@ -73,10 +87,20 @@ export default {
     font-family: 'Inter';
     font-weight: 600;
     margin: 0 2rem;
+
+    @media (max-width:768px) {
+        margin: 1rem 0;
+    }
+
+    
+}
+#btnCancelar{
+        background-color: #EDEDED;
+        color: #000;
 }
 
-.buttonPrimary-cancelar {
-    background-color: #EDEDED;
+/* .buttonPrimary-cancelar {
+    
     margin-top: 20px;
     border: 0px;
     border-radius: 62px;
@@ -86,7 +110,7 @@ export default {
     font-family: 'Inter';
     font-weight: 600;
     margin: 0 2rem;
-}
+} */
 
 .high-contrast {
     color: white;
