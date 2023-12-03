@@ -53,10 +53,10 @@
                             <a href="/" @click="logout">Sair</a>
                         </div>
                     </div>
-                    <router-link v-else to="/login" class="me-3">
+                    <router-link v-else to="/login" class="me-3" aria-label="usuario">
                         <font-awesome-icon class="fa-inverse" icon="circle-user" alt="minha conta" />
                     </router-link>
-                    <router-link to="/">
+                    <router-link to="/" aria-label="usuario">
                         <font-awesome-icon class="fa-inverse" icon="cart-shopping" alt="carrinho" />
                     </router-link>
                 </div>

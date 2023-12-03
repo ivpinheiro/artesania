@@ -27,6 +27,7 @@
             </div>
         </div>
         <div class="secondSection">
+            <img src="@/assets/img/banner/GirassoisDeVanGogh.png" alt="Girassois de Van Gogh">
         </div>
     </div>
 </template>
@@ -143,9 +144,9 @@ export default {
 }
 
 .secondSection {
-    background-image: url('@/assets/img/banner/GirassoisDeVanGogh.png');
+    /* background-image: url('@/assets/img/banner/GirassoisDeVanGogh.png');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     height: auto;
     width: 45%;
 
@@ -153,6 +154,7 @@ export default {
         height: 115px;
         background-position: top;
         width: 100%;
+        overflow: hidden;
     }
 }
 

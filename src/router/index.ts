@@ -46,7 +46,7 @@ const router = createRouter({
       name: 'dashboard',
       component: DashboardPage,
       meta: {
-        breadcrumb: 'Mira Morani  /  Meu Painel',
+        breadcrumb: 'Rafaela Oliveira  /  Meu Painel',
         middleware: authMiddleWare.oauthMiddleWare
       }
     },
@@ -97,7 +97,7 @@ const router = createRouter({
       name: 'negotiation-chat',
       component: NegotiationChat,
       meta: {
-        breadcrumb: 'Mira Morani  /  Chat '
+        breadcrumb: 'Rafaela Oliveira  /  Chat '
       }
     }, 
     {
@@ -122,7 +122,7 @@ const router = createRouter({
       name: 'order-agreement-confirmation-page',
       component: OrderAgreementConfirmationPage,
       meta: {
-        breadcrumb: 'Mira Morani  /  Meu Painel '
+        breadcrumb: 'Rafaela Oliveira  /  Meu Painel '
       }
     },
     

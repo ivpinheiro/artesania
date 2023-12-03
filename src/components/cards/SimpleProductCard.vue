@@ -2,7 +2,7 @@
     <router-link :to="`/products/view/${productId}`" class="text-decoration-none">
         <div class="card product-card contrast">
             <div class="wallpaper-img">
-                <img :src="getImageUrl(urlImg)" class="card-img card-img-top" alt="...">
+                <img :src="getImageUrl(urlImg)" class="card-img card-img-top" fetchpriority="high" :alt="{productName} ">
             </div>
             <div class="card-body text-center">
                 <h5 class="card-title word-wrap-break-word" id="card-title">{{ productName }}</h5>
