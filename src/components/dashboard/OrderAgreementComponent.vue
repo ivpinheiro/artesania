@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="button-group">
-      <RouterLink class="link-class-none" to="/chat">
+      <RouterLink class="link-class-none" to="/dashboard/confirmation">
         <button class="buttonPrimary">
           Enviar Orçamento
         </button>

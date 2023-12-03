@@ -49,6 +49,12 @@
                 </div>
             </div>
         </div>
+        <button class="buttonPrimary">
+            <RouterLink to="/chat"
+              class="d-flex justify-content-center align-items-center text-decoration-none router-link">
+              Ver Resposta
+            </RouterLink>
+        </button>
     </div>
 </template>
 
