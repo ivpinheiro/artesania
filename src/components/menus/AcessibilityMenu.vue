@@ -7,12 +7,12 @@
             </li>
         </span>
         <li class="nav-item">
-            <div class="nav-link-joint"><span class="nav-link" id="increase-font-button">A+</span> | <span class="nav-link"
-                    id="decrease-font-button">A-</span></div>
+            <div class="nav-link-joint"><span class="nav-link" id="increase-font-button" @click="fontSize('+')">A+</span> |
+                <span class="nav-link" id="decrease-font-button" @click="fontSize('-')">A-</span></div>
         </li>
         <li class="nav-item">
             <font-awesome-icon class="fa-color" icon="fa-solid fa-circle-half-stroke" />
-            <span class="high-contrast-b" id="toggle-high-contrast">Alto Contraste</span>
+            <span class="high-contrast-b" id="toggle-high-contrast" @click="toggleHighContrast">Alto Contraste</span>
         </li>
     </ul>
 </template>
@@ -38,6 +38,14 @@ export default {
                 return value.every((item) => typeof item === 'string');
             }
         },
+    },
+    methods: {
+        toggleHighContrast() {
+            GlobalUtils.HighContrastToggle.highContrast()
+        },
+        fontSize(operator) {
+            GlobalUtils.FontSizeController.fontSizeController(operator)
+        }
     },
     computed: {
         isHidden() {
@@ -69,7 +77,7 @@ export default {
             this.errorMessage = error
             this.loading = false
         }
-    },
+    }
 };
 </script>
 <style lang="scss" scoped>

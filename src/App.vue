@@ -25,10 +25,11 @@ export default {
       hiddenElementsSignin: '/sign',
     }
   },
-  components: { GlobalUtils, NavBar, AcessibilityMenu, FooterComp },
-  mounted() {
-    GlobalUtils.FontSizeController.fontSizeController()
-    GlobalUtils.HighContrastToggle.highContrast()
+  components: {
+    GlobalUtils,
+    NavBar,
+    AcessibilityMenu,
+    FooterComp
   },
   computed: {
     isHidden() {
