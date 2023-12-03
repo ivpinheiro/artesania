@@ -56,7 +56,7 @@ export default {
     border: 0px;
     border-radius: 62px;
     width: 50%;
-    height: auto;
+    height: 40px;
     color: #fff;
     font-weight: 600;
 }
@@ -69,7 +69,7 @@ export default {
     border: 0px;
     border-radius: 62px;
     width: 50%;
-    height: auto;
+    height: 40px;
     color: #000;
     font-weight: 600;
 }

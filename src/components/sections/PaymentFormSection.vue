@@ -1,11 +1,11 @@
 <template>
     <div class="card-content" id="insira-informações-de-pagamento">
         <div class="forms">
-            <b class="title-card">Insira Informações de Pagamento</b>
+            <b class="title-card">Insira informações de pagamento</b>
 
             <div class="forms-options">
                 <div class="mb-3">
-                    <label for="inputCard" class="form-label" id="lblCartao"><b>Numero do Cartão</b></label>
+                    <label for="inputCard" class="form-label" id="lblCartao"><b>Numero do cartão</b></label>
                     <input type="number" class="form-control" name="inputCard" id="inputCard" placeholder="Numero do seu cartão">
                 </div>
                 <div class="mb-3">

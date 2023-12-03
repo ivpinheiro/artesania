@@ -6,7 +6,7 @@
         <div class="confirm-text">
             <h3>Pagamento Confirmado</h3><br>
             <p>Sua compra foi efetuada com sucesso!</p>
-            <p>Um email foi enviado para <b>meuemail@gmeuemail.com</b> com detalhees do pedido</p>
+            <p>Um email foi enviado para <b>meuemail@gmeuemail.com</b> com detalhes do pedido</p>
         </div>
     </div>
 </template>
