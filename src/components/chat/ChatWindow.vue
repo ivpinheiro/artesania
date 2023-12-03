@@ -43,16 +43,16 @@
         </div>
         <div class="conversation-area">
           <div class="conversationButton-area">
-                <button class="sendImg">
-                    <img src="@/assets/img/chat/chat_image_upload.svg" alt="Enviar Imagem" class="buttonSend">
-                </button>
-                <button class="mic-conversation">
-                    <img src="@/assets/img/chat/chat_microfone.svg" alt="Enviar Audio" class="buttonSend">
-                </button>
-                <input type="text" name="txtArtistIput" id="txtArtistInput" placeholder="Escreva sua mensagem aqui...">
-                <buttom class="buttonPrimary">Enviar</buttom>
-            </div>
-            
+            <button class="sendImg">
+                <img src="@/assets/img/chat/chat_image_upload.svg" alt="Enviar Imagem" class="buttonSend">
+            </button>
+            <button class="mic-conversation">
+                <img src="@/assets/img/chat/chat_microfone.svg" alt="Enviar Audio" class="buttonSend">
+            </button>
+          </div> 
+          <input type="text" name="txtArtistIput" class="txtArtistInput">
+          <!-- <div class="sendButton-area"></div> -->
+          <button class="buttonPrimary send-message">Enviar</button>
         </div>
         <div class="message-input">
           <img src="@/assets/img/chat/chat_microfone.svg" alt="imagem de um microfone" />
@@ -233,27 +233,45 @@ export default {
 }
 
 .conversation-area {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1rem 0 0 0;
+/*   display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem 0;
 }
 
-#txtArtistInput {
-    background-color: rgba(51, 51, 51, 35%);
-    border-style: none;
-    border-radius: 1rem;
+.conversationButton-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.txtArtistInput {
+    border: 1px solid #7D7E7E;
+    background-color: #fff;
     width: 100%;
-    padding: 0rem 1rem;
+    border-radius: 1rem;
     margin: 0rem 1rem;
 }
 
-.conversationButton-area {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 30%;
-    color: rgba(51, 51, 51, 80%);
+
+
+.buttonPrimary{
+  background-color: #9D3207;
+  margin-top: 20px;
+  border: 0px;
+  border-radius: 26px;
+  width: 25%;
+  height: 40px;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin: 0 2rem;
+}
+
+.send-message{
+  width: 80%;
+  align-self: center;
 }
 
 .sendImg {
