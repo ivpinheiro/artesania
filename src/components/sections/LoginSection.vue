@@ -52,6 +52,8 @@ a:focus {
 }
 .login-info{
     width: 50%;
+    margin-bottom: 20px;
+
 }
 
 .form-control{
