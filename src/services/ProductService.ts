@@ -18,7 +18,7 @@ export class ProductService {
         let dataURL = `${this.serverURL}/artists`;
         return axios.get(dataURL);
     }
-    static getAllArtist(artistId: number) {
+    static getArtist(artistId: number) {
         let dataURL = `${this.serverURL}/artists/${artistId}`;
         return axios.get(dataURL);
     }

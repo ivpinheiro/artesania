@@ -76,6 +76,17 @@
         </div>
       </div>
       <div class="secondSection contrast">
+        <div class="artist-name-and-filter">
+          <p class="artist-name">{{ artist.name }}</p>
+          <p class="cards-items" v-if="this.endIndex > this.products.length">Mostrando {{ this.startIndex + 1 }} - {{
+            this.products.length }}
+            de {{
+              this.products.length }} Obras</p>
+          <p class="cards-items" v-if="this.endIndex < this.products.length">Mostrando {{ this.startIndex + 1 }} - {{
+            this.endIndex }}
+            de {{
+              this.products.length }} Obras</p>
+        </div>
         <div class="card-deck products">
           <div v-if="loading">
             <div class="container">
@@ -95,9 +106,7 @@
         <PaginationTable :total-pages="totalPages" :current-page="currentPage" :change-page="changePage">
         </PaginationTable>
       </div>
-
     </div>
-    <!-- <SpinnerLoader /> -->
   </div>
 </template>
 
@@ -127,7 +136,10 @@ export default {
       pageSize: 6,
       currentPage: 1,
       chevronElement: Object,
-      inTransition: false
+      inTransition: false,
+      artist: '',
+      startIndex: Number,
+      endIndex: Number
     };
   },
   computed: {
@@ -135,9 +147,9 @@ export default {
       return Math.ceil(this.products.length / this.pageSize);
     },
     pagedElements() {
-      const startIndex = (this.currentPage - 1) * this.pageSize;
-      const endIndex = startIndex + this.pageSize;
-      return this.products.slice(startIndex, endIndex);
+      this.startIndex = (this.currentPage - 1) * this.pageSize;
+      this.endIndex = this.startIndex + this.pageSize;
+      return this.products.slice(this.startIndex, this.endIndex);
     }
   },
   methods: {
@@ -153,6 +165,9 @@ export default {
         this.loading = true
         let responseProducts = await ProductService.getAllProducts()
         this.products = responseProducts.data.filter(product => product["artist-id"] === this.$route.params.artistId)
+        let responseArtist = await ProductService.getArtist(this.$route.params.artistId)
+        this.artist = responseArtist.data
+        console.log(this.artist)
         this.loading = false
       } else {
         this.loading = true
@@ -274,6 +289,24 @@ export default {
     background-position: top;
     width: 100%;
   }
+}
+
+.artist-name-and-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-name {
+  color: $artist-gallery-name;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.cards-items {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .art-styles {

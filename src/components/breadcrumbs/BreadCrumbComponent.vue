@@ -71,13 +71,13 @@ export default {
     created: async function () {
         try {
             if (this.$route.path.includes('gallery/artist')) {
-                let responseArtist = await ProductService.getAllArtist(this.$route.params.artistId)
+                let responseArtist = await ProductService.getArtist(this.$route.params.artistId)
                 this.artist = responseArtist.data
                 this.showBreadCrumb = true
             }
             if (this.$route.path.includes('products')) {
                 let reponseProduct = await ProductService.getProduct(this.$route.params.productId)
-                let responseArtist = await ProductService.getAllArtist(reponseProduct.data["artist-id"])
+                let responseArtist = await ProductService.getArtist(reponseProduct.data["artist-id"])
                 this.product = reponseProduct.data
                 this.artist = responseArtist.data
                 this.showBreadCrumb = true
@@ -102,7 +102,6 @@ export default {
     cursor: pointer;
     margin: 0px 0%;
 }
-
 
 .page-active {
     font-weight: bold;

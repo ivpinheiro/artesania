@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="secondSection">
-            <img src="@/assets/img/banner/GirassoisDeVanGogh.png" alt="Girassois de Van Gogh">
+            <!-- <img src="@/assets/img/banner/GirassoisDeVanGogh.png" alt="Girassois de Van Gogh"> -->
         </div>
     </div>
 </template>
@@ -45,7 +45,8 @@ export default {
     font-family: 'Inter';
     font-weight: 800;
     line-height: 1;
-    @media (max-width: 760px){
+
+    @media (max-width: 760px) {
         font-size: 45px;
     }
 }
@@ -82,7 +83,8 @@ export default {
     font-family: 'Inter';
     font-weight: 800;
     line-height: 1;
-    @media (max-width: 760px){
+
+    @media (max-width: 760px) {
         font-size: 45px;
     }
 }
@@ -90,7 +92,7 @@ export default {
 .firstSection .headline .attention {
     color: #9D3207;
     font-weight: 800;
-    
+
 }
 
 .firstSection .buttonPrimary {
@@ -144,9 +146,9 @@ export default {
 }
 
 .secondSection {
-    /* background-image: url('@/assets/img/banner/GirassoisDeVanGogh.png');
+    background-image: url('@/assets/img/banner/GirassoisDeVanGogh.png');
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     height: auto;
     width: 45%;
 
