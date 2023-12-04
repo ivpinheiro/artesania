@@ -26,7 +26,7 @@ export default {
         AboutSection
     }, mounted() {
         GlobalUtils.FontSizeController.fontSizeController()
-        GlobalUtils.HighContrastToggle.highContrast()
+        //GlobalUtils.HighContrastToggle.highContrast()
     }
 }
 </script>
@@ -42,8 +42,6 @@ export default {
 
 .logo-mobile{
     display: none;
-}
-.firstSection{
 }
 
 @media(max-width: 768px){

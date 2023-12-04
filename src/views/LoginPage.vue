@@ -29,7 +29,7 @@ export default {
         AboutSection
     }, mounted() {
         GlobalUtils.FontSizeController.fontSizeController()
-        GlobalUtils.HighContrastToggle.highContrast()
+        //GlobalUtils.HighContrastToggle.highContrast()
     }
 }
 </script>
