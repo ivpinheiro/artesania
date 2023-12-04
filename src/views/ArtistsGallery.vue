@@ -78,14 +78,10 @@
       <div class="secondSection contrast">
         <div class="artist-name-and-filter">
           <p class="artist-name">{{ artist.name }}</p>
-          <p class="cards-items" v-if="this.endIndex > this.products.length">Mostrando {{ this.startIndex + 1 }} - {{
-            this.products.length }}
-            de {{
-              this.products.length }} Obras</p>
-          <p class="cards-items" v-if="this.endIndex < this.products.length">Mostrando {{ this.startIndex + 1 }} - {{
-            this.endIndex }}
-            de {{
-              this.products.length }} Obras</p>
+          <p class="cards-items">
+            Mostrando {{ getStartIndex() }} - {{ getEndIndex() }} de {{ products.length }} Obras  / Ordenar por:
+            <span></span>
+          </p>
         </div>
         <div class="card-deck products">
           <div v-if="loading">
@@ -157,6 +153,12 @@ export default {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
       }
+    },
+    getStartIndex() {
+      return this.startIndex + 1;
+    },
+    getEndIndex() {
+      return Math.min(this.endIndex, this.products.length);
     }
   },
   created: async function () {
@@ -305,7 +307,7 @@ export default {
 
 .cards-items {
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 

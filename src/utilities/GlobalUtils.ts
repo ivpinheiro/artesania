@@ -23,29 +23,29 @@ class FontSizeController {
 }
 
 class PurchaseQuantity {
-    static PurchaseQuantity() {
-        const increaseButton = document.getElementById("increase-button")
-        const decreaseButton = document.getElementById("decrease-button")
-        if (increaseButton && decreaseButton) {
-            let counter = 0;
-            const counterSpan = document.querySelector(".qtdCart span");
-            const updateCounter = () => {
-                if (counterSpan) {
-                    counterSpan.textContent = counter.toString();
-                }
-            };
-            increaseButton.addEventListener("click", () => {
-                counter++;
-                updateCounter();
-            });
-            decreaseButton.addEventListener("click", () => {
-                if (counter > 0) {
-                    counter--;
-                    updateCounter();
-                }
-            });
-        }
-    }
+    // static PurchaseQuantity() {
+    //     const increaseButton = document.getElementById("increase-button")
+    //     const decreaseButton = document.getElementById("decrease-button")
+    //     if (increaseButton && decreaseButton) {
+    //         let counter = 0;
+    //         const counterSpan = document.querySelector(".qtdCart span");
+    //         const updateCounter = () => {
+    //             if (counterSpan) {
+    //                 counterSpan.textContent = counter.toString();
+    //             }
+    //         };
+    //         increaseButton.addEventListener("click", () => {
+    //             counter++;
+    //             updateCounter();
+    //         });
+    //         decreaseButton.addEventListener("click", () => {
+    //             if (counter > 0) {
+    //                 counter--;
+    //                 updateCounter();
+    //             }
+    //         });
+    //     }
+    // }
 }
 
 class HighContrastToggle {
@@ -53,9 +53,7 @@ class HighContrastToggle {
         const elements = document.getElementsByClassName("contrast")
         const textElements = document.querySelectorAll(
             "a, p, h1, h2, h3, h4, h5, h6, .fa, span, .badge, .buttonPrimary, .btn")
-        // Iterate through all elements using forEach
         Array.from(elements).forEach(function (body) {
-            // Toggle the "high-contrast" class on each element
             body.classList.toggle("high-contrast")
         })
         Array.from(textElements).forEach(function (text) {
