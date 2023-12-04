@@ -6,6 +6,7 @@ import OrderAgreementPage from '@/views/OrderAgreementPage.vue'
 import OrderAgreementConfirmationPage from '@/views/OrderAgreementConfirmationPage.vue'
 import SignPage from '@/views/SignInPage.vue'
 import ArtistsGallery from '@/views/ArtistsGallery.vue'
+import ArtistsGalleryProfile from '@/views/ArtistsGalleryProfile.vue'
 import PaymentPage from '@/views/PaymentPage.vue'
 import ProductPage from '@/views/ProductPage.vue'
 import ConfirmPaymentPage from '@/views/ConfirmPaymentPage.vue'
@@ -52,7 +53,7 @@ const router = createRouter({
     },
     {
       path: '/gallery',
-      name: 'gallery',
+      name: 'gallery-art',
       component: ArtistsGallery,
       meta: {
         breadcrumb: 'Galeria'
@@ -60,10 +61,18 @@ const router = createRouter({
     },
     {
       path: '/gallery/artist/:artistId',
-      name: 'artist-gallery',
+      name: 'gallery-art-artist',
       component: ArtistsGallery,
       meta: {
         breadcrumb: 'Galeria'
+      }
+    },
+    {
+      path: '/artists/gallery/profiles',
+      name: 'gallery-profile-artist',
+      component: ArtistsGalleryProfile,
+      meta: {
+        breadcrumb: 'Galeria de perfis'
       }
     },
     {

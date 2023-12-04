@@ -218,6 +218,7 @@
       "id": 1,
       "name": "Marcio Almeida",
       "artist-bio": "Marcio é um pintor contemporâneo conhecido por suas obras abstratas que retratam emoções humanas.",
+      "independent-artist": true,
       "rating": 4.8,
       "sales": 1200,
       "artist-profile-url": "artist-id-1",
@@ -231,6 +232,7 @@
       "id": 2,
       "name": "Rafaela Oliveira",
       "artist-bio": "Rafaela é um escultora especializada em obras de arte feitas a partir de materiais reciclados.",
+      "independent-artist": true,
       "rating": 4.5,
       "sales": 800,
       "artist-profile-url": "artist-id-2",
@@ -244,6 +246,7 @@
       "id": 3,
       "name": "Marina Santos",
       "artist-bio": "Marina é uma fotógrafa premiada por suas imagens emocionais que retratam a natureza.",
+      "independent-artist": true,
       "rating": 4.9,
       "sales": 1500,
       "artist-profile-url": "artist-id-3",
@@ -257,6 +260,7 @@
       "id": 4,
       "name": "Pedro Costa",
       "artist-bio": "Pedro é um artista digital que cria ilustrações surreais e futuristas.",
+      "independent-artist": true,
       "rating": 4.7,
       "sales": 1100,
       "artist-profile-url": "artist-id-4",
@@ -270,6 +274,7 @@
       "id": 5,
       "name": "Fábio Ferreira",
       "artist-bio": "Fábio é uma artesão conhecido por suas peças únicas de cerâmica feitas à mão.",
+      "independent-artist": true,
       "rating": 4.6,
       "sales": 950,
       "artist-profile-url": "artist-id-5",
@@ -283,6 +288,7 @@
       "id": 6,
       "name": "Gustavo Silva",
       "artist-bio": "Gustavo é um músico talentoso que compõe trilhas sonoras para filmes e jogos.",
+      "independent-artist": true,
       "rating": 4.9,
       "sales": 1300,
       "artist-profile-url": "artist-id-6",
@@ -296,6 +302,7 @@
       "id": 7,
       "name": "Camila Ribeiro",
       "artist-bio": "Camila é uma escritora que cria poesias e contos inspirados em experiências pessoais.",
+      "independent-artist": true,
       "rating": 4.8,
       "sales": 1050,
       "artist-profile-url": "artist-id-7",
@@ -309,6 +316,7 @@
       "id": 8,
       "name": "Lucas Gonçalves",
       "artist-bio": "Lucas é um ator versátil conhecido por suas performances no teatro e no cinema.",
+      "independent-artist": true,
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-8",
@@ -322,6 +330,7 @@
       "id": 9,
       "name": "Juliana Lima",
       "artist-bio": "Juliana é uma bailarina renomada por suas coreografias inovadoras e expressivas.",
+      "independent-artist": true,
       "rating": 4.9,
       "sales": 1200,
       "artist-profile-url": "artist-id-9",
@@ -335,6 +344,7 @@
       "id": 10,
       "name": "Diego Fernandes",
       "artist-bio": "Diego é um designer gráfico que cria obras modernas e minimalistas.",
+      "independent-artist": true,
       "rating": 4.6,
       "sales": 900,
       "artist-profile-url": "artist-id-10",
@@ -348,6 +358,7 @@
       "id": 11,
       "name": "Luiz Barbosa",
       "artist-bio": "Luiz é um artista de rua famoso por suas pinturas murais inspiradoras.",
+      "independent-artist": true,
       "rating": 4.8,
       "sales": 1100,
       "artist-profile-url": "artist-id-11",
@@ -361,6 +372,7 @@
       "id": 12,
       "name": "Bruna Oliveira",
       "artist-bio": "Bruna é uma cineasta premiada por seus documentários impactantes sobre questões sociais.",
+      "independent-artist": true,
       "rating": 4.9,
       "sales": 1250,
       "artist-profile-url": "artist-id-12",
@@ -374,6 +386,7 @@
       "id": 13,
       "name": "Josino Santos",
       "artist-bio": "Josino é um artista de performance que cria obras interativas e provocativas.",
+      "independent-artist": true,
       "rating": 4.7,
       "sales": 950,
       "artist-profile-url": "artist-id-13",
@@ -387,6 +400,7 @@
       "id": 14,
       "name": "Eduardo Lima",
       "artist-bio": "Eduardo é um artista de grafite que transforma espaços urbanos com suas pinturas vibrantes.",
+      "independent-artist": true,
       "rating": 4.8,
       "sales": 1050,
       "artist-profile-url": "artist-id-14",
@@ -400,6 +414,7 @@
       "id": 15,
       "name": "Fernando Costa",
       "artist-bio": "Fernando é um artista multimídia que combina tecnologia e arte em suas instalações.",
+      "independent-artist": true,
       "rating": 4.9,
       "sales": 1150,
       "artist-profile-url": "artist-id-15",
@@ -413,6 +428,7 @@
       "id": 16,
       "name": "Gabriel Ferreira",
       "artist-bio": "Gabriel é um arquiteto paisagista conhecido por suas criações harmoniosas e sustentáveis.",
+      "independent-artist": false,
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-16",
@@ -426,6 +442,7 @@
       "id": 17,
       "name": "José Gonçalves",
       "artist-bio": "José é um artista têxtil que produz tapeçarias intricadas e detalhadas.",
+      "independent-artist": false,
       "rating": 4.6,
       "sales": 900,
       "artist-profile-url": "artist-id-17",
@@ -439,6 +456,7 @@
       "id": 18,
       "name": "Erica Lima",
       "artist-bio": "Erica é uma ilustradora de quadrinhos reconhecido por suas narrativas envolventes.",
+      "independent-artist": false,
       "rating": 4.8,
       "sales": 1100,
       "artist-profile-url": "artist-id-18",
@@ -452,6 +470,7 @@
       "id": 19,
       "name": "Joana Pereira",
       "artist-bio": "Joana é uma artista de esculturas em madeira que retrata figuras humanas.",
+      "independent-artist": false,
       "rating": 4.9,
       "sales": 1200,
       "artist-profile-url": "artist-id-19",
@@ -465,6 +484,7 @@
       "id": 20,
       "name": "Bianca Silva",
       "artist-bio": "Bianca é uma pintora realista que retrata paisagens urbanas com grande detalhamento.",
+      "independent-artist": false,
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-20",
@@ -478,6 +498,7 @@
       "id": 21,
       "name": "Leonardo Oliveira",
       "artist-bio": "Leonardo é um artista de colagem que cria composições surreais com recortes de revistas.",
+      "independent-artist": false,
       "rating": 4.8,
       "sales": 1050,
       "artist-profile-url": "artist-id-21",
@@ -491,6 +512,7 @@
       "id": 22,
       "name": "Marcela Santos",
       "artist-bio": "Marcela é uma artista gráfico que trabalha com arte vetorial e formas abstratas.",
+      "independent-artist": false,
       "rating": 4.6,
       "sales": 950,
       "artist-profile-url": "artist-id-22",
@@ -504,6 +526,7 @@
       "id": 23,
       "name": "Gabriel Fernandes",
       "artist-bio": "Gabriel é um fotógrafo documentalista que capta a essência de diferentes culturas.",
+      "independent-artist": false,
       "rating": 4.9,
       "sales": 1250,
       "artist-profile-url": "artist-id-23",
@@ -517,6 +540,7 @@
       "id": 24,
       "name": "Aline Silva",
       "artist-bio": "Aline é uma escultora contemporânea que trabalha principalmente com metal.",
+      "independent-artist": false,
       "rating": 4.7,
       "sales": 1000,
       "artist-profile-url": "artist-id-24",
@@ -530,6 +554,7 @@
       "id": 25,
       "name": "Paula Costa",
       "artist-bio": "Paula é uma ilustradora infantil que cria personagens encantadores para livros.",
+      "independent-artist": false,
       "rating": 4.8,
       "sales": 1100,
       "artist-profile-url": "artist-id-25",
@@ -543,6 +568,7 @@
       "id": 26,
       "name": "Quiteria Lima",
       "artist-bio": "Quiteria é uma artista de arte urbana que produz intervenções artísticas em espaços públicos.",
+      "independent-artist": false,
       "rating": 4.9,
       "sales": 1200,
       "artist-profile-url": "artist-id-26",
@@ -556,6 +582,7 @@
       "id": 27,
       "name": "Ricardo Oliveira",
       "artist-bio": "Ricardo é um músico de jazz conhecido por suas performances cativantes e improvisações.",
+      "independent-artist": false,
       "rating": 4.7,
       "sales": 1050,
       "artist-profile-url": "artist-id-27",
@@ -564,74 +591,9 @@
         "Performance Cativante",
         "Improvisação"
       ]
-    },
-    {
-      "id": 28,
-      "name": "Sara Almeida",
-      "artist-bio": "Sara é uma pintora expressionista que utiliza cores vivas em suas obras emocionais.",
-      "rating": 4.6,
-      "sales": 900,
-      "artist-profile-url": "artist-id-28",
-      "tag-arts": [
-        "Pintura Expressionista",
-        "Cores Vivas",
-        "Emoções"
-      ]
-    },
-    {
-      "id": 29,
-      "name": "Thiago Barbosa",
-      "artist-bio": "Thiago é um fotógrafo de moda reconhecido por suas composições inovadoras.",
-      "rating": 4.8,
-      "sales": 1100,
-      "artist-profile-url": "artist-id-29",
-      "tag-arts": [
-        "Fotografia de Moda",
-        "Composição Inovadora",
-        "Estilo"
-      ]
-    },
-    {
-      "id": 30,
-      "name": "Ursula Costa",
-      "artist-bio": "Ursula é uma escultora de cerâmica que cria peças abstratas e funcionais.",
-      "rating": 4.9,
-      "sales": 1250,
-      "artist-profile-url": "artist-id-30",
-      "tag-arts": [
-        "Escultura em Cerâmica",
-        "Abstração",
-        "Funcionalidade"
-      ]
-    },
-    {
-      "id": 31,
-      "name": "Valentina Santos",
-      "artist-bio": "Valentina é uma ilustradora digital que cria personagens fantásticos para jogos.",
-      "rating": 4.7,
-      "sales": 1000,
-      "artist-profile-url": "artist-id-31",
-      "tag-arts": [
-        "Ilustração Digital",
-        "Personagens Fantásticos",
-        "Jogos"
-      ]
-    },
-    {
-      "id": 32,
-      "name": "Xavier Fernandes",
-      "artist-bio": "Xavier é um artista de instalações que utiliza materiais reciclados em suas obras.",
-      "rating": 4.8,
-      "sales": 1050,
-      "artist-profile-url": "artist-id-32",
-      "tag-arts": [
-        "Arte de Instalação",
-        "Reciclagem",
-        "Sustentabilidade"
-      ]
     }
   ],
-  "pathAnchor": [
+  "path-anchor": [
     {
       "routerPageName": "home",
       "listPathAncor": [
@@ -650,7 +612,29 @@
       ]
     },
     {
-      "routerPageName": "artist-gallery ",
+      "routerPageName": "gallery-art",
+      "listPathAncor": [
+        {
+          "galeria": "Galeria"
+        },
+        {
+          "rodape": "Rodapé"
+        }
+      ]
+    },
+    {
+      "routerPageName": "gallery-art-artist",
+      "listPathAncor": [
+        {
+          "galeria": "Galeria"
+        },
+        {
+          "rodape": "Rodapé"
+        }
+      ]
+    },
+    {
+      "routerPageName": "gallery-profile-artist",
       "listPathAncor": [
         {
           "galeria": "Galeria"

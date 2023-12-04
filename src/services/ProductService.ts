@@ -23,7 +23,7 @@ export class ProductService {
         return axios.get(dataURL);
     }
     static getAnchors() {
-        let dataURL = `${this.serverURL}/pathAnchor`;
+        let dataURL = `${this.serverURL}/path-anchor`;
         return axios.get(dataURL);
     }
 }

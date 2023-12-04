@@ -1,9 +1,7 @@
 <template>
     <div class="container">
         <div class="firstSection contrast">
-            <div>
-                <h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1>
-            </div>
+            <h1 class="headline">NOSSOS ARTISTAS EM DESTAQUE</h1>
             <div class="line upper">
                 <div class="artist-container" v-for="(artist, index) in artists.slice(0, 2)" :key="index">
                     <router-link :to="`/gallery/artist/${artist.id}`" class="text-decoration-none">
@@ -24,12 +22,18 @@
                     </router-link>
                 </div>
             </div>
+            <div class="btn-our-artists">
+                <router-link :to="`/artists/gallery/profiles`" class="btn buttonPrimary contrast">
+                    Ver Todos Artistas
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import { ProductService } from '@/services/ProductService.ts'
+import { ProductUtils } from '@/utilities/ProductUtils.ts'
 
 export default {
     name: 'OurArtists',
@@ -44,6 +48,8 @@ export default {
         try {
             this.loading = true
             let response = await ProductService.getAllArtists()
+            // shuffle da lista de produtos
+            // this.artists = ProductUtils.ProductList.shuffleArray(response.data.map(artist => ({ ...artist })))
             this.artists = response.data
             this.loading = false
         } catch (error) {
@@ -61,10 +67,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+    width: auto;
+}
+
 .firstSection {
-    padding: 60px 70px 60px 70px;
+    padding: 60px 70px 150px 70px;
     width: 100%;
-    height: 663px;
+    height: 950px;
     align-items: center;
     background-color: #EAB766;
     border-radius: 40px;
@@ -72,12 +82,13 @@ export default {
 
     @media (max-width: 1160px) {
         height: fit-content;
+        padding: 60px 70px 60px 70px;
     }
 }
 
 .artist-container {
     flex: 1;
-    padding: 0 5px;
+    padding: 0 25px;
 }
 
 .firstSection .headline {
@@ -87,6 +98,7 @@ export default {
     font-weight: 800;
     line-height: 1;
     text-align: center;
+    margin-bottom: 45px;
 
     @media (max-width: 760px) {
         font-size: 45px;
@@ -201,6 +213,26 @@ export default {
     width: 100%;
     overflow: hidden;
     border-radius: 20px;
+}
+
+.btn-our-artists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonPrimary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9D3207;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .high-contrast {

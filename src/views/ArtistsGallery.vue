@@ -82,7 +82,7 @@
             Mostrando {{ getStartIndex() }} - {{ getEndIndex() }} de {{ products.length }} Obras /
             <span>
               <div class="btn-group">
-                <button class="btn btn-sm dropdown-toggle border-0 p-0 m-0 cards-items" type="button"
+                <button class="btn btn-sm dropdown-toggle border-0 m-0 cards-items" type="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Ordenar por:
                 </button>
@@ -333,6 +333,9 @@ export default {
 }
 
 .cards-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
   font-weight: bold;
 }
