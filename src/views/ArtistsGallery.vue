@@ -68,19 +68,37 @@
         <div class="btn-filter filters">
           <button class="btn btnOrder buttonPrimary">Aplicar Filtro</button>
           <RouterLink to="/order/page"
-              class="d-flex justify-content-center align-items-center text-decoration-none router-link button-container-link">
+            class="d-flex justify-content-center align-items-center text-decoration-none router-link button-container-link">
             <button class="btn btnOrder buttonPrimary">
-                Fazer Encomenda
+              Fazer Encomenda
             </button>
-        </RouterLink>
+          </RouterLink>
         </div>
       </div>
       <div class="secondSection contrast">
         <div class="artist-name-and-filter">
           <p class="artist-name">{{ artist.name }}</p>
           <p class="cards-items">
-            Mostrando {{ getStartIndex() }} - {{ getEndIndex() }} de {{ products.length }} Obras  / Ordenar por:
-            <span></span>
+            Mostrando {{ getStartIndex() }} - {{ getEndIndex() }} de {{ products.length }} Obras /
+            <span>
+              <div class="btn-group">
+                <button class="btn btn-sm dropdown-toggle border-0 p-0 m-0 cards-items" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Ordenar por:
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <p class="dropdown-item cards-items">Populares</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item cards-items">Maior preço</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item cards-items">Menor preço</p>
+                  </li>
+                </ul>
+              </div>
+            </span>
           </p>
         </div>
         <div class="card-deck products">
@@ -222,9 +240,10 @@ export default {
   margin: 0;
 }
 
-.button-container-link{
+.button-container-link {
   width: 100%;
 }
+
 .f-icon-filter {
   font-size: 25px;
   margin-left: auto;
@@ -300,6 +319,11 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .artist-name {
@@ -309,7 +333,6 @@ export default {
 }
 
 .cards-items {
-  display: flex;
   font-size: 18px;
   font-weight: bold;
 }
@@ -339,9 +362,11 @@ export default {
   font-size: 20px;
   padding: 0;
 }
+
 .buttonPrimary:hover {
   color: black;
 }
+
 .buttonPrimary:focus {
   color: black;
 }
@@ -375,5 +400,48 @@ export default {
     height: 50px;
     border-style: none;
   }
+}
+
+.dropdown-menu {
+  --bs-dropdown-zindex: 1000;
+  --bs-dropdown-min-width: 10rem;
+  --bs-dropdown-padding-x: 0;
+  --bs-dropdown-padding-y: 0.5rem;
+  --bs-dropdown-spacer: 0.125rem;
+  --bs-dropdown-font-size: 1rem;
+  --bs-dropdown-color: var(--bs-body-color);
+  --bs-dropdown-bg: var(--bs-body-bg);
+  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-border-radius: var(--bs-border-radius);
+  --bs-dropdown-border-width: var(--bs-border-width);
+  --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+  --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+  --bs-dropdown-divider-margin-y: 0.5rem;
+  --bs-dropdown-box-shadow: var(--bs-box-shadow);
+  --bs-dropdown-link-color: var(--bs-body-color);
+  --bs-dropdown-link-hover-color: var(--bs-body-color);
+  --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: rgba(157, 50, 7, 0.3);
+  --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+  --bs-dropdown-item-padding-x: 1rem;
+  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-padding-x: 1rem;
+  --bs-dropdown-header-padding-y: 0.5rem;
+  position: absolute;
+  z-index: var(--bs-dropdown-zindex);
+  display: none;
+  min-width: var(--bs-dropdown-min-width);
+  padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+  margin: 0;
+  font-size: var(--bs-dropdown-font-size);
+  color: var(--bs-dropdown-color);
+  text-align: left;
+  list-style: none;
+  background-color: var(--bs-dropdown-bg);
+  background-clip: padding-box;
+  border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+  border-radius: var(--bs-dropdown-border-radius);
 }
 </style>
