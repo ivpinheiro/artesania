@@ -67,12 +67,12 @@
 
         <div class="btn-filter filters">
           <button class="btn btnOrder buttonPrimary">Aplicar Filtro</button>
-          <button class="btn btnOrder buttonPrimary">
-            <RouterLink to="/order/page"
-              class="d-flex justify-content-center align-items-center text-decoration-none router-link">
-              Fazer Encomenda
-            </RouterLink>
-          </button>
+          <RouterLink to="/order/page"
+              class="d-flex justify-content-center align-items-center text-decoration-none router-link button-container-link">
+            <button class="btn btnOrder buttonPrimary">
+                Fazer Encomenda
+            </button>
+        </RouterLink>
         </div>
       </div>
       <div class="secondSection contrast">
@@ -205,6 +205,9 @@ export default {
   margin: 0;
 }
 
+.button-container-link{
+  width: 100%;
+}
 .f-icon-filter {
   font-size: 25px;
   margin-left: auto;
@@ -300,6 +303,12 @@ export default {
   font-weight: bold;
   font-size: 20px;
   padding: 0;
+}
+.buttonPrimary:hover {
+  color: black;
+}
+.buttonPrimary:focus {
+  color: black;
 }
 
 .router-link:hover {

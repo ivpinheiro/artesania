@@ -28,7 +28,9 @@ export default {
   width: 2px;
   height: 100%;
 }
-
+a:focus {
+  color: #000;
+}
 .buttons_space {
   width: 100%;
   height: 110px;
