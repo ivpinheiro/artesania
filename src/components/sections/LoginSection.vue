@@ -47,7 +47,9 @@
 
     overflow: hidden;
 }
-
+a:focus {
+    color: #000;
+}
 .login-info{
     width: 50%;
 }
