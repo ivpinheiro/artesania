@@ -1,17 +1,23 @@
 <template>
   <div class="buttons_space contrast">
     <div class="buttons_section contrast">
-      <div class="buttonPrimary">
-        <RouterLink class="link-class-none" to="/login">ENTRAR</RouterLink>
-      </div>
+      <RouterLink class="link-class-none buttonPrimary" to="/login">
+        <div class="">
+          ENTRAR
+        </div>
+      </RouterLink>
       <div class="verticalLine"></div>
-      <div class="buttonPrimary">
-        <RouterLink class="link-class-none" to="/sign">CADASTRAR-SE</RouterLink>
-      </div>
+      <RouterLink class="link-class-none buttonPrimary" to="/sign">
+        <div class="">
+          CADASTRAR-SE
+        </div>
+      </RouterLink>
       <div class="verticalLine"></div>
-      <div class="buttonPrimary">
-        <RouterLink class="link-class-none" to="/dashboard/order">ÁREA DO ARTISTA</RouterLink>
-      </div>
+      <RouterLink class="link-class-none buttonPrimary" to="/dashboard/order">
+        <div class="">
+          ÁREA DO ARTISTA
+        </div>
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -28,9 +34,11 @@ export default {
   width: 2px;
   height: 100%;
 }
+
 a:focus {
   color: #000;
 }
+
 .buttons_space {
   width: 100%;
   height: 110px;
@@ -43,6 +51,25 @@ a:focus {
   align-items: center;
   justify-content: space-around;
   height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 800;
+}
+
+a,
+.link-class-none {
+  all: unset;
+  text-decoration: unset;
+  color: inherit;
+  font-size: unset;
+  font-family: unset;
+  font-weight: unset;
+  cursor: pointer;
 }
 
 .buttonPrimary {

@@ -68,6 +68,14 @@ const router = createRouter({
       }
     },
     {
+      path: '/artists/gallery/profiles/independent',
+      name: 'gallery-art-artist-independent',
+      component: ArtistsGalleryProfile,
+      meta: {
+        breadcrumb: 'Artistas independentes'
+      }
+    },
+    {
       path: '/artists/gallery/profiles',
       name: 'gallery-profile-artist',
       component: ArtistsGalleryProfile,

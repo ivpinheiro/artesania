@@ -11,8 +11,8 @@
                         <span class="input-group-text" id="addon-wrapping"
                             style="background-color: white; border:none"><font-awesome-icon icon="magnifying-glass"
                                 class="magnifying-g" /></span>
-                        <input type="search" class="form-control" placeholder="Procurar"
-                            aria-label="Digite seu e-mail" aria-describedby="addon-wrapping" style="border:none">
+                        <input type="search" class="form-control" placeholder="Procurar" aria-label="Digite seu e-mail"
+                            aria-describedby="addon-wrapping" style="border:none">
                     </div>
                 </div>
             </form>
@@ -23,7 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="sectionsArea">
                     <li class="nav-item">
-                        <a class="nav-link active text-center m-1" aria-current="page">Artistas independentes</a>
+                        <RouterLink to="/artists/gallery/profiles/independent"
+                            class="text-decoration-none router-link button-container-link">
+                            <a class="nav-link active text-center m-1" aria-current="page">Artistas independentes</a>
+                        </RouterLink>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-center m-1" aria-current="page" href="#">Pinturas</a>
@@ -48,7 +51,7 @@
                 </form>
                 <div class="d-flex align-items-center justify-content-center">
                     <div v-if="estaLogado">
-                        <p  id="nameUser" @click="toggleMenu">Olá, Kamila!</p>
+                        <p id="nameUser" @click="toggleMenu">Olá, Kamila!</p>
                         <div v-if="showMenu" class="menu-options">
                             <a href="/" @click="logout">Sair</a>
                         </div>
@@ -107,13 +110,15 @@ export default {
     font-weight: bold;
     padding: 10px 0;
 }
-#nameUser{
+
+#nameUser {
     min-width: 100px;
     margin-bottom: 0px;
     color: #9D3207;
     font-weight: 500;
     cursor: pointer;
 }
+
 #brand-name {
     font-family: Inter;
     font-weight: 900;
@@ -121,11 +126,12 @@ export default {
     color: #9D3207;
     padding-left: 1em;
 }
+
 .menu-options {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -139,7 +145,8 @@ export default {
 .menu-options a:hover {
     background-color: #f1f1f1;
 }
-#sectionsArea{
+
+#sectionsArea {
     align-items: center;
 }
 

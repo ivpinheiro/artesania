@@ -160,10 +160,17 @@ export default {
   },
   created: async function () {
     try {
-      this.loading = true
-      let responseArtists = await ProductService.getAllArtists()
-      this.artists = responseArtists.data
-      this.loading = false
+      if (this.$route.path.includes('/artists/gallery/profiles/independent')) {
+        this.loading = true
+        let responseArtists = await ProductService.getAllArtists()
+        this.artists = responseArtists.data.filter(artist => { if (artist['independent-artist']) { return artist } })
+        this.loading = false
+      } else {
+        this.loading = true
+        let responseArtists = await ProductService.getAllArtists()
+        this.artists = responseArtists.data
+        this.loading = false
+      }
     } catch (error) {
       this.errorMessage = error
       this.loading = false
