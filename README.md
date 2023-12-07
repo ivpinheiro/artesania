@@ -14,6 +14,14 @@
 
 # Artesania
 
+Artesania is an e-commerce project specializing in the sale of Artistic products in a revolutionary way.
+
+# Artesania: backend
+
+This is the fake <a href="https://github.com/ivbpinheiro/artesania-json-server" target="_blank"><b>backend</b></a> created to test the features of Artesania e-commerce.
+
+# Artesania: Vite Dev
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
