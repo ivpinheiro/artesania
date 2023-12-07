@@ -1,3 +1,17 @@
+<h1 align="center">
+  <a
+    target="_blank"
+    href="https://artesania-art.vercel.app"
+  >
+    <img
+      align="center"
+      alt="Artesania"
+      src="https://github.com/ivbpinheiro/artesania/blob/main/src/assets/img/repo/logo.svg?raw=true"
+      style="width:100%;"
+    />
+  </a>
+</h1>
+
 # Artesania
 
 This template should help get you started developing with Vue 3 in Vite.
