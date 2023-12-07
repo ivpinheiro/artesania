@@ -16,19 +16,19 @@
 
 Artesania is an e-commerce project specializing in the sale of Artistic products in a revolutionary way.
 
-# Artesania: backend
+## Artesania: backend
 
 This is the fake <a href="https://github.com/ivbpinheiro/artesania-json-server" target="_blank"><b>backend</b></a> created to test the features of Artesania e-commerce.
 
-# Artesania: Vite Dev
+## Artesania: Vite Dev
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+### Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Type Support for `.vue` Imports in TS
+### Type Support for `.vue` Imports in TS
 
 TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
@@ -39,45 +39,27 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
     2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+### Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project setup for Dev
+### Project setup for Dev
 
-### Install dependencies
+#### Install dependencies
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 
 ```
 npm run dev
 ```
 
-### Go to the server folder
+### Project setup for Deploy
 
-```
-cd server
-```
-
-### Install dependencies of json-server
-
-```
-npm i
-```
-
-### Start backend endpoints
-
-```
-npm run start
-```
-
-## Project setup for Deploy
-
-### Type-Check, Compile and Minify for Production
+#### Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
