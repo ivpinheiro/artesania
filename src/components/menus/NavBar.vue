@@ -51,8 +51,10 @@
                 </form>
                 <div class="d-flex align-items-center justify-content-center">
                     <div v-if="estaLogado">
+                        
                         <p id="nameUser" @click="toggleMenu">Olá, Kamila!</p>
                         <div v-if="showMenu" class="menu-options">
+                            <RouterLink to="/chat" class="text-decoration-none">Meus pedidos</RouterLink>
                             <a href="/" @click="logout">Sair</a>
                         </div>
                     </div>
