@@ -187,6 +187,17 @@
       <!-- Copyright -->
       <div class="col-lg text-center">
         Artesania © 2023, Todos os direitos reservados
+        <div class="d-flex justify-content-center align-items-center text-reset">
+          Made with
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall m-1" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+            style="font-size:14px;color:#F00;margin-bottom:-2px">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+            </path>
+          </svg><!-- --> <!-- --> by <!-- --> <!-- -->
+          <a class="text-reset m-1" target="_blank" rel="nofollow"
+            href="https://github.com/ivpinheiro/artesania">Artesania Group</a>
+        </div>
       </div>
       <!-- Copyright -->
 
@@ -223,15 +234,18 @@ export default {
 
 .footer-comp {
   background: linear-gradient(white 15%, 0%, $footer-color 85%);
+
   @media (max-width: 530px) {
     background: linear-gradient(white 5%, 0%, $footer-color 85%);
-  }  
+  }
+
   @media (min-width: 531px) and (max-width: 650px) {
     background: linear-gradient(white 7%, 0%, $footer-color 85%);
-  } 
+  }
+
   @media (min-width: 651px) and (max-width: 770px) {
     background: linear-gradient(white 9%, 0%, $footer-color 85%);
-  } 
+  }
 }
 
 .subs-footer {
@@ -241,9 +255,10 @@ export default {
   background-color: $footer-color2;
   border-radius: 20px;
   padding: 3vh;
+
   @media (max-width: 1060px) {
     max-width: 95%;
-  }  
+  }
 }
 
 .subscribe-offers {
@@ -310,6 +325,17 @@ export default {
   border-top: 1px solid gray;
 }
 
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
 .high-contrast {
   color: white;
   background: black;
@@ -317,4 +343,5 @@ export default {
 
 .high-contrast-text {
   color: white;
-}</style>
+}
+</style>
